@@ -1,0 +1,76 @@
+% Documento simplificado para una tesis tipo MIT
+% Versión más simple con explicaciones contextuales
+
+\documentclass[11pt]{report} % Clase de documento adecuada para tesis
+
+% Paquetes esenciales
+\usepackage[letterpaper, margin=1in]{geometry} % Configuración de márgenes
+\usepackage{graphicx} % Paquete para incluir gráficos
+\usepackage{amsmath} % Paquete para ecuaciones matemáticas avanzadas
+\usepackage{amssymb} % Símbolos matemáticos adicionales
+\usepackage{setspace} % Espaciado entre líneas
+\usepackage{titlesec} % Personalizar los títulos de secciones
+
+% Información de la portada
+\title{Sistema de carga modular y aterrizaje de precisión para enjambre de drones} % Título de la tesis
+\author{José Alberto Castro Villasana \and José Eduardo Castro Villasana \and Ana Bárbara Quintero García} % Nombres de los autores
+\date{Diciembre 2024} % Fecha de presentación
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    
+    {\Huge\textbf{Sistema de carga modular y aterrizaje de precisión para enjambre de drones}} % Título en grande
+    
+    \vspace{2.5cm} % Espacio adicional para centrar mejor
+    {\Large\textbf{José Alberto Castro Villasana, José Eduardo Castro Villasana, Ana Bárbara Quintero García}} % Nombres de los autores
+    
+    \vfill
+    
+    {\large\textbf{Una Tesis presentada a la Facultad de Ingeniería}} % Información sobre la presentación
+    {\large\textbf{en Conformidad con los Requisitos para el Grado de}} % Información sobre la presentación
+    {\large\textbf{Ingeniero en Tecnologías Electrónicas y Robótica, Ingeniero en Mecatrónica}} % Información sobre la presentación
+    
+    \vspace{2cm}
+    
+    \includegraphics[width=0.4\textwidth]{pictures/logo_udem.png} % Logo de la institución
+    
+    \vspace{2cm}
+    
+    {\large\textbf{Universidad de Monterrey} \newline Departamento de Ingeniería y Tecnologías \newline San Pedro Garza García, México} % Institución y departamento
+    
+    \vspace{1.5cm}
+    {\large\textbf{Diciembre 2024}} % Fecha de presentación
+    
+    \vfill
+    
+    {\large\textbf{Asesor:} \newline \textbf{Fermín Castro}} % Información del asesor
+
+\end{titlepage}
+
+% Índice
+\tableofcontents
+\newpage
+
+% Espaciado entre líneas
+\onehalfspacing% Espaciado de 1.5 líneas para mejor legibilidad
+
+% Llamar a capítulos almacenados en archivos externos
+\chapter{Introducción} % Capítulo de introducción
+\input{chapters/introduccion} % Llama al archivo 'introduccion.tex' desde la carpeta 'chapters'
+
+\chapter{Desarrollo} % Capítulo principal de desarrollo
+\input{chapters/desarrollo} % Llama al archivo 'desarrollo.tex' desde la carpeta 'chapters'
+
+\chapter{Conclusiones} % Capítulo de conclusiones
+\input{chapters/conclusiones} % Llama al archivo 'conclusiones.tex' desde la carpeta 'chapters'
+
+% Bibliografía
+\begin{thebibliography}{9}
+    \bibitem{ejemplo} Autor, ``Título del artículo o libro'', Año. % Ejemplo de referencia bibliográfica
+\end{thebibliography}
+
+\end{document}
