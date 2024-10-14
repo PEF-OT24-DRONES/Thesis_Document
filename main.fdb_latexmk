@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1728510736 "/home/albertocastro/Documents/Thesis_Document/main.tex" "main.pdf" "main" 1728510737
+["pdflatex"] 1728946678 "/home/albertocastro/Documents/Thesis_Document/main.tex" "main.pdf" "main" 1728946679
   "/etc/texmf/web2c/texmf.cnf" 1726609615 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/albertocastro/Documents/Thesis_Document/main.tex" 1728510560 3018 de4ea357fc3056a45b772316d4bbb466 ""
+  "/home/albertocastro/Documents/Thesis_Document/main.tex" 1728946678 3160 6569b5a63bab45a9ea741f1672bbd7da ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -62,10 +62,11 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1728481014 1412566 690b792799e7b4eee02128b727df3b3f ""
   "chapters/conclusiones.tex" 1728484464 0 d41d8cd98f00b204e9800998ecf8427e ""
   "chapters/desarrollo.tex" 1728484456 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "chapters/estado_arte.tex" 1728579578 3608 b575da88f2738e7bbe063d239d83f253 ""
   "chapters/introduccion.tex" 1728510736 5904 63783c01c46c37f58be6558a010bf33d ""
-  "main.aux" 1728510737 3179 611c6cf514bbaacfda6504dc090e5acb "pdflatex"
-  "main.tex" 1728510560 3018 de4ea357fc3056a45b772316d4bbb466 ""
-  "main.toc" 1728510737 1827 b2538ddd3990ed444b346d2089859892 "pdflatex"
+  "main.aux" 1728946678 5006 7d46930a0c74f803270a4542c15f96e8 "pdflatex"
+  "main.tex" 1728946678 3160 6569b5a63bab45a9ea741f1672bbd7da ""
+  "main.toc" 1728946678 2860 70e60133ac640ee547e0c74b5529ff8e "pdflatex"
   "pictures/logo_udem.png" 1728484887 9158 c368e2e623eee1ced48df331c43c79c1 ""
   (generated)
   "main.aux"

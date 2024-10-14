@@ -298,6 +298,13 @@ INPUT ./chapters/introduccion.tex
 INPUT ./chapters/introduccion.tex
 INPUT chapters/introduccion.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
+INPUT ./chapters/estado_arte.tex
+INPUT ./chapters/estado_arte.tex
+INPUT ./chapters/estado_arte.tex
+INPUT chapters/estado_arte.tex
+INPUT ./chapters/estado_arte.tex
+INPUT ./chapters/estado_arte.tex
+INPUT chapters/estado_arte.tex
 INPUT ./chapters/desarrollo.tex
 INPUT ./chapters/desarrollo.tex
 INPUT ./chapters/desarrollo.tex
