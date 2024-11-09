@@ -10,6 +10,9 @@
 \usepackage{amssymb} % Símbolos matemáticos adicionales
 \usepackage{setspace} % Espaciado entre líneas
 \usepackage{titlesec} % Personalizar los títulos de secciones
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+
 
 % Información de la portada
 \title{Sistema de carga modular y aterrizaje de precisión para enjambre de drones} % Título de la tesis
@@ -31,7 +34,9 @@
     \vfill
     
     {\large\textbf{Una Tesis presentada a la Facultad de Ingeniería}} % Información sobre la presentación
-    {\large\textbf{en Conformidad con los Requisitos para el Grado de}} % Información sobre la presentación
+    {\large\textbf{en Conformidad con los Requisitos para el Grado de:}} % Información sobre la presentación
+    
+    \vspace{0.2cm}
     {\large\textbf{Ingeniero en Tecnologías Electrónicas y Robótica, Ingeniero en Mecatrónica}} % Información sobre la presentación
     
     \vspace{2cm}
@@ -40,13 +45,19 @@
     
     \vspace{2cm}
     
-    {\large\textbf{Universidad de Monterrey} \newline Departamento de Ingeniería y Tecnologías \newline San Pedro Garza García, México} % Institución y departamento
+    {\large\textbf{Universidad de Monterrey}}
+
+    \vspace{0.2cm}
+    {\large\text{ Departamento de Ingeniería y Tecnologías }}
+
+    \vspace{0.2cm}
+    {\large\text{San Pedro Garza García, México}} % Institución y departamento
     
     \vspace{1.5cm}
-    {\large\textbf{Diciembre 2024}} % Fecha de presentación
+    {\large\textbf{30 de noviembre 2024}} % Fecha de presentación
     
     \vfill
-    {\large\textbf{Asesor:} \textbf{Fermín Castro}} % Información del asesor
+    {\large\textbf{Asesor:} \text{Fermín Castro Aragón}} % Información del asesor
     
 \end{titlepage}
 
@@ -67,12 +78,13 @@
 \chapter{Desarrollo} % Capítulo principal de desarrollo
 \input{chapters/desarrollo} % Llama al archivo 'desarrollo.tex' desde la carpeta 'chapters'
 
+\chapter{Resultados} % Capítulo principal de desarrollo
+\input{chapters/resultados} % Llama al archivo 'resultados.tex' desde la carpeta 'chapters'
+
 \chapter{Conclusiones} % Capítulo de conclusiones
 \input{chapters/conclusiones} % Llama al archivo 'conclusiones.tex' desde la carpeta 'chapters'
 
 % Bibliografía
-\begin{thebibliography}{9}
-    \bibitem{ejemplo} Autor, ``Título del artículo o libro'', Año. % Ejemplo de referencia bibliográfica
-\end{thebibliography}
+\input{chapters/bibliografía.tex} % Llama al archivo 'bibliografía.tex' desde la carpeta 'chapters'
 
 \end{document}

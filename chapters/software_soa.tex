@@ -1,0 +1,308 @@
+% Description: Contains the software state of the art.
+
+\section{Software}
+
+\subsection{FC Firmware}
+    \subsubsection{Firmware PX4}
+    El firmware PX4 ha sido una pieza fundamental en el desarrollo de sistemas de control de vuelo para drones y vehículos no tripulados, destacándose por su naturaleza de código abierto y su flexibilidad para diversas aplicaciones. Según la documentación oficial, \textit{``PX4 is a powerful open source autopilot flight stack running on the NuttX RTOS''} \cite{px4_docs}. Este sistema es ampliamente reconocido por su arquitectura modular, que permite la integración de nuevos sensores, actuadores y algoritmos de control, facilitando adaptaciones específicas para cumplir con los requisitos de diferentes proyectos \cite{px4_docs}.
+
+    Entre sus características más destacadas, se encuentra su capacidad para soportar una amplia variedad de tipos de vehículos. En este sentido, PX4 \textit{``supports many different vehicle frames/types, including: multicopters, fixed-wing aircraft (planes), VTOLs (hybrid multicopter/fixed-wing), ground vehicles, and underwater vehicles''} \cite{px4_docs}. Esta capacidad de soportar múltiples configuraciones es esencial para el diseño de sistemas modulares, ya que permite aplicar el mismo marco de trabajo a diversas plataformas con modificaciones mínimas.
+
+    Además, PX4 es parte integral de un ecosistema más amplio que incluye estaciones de control en tierra como QGroundControl, Mission Planner y hardware específico como Pixhawk. La documentación menciona que \textit{``PX4 is a core part of a broader drone platform that includes the QGroundControl ground station, Pixhawk hardware, and MAVSDK for integration with companion computers, cameras, and other hardware using the MAVLink protocol''} \cite{px4_docs}. Esta integración asegura una comunicación fluida entre los diferentes componentes del sistema, lo cual es crucial para el monitoreo en tiempo real y la planificación de misiones.
+
+    La comunidad activa de desarrolladores que respalda a PX4 contribuye a su desarrollo continuo, proporcionando soporte y mejoras en sus características. Esta colaboración refuerza su capacidad para adaptarse a diferentes aplicaciones y asegura que los usuarios puedan implementar \textit{``robust and deep integration with companion computers and robotics APIs such as ROS 2 and MAVSDK''} \cite{px4_docs}.
+
+    Finalmente, PX4 ofrece \textit{``flexible and powerful flight modes and safety features''} que son vitales para proyectos que requieren maniobras complejas, como el aterrizaje autónomo preciso en estaciones de carga \cite{px4_docs}. Estas funcionalidades avanzadas de control y su capacidad de integrarse con tecnologías de visión por computadora y sensores externos consolidan a PX4 como una herramienta clave en el desarrollo de tecnologías de vanguardia para vehículos autónomos.
+
+    
+    \subsubsection{Firmware ArduPilot}
+    ArduPilot es un software de código abierto que se ejecuta en una amplia variedad de hardware, permitiendo la creación y uso de sistemas autónomos de vehículos no tripulados para aplicaciones pacíficas. Según la documentación oficial, \textit{“ArduPilot provides a comprehensive suite of tools suitable for almost any vehicle and application. As an open source project, it is constantly evolving based on rapid feedback from a large community of users”} \cite{ardupilot_docs}. Esta flexibilidad y capacidad de adaptación han convertido a ArduPilot en una herramienta esencial para proyectos de automatización y robótica que buscan una solución versátil y robusta.
+
+    Uno de los aspectos más destacados de ArduPilot es que, aunque no fabrica hardware, \textit{“ArduPilot firmware works on a wide variety of different hardware to control unmanned vehicles of all types”} \cite{ardupilot_docs}. Esto significa que puede integrarse con distintos tipos de controladores, sensores y dispositivos periféricos, transformando prácticamente cualquier máquina móvil en un vehículo autónomo con la simple adición de un paquete de hardware adecuado.
+
+    El firmware es el código que se ejecuta en el controlador, y la elección del tipo de firmware depende del vehículo y la misión. Como se menciona en la documentación, \textit{“You choose the firmware to match your vehicle and mission: Copter, Plane, Rover, Sub, or Antenna Tracker”} \cite{ardupilot_docs}. Esta versatilidad permite a los desarrolladores seleccionar la configuración más apropiada para sus necesidades específicas, optimizando así el proceso de desarrollo y operación.
+
+    ArduPilot también se complementa con estaciones de control en tierra (GCS), que funcionan como la interfaz entre el usuario y el controlador del vehículo. \textit{“Various versions of GCS software are available for Windows, Linux, and Android platforms”}, y estas estaciones permiten configurar, probar y afinar el vehículo, además de planificar y ejecutar misiones autónomas \cite{ardupilot_docs}. Una de las herramientas más completas en este ámbito es Mission Planner, descrita como \textit{“a full-featured GCS supported by ArduPilot”}, que ofrece interacción mediante clics, scripts personalizados y simulación \cite{ardupilot_docs}.
+
+\subsection{Ground Control Systems}
+    \subsubsection{QGroundControl}
+    QGroundControl (QGC) es una estación de control en tierra ampliamente utilizada que ofrece un control de vuelo completo y la configuración de vehículos equipados con los firmwares PX4 y ArduPilot. La documentación oficial destaca que \textit{“QGroundControl provides full flight control and vehicle setup for PX4 or ArduPilot powered vehicles”} \cite{qgc_docs}. Esta plataforma se caracteriza por su facilidad de uso para principiantes, al tiempo que ofrece un soporte robusto y avanzado para usuarios más experimentados, permitiéndoles aprovechar al máximo las capacidades de sus vehículos no tripulados.
+
+    Entre las principales características de QGroundControl, se incluye la configuración y ajuste total de vehículos propulsados por ArduPilot y PX4. Además, \textit{“Flight support for vehicles running PX4 and ArduPilot (or any other autopilot that communicates using the MAVLink protocol)”} es una funcionalidad esencial que asegura su compatibilidad con cualquier sistema de piloto automático que utilice el protocolo MAVLink \cite{qgc_docs}. Esto lo convierte en una herramienta versátil para gestionar diversas configuraciones de vehículos y misiones.
+
+    QGroundControl también permite la planificación de misiones autónomas con una visualización detallada de mapas de vuelo que muestran la posición del vehículo, la trayectoria de vuelo, los puntos de referencia (waypoints) y los instrumentos del vehículo. \textit{“Mission planning for autonomous flight”} y la visualización de la misión en un mapa de vuelo enriquecido proporcionan a los operadores una comprensión precisa y visual del entorno y las operaciones en curso \cite{qgc_docs}.
+
+    Por último, una de las ventajas más notables de QGC es su soporte para la gestión de múltiples vehículos, permitiendo a los operadores controlar y supervisar más de un dron simultáneamente. Esta funcionalidad es crucial en aplicaciones avanzadas como operaciones de enjambre y misiones coordinadas de múltiples vehículos \cite{qgc_docs}.
+
+    \subsubsection{Mission Planner}
+    Mission Planner es una estación de control en tierra (GCS) desarrollada para gestionar vehículos equipados con el firmware ArduPilot. Según la documentación oficial, \textit{“Mission Planner is a full-featured GCS supported by ArduPilot”} \cite{ardupilot_docs}. Esta herramienta proporciona a los usuarios la capacidad de configurar, supervisar y controlar sus vehículos de forma eficiente y avanzada, siendo adecuada tanto para usuarios novatos como para expertos.
+
+    Una de las funcionalidades más notables de Mission Planner es su capacidad para la planificación de misiones autónomas, lo que permite a los operadores definir rutas de vuelo de manera sencilla a través de una interfaz intuitiva. Esta funcionalidad hace que Mission Planner sea fundamental para el desarrollo y ajuste de misiones complejas. Además, la posibilidad de realizar simulaciones y analizar los datos después de cada vuelo proporciona una visión integral del rendimiento del vehículo.
+
+    Mission Planner incluye herramientas de configuración y ajuste de parámetros que facilitan la personalización del vehículo para adaptarlo a distintas aplicaciones. La capacidad de \textit{“tuning and testing vehicle parameters directly from the GCS”} permite a los operadores optimizar el firmware para ajustarse a las necesidades específicas del vehículo y mejorar su desempeño \cite{ardupilot_docs}.
+
+    Otra ventaja significativa es la presentación de datos de telemetría en tiempo real, que ofrece información sobre la posición, velocidad, estado de la batería y otros parámetros críticos, ayudando a garantizar la seguridad y efectividad de las operaciones de vuelo.
+
+    \begin{figure}[h!] 
+    \centering 
+    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Imagen ilustrativa de la interfaz de Mission Planner 
+    \caption{Interfaz de Mission Planner mostrando la planificación de una misión.} 
+    \label{fig:mission_planner}
+    \end{figure}
+
+\subsection{Companion Computer Operative Systems} 
+    
+    Existen múltiples opciones de companion computers que pueden emplearse en el desarrollo de proyectos relacionados con vehículos no tripulados. Entre las más populares se encuentran: Raspberry Pi, Nvidia Jetson Nano, Odroid, entre otros \cite{electronics_section}. En este proyecto, se ha elegido una Raspberry Pi 4 por su combinación de bajo costo, versatilidad y facilidad de uso. A continuación, se detallan las características principales de los sistemas operativos compatibles con la Raspberry Pi 4 y 5.
+
+    \subsubsection{Ubuntu}
+
+    Ubuntu es un sistema operativo de código abierto basado en Linux que ha ganado popularidad por su estabilidad y amplia comunidad de soporte. Según la documentación oficial de Ubuntu, este sistema es \textit{“designed for security, reliability, and ease of use”} \cite{ubuntu_docs}. En el contexto de los companion computers para drones y otros vehículos autónomos, Ubuntu se utiliza frecuentemente debido a su compatibilidad con herramientas de robótica como ROS (Robot Operating System), lo que facilita la integración y desarrollo de software avanzado de control y automatización.
+
+    Ubuntu ofrece soporte para arquitecturas ARM, lo que permite su instalación y ejecución en dispositivos como la Raspberry Pi 4 y 5. Esta capacidad es fundamental para proyectos que requieren procesamiento local eficiente, manejo de datos de sensores y comunicación en tiempo real. Adicionalmente, la flexibilidad de Ubuntu permite la personalización de su entorno para adaptarse a las necesidades específicas del proyecto, ya sea para ejecutar nodos de control de vuelo o procesamiento de imágenes en tiempo real.
+
+    \begin{figure}[h!] 
+    \centering 
+    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Imagen ilustrativa de Raspberry Pi con Ubuntu o Raspbian 
+    \caption{Ubuntu OS} 
+    \label{fig} 
+    \end{figure}
+
+    \subsubsection{Raspberry Pi OS}
+
+    Raspberry Pi OS, es el sistema operativo oficial desarrollado y optimizado para dispositivos Raspberry Pi. La documentación de Raspberry Pi OS lo describe como \textit{“a Debian-based operating system specifically tuned for the Raspberry Pi hardware”} \cite{raspbian_docs}. Su principal ventaja es su optimización para el hardware de Raspberry Pi, lo que garantiza un rendimiento óptimo y un uso eficiente de los recursos disponibles.
+
+    Raspbian incluye una serie de herramientas preinstaladas que facilitan el desarrollo y prototipado, haciendo que sea una opción preferida para proyectos educativos y de investigación. La compatibilidad con Python y otras bibliotecas de programación facilita la implementación de scripts y software necesarios para el control de drones y otras aplicaciones robóticas.
+
+    En comparación con otros sistemas operativos, Raspbian es ligero y permite un arranque rápido, lo cual es beneficioso en escenarios donde se requiere un inicio rápido del sistema. Además, la comunidad activa de usuarios de Raspberry Pi proporciona recursos y asistencia que resultan invaluables para la resolución de problemas y la optimización del software.
+
+    \begin{figure}[h!] 
+    \centering 
+    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Imagen ilustrativa de Raspberry Pi con Ubuntu o Raspbian 
+    \caption{Raspberry Pi OS}
+    \label{fig}
+    \end{figure}
+
+\subsection{ROS2 Distributions}
+    Las distribuciones de ROS 2 (Robot Operating System 2) proporcionan entornos estandarizados para el desarrollo de aplicaciones robóticas, cada una adaptada a diferentes necesidades y capacidades de hardware. Una de las ventajas de ROS 2 es su capacidad para facilitar la comunicación entre distribuciones mediante el uso de topics, lo que permite que nodos en distintas versiones de ROS 2 se comuniquen y colaboren de manera efectiva en un mismo proyecto \cite{ros_docs}. En la siguiente sección se abordarán más detalles sobre el funcionamiento general de ROS 2 y su importancia en proyectos de robótica.
+
+    En el contexto de companion computers como la Raspberry Pi, las distribuciones específicas de ROS 2 se eligen basándose en la versión de hardware y la compatibilidad de software. La Raspberry Pi 4, por ejemplo, es adecuada para ejecutar la distribución ROS 2 Humble \cite{raspberry_docs}, mientras que la Raspberry Pi 5 puede correr la distribución más reciente, ROS 2 Jazzy Jalisco \cite{ros_docs}. A continuación, se describen las principales características de cada distribución y algunas diferencias importantes.
+    \subsubsection{Distribución Humble}
+
+    La distribución ROS 2 Humble es conocida por su estabilidad y soporte a largo plazo (LTS), lo que la convierte en una opción popular para proyectos que requieren fiabilidad y consistencia en el tiempo. Esta versión es ideal para proyectos que utilizan hardware como la Raspberry Pi 4, ya que está optimizada para correr de manera eficiente en dispositivos con arquitecturas ARM \cite{humble_documentation}.
+
+    Características principales de ROS 2 Humble:
+
+    Soporte a largo plazo (LTS), garantizando actualizaciones y soporte extendido.
+    Mayor estabilidad en la comunicación entre nodos.
+    Compatibilidad con una amplia gama de paquetes y bibliotecas de ROS.
+    Recomendado para proyectos de investigación y aplicaciones de largo plazo.
+    \subsubsection{Distribución Jazzy}
+
+    La distribución ROS 2 Jazzy Jalisco es una de las más recientes y está diseñada para aprovechar las capacidades avanzadas del hardware más moderno, como la Raspberry Pi 5. Esta versión incluye mejoras en rendimiento y nuevas funcionalidades que facilitan el desarrollo de aplicaciones robóticas más complejas y eficientes \cite{jazzy_documentation}.
+
+    Características principales de ROS 2 Jazzy Jalisco:
+
+    Introducción de características experimentales y optimizaciones de rendimiento.
+    Mejoras en la latencia y el manejo de la comunicación entre nodos.
+    Integración mejorada con nuevas herramientas de simulación y depuración.
+    Adecuado para desarrolladores que buscan utilizar las últimas funcionalidades de ROS 2 en proyectos avanzados.
+    Ambas distribuciones comparten la capacidad de usar el middleware DDS (Data Distribution Service) para la comunicación entre nodos, permitiendo la creación de sistemas distribuidos y escalables. La elección entre ROS 2 Humble y Jazzy Jalisco dependerá de las especificaciones de hardware disponibles y las necesidades específicas del proyecto.
+
+    \begin{figure}[h!] 
+    \centering 
+    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Imagen ilustrativa de dispositivos ejecutando ROS 2 Humble y Jazzy 
+    \caption{ROS 2 Humble y ROS 2 Jazzy Jalisco} 
+    \label{fig} 
+    \end{figure}
+
+\subsection{ROS2 Documentation}
+    ROS 2 (Robot Operating System 2) es un conjunto de bibliotecas y herramientas que permiten a los desarrolladores crear aplicaciones de robótica. Es una evolución de ROS 1, diseñada para abordar limitaciones en términos de escalabilidad, seguridad y soporte a sistemas en tiempo real. ROS 2 ofrece un marco de trabajo robusto que facilita la implementación de sistemas distribuidos y permite la comunicación entre múltiples nodos a través de una arquitectura basada en el middleware DDS (Data Distribution Service) \cite{ros_docs}. A continuación, se detallan los beneficios y la estructura de ROS 2.
+
+    \subsubsection{Benefits of ROS2}
+
+    ROS 2 introduce mejoras significativas que lo hacen más adecuado para aplicaciones avanzadas de robótica. Entre los principales beneficios se encuentran:
+
+    \begin{itemize} \item Multithreading y manejo en tiempo real: ROS 2 permite la ejecución de múltiples nodos en paralelo, lo que mejora el rendimiento en aplicaciones complejas. \item Comunicación mediante topics, nodos y servicios: Facilita la creación de sistemas distribuidos donde los nodos se comunican de forma eficiente. \item Archivos de lanzamiento (launchfiles): Simplifican la ejecución de múltiples nodos y configuraciones mediante un solo archivo. \item Baja latencia y comunicación rápida: La arquitectura basada en DDS proporciona una comunicación confiable y de baja latencia, esencial para aplicaciones críticas. \item Diferentes tipos de mensajes: Soporte para mensajes personalizados y definidos por el usuario. \end{itemize}
+
+    \begin{table}[h!]
+    \centering
+    \caption{Beneficios clave de ROS 2}
+    \begin{tabular}{|l|p{10cm}|}
+    \hline
+    \textbf{Beneficio} & \textbf{Descripción} \\
+    \hline
+    Multithreading & Permite la ejecución de nodos en paralelo, optimizando el rendimiento \\
+    \hline
+    Uso de topics & Comunicación asincrónica entre nodos para el intercambio de datos \\
+    \hline
+    Nodos y servicios & Los nodos son unidades de ejecución que interactúan mediante servicios y topics \\
+    \hline
+    Archivos de lanzamiento (launchfiles) & Permiten la configuración y ejecución de múltiples nodos simultáneamente \\
+    \hline
+    Comunicación rápida & Basada en DDS, proporciona comunicación de baja latencia \\
+    \hline
+    Mensajes personalizados & Soporte para definir y usar mensajes específicos para aplicaciones personalizadas \\
+    \hline
+    \end{tabular}
+    \label{table}
+    \end{table}
+
+    \subsubsection{ROS2 Architecture}
+
+    Dentro de la documentación oficial de ROS 2 se habla de que un aspecto central de esta arquitectura son los nodos, que actúan como las unidades básicas de procesamiento en un sistema de ROS 2. Los nodos se comunican entre sí mediante topics, que permiten un intercambio de información asincrónico y eficiente.
+
+    Los mensajes en ROS 2 definen la estructura de los datos que se transmiten a través de topics. Estos mensajes pueden ser de tipos predefinidos o personalizados, adaptándose a las necesidades de la aplicación. Los servicios, por otro lado, permiten una comunicación sincrónica entre nodos, donde un nodo solicita una acción específica y otro nodo responde con el resultado.
+
+    Los archivos de lanzamiento, o launchfiles, son documentos que permiten ejecutar múltiples nodos y configurar parámetros de forma simultánea. Facilitan la gestión de sistemas complejos, ya que centralizan la configuración en un solo archivo, lo que simplifica la puesta en marcha de aplicaciones robóticas \cite{ros_docs}.
+
+    Finalmente, ROS 2 admite la configuración y uso de parámetros, que son variables accesibles desde los nodos para ajustar comportamientos en tiempo de ejecución sin necesidad de recompilar el código.
+
+    \begin{figure}[h!] 
+    \centering 
+    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Imagen ilustrativa de la estructura de ROS 2 
+    \caption{Estructura de ROS 2, mostrando la interacción de nodos, topics, servicios y launchfiles.}
+    \label{fig} 
+    \end{figure}
+
+\subsection{Computer Vision}
+    
+
+    La visión por computadora es un campo de la programación que permite a los sistemas interpretar y procesar información visual del mundo que los rodea. Es esencial para aplicaciones que requieren el análisis de imágenes y videos en tiempo real, como la navegación autónoma de vehículos, detección de objetos, inteligencia artificial, etc.
+
+    \subsubsection{OpenCV Library}
+
+    OpenCV (Open Source Computer Vision Library) es una biblioteca de código abierto ampliamente utilizada en la industria y en la investigación académica para el desarrollo de aplicaciones de visión por computadora. De acuerdo con la documentación oficial, OpenCV es \textit{“an open-source computer vision and machine learning software library containing more than 2500 optimized algorithms”} \cite{opencv_docs}. Esta biblioteca proporciona herramientas para tareas como el procesamiento de imágenes, reconocimiento de objetos, seguimiento de movimiento, entre otras, y es compatible con múltiples lenguajes de programación como Python, C++ y más.
+
+    OpenCV es conocida por su flexibilidad y facilidad de uso, lo que la hace popular tanto entre principiantes como entre expertos en el área de la visión por computadora. La biblioteca incluye funciones de alto rendimiento que pueden ser ejecutadas en tiempo real, haciendo que sea una opción ideal para proyectos de robótica y sistemas autónomos \cite{arevalo2004}.
+
+    \subsubsection{Camera Calibration}
+
+    La calibración de cámaras es un proceso crucial en la visión por computadora, necesario para corregir distorsiones inherentes a las lentes de las cámaras y obtener mediciones precisas del entorno. Este proceso implica la obtención de parámetros intrínsecos y extrínsecos que permiten mapear las coordenadas 2D de una imagen a coordenadas 3D en el mundo real.
+
+    \begin{figure}[h!] 
+    \centering 
+    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Imagen de distorciones de barril y cojín inherentes a las cámaras 
+    \caption{Tipos de distorciones de cámaras}
+    \label{fig} 
+    \end{figure}
+
+    Según la documentación de OpenCV, \textit{“Camera calibration is the process of estimating the parameters of the lens and the image sensor of an imaging device”} \cite{opencv_calib3d}. OpenCV proporciona herramientas y funciones que permiten realizar este proceso de manera eficiente mediante la detección de patrones en imágenes, como tableros de ajedrez o círculos.
+
+    El flujo típico de calibración de una cámara con OpenCV incluye capturar imágenes de un patrón conocido, identificar los puntos de interés en cada imagen y utilizar algoritmos de optimización para calcular los parámetros de la cámara. Estos parámetros incluyen la distancia focal, el punto principal, y los coeficientes de distorsión radial y tangencial \cite{opencv_tutorial_calib}.
+
+    Además, se pueden utilizar los resultados de la calibración para corregir la distorsión en imágenes y videos, mejorando así la precisión de las aplicaciones de visión por computadora y el uso para calcular la pose o posiciónes de algunos objetos de interés. El uso de una cámara calibrada es fundamental en proyectos que requieren un análisis espacial preciso, como la navegación autónoma de robots y drones.
+
+    \begin{figure}[h!] 
+    \centering 
+    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Imagen ilustrativa de un tablero de ajedrez para calibración de cámaras 
+    \caption{Patrón de tablero de ajedrez utilizado en la calibración de cámaras con OpenCV.} \label{fig} 
+    \end{figure}
+
+\subsection{What is an ArUco?}
+    ArUco, cuyo nombre proviene de la combinación de "Artificial" y "Uco" (por la Universidad de Córdoba, donde se desarrolló), es una biblioteca de código abierto ampliamente reconocida en el ámbito de la visión por computadora para la detección de marcadores fiduciales en imágenes. Esta tecnología es fundamental para la estimación de la pose de la cámara con respecto a los marcadores cuando la cámara ha sido previamente calibrada. De acuerdo con la documentación, \textit{“ArUco is an OpenSource library for detecting squared fiducial markers in images”} \cite{aruco_docs}. La detección de estos marcadores es crucial en aplicaciones que requieren una estimación precisa de la posición y orientación de objetos en el espacio tridimensional.
+
+    \subsubsection{Historia de los Marcadores Aruco}
+
+    Los marcadores ArUco se originaron como una solución para superar las limitaciones de otras tecnologías de detección de patrones, colores o figuras. El objetivo era desarrollar una técnica que proporcionara alta fiabilidad incluso bajo oclusiones parciales y condiciones de iluminación variables. Los primeros estudios se centraron en la generación automática de marcadores con un diseño que asegurara su unicidad y facilidad de detección. Estos marcadores están compuestos por un patrón binario rodeado de un borde negro, lo que mejora su visibilidad y robustez en diferentes condiciones de iluminación \cite{aruco_docs}.
+
+    \begin{figure}[h!] 
+    \centering 
+    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Ejemplo de marcadores ArUco 
+    \caption{ArUco example} 
+    \label{fig} 
+    \end{figure}
+
+    \subsubsection{Aplicaciones Comunes}
+
+    Los marcadores ArUco se utilizan en una variedad de aplicaciones, que incluyen la calibración de cámaras, la realidad aumentada, y el control y navegación de robots y drones. Una de las ventajas de usar ArUco es su capacidad para actuar como puntos de referencia en entornos 3D, permitiendo a los sistemas de visión por computadora calcular la pose de la cámara. Según la documentación, \textit{“Markers can be used as 3D landmarks for camera pose estimation”} \cite{aruco_docs_pdf}. Esta característica hace que los marcadores sean esenciales en sistemas de seguimiento y posicionamiento donde la precisión es crítica.
+
+    \begin{figure}[h!] 
+    \centering 
+    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Ejemplo de pose de un marcador ArUco siendo detectada 
+    \caption{ArUco pose estimation} 
+    \label{fig} 
+    \end{figure}
+
+    \subsubsection{Formatos de Marcadores}
+
+    Los marcadores ArUco están compuestos por un borde negro externo y una región interna que codifica un patrón binario único. Dependiendo del diccionario que se esté utilizando, el número de bits en el marcador varía, lo que afecta la probabilidad de confusión con otros marcadores y la distancia de detección. Una mayor resolución de los marcadores permite que estos se detecten desde distancias más lejanas, pero puede requerir mayor procesamiento \cite{aruco_docs}.
+
+    La biblioteca ArUco también soporta la creación de diccionarios personalizados, lo que permite a los desarrolladores adaptar los marcadores a las necesidades específicas de sus proyectos. \textit{“The design of a dictionary is important since the idea is that their markers should be as different as possible to avoid confusions”} \cite{aruco_docs_pdf}. Esta flexibilidad es especialmente útil en proyectos donde es crucial mantener la unicidad y fiabilidad de la detección de marcadores en entornos complejos.
+
+    \begin{figure}[h!] 
+    \centering 
+    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Ejemplo de marcador ArUco con su formato binario 
+    \caption{Imagen explicación de bits en ArUco} 
+    \label{fig} 
+    \end{figure}
+
+\subsection{Aruco vs Embedded Aruco}
+    Los marcadores ArUco y los marcadores Embedded ArUco (e-ArUco) son tecnologías utilizadas en visión por computadora para tareas de detección y estimación de pose. Aunque ambos comparten una base común en cuanto a su diseño y algoritmos de detección, tienen diferencias importantes que los hacen adecuados para distintas aplicaciones, especialmente en el contexto de operaciones de alta precisión y entornos desafiantes.
+
+    \subsubsection{Diferencias Principales}
+
+    La principal diferencia entre los marcadores ArUco tradicionales y los marcadores Embedded ArUco radica en la optimización de estos últimos para detecciones de alta precisión en un rango amplio de distancias. Según Khazetdinov et al. (2021), \textit{“a new type of fiducial marker called embedded ArUco (e-ArUco) was developed specially for a task of robust marker detection for a wide range of distances”} \cite{khazetdinov2021}. Los e-ArUco están diseñados para mantener su detectabilidad y precisión en escenarios donde los marcadores ArUco estándar podrían no ser tan efectivos, como cuando se requiere una precisión milimétrica en aplicaciones de aterrizaje de UAVs.
+
+    Otra diferencia significativa es que los marcadores e-ArUco están diseñados para mejorar la robustez de la detección, minimizando los errores que podrían surgir por condiciones de iluminación cambiantes y oclusiones parciales. Estos marcadores se basan en los algoritmos de detección de ArUco, lo que permite su implementación sin cambios sustanciales en los sistemas existentes basados en ArUco \cite{khazetdinov2021}.
+
+    \subsubsection{Casos de Uso}
+
+    Los marcadores ArUco tradicionales como se mencionó en la sección anterior, se utilizan comúnmente en aplicaciones de realidad aumentada, estimacion de poses y navegación de robots y drones. Estos marcadores son versátiles y se pueden adaptar a diversas aplicaciones que no requieren una precisión extrema, siendo ideales para proyectos de investigación y desarrollo.
+
+    Por otro lado, los marcadores Embedded ArUco (e-ArUco) están específicamente diseñados para situaciones donde la precisión es más crítica. Un ejemplo destacado es el uso en el aterrizaje de UAVs (vehículos aéreos no tripulados), donde se necesita una detección precisa y confiable a diferentes distancias. En un estudio realizado por Khazetdinov et al., tuvo como resultado \textit{“an average landing accuracy was 2.03 cm with a standard deviation of 1.53 cm”} al usar marcadores e-ArUco y un algoritmo de aterrizaje implementado en ROS y probado en el simulador Gazebo \cite{khazetdinov2021}. Esta capacidad hace que los e-ArUco sean ideales para entornos donde se requiere una precisión milimétrica, como en operaciones de aterrizaje autónomo de alta precisión.
+
+    \begin{figure}[h!] 
+        \centering 
+        %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Imagen ilustrativa de un marcador Embedded ArUco y un dron aterrizando 
+        \caption{Representación de un marcador Embedded ArUco utilizado en el aterrizaje de precisión de UAVs.} 
+        \label{fig} 
+    \end{figure}
+
+\subsection{Aruco Detection}
+    La detección de marcadores ArUco es un proceso esencial en la visión por computadora que permite la identificación y estimación de la pose de los marcadores en imágenes. La siguiente sección detalla los algoritmos de detección, la implementación en OpenCV y los parámetros que afectan la precisión de la detección.
+
+    \subsubsection{Algoritmos de Detección}
+
+    La detección de los marcadores ArUco se basa en algoritmos de visión por computadora que identifican contornos y patrones específicos en las imágenes. Según la documentación de OpenCV, el proceso de detección comienza con la identificación de cuadrados en la imagen y la verificación de si estos contienen un patrón binario válido correspondiente a un marcador ArUco \cite{opencv_docs_aruco}. El algoritmo implementado en OpenCV utiliza la segmentación de contornos y la detección de bordes para encontrar regiones cuadradas que luego se comprueban para determinar si coinciden con los patrones en el diccionario de ArUco.
+
+    Una vez que se identifica un marcador, el algoritmo calcula la pose de la cámara en relación con el marcador utilizando la proyección inversa. Este proceso es particularmente importante en aplicaciones donde se necesita calcular la posición y orientación de la cámara para la navegación y el control de robots y drones.
+
+    \subsubsection{Implementación en OpenCV}
+
+    OpenCV ofrece una implementación robusta para la detección de marcadores ArUco a través del módulo \texttt{cv::aruco}. La función principal para la detección es \texttt{cv::aruco::detectMarkers}, que se encarga de identificar los marcadores en una imagen y devolver sus esquinas y los IDs correspondientes. La documentación de OpenCV resalta que \textit{“the function detects the markers and returns their IDs and corner positions in the image”} \cite{opencv_tutorial_aruco}.
+
+    El siguiente ejemplo muestra cómo usar OpenCV para detectar marcadores ArUco en Python:
+
+    \begin{verbatim} import cv2 import cv2.aruco as aruco
+
+    Cargar la imagen
+    image = cv2.imread('image_path.jpg')
+
+    Definir el diccionario de ArUco
+    aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_250)
+
+    Detectar los marcadores
+    corners, ids, _ = aruco.detectMarkers(image, aruco_dict)
+
+    Dibujar los marcadores detectados
+    if ids is not None: aruco.drawDetectedMarkers(image, corners, ids) \end{verbatim}
+
+    Este código permite la detección y visualización de los marcadores ArUco en una imagen de una forma muy simple, devolviendo las posiciones de las esquinas y los IDs de los marcadores detectados.
+
+    \subsubsection{Parámetros de Precisión}
+
+    La precisión de la detección de marcadores ArUco depende de varios factores, incluidos la calidad de la imagen, el tamaño del marcador, y los parámetros de calibración de la cámara. Según la documentación de OpenCV, la calibración precisa de la cámara es fundamental para minimizar los errores en la estimación de la pose \cite{opencv_docs_aruco}. Entre los parámetros que afectan la detección se encuentran:
+
+    \begin{itemize} \item \textbf{Distorsión de la lente}: La corrección de la distorsión de la lente mejora la precisión de la detección. \item \textbf{Resolución del marcador}: Marcadores con mayor resolución permiten una detección más precisa a distancias más largas, pero requieren más recursos de procesamiento. \item \textbf{Iluminación y contraste}: La detección puede verse afectada por condiciones de iluminación variables, por lo que es importante que la imagen tenga un buen contraste entre el marcador y el fondo. \end{itemize}
+
+    \begin{figure}[h!] 
+        \centering 
+        %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Ejemplo de detección de marcadores ArUco en una imagen 
+        \caption{Detección de marcadores ArUco con OpenCV mostrando los IDs y las esquinas detectadas.} 
+        \label{fig} 
+    \end{figure}
+
+
+
+
+
