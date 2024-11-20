@@ -18,19 +18,38 @@
     
     The type of drone chosen depends on the specific requirements of the task, such as the payload capacity, flight time, range, and available budget.
 
-\subsection{Charging Stations}
-    \subsubsection{Types of Charging Stations}
-    There are several types of charging stations for drones currently available in the market, each designed to meet specific needs depending on the type of drone, its intended application, and operational environment. The most common types of drone charging stations include:
-    
-    \paragraph{Contact-Based Charging Stations} These are among the most widely used solutions in the market, typically relying on metal contacts between the drone and the station to transfer electrical energy. Contact-based charging stations are relatively inexpensive and are suited for various commercial applications, including surveying, surveillance, and agriculture. They require precise landing, as proper alignment is necessary to establish the connection.
-    
-    \paragraph{Wireless Charging Stations} Wireless charging, also known as inductive charging, uses electromagnetic fields to transfer power to the drone without physical contact. While this technology provides more flexibility in terms of landing, it is less efficient compared to contact-based charging and has higher production costs. It is often utilized in specialized environments where drones must be kept operational without manual intervention, such as security monitoring or in areas where contact charging is impractical.
-    
-    \paragraph{Battery Swap Stations} These stations are designed to swap out depleted drone batteries with fully charged ones. The process is automated, allowing for continuous drone operation with minimal downtime. This approach is typically used in high-demand applications, such as drone delivery services and industrial inspections, where the quick turnaround is crucial.
-    
-    \paragraph{Solar-Powered Charging Stations} Solar-powered stations use solar panels to generate energy, which is stored and used to charge the drone. They are especially popular in remote areas where there is no direct access to power grids. These stations are environmentally friendly and allow drones to operate in off-grid locations, making them ideal for environmental monitoring and research.
-    
-    Overall, the choice of charging station depends on the intended application of the drone, the available infrastructure, and the required operational efficiency.
+\subsection{Types of Charging Stations}
+    \subsubsection{Introduction}
+    Currently, there is a growing trend towards the concept of charging or docking stations for drones. These stations can have different approaches that optimize the operational capacity and autonomy of drones. According to Grlj, C.G., "A docking station for UAVs is a multipurpose system that enables them to land safely, take off, recharge and/or replace batteries, and transfer data and payload" \cite{}.
+
+    In this context, various types of charging stations can be observed, classified according to the following specifications \cite{}:
+
+    \begin{itemize}
+    \item \textbf{Mobility} (fixed and mobile)
+    \item \textbf{Charging method} (two electrodes, multiple electrodes, wireless, etc.)
+    \item \textbf{Automatic battery exchange} (recharging spare batteries)
+    \item \textbf{Positioning} (active and passive)
+    \item \textbf{Drone storage} (yes or no)
+    \item \textbf{Package delivery} (with storage, without storage)
+    \item \textbf{Type of landing} (precision, vision-based, etc.)
+    \item \textbf{Type of landing platform} (self-leveling)
+    \end{itemize}
+
+    The types of charging stations are primarily classified based on mobility, divided into fixed and mobile stations.
+
+    \subsubsection{Fixed Charging Stations}
+    The main objective of fixed charging stations is to provide a stable platform that allows drones to recharge without needing to move the infrastructure during the operation process. These stations are often simpler in design and are placed in strategic locations, such as cities or industrial areas, where drones need a secure base to recharge, perform maintenance, or even exchange batteries. According to Grlj et al., many of these fixed stations use an active or passive positioning system to ensure the drone lands accurately, and they may feature charging options through electrical contacts or even wireless charging \cite{}.
+
+    \subsubsection{Advantages of Fixed Charging Stations}
+    Fixed stations are particularly useful in situations where the drone needs a precise landing in a constant location. These stations can use visual markers, such as ArUco markers, to guide the drone during the final landing phase, ensuring high accuracy in the maneuver. Additionally, they may include self-leveling platform systems to guarantee the stability of the drone upon landing, especially on uneven terrain.
+
+    \subsubsection{Mobile Charging Stations}
+    Mobile charging stations, on the other hand, provide greater operational flexibility, as they are mounted on surface vehicles, such as Unmanned Ground Vehicles (UGVs) or even Unmanned Surface Vehicles (USVs). These stations extend the range of drones by moving to locations that require real-time logistical support, such as in search and rescue operations. An example of this type of solution is the system developed for cooperation between UGVs and UAVs, where the UGV acts as a mobile charging base that can also automatically exchange batteries.
+
+    Therefore, the classification of charging stations depends on several factors, such as mobility (fixed or mobile), charging method, drone storage capacity, and type of landing platform. Additionally, some stations include storage systems for drones, protecting them from adverse weather conditions. Some of these stations are capable of automatically exchanging batteries, allowing extended operation time without human intervention.
+
+    \subsubsection{Advantages of Mobile Charging Stations}
+    Mobile stations provide a dynamic alternative for supporting drones in missions that require continuous movement. For example, some stations are mounted on autonomous ground vehicles that can move to locations where the drone requires assistance, significantly increasing the operational range of the UAV. These types of stations can also incorporate complex systems to exchange batteries, such as robotic arms that ensure the safe removal and insertion of the drone's battery without needing to pause the mission for long recharge periods.
 
 \subsection{Automatic Drawer Mechanism}
     \subsubsection{Types of Mechanisms}

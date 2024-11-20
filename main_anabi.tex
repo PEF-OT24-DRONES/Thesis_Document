@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+\title{THESIS: STATE OF ART}
+\author{Ana Bárbara Quintero García}
+\date{November 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+% Description: This file contains the state of the art of the electronics.
+
+\section{Electronics}
+
+\subsection{Movimiento a Motores y Módulos ESC}
+
+En los drones, los motores sin escobillas (\textit{brushless}) requieren de módulos \textit{Electronic Speed Controller} (ESC) que permitan controlar su velocidad y dirección de rotación con precisión. Los ESC convierten la corriente directa (DC) de la batería en la corriente alterna (AC) que los motores necesitan, ajustando la frecuencia y voltaje de la señal para controlar su velocidad de giro. 
+
+El funcionamiento del ESC depende de la tecnología de modulación de frecuencia, donde la tasa de cambio determina la velocidad del motor. Como señala Rohde y Schwarz, “los ESC modernos no solo regulan la velocidad, sino que también monitorean la temperatura y el voltaje, protegiendo el motor contra sobrecargas” \cite{rohdE_ESC}. En el contexto de un sistema de carga modular para drones, estos ESC permiten un control ágil y seguro del sistema de propulsión, esencial en las maniobras de aterrizaje y acoplamiento en la estación de carga.
+
+\subsection{Controladores de Vuelo}
+
+Los controladores de vuelo son los componentes centrales que gestionan la estabilidad, navegación, y la ejecución de comandos de vuelo en los drones. Existen varios modelos en el mercado, cada uno con sus características específicas y aplicaciones recomendadas. Entre los controladores más relevantes destacan:
+
+\subsubsection{Principales Controladores de Vuelo}
+\begin{itemize}
+    \item \textbf{DJI Naza}: Este controlador es ampliamente utilizado en drones comerciales debido a su facilidad de configuración y su sistema de estabilización mejorado. Sin embargo, presenta limitaciones en personalización y flexibilidad para proyectos de investigación avanzada.
+    \item \textbf{APM (ArduPilot Mega)}: La plataforma APM, desarrollada por ArduPilot, es una opción altamente personalizable y adecuada para proyectos de código abierto. No obstante, se enfrenta a restricciones en términos de potencia de procesamiento, limitando su uso en aplicaciones complejas.
+    \item \textbf{Holybro Kakute}: Este controlador ofrece buena integración de sensores y es ideal para drones pequeños y de carrera, pero carece de las capacidades avanzadas de procesamiento necesarias en aplicaciones autónomas y de carga pesada.
+\end{itemize}
+
+\subsubsection{Pixhawk 6X: }
+
+Entre todos los controladores mencionados, el \textbf{Pixhawk 6X} destaca como la opción más avanzada y robusta. Según el equipo de desarrollo de Pixhawk, “el Pixhawk 6X fue diseñado para proporcionar un alto nivel de procesamiento con la mayor compatibilidad para sensores avanzados y módulos de comunicación” \cite{pixhawk_docs}. Las principales ventajas del Pixhawk 6X incluyen:
+\begin{itemize}
+    \item \textbf{Procesamiento y Estabilidad}: Equipado con procesadores de alto rendimiento que soportan algoritmos avanzados de estabilización y control de vuelo.
+    \item \textbf{Modularidad}: Permite una integración fluida con computadoras complementarias y sistemas externos, lo cual es fundamental para aplicaciones autónomas.
+    \item \textbf{Sensores Integrados}: Incluye un acelerómetro y giroscopio de alta precisión, además de soporte para sensores externos como magnetómetros y GPS.
+    \item \textbf{Compatibilidad}: Altamente compatible con sistemas de comunicación como UART, I2C, y CAN, lo cual facilita su integración en sistemas complejos como estaciones de carga autónomas.
+\end{itemize}
+
+\subsection{Computadoras Complementarias y Sistemas Embebidos}
+
+En aplicaciones avanzadas de drones, los controladores de vuelo a menudo necesitan el apoyo de sistemas embebidos adicionales, conocidos como computadoras complementarias o \textit{companion computers}, para gestionar procesamiento de datos intensivo, algoritmos de inteligencia artificial, o transmisión de video en tiempo real.
+
+\subsubsection{Principales Computadoras Complementarias}
+\begin{itemize}
+    \item \textbf{Raspberry Pi 4 y 5}: La \textbf{Raspberry Pi 4} y su sucesora, la \textbf{Raspberry Pi 5}, son opciones económicas y potentes. Gracias a su procesador de 64 bits y sus 4 GB o más de RAM, estas computadoras pueden ejecutar sistemas operativos complejos y manejar procesamiento intensivo, como procesamiento de imágenes y algoritmos de reconocimiento de patrones. Según Raspbian, la Raspberry Pi 5 tiene un 30\% más de rendimiento comparado con la versión anterior, haciéndola ideal para drones que requieren alto rendimiento a bajo costo \cite{rasp_docs}.
+    \item \textbf{Odroid XU4}: Con un procesador Exynos 5422 octa-core, el Odroid XU4 ofrece un alto rendimiento en aplicaciones de procesamiento en tiempo real. Sin embargo, su consumo energético es mayor, lo cual limita su uso en aplicaciones de bajo consumo como drones ligeros.
+    \item \textbf{Jetson Nano}: Esta computadora, desarrollada por NVIDIA, incluye una GPU integrada que facilita tareas de inteligencia artificial y visión computacional. Aunque su potencia en procesamiento de gráficos es sobresaliente, su costo y complejidad de integración superan los beneficios en aplicaciones donde el costo es un factor limitante.
+    \item \textbf{Arduino}: En el contexto de una estación de carga, el Arduino es ideal para manejar tareas específicas de bajo procesamiento, como el control de motores de posicionamiento. Su simplicidad y bajo consumo energético lo hacen adecuado para tareas de control periférico, complementando bien a una Raspberry Pi que maneje la gestión central de la estación.
+\end{itemize}
+
+\subsection{Tipos de Protocolos de Comunicación}
+
+Para conectar de manera efectiva los diferentes sistemas y módulos, es necesario implementar protocolos de comunicación estandarizados que aseguren una transmisión confiable de datos. En la estación de carga modular, estos protocolos permiten la comunicación entre la Raspberry Pi, el Arduino, y el controlador Pixhawk, creando un sistema integrado.
+
+\subsubsection{Principales Protocolos de Comunicación}
+\begin{itemize}
+    \item \textbf{A Universal Asynchronous Receiver/Transmitter (UART)} serial connection defines a protocol for exchanging serial data between two devices using two wires: one for transmitting and one for receiving data. This type of connection can operate in three modes: simplex, where data flows in one direction only; half-duplex, where data can flow in both directions but not simultaneously; and full-duplex, where data can be transmitted and received simultaneously between the transmitter and receiver \cite{Gupta2019}.
+
+    \item \textbf{The Serial Peripheral Interface (SPI)} is typically used to facilitate communication between microcontrollers and peripheral integrated circuits (ICs), coordinating the functionality of sensors, displays, and input devices. SPI is a synchronous, full-duplex interface, meaning that data is transmitted and received simultaneously, synchronized by a clock signal. This communication occurs through a 4-wire interface consisting of the following signals: clock (SCLK), chip select (CS), main out/subnode in (MOSI), and main in/subnode out (MISO). Multiple subnodes can be connected to a single SPI master either in regular mode, where each subnode has its own dedicated CS line and the master activates the appropriate line to communicate with a specific subnode, or in daisy chain mode, where subnodes are connected in series with a single CS line. In daisy chain mode, the output of one subnode is the input of the next, and data is passed sequentially through the chain. \cite{Wootton2016}
+    
+    \item  \textbf{The Inter-Integrated Circuit (I2C)} protocol combines features of both UART and SPI, allowing multiple slave devices to connect to a single master using only two bidirectional lines: the serial data (SDA) line and the serial clock (SCL) line. Each device on the I2C bus has a unique address, enabling the master to communicate with multiple slaves—and even other masters—by addressing them individually. This protocol is commonly used for connecting peripheral devices such as EEPROMs, real-time clocks (RTCs), and various sensors. \cite{Gazi2021}
+\end{itemize}
+
+\subsubsection{Communication Protocols}
+These communication protocols—UART, SPI, and I2C—are sets of rules that govern the transmission and reception of data across a network, enabling seamless communication between different systems. Communication protocols are categorized into two main types: synchronous and asynchronous. Synchronous communication involves a pattern where servers communicate in a request-response manner, waiting for a response before proceeding. Examples include HTTP, Remote Procedure Call (RPC), and synchronous messaging. These protocols are typically used in scenarios requiring immediate communication but can suffer from higher latency, scalability challenges, and long wait times if no response is received.
+In contrast, asynchronous communication does not require a response to exchange messages or data. Examples include message queues, background processing, and event subscribers, where one event can trigger a series of messages sent to one or multiple devices. Asynchronous communication is more flexible, scalable, and robust, making it suitable for more complex and dynamic systems.
+\cite{Subero2024}
+
+\subsubsection{Challenges and Solutions}
+Latency, noise, and data integrity issues are significant challenges in serial connections, particularly in applications such as drones where reliable communication is crucial. For UART connections, latency can be a problem due to the need to wait for data to be fully transmitted and received, especially in half-duplex or simplex modes. Solutions to address latency include using faster baud rates and optimizing software to handle data more efficiently. Noise can interfere with the transmission, leading to data corruption; to mitigate this, shielding of wires and the use of error-checking protocols like parity bits are common practices. Data integrity in UART is also improved through the use of checksums and redundant data transmission.
+
+In SPI connections, noise and data integrity issues are managed by ensuring that the clock and data lines are well-shielded and by using robust grounding techniques. Since SPI operates synchronously, clock skew can introduce latency and data errors. This can be addressed by keeping the clock signal clean and consistent, often through the use of low-skew clock drivers and careful PCB layout design to minimize signal path differences. Data integrity is further ensured by the use of CRC (Cyclic Redundancy Check) to detect errors in transmitted data.
+
+For I2C, latency arises due to its slower data rates compared to SPI, and the need to address multiple devices on the bus can introduce delays. This is tackled by optimizing bus speeds and using higher-speed variants of I2C like Fast Mode Plus or High-Speed Mode. Noise and data integrity are managed by implementing pull-up resistors on the communication lines to ensure clean signal levels and by using differential signaling techniques in environments with high electromagnetic interference. Error detection mechanisms like ACK/NACK (Acknowledge/Not Acknowledge) bits help in maintaining data integrity by confirming successful data transmission.
+
+Overall, addressing these challenges involves a combination of hardware improvements, such as better shielding and signal integrity practices, and software strategies, including error detection and correction algorithms, to ensure reliable and efficient communication in drone systems.
+\cite{CompComms2023}
+
+\subsection{Sensors}
+
+A sensor is a device that detects and measures a physical property or condition, such as temperature, pressure, motion, or light, and converts it into a signal that can be read or recorded by an observer or an instrument. Sensors are used in a wide range of applications, from industrial automation and environmental monitoring to consumer electronics and healthcare. They play a crucial role in gathering data from the environment, enabling systems to respond to changes or perform specific functions based on the information collected.
+%NECESITO LA CITAAAAAAA
+
+\subsubsection{Types of Sensors}
+\begin{itemize}
+
+\item \textbf{Mechanical sensors:} A mechanical sensor is a type of sensor that relies on physical movement or mechanical interaction to detect changes in its environment and produce a corresponding electrical signal. These sensors typically involve a mechanical component that moves or changes position in response to a physical stimulus, such as pressure, force, or displacement. 
+\item \textbf{Motion sensors:} Motion sensors detect movement by sensing a change in some physical parameter, which might be infrared radiation, sound waves, light, or other signals. When movement is detected, the sensor typically triggers an action, such as turning on a light, sounding an alarm, or sending a notification.
+\item \textbf{Proximity sensors:} Proximity sensors are sensors that can sense the near existence of an object without having to be directly contacting the object. There are several types of proximity sensors such as ultrasonic, laser, infrared, and magnetic. 
+\item \textbf{Optical sensors:} Optical sensors detect the absence, presence, or amount of light matter. It measures changes in light, such as intensity, wavelength, or polarization, and uses this information to detect or measure physical properties or events. 
+
+\cite{dailysensors2021}
+\cite{huang2023}
+\cite{sensors2017}
+    
+\end{itemize}
+
+\subsection{Types of Chargers and Charging}
+\subsubsection{Technologies}
+For fast-charging technologies, the importance of amperage and voltage is the main output of the charger. The current or amperage is the amount of electricity flowing through the plug to the battery. The voltage is the strength of the electric current. In most cases, the fast charging cables or technologies change the voltage rather than the current to increase the amount of potential energy. For a long time, phones and other small portable devices were being charged by 5V/2.4A, but now, with the introduction of USB-C cables, these devices are being charged to up to 100W (20V/5A). Laptops, which are larger portable devices, can handle more power, hence faster charging and more amperage and voltage, than smaller devices. 
+\cite{fastchargers}
+
+Smart charging systems are new technologies designed to optimize the charging process for devices, including electric vehicles, drones, and other rechargeable batteries. These technologies incorporate algorithms, communication, and remote interactions to efficiently manage energy usage during charging. In battery swapping scenarios, vehicles or devices can replace their empty or low batteries with a fully recharged battery that was pre-charged and ready for immediate use. In this case, there would always be a backup battery charging while the first battery is in use in the device. The backup battery would then replace the first battery, which would then be placed back to charge as the backup battery is in use. This minimizes downtime and ensures continuous operation, especially in high-demand environments where quick turnaround is essential. 
+\cite{vehiclessmartcharge}
+
+\subsubsection{Wired vs. Wireless Charging}
+When comparing the wired vs. wireless types of charging in any rechargeable battery, it is essential to compare which method is more effective against which is more practical in everyday use. Wired charging is where a plug is directly in contact with the battery and then connected to a power adapter. The device draws power through the cable to charge its battery. 
+
+Wireless charging, as its name suggests, is where there are no cables involved in the charging process. In this case, power is transmitted via magnetic fields between two coils (one in the device and one in the charger) through a technology named inductive charging or resonant charging, where resonant frequencies are more efficient and can reach a longer distance. 
+
+When comparing both technologies, wireless is more convenient, eliminating the need for plugging and unplugging cables, but it can be slower and less efficient.
+\cite{wiredvwirelessMohammed}
+
+\subsubsection{Comparative Analysis}
+Wired charging is better for faster charging, efficient power transfer since there is less energy loss, more reliable since it does not depend on a specific position or distance, and more economic. However, dealing with cables can be difficult to deal with when they get tangled, lost or worn out, this technology is also inconvenient in a situation where it is frequently plugged or unplugged, and when charging, the device has limited mobility due to the need to stay connected to power through the cable. 
+
+Wired charging is more convenient since it was no need for cables which means it has reduced wear and tear, and its charging space is less cluttered due to the no cables. However, wireless charging tends to be slower, less efficient, requires precise alignment, generates more heat, and often comes at a higher cost compared to wired charging.
+\cite{wirelessLu}
+
+\subsubsection{Battery Technology}
+Drone batteries are usually lithium-based batteries, normally there being several batteries in one battery pack. Li-Po batteries use Lithium-ion materials due to its high-conductivity semisolid polymer, same as Li-ion batteries, but unlike those, the LiPo batteries are 20\% lighter but still using the same energy density. Li-ion batteries are found more frequently in larger drones or those with longer flight times, since they have a higher energy density and can bring longevity in their life cycle. For these reasons, LiPo batteries are often preferred for their lighter wight and higher power output for shorter flights. 
+\cite{dronebatteriesKim}
+
+\printbibliography
+
+\end{document}

@@ -2,12 +2,64 @@
 
 \section{Electronics}
 
-\subsection{Companion Computer}
-    \subsubsection{Modelos Disponibles}
-    \subsubsection{Configuración de Hardware}
-    \subsubsection{Sistemas Operativos Soportados}
+\subsection{Movimiento a Motores y Módulos ESC}
 
-\subsection{Flight Controllers}
-    \subsubsection{Modelos Disponibles}
-    \subsubsection{Why use a Flight Controller insted of just a Companion Computer?}
-    \subsubsection{Protocolos de Comunicación entre FC y CC}
+En los drones, los motores sin escobillas (\textit{brushless}) requieren de módulos \textit{Electronic Speed Controller} (ESC) que permitan controlar su velocidad y dirección de rotación con precisión. Los ESC convierten la corriente directa (DC) de la batería en la corriente alterna (AC) que los motores necesitan, ajustando la frecuencia y voltaje de la señal para controlar su velocidad de giro. 
+
+El funcionamiento del ESC depende de la tecnología de modulación de frecuencia, donde la tasa de cambio determina la velocidad del motor. Como señala Rohde y Schwarz, “los ESC modernos no solo regulan la velocidad, sino que también monitorean la temperatura y el voltaje, protegiendo el motor contra sobrecargas” \cite{rohdE_ESC}. En el contexto de un sistema de carga modular para drones, estos ESC permiten un control ágil y seguro del sistema de propulsión, esencial en las maniobras de aterrizaje y acoplamiento en la estación de carga.
+
+\subsection{Controladores de Vuelo}
+
+Los controladores de vuelo son los componentes centrales que gestionan la estabilidad, navegación, y la ejecución de comandos de vuelo en los drones. Existen varios modelos en el mercado, cada uno con sus características específicas y aplicaciones recomendadas. Entre los controladores más relevantes destacan:
+
+\subsubsection{Principales Controladores de Vuelo}
+\begin{itemize}
+    \item \textbf{DJI Naza}: Este controlador es ampliamente utilizado en drones comerciales debido a su facilidad de configuración y su sistema de estabilización mejorado. Sin embargo, presenta limitaciones en personalización y flexibilidad para proyectos de investigación avanzada.
+    \item \textbf{APM (ArduPilot Mega)}: La plataforma APM, desarrollada por ArduPilot, es una opción altamente personalizable y adecuada para proyectos de código abierto. No obstante, se enfrenta a restricciones en términos de potencia de procesamiento, limitando su uso en aplicaciones complejas.
+    \item \textbf{Holybro Kakute}: Este controlador ofrece buena integración de sensores y es ideal para drones pequeños y de carrera, pero carece de las capacidades avanzadas de procesamiento necesarias en aplicaciones autónomas y de carga pesada.
+\end{itemize}
+
+\subsubsection{Pixhawk 6X: }
+
+Entre todos los controladores mencionados, el \textbf{Pixhawk 6X} destaca como la opción más avanzada y robusta. Según el equipo de desarrollo de Pixhawk, “el Pixhawk 6X fue diseñado para proporcionar un alto nivel de procesamiento con la mayor compatibilidad para sensores avanzados y módulos de comunicación” \cite{pixhawk_docs}. Las principales ventajas del Pixhawk 6X incluyen:
+\begin{itemize}
+    \item \textbf{Procesamiento y Estabilidad}: Equipado con procesadores de alto rendimiento que soportan algoritmos avanzados de estabilización y control de vuelo.
+    \item \textbf{Modularidad}: Permite una integración fluida con computadoras complementarias y sistemas externos, lo cual es fundamental para aplicaciones autónomas.
+    \item \textbf{Sensores Integrados}: Incluye un acelerómetro y giroscopio de alta precisión, además de soporte para sensores externos como magnetómetros y GPS.
+    \item \textbf{Compatibilidad}: Altamente compatible con sistemas de comunicación como UART, I2C, y CAN, lo cual facilita su integración en sistemas complejos como estaciones de carga autónomas.
+\end{itemize}
+
+\subsection{Computadoras Complementarias y Sistemas Embebidos}
+
+En aplicaciones avanzadas de drones, los controladores de vuelo a menudo necesitan el apoyo de sistemas embebidos adicionales, conocidos como computadoras complementarias o \textit{companion computers}, para gestionar procesamiento de datos intensivo, algoritmos de inteligencia artificial, o transmisión de video en tiempo real.
+
+\subsubsection{Principales Computadoras Complementarias}
+\begin{itemize}
+    \item \textbf{Raspberry Pi 4 y 5}: La \textbf{Raspberry Pi 4} y su sucesora, la \textbf{Raspberry Pi 5}, son opciones económicas y potentes. Gracias a su procesador de 64 bits y sus 4 GB o más de RAM, estas computadoras pueden ejecutar sistemas operativos complejos y manejar procesamiento intensivo, como procesamiento de imágenes y algoritmos de reconocimiento de patrones. Según Raspbian, la Raspberry Pi 5 tiene un 30\% más de rendimiento comparado con la versión anterior, haciéndola ideal para drones que requieren alto rendimiento a bajo costo \cite{rasp_docs}.
+    \item \textbf{Odroid XU4}: Con un procesador Exynos 5422 octa-core, el Odroid XU4 ofrece un alto rendimiento en aplicaciones de procesamiento en tiempo real. Sin embargo, su consumo energético es mayor, lo cual limita su uso en aplicaciones de bajo consumo como drones ligeros.
+    \item \textbf{Jetson Nano}: Esta computadora, desarrollada por NVIDIA, incluye una GPU integrada que facilita tareas de inteligencia artificial y visión computacional. Aunque su potencia en procesamiento de gráficos es sobresaliente, su costo y complejidad de integración superan los beneficios en aplicaciones donde el costo es un factor limitante.
+    \item \textbf{Arduino}: En el contexto de una estación de carga, el Arduino es ideal para manejar tareas específicas de bajo procesamiento, como el control de motores de posicionamiento. Su simplicidad y bajo consumo energético lo hacen adecuado para tareas de control periférico, complementando bien a una Raspberry Pi que maneje la gestión central de la estación.
+\end{itemize}
+
+\subsection{Tipos de Protocolos de Comunicación}
+
+Para conectar de manera efectiva los diferentes sistemas y módulos, es necesario implementar protocolos de comunicación estandarizados que aseguren una transmisión confiable de datos. En la estación de carga modular, estos protocolos permiten la comunicación entre la Raspberry Pi, el Arduino, y el controlador Pixhawk, creando un sistema integrado.
+
+\subsubsection{Principales Protocolos de Comunicación}
+\begin{itemize}
+    \item \textbf{UART (Universal Asynchronous Receiver-Transmitter)}: Ideal para conexiones simples de bajo costo, el UART permite la transmisión punto a punto de datos asíncronos entre dispositivos, lo cual es útil para comunicación básica entre la Raspberry Pi y el Arduino.
+    \item \textbf{SPI (Serial Peripheral Interface)}: Este protocolo permite una comunicación sincrónica de alta velocidad y es adecuado para aplicaciones que requieren transferencia de datos rápida y simultánea entre la Raspberry Pi y el Pixhawk.
+    \item \textbf{I2C (Inter-Integrated Circuit)}: Con solo dos líneas (SDA y SCL), I2C permite la conexión de múltiples dispositivos, haciéndolo ideal para la integración de sensores y periféricos adicionales en el sistema de carga.
+\end{itemize}
+
+\subsection{Sensores de Proximidad}
+
+Para medir con precisión la posición de componentes móviles como el cajón de la estación de carga, se utilizan sensores de proximidad que detectan cuando el cajón está completamente extendido o retraído. Estos sensores garantizan una operación segura y evitan daños en el sistema al proporcionar retroalimentación precisa al controlador.
+
+\subsubsection{Tipos de Sensores de Proximidad}
+\begin{itemize}
+    \item \textbf{Interruptores de Límite (Limit Switches)}: Estos sensores mecánicos detectan la posición final del cajón mediante contacto físico y son ideales para aplicaciones de alta confiabilidad y bajo costo.
+    \item \textbf{Sensores Inductivos}: Son capaces de detectar objetos metálicos sin necesidad de contacto, lo cual es útil en aplicaciones donde se desea evitar el desgaste mecánico o en entornos con mucho movimiento.
+    \item \textbf{Sensores Capacitivos y Ópticos}: Adecuados para detectar objetos no metálicos, ofrecen una detección precisa y son comúnmente empleados en aplicaciones de precisión alta.
+\end{itemize}
+

@@ -1,92 +1,144 @@
-\contentsline {chapter}{\numberline {1}Introducción}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Contexto General y Motivación}{3}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Contexto del Problema}{3}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Importancia del Problema}{4}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Planteamiento del Problema}{4}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Definición Clara del Problema}{4}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Preguntas de Investigación}{4}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Objetivos}{5}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Objetivo General}{5}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Objetivos Específicos}{5}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Justificación}{5}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Relevancia del Proyecto}{5}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Impacto Potencial}{6}{subsection.1.4.2}%
-\contentsline {section}{\numberline {1.5}Justificación}{6}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Relevancia del Proyecto}{6}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Impacto Potencial}{7}{subsection.1.5.2}%
-\contentsline {section}{\numberline {1.6}Alcance y Limitaciones}{7}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Alcance del Trabajo}{7}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}Limitaciones del Estudio}{7}{subsection.1.6.2}%
-\contentsline {section}{\numberline {1.7}Estructura de la Tesis}{8}{section.1.7}%
-\contentsline {chapter}{\numberline {2}Estado del Arte}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Estado del Arte}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Hardware}{9}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Drones}{9}{subsection.2.2.1}%
-\contentsline {subsubsection}{Types of Drones}{9}{subsubsection*.2}%
-\contentsline {paragraph}{Consumer Drones}{9}{paragraph*.3}%
-\contentsline {paragraph}{Commercial Drones}{9}{paragraph*.4}%
-\contentsline {paragraph}{Industrial Drones}{9}{paragraph*.5}%
-\contentsline {paragraph}{Racing Drones}{10}{paragraph*.6}%
-\contentsline {paragraph}{Military Drones}{10}{paragraph*.7}%
-\contentsline {subsection}{\numberline {2.2.2}Charging Stations}{10}{subsection.2.2.2}%
-\contentsline {subsubsection}{Types of Charging Stations}{10}{subsubsection*.8}%
-\contentsline {paragraph}{Contact-Based Charging Stations}{10}{paragraph*.9}%
-\contentsline {paragraph}{Wireless Charging Stations}{10}{paragraph*.10}%
-\contentsline {paragraph}{Battery Swap Stations}{10}{paragraph*.11}%
-\contentsline {paragraph}{Solar-Powered Charging Stations}{11}{paragraph*.12}%
-\contentsline {subsection}{\numberline {2.2.3}Automatic Drawer Mechanism}{11}{subsection.2.2.3}%
-\contentsline {subsubsection}{Types of Mechanisms}{11}{subsubsection*.13}%
-\contentsline {paragraph}{Pistons}{11}{paragraph*.14}%
-\contentsline {paragraph}{Belt and Toothed Pulley}{11}{paragraph*.15}%
-\contentsline {paragraph}{Belt and V-Pulley}{11}{paragraph*.16}%
-\contentsline {subsection}{\numberline {2.2.4}Motors and Propellers}{11}{subsection.2.2.4}%
-\contentsline {subsubsection}{Motor Selection}{11}{subsubsection*.17}%
-\contentsline {paragraph}{Comparison with Other Motors}{12}{paragraph*.18}%
-\contentsline {section}{\numberline {2.3}Electronics}{13}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Companion Computer}{13}{subsection.2.3.1}%
-\contentsline {subsubsection}{Modelos Disponibles}{13}{subsubsection*.19}%
-\contentsline {subsubsection}{Configuración de Hardware}{13}{subsubsection*.20}%
-\contentsline {subsubsection}{Sistemas Operativos Soportados}{13}{subsubsection*.21}%
-\contentsline {subsection}{\numberline {2.3.2}Flight Controllers}{13}{subsection.2.3.2}%
-\contentsline {subsubsection}{Modelos Disponibles}{13}{subsubsection*.22}%
-\contentsline {subsubsection}{Why use a Flight Controller insted of just a Companion Computer?}{13}{subsubsection*.23}%
-\contentsline {subsubsection}{Protocolos de Comunicación entre FC y CC}{13}{subsubsection*.24}%
-\contentsline {section}{\numberline {2.4}Software}{13}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}FC Firmware}{13}{subsection.2.4.1}%
-\contentsline {subsubsection}{Firmware PX4}{13}{subsubsection*.25}%
-\contentsline {subsubsection}{Firmware ArduPilot}{14}{subsubsection*.26}%
-\contentsline {subsection}{\numberline {2.4.2}Ground Control Systems}{15}{subsection.2.4.2}%
-\contentsline {subsubsection}{QGroundControl}{15}{subsubsection*.27}%
-\contentsline {subsubsection}{Mission Planner}{15}{subsubsection*.28}%
-\contentsline {subsection}{\numberline {2.4.3}Companion Computer Operative Systems}{16}{subsection.2.4.3}%
-\contentsline {subsubsection}{Ubuntu}{16}{subsubsection*.29}%
-\contentsline {subsubsection}{Raspberry Pi OS}{16}{subsubsection*.30}%
-\contentsline {subsection}{\numberline {2.4.4}ROS2 Distributions}{17}{subsection.2.4.4}%
-\contentsline {subsubsection}{Distribución Humble}{17}{subsubsection*.31}%
-\contentsline {subsubsection}{Distribución Jazzy}{18}{subsubsection*.32}%
-\contentsline {subsection}{\numberline {2.4.5}ROS2 Documentation}{18}{subsection.2.4.5}%
-\contentsline {subsubsection}{Benefits of ROS2}{18}{subsubsection*.33}%
-\contentsline {subsubsection}{ROS2 Architecture}{19}{subsubsection*.34}%
-\contentsline {subsection}{\numberline {2.4.6}Computer Vision}{20}{subsection.2.4.6}%
-\contentsline {subsubsection}{OpenCV Library}{20}{subsubsection*.35}%
-\contentsline {subsubsection}{Camera Calibration}{20}{subsubsection*.36}%
-\contentsline {subsection}{\numberline {2.4.7}What is an ArUco?}{21}{subsection.2.4.7}%
-\contentsline {subsubsection}{Historia de los Marcadores Aruco}{21}{subsubsection*.37}%
-\contentsline {subsubsection}{Aplicaciones Comunes}{21}{subsubsection*.38}%
-\contentsline {subsubsection}{Formatos de Marcadores}{22}{subsubsection*.39}%
-\contentsline {subsection}{\numberline {2.4.8}Aruco vs Embedded Aruco}{22}{subsection.2.4.8}%
-\contentsline {subsubsection}{Diferencias Principales}{22}{subsubsection*.40}%
-\contentsline {subsubsection}{Casos de Uso}{23}{subsubsection*.41}%
-\contentsline {subsection}{\numberline {2.4.9}Aruco Detection}{23}{subsection.2.4.9}%
-\contentsline {subsubsection}{Algoritmos de Detección}{23}{subsubsection*.42}%
-\contentsline {subsubsection}{Implementación en OpenCV}{24}{subsubsection*.43}%
-\contentsline {subsubsection}{Parámetros de Precisión}{24}{subsubsection*.44}%
-\contentsline {chapter}{\numberline {3}Desarrollo}{26}{chapter.3}%
-\contentsline {subsection}{\numberline {3.0.1}Diseño de la Estación de Carga}{26}{subsection.3.0.1}%
-\contentsline {section}{\numberline {3.1}Ensamble de Estructura de la Estación de Carga}{26}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Armado de Mecanismo de Poleas}{26}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Electronica para movimiento del cajón}{26}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Programación para control de movimiento del cajón}{26}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Armado del Drone}{26}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Resultados}{27}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{28}{chapter.5}%
+\contentsline {chapter}{\numberline {1}Introducción}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Contexto General y Motivación}{4}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Contexto del Problema}{4}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Importancia del Problema}{5}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Planteamiento del Problema}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Definición Clara del Problema}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Preguntas de Investigación}{5}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Objetivos}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Objetivo General}{6}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Objetivos Específicos}{6}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Justificación}{6}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Relevancia del Proyecto}{6}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Impacto Potencial}{7}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Justificación}{7}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Relevancia del Proyecto}{7}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Impacto Potencial}{8}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}Alcance y Limitaciones}{8}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Alcance del Trabajo}{8}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Limitaciones del Estudio}{8}{subsection.1.6.2}%
+\contentsline {section}{\numberline {1.7}Estructura de la Tesis}{9}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Estado del Arte}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Estado del Arte}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Hardware}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Drones}{10}{subsection.2.2.1}%
+\contentsline {subsubsection}{Types of Drones}{10}{subsubsection*.2}%
+\contentsline {paragraph}{Consumer Drones}{10}{paragraph*.3}%
+\contentsline {paragraph}{Commercial Drones}{10}{paragraph*.4}%
+\contentsline {paragraph}{Industrial Drones}{10}{paragraph*.5}%
+\contentsline {paragraph}{Racing Drones}{11}{paragraph*.6}%
+\contentsline {paragraph}{Military Drones}{11}{paragraph*.7}%
+\contentsline {subsection}{\numberline {2.2.2}Types of Charging Stations}{11}{subsection.2.2.2}%
+\contentsline {subsubsection}{Introduction}{11}{subsubsection*.8}%
+\contentsline {subsubsection}{Fixed Charging Stations}{12}{subsubsection*.9}%
+\contentsline {subsubsection}{Advantages of Fixed Charging Stations}{12}{subsubsection*.10}%
+\contentsline {subsubsection}{Mobile Charging Stations}{12}{subsubsection*.11}%
+\contentsline {subsubsection}{Advantages of Mobile Charging Stations}{12}{subsubsection*.12}%
+\contentsline {subsection}{\numberline {2.2.3}Automatic Drawer Mechanism}{13}{subsection.2.2.3}%
+\contentsline {subsubsection}{Types of Mechanisms}{13}{subsubsection*.13}%
+\contentsline {paragraph}{Pistons}{13}{paragraph*.14}%
+\contentsline {paragraph}{Belt and Toothed Pulley}{13}{paragraph*.15}%
+\contentsline {paragraph}{Belt and V-Pulley}{13}{paragraph*.16}%
+\contentsline {subsection}{\numberline {2.2.4}Motors and Propellers}{13}{subsection.2.2.4}%
+\contentsline {subsubsection}{Motor Selection}{13}{subsubsection*.17}%
+\contentsline {paragraph}{Comparison with Other Motors}{14}{paragraph*.18}%
+\contentsline {section}{\numberline {2.3}Electronics}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Movimiento a Motores y Módulos ESC}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Controladores de Vuelo}{14}{subsection.2.3.2}%
+\contentsline {subsubsection}{Principales Controladores de Vuelo}{14}{subsubsection*.19}%
+\contentsline {subsubsection}{Pixhawk 6X: }{15}{subsubsection*.20}%
+\contentsline {subsection}{\numberline {2.3.3}Computadoras Complementarias y Sistemas Embebidos}{15}{subsection.2.3.3}%
+\contentsline {subsubsection}{Principales Computadoras Complementarias}{15}{subsubsection*.21}%
+\contentsline {subsection}{\numberline {2.3.4}Tipos de Protocolos de Comunicación}{16}{subsection.2.3.4}%
+\contentsline {subsubsection}{Principales Protocolos de Comunicación}{16}{subsubsection*.22}%
+\contentsline {subsection}{\numberline {2.3.5}Sensores de Proximidad}{16}{subsection.2.3.5}%
+\contentsline {subsubsection}{Tipos de Sensores de Proximidad}{17}{subsubsection*.23}%
+\contentsline {section}{\numberline {2.4}Software}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}FC Firmware}{17}{subsection.2.4.1}%
+\contentsline {subsubsection}{Firmware PX4}{17}{subsubsection*.24}%
+\contentsline {subsubsection}{Firmware ArduPilot}{18}{subsubsection*.25}%
+\contentsline {subsection}{\numberline {2.4.2}Ground Control Systems}{19}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Companion Computer Operative Systems}{19}{subsection.2.4.3}%
+\contentsline {subsubsection}{Ubuntu}{20}{subsubsection*.26}%
+\contentsline {subsubsection}{Raspberry Pi OS}{20}{subsubsection*.27}%
+\contentsline {subsection}{\numberline {2.4.4}ROS2 Distributions}{20}{subsection.2.4.4}%
+\contentsline {subsubsection}{Distribución Humble}{21}{subsubsection*.28}%
+\contentsline {subsubsection}{Distribución Jazzy}{21}{subsubsection*.29}%
+\contentsline {subsection}{\numberline {2.4.5}ROS2 Documentation}{21}{subsection.2.4.5}%
+\contentsline {subsubsection}{Benefits of ROS2}{22}{subsubsection*.30}%
+\contentsline {subsubsection}{ROS2 Architecture}{22}{subsubsection*.31}%
+\contentsline {subsection}{\numberline {2.4.6}Computer Vision}{24}{subsection.2.4.6}%
+\contentsline {subsubsection}{OpenCV Library}{24}{subsubsection*.32}%
+\contentsline {subsubsection}{Camera Calibration}{24}{subsubsection*.33}%
+\contentsline {subsection}{\numberline {2.4.7}What is an ArUco?}{25}{subsection.2.4.7}%
+\contentsline {subsubsection}{Historia de los Marcadores Aruco}{25}{subsubsection*.34}%
+\contentsline {subsubsection}{Aplicaciones Comunes}{26}{subsubsection*.35}%
+\contentsline {subsubsection}{Formatos de Marcadores}{26}{subsubsection*.36}%
+\contentsline {subsection}{\numberline {2.4.8}Aruco vs Embedded Aruco}{26}{subsection.2.4.8}%
+\contentsline {subsubsection}{Diferencias Principales}{27}{subsubsection*.37}%
+\contentsline {subsubsection}{Casos de Uso}{27}{subsubsection*.38}%
+\contentsline {subsection}{\numberline {2.4.9}Aruco Detection}{28}{subsection.2.4.9}%
+\contentsline {subsubsection}{Algoritmos de Detección}{28}{subsubsection*.39}%
+\contentsline {subsubsection}{Implementación en OpenCV}{28}{subsubsection*.40}%
+\contentsline {subsubsection}{Parámetros de Precisión}{29}{subsubsection*.41}%
+\contentsline {subsection}{\numberline {2.4.10}Comunicación ROS2 - Pixhawk}{29}{subsection.2.4.10}%
+\contentsline {subsubsection}{Protocolo MAVLink}{29}{subsubsection*.42}%
+\contentsline {subsubsection}{Opciones de Integración de MAVLink en ROS 2}{30}{subsubsection*.43}%
+\contentsline {paragraph}{MAVROS}{30}{paragraph*.44}%
+\contentsline {paragraph}{Micro XRCE-DDS}{30}{paragraph*.45}%
+\contentsline {subsubsection}{Envío de Comandos mediante ROS 2 usando MAVLink}{30}{subsubsection*.46}%
+\contentsline {subsection}{\numberline {2.4.11}Sensores para la Navegación en Ambientes Exteriores e Interiores}{31}{subsection.2.4.11}%
+\contentsline {subsubsection}{Sensores para Ambientes Exteriores}{31}{subsubsection*.47}%
+\contentsline {subsubsection}{Sensores para Ambientes Interiores}{32}{subsubsection*.48}%
+\contentsline {subsubsection}{Fusión de Sensores para Precisión en Navegación}{32}{subsubsection*.49}%
+\contentsline {subsection}{\numberline {2.4.12}Fusión de Sensores usando el Filtro de Kalman en Pixhawk}{33}{subsection.2.4.12}%
+\contentsline {subsubsection}{Fusión de GPS e IMU en Exteriores}{33}{subsubsection*.50}%
+\contentsline {subsubsection}{Desafíos en la Fusión de Sensores en Ambientes Dinámicos}{34}{subsubsection*.51}%
+\contentsline {subsubsection}{Fusión de Sensores en Interiores sin GPS}{34}{subsubsection*.52}%
+\contentsline {subsubsection}{Sensores Alternativos para Navegación en Interiores}{34}{subsubsection*.53}%
+\contentsline {subsubsection}{Requisitos para la Fusión de Sensores sin GPS}{35}{subsubsection*.54}%
+\contentsline {chapter}{\numberline {3}Desarrollo}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Diseño y Desarrollo de la Base de Carga}{37}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Especificaciones y Requerimientos}{37}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Selección e Implementación del Mecanismo de Movimiento del Cajón}{37}{subsection.3.1.2}%
+\contentsline {subsubsection}{Diseños CAD y Componentes}{38}{subsubsection*.55}%
+\contentsline {subsubsection}{Mecanismo Polea y Banda tipo V}{38}{subsubsection*.56}%
+\contentsline {subsection}{\numberline {3.1.3}Diseño CAD de la Base de Carga}{38}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Lista de Materiales}{39}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Proceso de Manufactura de la Estructura de la Base de Carga}{40}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Circuito Electrónico de la Estación de Carga}{40}{subsection.3.1.6}%
+\contentsline {subsubsection}{Diagrama de Conexiones}{40}{subsubsection*.57}%
+\contentsline {subsubsection}{Contrucción del Circuito}{40}{subsubsection*.58}%
+\contentsline {subsubsection}{Programación del Circuito}{41}{subsubsection*.59}%
+\contentsline {section}{\numberline {3.2}Instrumentación del Dron}{41}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Especificaciones y Requerimientos}{41}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Lista de Materiales para la Instrumentación del Dron}{41}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Diseños CAD del Dron}{42}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Circuito de Distribución de Energía}{42}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Integración de Componentes Electrónicos}{42}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Software Configuration}{43}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Configuración de la Computadora en Tierra}{43}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Configuración de la Computadora Auxiliar del Dron}{43}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Configuración de la Estación de Control en Tierra}{43}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Sistema de Visión}{44}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Especificaciones y Requerimientos}{44}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Calibración de la Cámara}{44}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Generación de Marcadores Aruco}{44}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Detección de Marcadores e-Aruco en Tiempo Real}{44}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Sistema de Comunicación}{45}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Especificaciones y Requerimientos}{45}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Protocolo de Comunicación entre el Dron y la Base de Carga}{45}{subsection.3.5.2}%
+\contentsline {subsubsection}{Diagrama de Comunicación WiFi}{45}{subsubsection*.60}%
+\contentsline {subsubsection}{Diagrama de Comunicación de Nodos ROS 2}{45}{subsubsection*.61}%
+\contentsline {chapter}{\numberline {4}Resultados}{46}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Resultados del Diseño y Manufactura de la Base de Carga}{46}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Diseño CAD Final del 1er protopipo de la Estación de Carga}{46}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Diseño e Instrumentación del Drone}{46}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Movimiento del Cajón}{46}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Vuelo del Drone}{46}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Carga y Descarga de Batería}{46}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Detección del ArUco}{46}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}Sistema de Comunicación}{46}{subsection.4.1.7}%
+\contentsline {section}{\numberline {4.2}Análisis de Desempeño General}{46}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Resultados de Integración Global}{46}{subsection.4.2.1}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{47}{chapter.5}%

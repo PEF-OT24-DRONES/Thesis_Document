@@ -1,0 +1,726 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{CompComms2023}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5b91ce97337d815fea5fe57d995adf7c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jinrong},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=19d4dd498226176208f19d6f469f0c1f}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Shengqiu},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{b2d0cc3bb9fed60c017a01199904da0f}
+      \strng{fullhash}{b2d0cc3bb9fed60c017a01199904da0f}
+      \strng{bibnamehash}{b2d0cc3bb9fed60c017a01199904da0f}
+      \strng{authorbibnamehash}{b2d0cc3bb9fed60c017a01199904da0f}
+      \strng{authornamehash}{b2d0cc3bb9fed60c017a01199904da0f}
+      \strng{authorfullhash}{b2d0cc3bb9fed60c017a01199904da0f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2023 IEEE 2nd International Conference on Electrical Engineering, Big Data and Algorithms (EEBDA)}
+      \field{title}{Analysis and Comparison of UART, SPI and I2C}
+      \field{year}{2023}
+      \field{pages}{272\bibrangedash 276}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/EEBDA56825.2023.10090677
+      \endverb
+      \keyw{Resistance;Protocols;Power demand;Transmitters;Wires;Full-duplex system;Receivers;UART;SPI;I2C}
+    \endentry
+    \entry{Gazi2021}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1cacb2d2a850e7596a777c707663039c}{%
+           family={Gazi},
+           familyi={G\bibinitperiod},
+           given={Orhan},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9709fd2fa1ab4f411c6ee5dd7cc5ccc0}{%
+           family={Arl{ı}},
+           familyi={A\bibinitperiod},
+           given={A.\bibnamedelimi Çağr{ı}},
+           giveni={A\bibinitperiod\bibinitdelim Ç\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{6f947e79c33352ca92070e12b08d8658}
+      \strng{fullhash}{6f947e79c33352ca92070e12b08d8658}
+      \strng{bibnamehash}{6f947e79c33352ca92070e12b08d8658}
+      \strng{authorbibnamehash}{6f947e79c33352ca92070e12b08d8658}
+      \strng{authornamehash}{6f947e79c33352ca92070e12b08d8658}
+      \strng{authorfullhash}{6f947e79c33352ca92070e12b08d8658}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Inter integrated circuit (I2C) is a synchronous serial communication protocol. It is developed for serial communication between electronic devices. I2C is an 8-bit oriented communication protocol. I2C communication employs two wires for communication. I2C synchronous communication protocol has been developed by the Philips company in 1982. It is widely used for connecting low-speed peripheral devices to more complex electronic devices such as processors and microcontrollers for short-distance or intra-board communications. Several versions of I2C protocol have been released in time. In 2007, the version 3.0 was introduced. Version 4, which adds 5 Mbit/s ultra fast-mode, is introduced in 2012. In 2014, the last revision, version 6, was released. In this chapter, we first explain the I2C communication, then provide information about VHDL implementation of I2C communication protocol. We further explain the subject using clear examples.}
+      \field{booktitle}{State Machines using VHDL: FPGA Implementation of Serial Communication and Display Protocols}
+      \field{isbn}{978-3-030-61698-4}
+      \field{title}{Inter Integrated Circuit (I2C) Serial Communication in VHDL}
+      \field{year}{2021}
+      \field{pages}{193\bibrangedash 235}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1007/978-3-030-61698-4_5
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-030-61698-4_5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-030-61698-4_5
+      \endverb
+    \endentry
+    \entry{Gupta2019}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f546049cf939f55379fab01f639f61e9}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berkeley, CA}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{f546049cf939f55379fab01f639f61e9}
+      \strng{fullhash}{f546049cf939f55379fab01f639f61e9}
+      \strng{bibnamehash}{f546049cf939f55379fab01f639f61e9}
+      \strng{authorbibnamehash}{f546049cf939f55379fab01f639f61e9}
+      \strng{authornamehash}{f546049cf939f55379fab01f639f61e9}
+      \strng{authorfullhash}{f546049cf939f55379fab01f639f61e9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Universal Asynchronous Receiver/Transmitter (UART) is a method of serial communication allowing two different components on a device to talk to each other without the requirement of a clock. We consider UART in depth in this chapter as it is one of the most popular communication interfaces that has great significance in IoT security and penetration testing. There is also something known as Universal Synchronous/Asynchronous Receiver/Transmitter (USART), which transmits data both synchronously and asynchronously depending on the requirement; however, we have not seen a lot of devices using it. For that reason, we won't be covering USART, and focus instead on UART.}
+      \field{booktitle}{The IoT Hacker's Handbook: A Practical Guide to Hacking the Internet of Things}
+      \field{isbn}{978-1-4842-4300-8}
+      \field{title}{UART Communication}
+      \field{year}{2019}
+      \field{pages}{59\bibrangedash 80}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/978-1-4842-4300-8_4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-1-4842-4300-8_4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-1-4842-4300-8_4
+      \endverb
+    \endentry
+    \entry{huang2023}{article}{}
+      \name{author}{9}{}{%
+        {{un=1,uniquepart=given,hash=d3695b7d7ff3c3f3f3509de375acce78}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Liangsong},
+           giveni={L\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=557b5bf05ca404c8f58d52b022bcc787}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shuo},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62735e1af0391d63c09ff9fbcd3d4d54}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Kun},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ec6299c8e78c303ef3bf8d6be34b11d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuxia},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=feb2e73d7fc1fcd30400a692b1c9a382}{%
+           family={Sui},
+           familyi={S\bibinitperiod},
+           given={Hualei},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dac4f4a6da90363374681a9c026f04fd}{%
+           family={Bu},
+           familyi={B\bibinitperiod},
+           given={Xiaofei},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06523b7d517f4a379f3cec46cfc96353}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7ff1d21e3184f525b582b31f2ce6651b}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f189b293bd3263254702f8c5fe1d714b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0e949af21d58d21750d764848449df72}
+      \strng{fullhash}{10dc9478d799b471ba40f54f57026a0a}
+      \strng{bibnamehash}{10dc9478d799b471ba40f54f57026a0a}
+      \strng{authorbibnamehash}{10dc9478d799b471ba40f54f57026a0a}
+      \strng{authornamehash}{0e949af21d58d21750d764848449df72}
+      \strng{authorfullhash}{10dc9478d799b471ba40f54f57026a0a}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0924-4247}
+      \field{journaltitle}{Sensors and Actuators A: Physical}
+      \field{title}{Research progress of multifunctional flexible proximity sensors}
+      \field{volume}{360}
+      \field{year}{2023}
+      \field{pages}{114500}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.sna.2023.114500
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0924424723003497
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0924424723003497
+      \endverb
+      \keyw{Flexible proximity sensor,Non-contact sensor,Human-computer interaction,Electronic skin,Multifunctional flexible sensor}
+    \endentry
+    \entry{dailysensors2021}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=1e9e80fb5bc43df028d06eb40fe68a21}{%
+           family={Javaid},
+           familyi={J\bibinitperiod},
+           given={Mohd},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac64f478d5bbd373bdb223b8547d13de}{%
+           family={Haleem},
+           familyi={H\bibinitperiod},
+           given={Abid},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bdea3b1a4dd215f268474c41762736e5}{%
+           family={Rab},
+           familyi={R\bibinitperiod},
+           given={Shanay},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be190e020a86a4a1dbc8bba3b05aab5b}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Ravi\bibnamedelima Pratap},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7fc6d2201e1460e83153ebd28815a882}{%
+           family={Suman},
+           familyi={S\bibinitperiod},
+           given={Rajiv},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b204d82021ad47d15867539a3b220f06}
+      \strng{fullhash}{eed87a3beecf28b1d5b9367caf298248}
+      \strng{bibnamehash}{eed87a3beecf28b1d5b9367caf298248}
+      \strng{authorbibnamehash}{eed87a3beecf28b1d5b9367caf298248}
+      \strng{authornamehash}{b204d82021ad47d15867539a3b220f06}
+      \strng{authorfullhash}{eed87a3beecf28b1d5b9367caf298248}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors International}
+      \field{month}{1}
+      \field{title}{Sensors for daily life: A review}
+      \field{volume}{2}
+      \field{year}{2021}
+      \field{pages}{100121}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.sintl.2021.100121
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2666351121000425#sec2
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2666351121000425#sec2
+      \endverb
+    \endentry
+    \entry{dronebatteriesKim}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8a3c59ce854d9bfe1af95e8f955b2404}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jiwon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9bfa74d80a8f33a47c41565f67632005}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Yonghun},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c43f329a17ecf7ec074ac154d9b5cb5c}{%
+           family={Jeon},
+           familyi={J\bibinitperiod},
+           given={Seunghyeok},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc4c39b4778ce07a8433cf8a3657643d}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Jaeyun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3598b8d3a42fcf939039890dd5b2b9c5}{%
+           family={Cha},
+           familyi={C\bibinitperiod},
+           given={Hojung},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5faf62bdbe32fc0fea9e5f29fbfccc69}
+      \strng{fullhash}{36ff1ba090a2959feaa20fc5e32c95f9}
+      \strng{bibnamehash}{36ff1ba090a2959feaa20fc5e32c95f9}
+      \strng{authorbibnamehash}{36ff1ba090a2959feaa20fc5e32c95f9}
+      \strng{authornamehash}{5faf62bdbe32fc0fea9e5f29fbfccc69}
+      \strng{authorfullhash}{36ff1ba090a2959feaa20fc5e32c95f9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
+      \field{number}{11}
+      \field{title}{Optrone: Maximizing Performance and Energy Resources of Drone Batteries}
+      \field{volume}{39}
+      \field{year}{2020}
+      \field{pages}{3931\bibrangedash 3943}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/TCAD.2020.3012790
+      \endverb
+      \keyw{Batteries;Drones;Temperature;Discharges (electric);Runtime;Estimation;Aging;Drone;real-time battery management;state-of-charge (SoC) estimation}
+    \endentry
+    \entry{wirelessLu}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=102eeb52bed85fb5169e9016c3e60cd6}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2053a78b8c7e674d28eabbe236f2f077}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f678efa4adc87cf8d6e229b46a03b8dd}{%
+           family={Niyato},
+           familyi={N\bibinitperiod},
+           given={Dusit},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8874751d2a43a24680d2345721d0ae8a}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Dong\bibnamedelima In},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21502e7d52af09e49d31a5bc40073591}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Zhu},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a103020ef51c65c493ee01da81799b3c}
+      \strng{fullhash}{fc9bb3ff821d9b7b947c38f007a952e9}
+      \strng{bibnamehash}{fc9bb3ff821d9b7b947c38f007a952e9}
+      \strng{authorbibnamehash}{fc9bb3ff821d9b7b947c38f007a952e9}
+      \strng{authornamehash}{a103020ef51c65c493ee01da81799b3c}
+      \strng{authorfullhash}{fc9bb3ff821d9b7b947c38f007a952e9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Communications Surveys & Tutorials}
+      \field{number}{2}
+      \field{title}{Wireless Charging Technologies: Fundamentals, Standards, and Network Applications}
+      \field{volume}{18}
+      \field{year}{2016}
+      \field{pages}{1413\bibrangedash 1452}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1109/COMST.2015.2499783
+      \endverb
+      \keyw{Inductive charging;Wireless communication;Wireless sensor networks;Couplings;Energy harvesting;Radio frequency;Microwave theory and techniques;Wireless Charging;wireless power transfer;inductive coupling;resonance coupling;RF/Microwave radiation;energy harvesting;Qi;PMA;A4WP;simultaneous wireless information and power transfer (SWIPT);energy beamforming;wireless powered communication network (WPCN);Magnetic MIMO;Witricity;Wireless charging;wireless power transfer;inductive coupling;resonance coupling;RF/Microwave radiation;energy harvesting;Qi;PMA;A4WP;simultaneous wireless information and power transfer (SWIPT);energy beamforming;wireless powered communication network (WPCN);Magnetic MIMO;Witricity}
+    \endentry
+    \entry{wiredvwirelessMohammed}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=64ff4f36d4de3d758f66addeea1cedec}{%
+           family={Mohammed},
+           familyi={M\bibinitperiod},
+           given={Sadeq\bibnamedelimb Ali\bibnamedelima Qasem},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=075db271b8b1f669b6381c97066d7d71}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Jin-Woo},
+           giveni={J\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{508cda12f30bf87cb8ab690891620fc2}
+      \strng{fullhash}{508cda12f30bf87cb8ab690891620fc2}
+      \strng{bibnamehash}{508cda12f30bf87cb8ab690891620fc2}
+      \strng{authorbibnamehash}{508cda12f30bf87cb8ab690891620fc2}
+      \strng{authornamehash}{508cda12f30bf87cb8ab690891620fc2}
+      \strng{authorfullhash}{508cda12f30bf87cb8ab690891620fc2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{A Comprehensive State-of-the-Art Review of Wired/Wireless Charging Technologies for Battery Electric Vehicles: Classification/Common Topologies/Future Research Issues}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{pages}{19572\bibrangedash 19585}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2021.3055027
+      \endverb
+      \keyw{Batteries;Inductive charging;Electric vehicles;Magnetic resonance;Safety;Masers;Global warming;Charging stations;AC charging;battery electric vehicles (BEVs);DC charging;off-board charger;on-board charger (OBC);wired charging;wireless charging}
+    \endentry
+    \entry{fastchargers}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=00bd5a35c0131ba047f7fa90fd642ff1}{%
+           family={Neaimeh},
+           familyi={N\bibinitperiod},
+           given={Myriam},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1969b0c25c428ddd9cecb31097c531a3}{%
+           family={Salisbury},
+           familyi={S\bibinitperiod},
+           given={Shawn\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5dd4cd5b08543a2f0e5e7002907c1f2e}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={Graeme\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f31f45d750ed0a3d8a3bd1d351e4d76}{%
+           family={Blythe},
+           familyi={B\bibinitperiod},
+           given={Philip\bibnamedelima T.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=675eec5f4dd116592e5ef87129550088}{%
+           family={Scoffield},
+           familyi={S\bibinitperiod},
+           given={Don\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40df391c768623142e444ad64e7c9792}{%
+           family={Francfort},
+           familyi={F\bibinitperiod},
+           given={James\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{abb437e275aee2fa327b57245abb1743}
+      \strng{fullhash}{b3f52b749d9b384ebfc66eae955d7aac}
+      \strng{bibnamehash}{b3f52b749d9b384ebfc66eae955d7aac}
+      \strng{authorbibnamehash}{b3f52b749d9b384ebfc66eae955d7aac}
+      \strng{authornamehash}{abb437e275aee2fa327b57245abb1743}
+      \strng{authorfullhash}{b3f52b749d9b384ebfc66eae955d7aac}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0301-4215}
+      \field{journaltitle}{Energy Policy}
+      \field{title}{Analysing the usage and evidencing the importance of fast chargers for the adoption of battery electric vehicles}
+      \field{volume}{108}
+      \field{year}{2017}
+      \field{pages}{474\bibrangedash 486}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.enpol.2017.06.033
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0301421517303877
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0301421517303877
+      \endverb
+      \keyw{Electric vehicle,Public charging infrastructure,Fast charging,Rapid charging,Driving range,Regression analysis}
+    \endentry
+    \entry{vehiclessmartcharge}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=2e8e6f31d23012f601da987867518cc5}{%
+           family={Sadeghian},
+           familyi={S\bibinitperiod},
+           given={Omid},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cae432b2149ad950f6dbc89125349900}{%
+           family={Oshnoei},
+           familyi={O\bibinitperiod},
+           given={Arman},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72496785b3aadd10e815b6a0f66f46e5}{%
+           family={Mohammadi-ivatloo},
+           familyi={M\bibinithyphendelim i\bibinitperiod},
+           given={Behnam},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ceac7932d923c5d20b0340ba70a2828}{%
+           family={Vahidinasab},
+           familyi={V\bibinitperiod},
+           given={Vahid},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=182b3188563316eee083c107fcaeca16}{%
+           family={Anvari-Moghaddam},
+           familyi={A\bibinithyphendelim M\bibinitperiod},
+           given={Amjad},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{466ef5c5ceb013272b070a72c61375e5}
+      \strng{fullhash}{80f8a7b440c4150eabdb93f3a4d06647}
+      \strng{bibnamehash}{80f8a7b440c4150eabdb93f3a4d06647}
+      \strng{authorbibnamehash}{80f8a7b440c4150eabdb93f3a4d06647}
+      \strng{authornamehash}{466ef5c5ceb013272b070a72c61375e5}
+      \strng{authorfullhash}{80f8a7b440c4150eabdb93f3a4d06647}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2352-152X}
+      \field{journaltitle}{Journal of Energy Storage}
+      \field{title}{A comprehensive review on electric vehicles smart charging: Solutions, strategies, technologies, and challenges}
+      \field{volume}{54}
+      \field{year}{2022}
+      \field{pages}{105241}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.est.2022.105241
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2352152X22012403
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2352152X22012403
+      \endverb
+      \keyw{Electric vehicles smart charging,Electric vehicles aggregator,Vehicle-to-grid,Charging infrastructure,Smart charging challenges}
+    \endentry
+    \entry{Subero2024}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f8622315473e66cb1d4be37efea66e66}{%
+           family={Subero},
+           familyi={S\bibinitperiod},
+           given={Armstrong},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berkeley, CA}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{f8622315473e66cb1d4be37efea66e66}
+      \strng{fullhash}{f8622315473e66cb1d4be37efea66e66}
+      \strng{bibnamehash}{f8622315473e66cb1d4be37efea66e66}
+      \strng{authorbibnamehash}{f8622315473e66cb1d4be37efea66e66}
+      \strng{authornamehash}{f8622315473e66cb1d4be37efea66e66}
+      \strng{authorfullhash}{f8622315473e66cb1d4be37efea66e66}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this chapter, we look at using serial communication protocols. In the realm of embedded systems and microcontroller applications, the ability to communicate effectively with external devices is fundamental. Serial communication is the lifeblood of embedded systems, allowing microcontrollers to interact with many external devices and peripherals. The most ubiquitous of these are USART, SPI, and I2C, which I will be explaining in this chapter. We will embark on a journey to demystify these protocols, breaking down their functionalities, configurations, and applications. The applications we cover using sensors, GPS, GSM, and a host of other things once we have learned how to use these protocols will give you hands-on experience in using these devices in your applications. So grab a bottle of water and sit down. This will be a long one. By the end of this chapter, you will get a solid grasp of serial communications setting the stage for exciting projects and innovations in your embedded systems journey. Let's get started!}
+      \field{booktitle}{Programming PIC Microcontrollers with XC8: Mastering Classical Embedded Design}
+      \field{isbn}{979-8-8688-0467-0}
+      \field{title}{USART, SPI, I2C, and Communication Protocols}
+      \field{year}{2024}
+      \field{pages}{297\bibrangedash 366}
+      \range{pages}{70}
+      \verb{doi}
+      \verb 10.1007/979-8-8688-0467-0_8
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/979-8-8688-0467-0_8
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/979-8-8688-0467-0_8
+      \endverb
+    \endentry
+    \entry{sensors2017}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c3c2afbe70ee45a4611868544b759c98}{%
+           family={Vetelino},
+           familyi={V\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=77dfd8e2cb6446bbee7a345a4814c808}{%
+           family={Reghu},
+           familyi={R\bibinitperiod},
+           given={Aravind},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CRC press}%
+      }
+      \strng{namehash}{0c824a3b8ce34becb070e915552a993f}
+      \strng{fullhash}{0c824a3b8ce34becb070e915552a993f}
+      \strng{bibnamehash}{0c824a3b8ce34becb070e915552a993f}
+      \strng{authorbibnamehash}{0c824a3b8ce34becb070e915552a993f}
+      \strng{authornamehash}{0c824a3b8ce34becb070e915552a993f}
+      \strng{authorfullhash}{0c824a3b8ce34becb070e915552a993f}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to sensors}
+      \field{year}{2017}
+    \endentry
+    \entry{Wootton2016}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4f15db8ce80cd2b541aa4a6e43c84e0f}{%
+           family={Wootton},
+           familyi={W\bibinitperiod},
+           given={Cliff},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berkeley, CA}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{4f15db8ce80cd2b541aa4a6e43c84e0f}
+      \strng{fullhash}{4f15db8ce80cd2b541aa4a6e43c84e0f}
+      \strng{bibnamehash}{4f15db8ce80cd2b541aa4a6e43c84e0f}
+      \strng{authorbibnamehash}{4f15db8ce80cd2b541aa4a6e43c84e0f}
+      \strng{authornamehash}{4f15db8ce80cd2b541aa4a6e43c84e0f}
+      \strng{authorfullhash}{4f15db8ce80cd2b541aa4a6e43c84e0f}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Serial Peripheral Interface Bus (SPI) is a means of communicating between the CPU and the peripheral devices. It is very simple to operate and is used for a variety of devices that connect to the physical world. SD cards, touch screens, liquid crystal displays (LCDs), and analog-to-digital convertors (ADCs) are commonly connected to an SPI bus for extending embedded systems.}
+      \field{booktitle}{Samsung ARTIK Reference: The Definitive Developers Guide}
+      \field{isbn}{978-1-4842-2322-2}
+      \field{title}{Serial Peripheral Interface (SPI)}
+      \field{year}{2016}
+      \field{pages}{335\bibrangedash 349}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/978-1-4842-2322-2_21
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-1-4842-2322-2_21
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-1-4842-2322-2_21
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{pixhawk_docs}
+  \missing{rasp_docs}
+  \missing{rohdE_ESC}
+\endrefsection
+\endinput
+

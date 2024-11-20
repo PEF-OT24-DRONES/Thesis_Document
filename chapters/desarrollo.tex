@@ -1,17 +1,286 @@
-\subsection{Diseño de la Estación de Carga}
+Este capítulo describe el proceso de diseño, implementación y configuración de la estación de carga modular y la instrumentación del dron. Se detallan las metodologías y herramientas utilizadas para llevar a cabo el desarrollo, con un enfoque en la creación de una solución eficaz para el sistema de carga.
 
-\section{Ensamble de Estructura de la Estación de Carga}
+\section{Diseño y Desarrollo de la Base de Carga}
+\subsection{Especificaciones y Requerimientos}
+A continuación se presentan las especificaciones técnicas y los requisitos para la base de carga, garantizando compatibilidad y eficiencia para un sistema de carga en enjambres de drones:
+    \begin{itemize}
+        \item El diseño debe cumplir con la idea de que se puedan apilar varias estaciones de carga en un mismo espacio.
+        \item Las dimensiones mínimas requeridas para la estacion de carga debe ser de ancho, largo y alto.
+        \item La estacion de carga deberá contar con un mecanismo de carga para la recarga de la batería del dron.
+        \item Debe contar con por lo menos un método de posicionamiento visible para el drone.
+        \item El circuito de carga debe ser capaz de suministrar la corriente y voltaje adecuado para la carga de la batería del dron al momento de ser posicionado en la base de carga.
+    \end{itemize}
 
-\section{Armado de Mecanismo de Poleas}
+\subsection{Selección e Implementación del Mecanismo de Movimiento del Cajón}
 
-\section{Electronica para movimiento del cajón}
+En la sección 2.2.3 se explican en detalle los diferentes mecanismos de movimiento que se consideraron para la estación de carga, evaluando sus ventajas y desventajas en términos de precisión, durabilidad, costo y facilidad de integración en el diseño modular. Se analizaron opciones como pistones lineales, bandas dentadas y otros sistemas de transmisión, con el objetivo de seleccionar una solución que cumpliera con los requisitos de funcionalidad sin elevar demasiado los costos. 
+Tras esta evaluación, se optó por un mecanismo de Polea y Banda tipo V, el cual, además de ser una opción económica, utiliza componentes ya disponibles, como el motor. Este sistema permite un movimiento horizontal suficiente para posicionar el dron con la precisión necesaria para el proceso de carga, a la vez que facilita el apilamiento modular de la estación. La orientación del movimiento no obstruye la estructura general de la estación, lo cual asegura que el diseño cumpla con el requisito de apilabilidad y compatibilidad en espacios compartidos, manteniéndose compacto y adaptable sin comprometer la estructura modular de la estación.
 
-\section{Programación para control de movimiento del cajón}
+Para este mecanismo, se seleccionaron diferentes componentes, incluyendo una banda de alta resistencia para soportar las cargas previstas, poleas (con baja fricción) para optimizar el movimiento y reducir el desgaste del sistema en operaciones continuas, y un motor ... que tiene un torque de ... y cumple con el torque necesario para mover los 3 kg de peso del drone.
 
-\section{Armado del Drone}
+\subsubsection{Diseños CAD y Componentes}
+    \begin{enumerate}
+        \item Motor 
+            \begin{itemize}
+                \item Marca: Ford
+                \item Modelo: 
+                \item Torque: 
+                \item Velocidad: 
+                \item Imagen: 
+            \end{itemize}
+        \item Poleas
+        \item Banda
+        \item Baleros
+        \item Chumaceras 
+        \item Soporte del Motor
+    \end{enumerate}
+
+\subsubsection{Mecanismo Polea y Banda tipo V}
+(Imagen del Mecanismo)
+
+\subsection{Diseño CAD de la Base de Carga}
+Para cumplir con los requerimientos de diseño modular / apilable y compatibilidad con el drone en cuestión a las dimensiones de este. Se llevó a cabo el siguiente diseño en CAD:
+
+    \begin{itemize}
+        \item     El diseño de la estructura principal de la estación de carga se realizó en Fusion 360, considerando las dimensiones mínimas requeridas para el dron y el mecanismo de carga.
+        Imagen
+        \item     Se tomó en cuenta la dimensión necesaria para que el drone tenga un espacio de por lo menos 10 cm de separacion con la pared del cajón, esto para evitar alguna colusión del drone con la estructura de la base de carga al momento de intentar aterrizar, además se disminuyú la altura del cajón para que el drone pueda aterrizar sin problemas. Por otro lado se usarón rieles que se obtuvieron previamente reutilizados, por lo cual la estacion de carga física se encuentra salida de la base de carga por unos 5 cm al momento de estar cerrada, pero en el diseño CAD el diseño si se encuentra cerrado por completo. 
+        Imagen
+        \item     Se añadió un espacio de 25 cm para colocar la parte electronica del cajón.
+        imagen
+    \end{itemize}
+
+\subsection{Lista de Materiales}
+\begin{itemize}
+    \item Perfiles de Aluminio
+        \begin{itemize}
+            \item 2 x Perfiles de 75 cm
+            \item 2 x Perfiles de 50 cm
+            \item 2 x Perfiles de 25 cm
+        \end{itemize}
+    \item 1 x Fuente de Poder de 12V
+    \item 1 x Arduino Mega
+    \item 1 x Raspberry Pi 4
+    \item 1 x Driver JBT 
+    \item 2 x Sensor de Proximidad Inductivo
+    \item 1 x Joystick
+    \item 1 x Cargador de Lipo battery
+    \item Tronillería para perfil de aluminio
+    \item 2 x Rieles de 75 cmd
+    \item 1 x Motor de 12V
+    \item 1 x Soporte de Motor impreso en 3D
+    \item 1 x Banda de 1 m
+    \item 2 x Poleas de 5 cm de diámetro
+    \item 2 x Baleros de 5 cm de diámetro
+    \item 2 x Chumacera de 5 cm de diámetro impresas en 3D
+    \item 2 x MDF de 9 mm de 50 x 50 cm
+    \item 8 x Separadores de MDF impresos en 3D
+    \item 1 x Router WiFi
+    \item 16 x Codos para perfil de aluminio impresos en 3D
+\end{itemize}
+
+\subsection{Proceso de Manufactura de la Estructura de la Base de Carga}
+
+    \begin{enumerate}
+        \item \textbf{Corte del Material:} Para iniciar el proceso de manufactura, se realizaron cortes precisos de los perfiles de aluminio y las placas de MDF según las dimensiones especificadas en la lista de materiales. Este paso es fundamental para asegurar que todas las piezas se ensamblen correctamente en el diseño modular.
+            \begin{center}
+                \textit{Imagen del proceso de corte de perfiles de aluminio y MDF}
+            \end{center}
+        \item \textbf{Ensamblaje de la Estructura:} Una vez cortadas las piezas, se procedió a ensamblar la estructura principal de la estación de carga utilizando tornillos y tuercas para fijar los perfiles de aluminio y las placas de MDF usando los separadores impresos. Se verificó que todas las piezas estuvieran alineadas y niveladas para garantizar la estabilidad y resistencia de la base de carga.
+            \begin{center}
+                \textit{Imagen del proceso de ensamblaje de la estructura de la base de carga}
+            \end{center}
+        \item \textbf{Instalación del Mecanismo de Movimiento:} Después de ensamblar la estructura principal, se instaló el mecanismo de polea y banda tipo V para permitir el movimiento horizontal del cajón. Se colocaron las poleas, la banda y el motor en las ubicaciones previamente definidas, asegurando que el sistema de movimiento funcionara correctamente y sin obstrucciones.
+            \begin{center}
+                \textit{Imagen del proceso de instalación del mecanismo de movimiento}
+            \end{center}
+        
+    \end{enumerate}
 
 
 
+\subsection{Circuito Electrónico de la Estación de Carga}
+
+    \subsubsection{Diagrama de Conexiones}
+    Añadir diagrama de conexiones
+
+    \subsubsection{Contrucción del Circuito}
+    Añadir imágenes de la construcción del circuito
+
+    \subsubsection{Programación del Circuito}
+    Explicar el código de programación del circuito y su funcionamiento, mencionar que en los anexos se encuentra el código fuente del arduino y raspberry pi 4.
+
+
+\section{Instrumentación del Dron}
+
+\subsection{Especificaciones y Requerimientos}
+Para garantizar la compatibilidad y funcionalidad en el sistema de carga, el dron debe cumplir con las siguientes especificaciones:
+    \begin{itemize}
+        \item Las dimensiones de las piezas deberán adaptarse al frame del drone cuadricoptero de arquitectura abierta que fue comprado.
+        \item El dron deberá tener un circuito de carga compatible con la estacion de carga.
+        \item El drone deberá contar con una cámara y un sistema de visión para la detección de marcadores Aruco.
+        \item Se deberán integrar sensores de localización para la navegación en exterior.
+        \item Se deberá integrar algún microprocesador como computadora auxiliar para el procesamiento de datos y la comunicación con la estación de carga.
+    \end{itemize}
+
+\subsection{Lista de Materiales para la Instrumentación del Dron} 
+    \begin{itemize} 
+        \item 1 x Frame de cuadricóptero abierto (especificar modelo) 
+        \item 1 x Controlador de vuelo (especificar modelo) 
+        \item 1 x Cámara (compatible con detección Aruco) 
+        \item 1 x Raspberry Pi 4 (Companion Computer) 
+        \item 1 x Sensor de proximidad (modelo de preferencia) 
+        \item 1 x Módulo GPS (compatible con el controlador de vuelo) 
+        \item Cableado y conectores 
+        \item Material de montaje impreso en 3D (soportes específicos para cada componente) 
+    \end{itemize}
+
+\subsection{Diseños CAD del Dron} 
+Se presentan a continuación los diseños CAD de las piezas que se han desarrollado para el dron, adaptadas a su frame original para integrar los componentes electrónicos necesarios y cumplir con los requisitos de carga y posicionamiento.
+
+    \begin{itemize} 
+        \item Se diseñaron nuevos soportes para el microprocesador y la cámara, asegurando una integración estable y precisa en el frame. 
+        \item Se implementó un espacio de montaje para los sensores de localización y el circuito de carga. 
+        \begin{center} 
+            \textit{Imagen de los diseños CAD del dron con las piezas modificadas} 
+        \end{center} 
+    \end{itemize}
+
+
+
+\subsection{Circuito de Distribución de Energía} 
+El circuito de distribución de energía proporciona alimentación segura y estable a los componentes del dron. La selección de baterías y reguladores de voltaje fue optimizada para asegurar la duración de vuelo y protección de cada componente.
+
+    \begin{itemize} 
+        \item Se seleccionaron baterías de litio-polímero (LiPo) de alta capacidad para maximizar la autonomía. 
+        \item Reguladores de voltaje se añadieron para adaptar el suministro a la Raspberry Pi, la cámara y el controlador de vuelo. 
+        \begin{center} 
+            \textit{Imagen del circuito de distribución de energía en el dron} 
+        \end{center} 
+    \end{itemize}
+
+    \subsection{Integración de Componentes Electrónicos} Cada componente fue ensamblado y cableado de acuerdo con el diseño modular del dron. A continuación se describen los pasos del proceso de integración:
+
+    \begin{enumerate} 
+        \item \textbf{Montaje de la Cámara:} La cámara se fijó en la parte de abajo del dron, permitiendo una visibilidad óptima para la detección de marcadores Aruco. 
+            \begin{center} 
+                \textit{Imagen del montaje de la cámara en el dron} 
+            \end{center} 
+        \item \textbf{Instalación del Controlador de Vuelo y Módulo GPS:} El controlador de vuelo se instaló en el centro del frame para optimizar el balance y calibración, y el módulo GPS se colocó en una de las patas. 
+            \begin{center} 
+                \textit{Imagen del montaje del controlador de vuelo y módulo GPS} 
+            \end{center} 
+        \item \textbf{Instalación del Microprocesador:} La Raspberry Pi 4 se integró en un soporte impreso en 3D en la parte superior, y el microprocesador se colocó sobre este soporte. Un cable de comunicación serial se conectó entre la Raspberry Pi y el controlador de vuelo que se encuentra debajo de el microprocesador.
+            \begin{center} 
+                \textit{Imagen del montaje del microprocesador en el dron} 
+            \end{center} 
+    \end{enumerate}
+
+\section{Software Configuration}
+
+\subsection{Configuración de la Computadora en Tierra} Se documenta la configuración de la computadora en tierra, incluyendo las herramientas y librerías necesarias para la comunicación y el procesamiento de datos:
+
+    \begin{itemize} 
+        \item Instalación de ROS 2 y configuración de nodos para la comunicación con el dron. 
+        \item Configuración de los parámetros de red para la comunicación WiFi. 
+        \begin{center} 
+            \textit{Imagen del entorno de configuración en la computadora de tierra} 
+        \end{center} 
+    \end{itemize}
+
+\subsection{Configuración de la Computadora Auxiliar del Dron} La Raspberry Pi se configuró como una computadora auxiliar, encargada del procesamiento de datos y la comunicación en tiempo real con la estación de carga.
+
+    \begin{itemize} 
+        \item Instalación de ROS 2 y conexión de nodos de comunicación. 
+        \item Configuración de módulos de procesamiento de imágenes para la detección de Aruco. 
+        \begin{center} 
+            \textit{Imagen de la configuración del entorno en la Raspberry Pi 4} 
+        \end{center} 
+    \end{itemize}
+
+\subsection{Configuración de la Estación de Control en Tierra} Se detalla la configuración de la estación de control utilizando Mission Planner:
+
+    \begin{itemize} 
+        \item Instalación de Mission Planner para la visualización y gestión de parámetros de vuelo. 
+        \item Configuración de la calibración de sensores, incluyendo el acelerómetro, el giroscopio y el GPS. 
+        \begin{center} 
+            \textit{Imagen de la configuración de sensores en Mission Planner} 
+        \end{center} 
+    \end{itemize}
+
+\section{Sistema de Visión}
+\subsection{Especificaciones y Requerimientos} 
+El sistema de visión debe cumplir con los siguientes requisitos para asegurar la precisión en la detección de marcadores Aruco:
+    \begin{itemize}
+        \item Obtención y aplicación de las matrices de calibración de la cámara.
+        \item Generar marcadores Aruco de diferentes tamaños (Embedded ArUcos) para su detección en tiempo real.
+    \end{itemize}
+
+\subsection{Calibración de la Cámara} El proceso de calibración incluyó la captura de múltiples imágenes de una cuadrícula de calibración y la generación de los parámetros intrínsecos y extrínsecos.
+
+    \begin{center} 
+        % Imagen del proceso de calibración y los resultados obtenidos
+        \figurename{
+            \begin{figure}
+                \centering
+                %\includegraphics[width=0.8\textwidth]{pictures/calibracion_camara.png}
+                \caption{Imagen del proceso de calibración y los resultados obtenidos}
+            \end{figure}
+        }
+        
+        \textit{Imagen del proceso de calibración y los resultados obtenidos} 
+    \end{center}
+
+\subsection{Generación de Marcadores Aruco} 
+Se generaron marcadores Aruco adaptados al sistema, incluyendo tamaños y patrones específicos para maximizar la precisión en la detección desde diferentes alturas.
+    \begin{center} 
+        \textit{Imagen de los diferentes tamaños y diseños de los marcadores Aruco} 
+    \end{center}
+
+\subsection{Detección de Marcadores e-Aruco en Tiempo Real} 
+El proceso que se llevó a cabo para la detección de marcadores Aruco en tiempo real se describe a continuación:
+
+    \begin{enumerate} 
+        \item \textbf{Captura de Imágenes:} Se capturaron imágenes de la cámara en tiempo real, utilizando la webcam concectada a la Raspberry Pi 5 que se encuentra en el drone. 
+        \item \textbf{Procesamiento de Pose de los ArUcos:} Se aplicó un algoritmo para la deteccion de la pose de los marcadores ArUco el cual se describe a continuación: 
+            \begin{itemize} 
+                \item Se utilizó la librería OpenCV para el procesamiento de imágenes y la detección de marcadores Aruco. 
+                \item Se implementó un algoritmo de detección de bordes y esquinas para identificar los marcadores en las imágenes. 
+                \item Se mide el centroide de los marcadores y se calcula la matriz de posición y orientación para determinar la ubicación del drone.
+             \end{itemize}
+        
+        \item \textbf{Visualización en Tiempo Real:} Se mostraron los marcadores detectados en tiempo real, permitiendo la interacción con el sistema de control en tierra.
+    \end{enumerate}
+
+    \begin{center} 
+        \textit{Imagen de la detección de marcadores Aruco en tiempo real} 
+    \end{center}
+
+\section{Sistema de Comunicación}
+\subsection{Especificaciones y Requerimientos} 
+Para asegurar una comunicación efectiva entre el dron y la estación de carga, el sistema de comunicación debe cumplir con los siguientes requisitos:
+
+    \begin{itemize} 
+        \item Utilización de un protocolo basado en \textbf{WiFi} para la transferencia de datos entre el dron y la estación de carga. 
+        \item Implementación del middleware DDS (Data Distribution Service) de ROS 2 para publicación y suscripción de tópicos en tiempo real. 
+    \end{itemize}
+
+\subsection{Protocolo de Comunicación entre el Dron y la Base de Carga} 
+El protocolo de comunicación establece la interacción entre el dron y la estación de carga, utilizando ROS 2 y DDS para la transmisión de mensajes en tiempo real.
+
+    \begin{center} 
+        \textit{Diagrama del flujo de comunicación entre el dron y la base de carga} 
+    \end{center}
+
+\subsubsection{Diagrama de Comunicación WiFi} 
+Este diagrama muestra la estructura de comunicación dentro de la red WiFi, destacando el flujo de datos desde el dron hasta la estación de carga.
+
+\subsubsection{Diagrama de Comunicación de Nodos ROS 2} 
+El esquema de nodos en ROS 2 especifica los tópicos y servicios clave utilizados para la comunicación entre el dron y la estación de carga.
+
+    \begin{center} 
+        \textit{Diagrama de comunicación de nodos en ROS 2} 
+    \end{center}
 
 
 
