@@ -1,55 +1,143 @@
-% Description: This file contains the hardware state of the art.
-
 \section{Hardware}
 
 \subsection{Drones}
-    \subsubsection{Types of Drones}
-    Drones available in the market vary widely based on their intended applications, features, and prices. The following are the main types of drones that can be found:
-    
-    \paragraph{Consumer Drones} These drones are intended for recreational use and typically come equipped with a camera for capturing photos and videos. They are relatively affordable, with prices ranging from \$200 to \$1,500 depending on their features. Popular models include DJI's Phantom and Mavic series.
-    
-    \paragraph{Commercial Drones} These drones are designed for specific commercial purposes, such as surveying, mapping, inspection, and agriculture. They usually feature specialized sensors, like multispectral cameras, and have advanced software for planning and analyzing missions. Their price can range from \$2,000 to \$20,000. Examples include DJI's Matrice series and Parrot's Anafi.
-    
-    \paragraph{Industrial Drones} Industrial drones are high-performance devices used in demanding applications, such as power line inspections, oil and gas facility monitoring, and cargo transport. These drones are highly customizable and have long flight times, strong payload capabilities, and robust structures. Prices vary widely but generally exceed \$20,000, depending on the customization and capabilities.
-    
-    \paragraph{Racing Drones} Racing drones are built for speed, agility, and performance in drone racing competitions. They are lightweight, feature powerful motors, and are capable of speeds up to 150 km/h. Prices start around \$300 and can exceed \$2,000 for high-end models used by professional racers.
-    
-    \paragraph{Military Drones} Military drones, also known as Unmanned Aerial Vehicles (UAVs), are used for surveillance, reconnaissance, and combat missions. These drones are the most sophisticated, featuring stealth capabilities, long endurance, and powerful payloads. Costs vary significantly, often running into millions of dollars.
-    
-    The type of drone chosen depends on the specific requirements of the task, such as the payload capacity, flight time, range, and available budget.
 
-\subsection{Types of Charging Stations}
-    \subsubsection{Introduction}
-    Currently, there is a growing trend towards the concept of charging or docking stations for drones. These stations can have different approaches that optimize the operational capacity and autonomy of drones. According to Grlj, C.G., "A docking station for UAVs is a multipurpose system that enables them to land safely, take off, recharge and/or replace batteries, and transfer data and payload" \cite{}.
+    There are different categories or names for what can be considered a drone, such as UAV (Unmanned Aerial Vehicle), UAS (Unmanned Aerial Systems), RPAS (Remotely Piloted Aircraft System), or Multicopter (Figure \ref{fig:multicopter}). A specific definition is given by the official documentation \cite{ardupilot}, “A multicopter is a mechanically simple aerial vehicle whose motion is controlled by speeding or slowing multiple downward thrusting motor/propeller units.” It is known that each category has distinct functionalities, and therefore, a multicopter is not exactly the same as a UAV. According to the official documentation \cite{ardupilot}, “A multicopter becomes a UAV or Drone when it is capable of autonomous flight.”
 
-    In this context, various types of charging stations can be observed, classified according to the following specifications \cite{}:
+    Additionally, according to Piotr et al., "Drones or Unmanned Aerial Systems (UAV - Unmanned Aerial Vehicle or UAS - Unmanned Aerial Systems) are the aircrafts, which are able to fly without a pilot and passengers on board” \cite{piotr_drones}. Another definition comes from The Office of the Secretary of Defense of the United States of America: “A powered, aerial vehicle that does not carry a human operator, uses aerodynamic forces to provide vehicle lift, can fly autonomously or be piloted remotely, can be expendable or recoverable, and can carry a lethal or non-lethal payload.”
+
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.6\textwidth]{pictures/multicopter.png}
+        \caption{Multicopter.}
+        \label{fig:multicopter}
+    \end{figure}
+
+    There are various configurations of drones, each with different capabilities and specific applications. Figure \ref{fig:quad_frame} shows the Quad Frame, one of the most common and basic configurations. Quadrotor drones, with four motors and propellers, are ideal for applications like photography, surveillance, and light tasks.
+
+    Figure \ref{fig:hexa_frame} presents the Hexa Frame, with six motors and propellers, offering greater stability and payload capacity. These drones are suitable for tasks requiring the transport of heavier equipment, such as advanced sensors or high-resolution cameras.
+
+    In Figure \ref{fig:octo_frame}, the Octo Frame configuration is shown, featuring eight motors and propellers. Drones with this configuration are ideal for industrial applications due to their higher payload capacity and redundancy, which improves safety in case of motor or propeller failures.
+
+    Finally, Figure \ref{fig:octo_quad_frame} shows the Octo Quad Frame, combining the advantages of eight motors with the efficiency of a compact configuration. These types of drones are used when high payload capacity and precise stability control are required.
+
+    \begin{figure}[h!]
+        \centering
+        \begin{minipage}[b]{0.4\textwidth}
+            \includegraphics[width=\textwidth]{pictures/quad_frame.png}
+            \caption{Quad X Frame.}
+            \label{fig:quad_frame}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[b]{0.4\textwidth}
+            \includegraphics[width=\textwidth]{pictures/hexa_frame.png}
+            \caption{Hexa X Frame.}
+            \label{fig:hexa_frame}
+        \end{minipage}
+        \vskip\baselineskip
+        \begin{minipage}[b]{0.4\textwidth}
+            \includegraphics[width=\textwidth]{pictures/octo_frame.png}
+            \caption{Octo X Frame.}
+            \label{fig:octo_frame}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[b]{0.4\textwidth}
+            \includegraphics[width=\textwidth]{pictures/octo_quad_frame.png}
+            \caption{Octo Quad X Frame.}
+            \label{fig:octo_quad_frame}
+        \end{minipage}
+        \caption{Drone configurations.}
+        \label{fig:drone_frames}
+    \end{figure}
+
+\subsection{Types of Drone Charging Stations}
+
+    Currently, there is a growing trend towards the concept of charging or docking stations for drones. According to Grlj et al., "A docking station for UAVs is a multipurpose system that enables them to land safely, take off, recharge and/or replace batteries, and transfer data and payload" \cite{grlj_docking_stations}.
+
+    In this context, various types of charging stations can be observed, classified according to the following specifications \cite{grlj_docking_stations}:
 
     \begin{itemize}
-    \item \textbf{Mobility} (fixed and mobile)
-    \item \textbf{Charging method} (two electrodes, multiple electrodes, wireless, etc.)
-    \item \textbf{Automatic battery exchange} (recharging spare batteries)
-    \item \textbf{Positioning} (active and passive)
-    \item \textbf{Drone storage} (yes or no)
-    \item \textbf{Package delivery} (with storage, without storage)
-    \item \textbf{Type of landing} (precision, vision-based, etc.)
-    \item \textbf{Type of landing platform} (self-leveling)
+        \item Mobility (fixed and mobile)
+        \item Charging method (two electrodes, multiple electrodes, wireless, etc.)
+        \item Automatic battery exchange (recharging spare batteries)
+        \item Positioning (active and passive)
+        \item Drone storage (yes or no)
+        \item Package delivery (with storage, without storage)
+        \item Type of landing (precision, vision-based, etc.)
+        \item Type of landing platform (self-leveling)
     \end{itemize}
 
-    The types of charging stations are primarily classified based on mobility, divided into fixed and mobile stations.
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.7\textwidth]{pictures/charging_classification.png}
+        \caption{Drone Charging Stations Classification \cite{grlj_docking_stations}.}
+        \label{fig:charging_classification}
+    \end{figure}
 
-    \subsubsection{Fixed Charging Stations}
-    The main objective of fixed charging stations is to provide a stable platform that allows drones to recharge without needing to move the infrastructure during the operation process. These stations are often simpler in design and are placed in strategic locations, such as cities or industrial areas, where drones need a secure base to recharge, perform maintenance, or even exchange batteries. According to Grlj et al., many of these fixed stations use an active or passive positioning system to ensure the drone lands accurately, and they may feature charging options through electrical contacts or even wireless charging \cite{}.
+\subsubsection{Fixed Charging Stations}
 
-    \subsubsection{Advantages of Fixed Charging Stations}
-    Fixed stations are particularly useful in situations where the drone needs a precise landing in a constant location. These stations can use visual markers, such as ArUco markers, to guide the drone during the final landing phase, ensuring high accuracy in the maneuver. Additionally, they may include self-leveling platform systems to guarantee the stability of the drone upon landing, especially on uneven terrain.
+    The main objective of fixed charging stations is to provide a stable platform that allows drones to recharge without needing to move the infrastructure during the operation process. These stations are often simpler in design and are placed in strategic locations, such as cities or industrial areas. According to Grlj et al., many of these fixed stations use an active or passive positioning system to ensure the drone lands accurately, and they may feature charging options through electrical contacts or even wireless charging \cite{grlj_docking_stations}.
 
-    \subsubsection{Mobile Charging Stations}
-    Mobile charging stations, on the other hand, provide greater operational flexibility, as they are mounted on surface vehicles, such as Unmanned Ground Vehicles (UGVs) or even Unmanned Surface Vehicles (USVs). These stations extend the range of drones by moving to locations that require real-time logistical support, such as in search and rescue operations. An example of this type of solution is the system developed for cooperation between UGVs and UAVs, where the UGV acts as a mobile charging base that can also automatically exchange batteries.
+\subsubsection{Advantages of Fixed Charging Stations}
 
-    Therefore, the classification of charging stations depends on several factors, such as mobility (fixed or mobile), charging method, drone storage capacity, and type of landing platform. Additionally, some stations include storage systems for drones, protecting them from adverse weather conditions. Some of these stations are capable of automatically exchanging batteries, allowing extended operation time without human intervention.
+    Fixed stations are particularly useful in situations where the drone needs a precise landing in a constant location. These stations can use visual markers, such as ArUco [2] markers, to guide the drone during the final landing phase, ensuring high accuracy in the maneuver. Additionally, they may include self-leveling platform systems to guarantee the stability of the drone upon landing, especially on uneven terrain.
 
-    \subsubsection{Advantages of Mobile Charging Stations}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.6\textwidth]{pictures/fixed_charging_1.png}
+        \caption{Fixed docking station with its subsystems. The labels (1–4) show the battery replacement mechanism in operation \cite{grlj_docking_stations}.}
+        \label{fig:fixed_charging}
+    \end{figure}
+
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.6\textwidth]{pictures/fixed_2.png}
+        \caption{Battery replacement docking station \cite{grlj_docking_stations}.}
+        \label{fig:fixed_charging}
+    \end{figure}
+
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.6\textwidth]{pictures/fixed_3.png}
+        \caption{Endless Flyer \cite{grlj_docking_stations}, docking station with battery replacement mechanism. The labels in the center show the different landing stages and the order in which they are realized.}
+        \label{fig:fixed_charging}
+    \end{figure}
+
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.6\textwidth]{pictures/fixed_4.png}
+        \caption{ Docking station with recharging pad with the custom made UAV from \cite{grlj_docking_stations}. In the figure, the QR codes used in the approach and landing phase can be seen .}
+        \label{fig:fixed_charging}
+    \end{figure}
+
+\subsubsection{Mobile Charging Stations}
+
+    Mobile charging stations, on the other hand, provide greater operational flexibility, as they are mounted on surface vehicles, such as Unmanned Ground Vehicles (UGVs) or even Unmanned Surface Vehicles (USVs). These stations extend the range of drones by moving to locations that require real-time logistical support, such as in search and rescue operations \cite{grlj_docking_stations}.
+
+\subsubsection{Advantages of Mobile Charging Stations}
     Mobile stations provide a dynamic alternative for supporting drones in missions that require continuous movement. For example, some stations are mounted on autonomous ground vehicles that can move to locations where the drone requires assistance, significantly increasing the operational range of the UAV. These types of stations can also incorporate complex systems to exchange batteries, such as robotic arms that ensure the safe removal and insertion of the drone's battery without needing to pause the mission for long recharge periods.
+    
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.4\textwidth]{pictures/mobile_1.png}
+        \caption{Moving docking station with storage system and battery replacement system. Labels in the figure (1–4) show the order in which the active positioning mechanism and storing mechanism take place \cite{grlj_docking_stations}.}
+        \label{fig:mobile_charging}
+    \end{figure}
+
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.4\textwidth]{pictures/mobile_2.png}
+        \caption{UGV–UAV proposed moving docking station solution.}
+        \label{fig:mobile_charging}
+    \end{figure}
+
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.6\textwidth]{pictures/mobile_3.png}
+        \caption{USV–UAV landing system.}
+        \label{fig:mobile_charging}
+    \end{figure}
+
 
 \subsection{Automatic Drawer Mechanism}
     \subsubsection{Types of Mechanisms}
@@ -61,19 +149,41 @@
     
     \paragraph{Belt and V-Pulley} This mechanism involves a belt shaped like a V and a pulley, which ensures good friction and prevents slipping while moving the drawer. The belt and V-pulley mechanism is simple, inexpensive, and easy to source, which made it the choice for this project. It offers a balance between precision and accessibility, being a practical solution for the needs of an automatic drone storage drawer. Its main disadvantage is that it may lack the precise positioning capabilities of toothed pulleys, but for the current application, this is acceptable.
 
+    
 \subsection{Motors and Propellers}
-    \subsubsection{Motor Selection}
-    The selection of motors and propellers for a drone is based primarily on the total weight that the drone must carry, which determines the thrust required. Brushless motors are commonly used in drones due to their efficiency, reliability, and power-to-weight ratio. The specific motors chosen for this project are A2212 1000KV Brushless Motors, which are popular for their balance between power and efficiency.
-    
-    The thrust required for a drone must be approximately double the total weight of the drone to ensure stable flight. For a drone weighing 2 kg, the motors must provide at least 4 kg of thrust in total. The A2212 1000KV motors are capable of providing sufficient thrust when paired with appropriate propellers, making them suitable for small- to medium-sized drones. The propellers should be chosen based on the motor's specifications, balancing thrust, efficiency, and maneuverability.
-    
-    \paragraph{Comparison with Other Motors}
-    	extbf{2216 900KV Motors}: These motors are slightly larger than the A2212 and provide more torque, making them suitable for heavier drones or those needing more stability. They are often used with larger propellers, which allows for increased thrust but decreases agility.
-    
-    	extbf{1806 2300KV Motors}: These motors are designed for smaller, lighter drones or racing drones, providing higher RPMs and increased speed. They are not suitable for drones carrying heavy payloads, as they prioritize speed over thrust.
-    
-    The choice of motor is ultimately determined by the drone's intended purpose. The A2212 1000KV motors offer a good compromise for general use, providing enough thrust for stability while maintaining efficiency.
 
+    \subsubsection{Motors}
+    
+    Motors are an essential component for the flight of a drone, and they are typically brushless motors due to their high efficiency and durability. According to the guide, the selection of the motor depends on factors such as the drone's size, total weight, and the desired type of flight. Key considerations include:
+    
+    \begin{itemize}
+        \item \textbf{Kv Rating:} Indicates the revolutions per minute (RPM) per applied volt without load. A lower Kv provides more torque, making it ideal for larger drones with bigger propellers.
+        \item \textbf{Compatibility:} The motor must be compatible with the electronic speed controller (ESC) and the propellers.
+        \item \textbf{Mounting:} The drone's frame design should allow for a secure installation of the motors.
+    \end{itemize}
+    
+    \subsubsection{Propellers}
+    
+    Propellers generate the necessary lift for flight. According to the guide, they are a critical factor for the drone's performance and should be selected based on the motors and the size of the drone. Important characteristics include:
+    
+    \begin{itemize}
+        \item \textbf{Size (diameter and pitch):} Larger propellers generate more lift but require more powerful motors. The "pitch" determines how much air the propeller displaces per revolution.
+        \item \textbf{Material:} Propellers can be made of plastic, wood, or carbon fiber. Carbon fiber propellers are lighter and stronger, making them ideal for high-performance drones.
+        \item \textbf{Balancing:} Poorly balanced propellers can cause vibrations, affecting stability and the quality of sensor data.
+    \end{itemize}
+    
+    \subsubsection{LiPo Batteries}
+    
+    LiPo (Lithium Polymer) batteries are the primary energy source for most drones. They are lightweight, high-capacity, and capable of delivering the current required by the motors and other components. Key aspects include:
+    
+    \begin{itemize}
+        \item \textbf{Cells (S):} Each cell has a nominal voltage of 3.7V. For example, a 3S battery has 11.1V (3 × 3.7V). The number of cells must be compatible with the motors and ESCs.
+        \item \textbf{Capacity (mAh):} Determines the flight time. Higher capacity provides longer flights but also increases weight.
+        \item \textbf{Discharge Rate (C):} Indicates how much current the battery can safely provide. It must meet the motors' requirements.
+        \item \textbf{Charging and Safety:} LiPo batteries require specific chargers and must be handled carefully to prevent fires.
+    \end{itemize}
+    
+    
     
     
 

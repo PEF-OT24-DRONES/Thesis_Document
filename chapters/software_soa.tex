@@ -62,44 +62,50 @@ A pesar de su utilidad durante las etapas de preparación y pruebas, el sistema 
 
     Ubuntu es un sistema operativo de código abierto basado en Linux que ha ganado popularidad por su estabilidad y amplia comunidad de soporte, es importante saber que dentro de Ubuntu y sus versiones, las versiones pares son las que tienen mayor estabilidad. Según la documentación oficial de Ubuntu, este sistema es \textit{“designed for security, reliability, and ease of use”} \cite{ubuntu_docs}. En el contexto de los companion computers para drones y otros vehículos autónomos, Ubuntu se utiliza frecuentemente debido a su compatibilidad con herramientas de robótica como ROS (Robot Operating System), lo que facilita la integración y desarrollo de software avanzado de control y automatización.
 
-    Ubuntu ofrece soporte para arquitecturas ARM, lo que permite su instalación y ejecución en dispositivos como la Raspberry Pi 4 y 5. Esta capacidad es fundamental para proyectos que requieren procesamiento local eficiente, manejo de datos de sensores y comunicación en tiempo real. Adicionalmente, la flexibilidad de Ubuntu permite la personalización de su entorno para adaptarse a las necesidades específicas del proyecto, ya sea para ejecutar nodos de control de vuelo o procesamiento de imágenes en tiempo real.
+    Ubuntu ofrece soporte para arquitecturas ARM, lo que permite su instalación y ejecución en dispositivos como la Raspberry Pi 4 y 5. Esta capacidad es fundamental para proyectos que requieren procesamiento local eficiente, manejo de datos de sensores y comunicación en tiempo real. Adicionalmente, la flexibilidad de Ubuntu permite la personalización de su entorno para adaptarse a las necesidades específicas del proyecto, ya sea para ejecutar nodos de control de vuelo o procesamiento de imágenes en tiempo real \cite{ubuntu_docs}.
 
 
     \subsubsection{Raspberry Pi OS}
 
     Raspberry Pi OS, es el sistema operativo oficial desarrollado y optimizado para dispositivos Raspberry Pi. La documentación de Raspberry Pi OS lo describe como \textit{“a Debian-based operating system specifically tuned for the Raspberry Pi hardware”} \cite{raspbian_docs}. Su principal ventaja es su optimización para el hardware de Raspberry Pi, lo que garantiza un rendimiento óptimo y un uso eficiente de los recursos disponibles.
 
-    Raspbian incluye una serie de herramientas preinstaladas que facilitan el desarrollo y prototipado, haciendo que sea una opción preferida para proyectos educativos y de investigación. La compatibilidad con Python y otras bibliotecas de programación facilita la implementación de scripts y software necesarios para el control de drones y otras aplicaciones robóticas.
+    Raspbian incluye una serie de herramientas preinstaladas que facilitan el desarrollo y prototipado, haciendo que sea una opción preferida para proyectos educativos y de investigación. La compatibilidad con Python y otras bibliotecas de programación facilita la implementación de scripts y software necesarios para muchas aplicaciones de robótica.
 
-    En comparación con otros sistemas operativos, Raspbian es ligero y permite un arranque rápido, lo cual es beneficioso en escenarios donde se requiere un inicio rápido del sistema. Además, la comunidad activa de usuarios de Raspberry Pi proporciona recursos y asistencia que resultan invaluables para la resolución de problemas y la optimización del software.
+    En comparación con otros sistemas operativos, Raspbian es ligero y permite un \textbf{arranque rápido}, lo cual es beneficioso en escenarios donde se requiere un inicio rápido del sistema.
 
 
 \subsection{ROS2 Distributions}
-    Las distribuciones de ROS 2 (Robot Operating System 2) proporcionan entornos estandarizados para el desarrollo de aplicaciones robóticas, cada una adaptada a diferentes necesidades y capacidades de hardware. Una de las ventajas de ROS 2 es su capacidad para facilitar la comunicación entre distribuciones mediante el uso de topics, lo que permite que nodos en distintas versiones de ROS 2 se comuniquen y colaboren de manera efectiva en un mismo proyecto \cite{ros_docs}. En la siguiente sección se abordarán más detalles sobre el funcionamiento general de ROS 2 y su importancia en proyectos de robótica.
+    Las distribuciones de ROS 2 (Robot Operating System 2) proporcionan entornos estandarizados para el desarrollo de aplicaciones robóticas, cada una adaptada a diferentes necesidades y capacidades de hardware. Una de las ventajas de ROS 2 es su capacidad para \textbf{facilitar la comunicación entre distribuciones} mediante el uso de topics, lo que permite que nodos en distintas versiones de ROS 2 se comuniquen y colaboren de manera efectiva en un mismo proyecto \cite{ros_docs}. En la siguiente sección se abordarán más detalles sobre las distribuciones de ROS 2 más recientes y estables.
 
-    En el contexto de companion computers como la Raspberry Pi, las distribuciones específicas de ROS 2 se eligen basándose en la versión de hardware y la compatibilidad de software. La Raspberry Pi 4, por ejemplo, es adecuada para ejecutar la distribución ROS 2 Humble \cite{raspberry_docs}, mientras que la Raspberry Pi 5 puede correr la distribución más reciente, ROS 2 Jazzy Jalisco \cite{ros_docs}. A continuación, se describen las principales características de cada distribución y algunas diferencias importantes.
     \subsubsection{Distribución Humble}
 
-    La distribución ROS 2 Humble es conocida por su estabilidad y soporte a largo plazo (LTS), lo que la convierte en una opción popular para proyectos que requieren fiabilidad y consistencia en el tiempo. Esta versión es ideal para proyectos que utilizan hardware como la Raspberry Pi 4, ya que está optimizada para correr de manera eficiente en dispositivos con arquitecturas ARM \cite{humble_documentation}.
-
-    Características principales de ROS 2 Humble:
-
-    Soporte a largo plazo (LTS), garantizando actualizaciones y soporte extendido.
-    Mayor estabilidad en la comunicación entre nodos.
-    Compatibilidad con una amplia gama de paquetes y bibliotecas de ROS.
-    Recomendado para proyectos de investigación y aplicaciones de largo plazo.
-
+    La distribución \textbf{ROS 2 Humble Hawksbill} es conocida por ser una versión con \textbf{soporte a largo plazo (LTS)}, lo que garantiza actualizaciones constantes y confiables. Esta distribución está diseñada para proyectos que requieren estabilidad y una alta compatibilidad con diferentes sistemas y paquetes. Es ideal para hardware como la \textbf{Raspberry Pi 4} y es compatible con \textbf{Ubuntu 22.04} y versiones anteriores, como Ubuntu 20.04, lo que la hace accesible para configuraciones de hardware más estándar.
+    
+    De acuerdo con la documentación oficial de ROS 2, Humble es una de las versiones más recomendadas para proyectos que buscan consistencia a lo largo del tiempo, debido a su enfoque en evitar cambios disruptivos \cite{humble_documentation}.
+    
+    \paragraph{Características principales:}  
+    \begin{itemize}
+        \item \textbf{LTS (Long-Term Support):} Asegura soporte prolongado para actualizaciones y corrección de errores.
+        \item \textbf{Estabilidad:} Mejoras comprobadas en la comunicación entre nodos, garantizando confiabilidad.
+        \item \textbf{Compatibilidad amplia:} Funciona con la mayoría de las bibliotecas y paquetes existentes en el ecosistema de ROS 2.
+        \item \textbf{Optimización para ARM:} Ideal para plataformas como la Raspberry Pi 4, aprovechando recursos limitados de manera eficiente.
+    \end{itemize}
+    
+    En general, Humble es la opción preferida para quienes priorizan estabilidad en sus proyectos de investigación o aplicaciones a largo plazo.
+    
     \subsubsection{Distribución Jazzy}
-
-    La distribución ROS 2 Jazzy Jalisco es una de las más recientes y está diseñada para aprovechar las capacidades avanzadas del hardware más moderno, como la Raspberry Pi 5. Esta versión incluye mejoras en rendimiento y nuevas funcionalidades que facilitan el desarrollo de aplicaciones robóticas más complejas y eficientes \cite{jazzy_documentation}.
-
-    Características principales de ROS 2 Jazzy Jalisco:
-
-    Introducción de características experimentales y optimizaciones de rendimiento.
-    Mejoras en la latencia y el manejo de la comunicación entre nodos.
-    Integración mejorada con nuevas herramientas de simulación y depuración.
-    Adecuado para desarrolladores que buscan utilizar las últimas funcionalidades de ROS 2 en proyectos avanzados.
-    Ambas distribuciones comparten la capacidad de usar el middleware DDS (Data Distribution Service) para la comunicación entre nodos, permitiendo la creación de sistemas distribuidos y escalables. La elección entre ROS 2 Humble y Jazzy Jalisco dependerá de las especificaciones de hardware disponibles y las necesidades específicas del proyecto.
+    
+    La distribución \textbf{ROS 2 Jazzy Jalisco}, más reciente que Humble, está diseñada para sacar ventaja del hardware más moderno, como la \textbf{Raspberry Pi 5}, y es compatible con sistemas operativos avanzados como \textbf{Ubuntu 24.04}. Esta distribución incluye mejoras significativas en rendimiento y nuevas funcionalidades, pero se considera más experimental en comparación con versiones LTS.
+    
+    Según la documentación de Jazzy, su principal enfoque es facilitar el desarrollo de aplicaciones robóticas que aprovechen las últimas herramientas y simuladores, además de mejorar la velocidad en la comunicación entre nodos \cite{jazzy_documentation}.
+    
+    \paragraph{Características principales:}  
+    \begin{itemize}
+        \item \textbf{Nuevas funcionalidades:} Introducción de características experimentales y ajustes de rendimiento.
+        \item \textbf{Menor latencia:} Comunicación más rápida entre nodos, clave para aplicaciones en tiempo real.
+        \item \textbf{Integración avanzada:} Mejoras en simulación y depuración, aprovechando herramientas como Gazebo y Rviz.
+        \item \textbf{Orientación al hardware moderno:} Diseñada para dispositivos como la Raspberry Pi 5, que ofrecen mayor capacidad de procesamiento.
+    \end{itemize}
 
     \begin{figure}[h!]
         \centering
@@ -118,15 +124,38 @@ A pesar de su utilidad durante las etapas de preparación y pruebas, el sistema 
         \end{minipage}
     \end{figure}
 
-\subsection{ROS2 Documentation}
-    ROS 2 (Robot Operating System 2) es un conjunto de bibliotecas y herramientas que permiten a los desarrolladores crear aplicaciones de robótica. Es una evolución de ROS 1, diseñada para abordar limitaciones en términos de escalabilidad, seguridad y soporte a sistemas en tiempo real. ROS 2 ofrece un marco de trabajo robusto que facilita la implementación de sistemas distribuidos y permite la comunicación entre múltiples nodos a través de una arquitectura basada en el middleware DDS (Data Distribution Service) \cite{ros_docs}. A continuación, se detallan los beneficios y la estructura de ROS 2.
+\subsection{Arquitectura de ROS 2}
 
-    \subsubsection{Benefits of ROS2}
-
-    ROS 2 introduce mejoras significativas que lo hacen más adecuado para aplicaciones avanzadas de robótica. Entre los principales beneficios se encuentran:
-
-    \begin{itemize} \item Multithreading y manejo en tiempo real: ROS 2 permite la ejecución de múltiples nodos en paralelo, lo que mejora el rendimiento en aplicaciones complejas. \item Comunicación mediante topics, nodos y servicios: Facilita la creación de sistemas distribuidos donde los nodos se comunican de forma eficiente. \item Archivos de lanzamiento (launchfiles): Simplifican la ejecución de múltiples nodos y configuraciones mediante un solo archivo. \item Baja latencia y comunicación rápida: La arquitectura basada en DDS proporciona una comunicación confiable y de baja latencia, esencial para aplicaciones críticas. \item Diferentes tipos de mensajes: Soporte para mensajes personalizados y definidos por el usuario. \end{itemize}
-
+    ROS 2 (Robot Operating System 2) es un conjunto de bibliotecas y herramientas diseñadas para desarrollar aplicaciones de robótica. Es la evolución de ROS 1, creada para resolver problemas relacionados con la escalabilidad, seguridad y soporte a sistemas en tiempo real. ROS 2 utiliza una arquitectura basada en el middleware \textbf{DDS (Data Distribution Service)}, que facilita la comunicación entre nodos en sistemas distribuidos, asegurando interoperabilidad y un bajo tiempo de respuesta \cite{ros_docs}.  
+    
+    \subsubsection{Conceptos básicos de ROS 2}
+    
+    ROS 2 está organizado en torno a varios elementos fundamentales que permiten la interacción entre las diferentes partes del sistema robótico. Estos elementos, que definen su arquitectura modular, son esenciales para comprender cómo se estructura y funciona un sistema basado en ROS 2 \cite{ros_docs}:  
+    
+    \begin{itemize}
+        \item \textbf{Nodos:} Son las unidades básicas de ejecución en ROS 2. Cada nodo cumple una función específica, como recopilar datos de un sensor o controlar un actuador. Los nodos están diseñados para ser independientes y comunicarse entre sí mediante topics, servicios o acciones.  
+        \item \textbf{Messages (Mensajes):} Son estructuras de datos que se envían entre nodos para compartir información. Los mensajes tienen un formato definido que asegura que todos los nodos comprendan el contenido.  
+        \item \textbf{Topics:} Representan canales de comunicación para el intercambio de mensajes entre nodos. La comunicación mediante topics es asincrónica, lo que permite que los nodos publiquen y reciban información sin necesidad de esperar respuestas inmediatas.  
+        \item \textbf{Servicios (Services):} Permiten la comunicación síncrona entre nodos. A diferencia de los topics, los servicios funcionan en un esquema de solicitud y respuesta, lo cual es útil para operaciones específicas.  
+        \item \textbf{Actions:} Son similares a los servicios, pero están diseñados para operaciones de larga duración. Permiten a los nodos recibir actualizaciones del progreso de una tarea y cancelarla si es necesario.  
+        \item \textbf{Launch Files:} Facilitan la configuración y el inicio simultáneo de varios nodos. Esto simplifica la gestión de aplicaciones complejas, especialmente en entornos distribuidos.  
+        \item \textbf{Parámetros:} Son valores configurables que los nodos utilizan para ajustar su comportamiento sin necesidad de modificar el código.  
+    \end{itemize}
+    
+    La combinación de estos elementos permite que los sistemas robóticos diseñados en ROS 2 sean altamente escalables y flexibles, adaptándose tanto a proyectos pequeños como a sistemas complejos.  
+    
+    % Imagen de la arquitectura de ROS 2
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.6\textwidth]{pictures/ros2_arch.png}
+        \caption{Arquitectura de ROS 2 \cite{ros_docs}.}
+        \label{fig:ros2_architecture}
+    \end{figure}
+    
+    \subsubsection{Beneficios clave de ROS 2}
+    
+    La arquitectura de ROS 2 trae consigo varias ventajas que la hacen ideal para sistemas robóticos distribuidos y modernos. Entre los beneficios clave se encuentran los siguientes \cite{ros_docs}:  
+    
     \begin{table}[h!]
     \centering
     \caption{Beneficios clave de ROS 2}
@@ -134,72 +163,64 @@ A pesar de su utilidad durante las etapas de preparación y pruebas, el sistema 
     \hline
     \textbf{Beneficio} & \textbf{Descripción} \\
     \hline
-    Multithreading & Permite la ejecución de nodos en paralelo, optimizando el rendimiento \\
+    Multithreading & Permite la ejecución de nodos en paralelo, optimizando el rendimiento. \\
     \hline
-    Uso de topics & Comunicación asincrónica entre nodos para el intercambio de datos \\
+    Uso de topics & Comunicación asincrónica entre nodos para el intercambio de datos. \\
     \hline
-    Nodos y servicios & Los nodos son unidades de ejecución que interactúan mediante servicios y topics \\
+    Nodos y servicios & Los nodos interactúan mediante servicios y topics para tareas específicas. \\
     \hline
-    Archivos de lanzamiento (launchfiles) & Permiten la configuración y ejecución de múltiples nodos simultáneamente \\
+    Archivos de lanzamiento (Launch Files) & Configuran y ejecutan múltiples nodos al mismo tiempo. \\
     \hline
-    Comunicación rápida & Basada en DDS, proporciona comunicación de baja latencia \\
+    Comunicación rápida & Basada en DDS, proporciona comunicación de baja latencia entre nodos. \\
     \hline
-    Mensajes personalizados & Soporte para definir y usar mensajes específicos para aplicaciones personalizadas \\
+    Mensajes personalizados & Permite definir y utilizar estructuras específicas para cada aplicación. \\
+    \hline
+    Soporte a tiempo real & Habilita aplicaciones críticas donde el tiempo de respuesta es esencial. \\
     \hline
     \end{tabular}
-    \label{table}
-    \end{table}
+    \label{table:benefits}
+    \end{table}    
 
-    \subsubsection{ROS2 Architecture}
-
-    Dentro de la documentación oficial de ROS 2 se habla de que un aspecto central de esta arquitectura son los nodos, que actúan como las unidades básicas de procesamiento en un sistema de ROS 2. Los nodos se comunican entre sí mediante topics, que permiten un intercambio de información asincrónico y eficiente.
-
-    Los mensajes en ROS 2 definen la estructura de los datos que se transmiten a través de topics. Estos mensajes pueden ser de tipos predefinidos o personalizados, adaptándose a las necesidades de la aplicación. Los servicios, por otro lado, permiten una comunicación sincrónica entre nodos, donde un nodo solicita una acción específica y otro nodo responde con el resultado.
-
-    Los archivos de lanzamiento, o launchfiles, son documentos que permiten ejecutar múltiples nodos y configurar parámetros de forma simultánea. Facilitan la gestión de sistemas complejos, ya que centralizan la configuración en un solo archivo, lo que simplifica la puesta en marcha de aplicaciones robóticas \cite{ros_docs}.
-
-    Finalmente, ROS 2 admite la configuración y uso de parámetros, que son variables accesibles desde los nodos para ajustar comportamientos en tiempo de ejecución sin necesidad de recompilar el código.
-
-    \begin{figure}[h!] 
-    \centering 
-    \includegraphics[width=0.8\textwidth]{pictures/ros2_arch.png} % Imagen ilustrativa de la estructura de ROS 2 
-    \caption{Estructura de ROS 2, mostrando la interacción de nodos, topics, servicios y launchfiles.}
-    \label{fig} 
-    \end{figure}
 
 \subsection{Computer Vision}
+
+    La visión por computadora es una rama de la programación que permite a los sistemas interpretar y procesar información visual del entorno. Este campo es clave en aplicaciones que requieren análisis de imágenes y videos en tiempo real, como la navegación autónoma de robots, detección de objetos y sistemas de inteligencia artificial. Para facilitar el desarrollo de estas aplicaciones, existen herramientas y bibliotecas especializadas como OpenCV, que juega un papel fundamental en la implementación práctica de visión por computadora \cite{opencv_docs}.  
     
-
-    La visión por computadora es un campo de la programación que permite a los sistemas interpretar y procesar información visual del mundo que los rodea. Es esencial para aplicaciones que requieren el análisis de imágenes y videos en tiempo real, como la navegación autónoma de vehículos, detección de objetos, inteligencia artificial, etc.
-
     \subsubsection{OpenCV Library}
-
-    OpenCV (Open Source Computer Vision Library) es una biblioteca de código abierto ampliamente utilizada en la industria y en la investigación académica para el desarrollo de aplicaciones de visión por computadora. De acuerdo con la documentación oficial, OpenCV es \textit{“an open-source computer vision and machine learning software library containing more than 2500 optimized algorithms”} \cite{opencv_docs}. Esta biblioteca proporciona herramientas para tareas como el procesamiento de imágenes, reconocimiento de objetos, seguimiento de movimiento, entre otras, y es compatible con múltiples lenguajes de programación como Python, C++ y más.
-
-    OpenCV es conocida por su flexibilidad y facilidad de uso, lo que la hace popular tanto entre principiantes como entre expertos en el área de la visión por computadora. La biblioteca incluye funciones de alto rendimiento que pueden ser ejecutadas en tiempo real, haciendo que sea una opción ideal para proyectos de robótica y sistemas autónomos \cite{arevalo2004}.
-
+    
+    OpenCV (Open Source Computer Vision Library) es una de las bibliotecas más utilizadas en la industria y en la academia para el desarrollo de soluciones de visión por computadora. Según su documentación oficial, OpenCV es \textit{“an open-source computer vision and machine learning software library containing more than 2500 optimized algorithms”} \cite{opencv_docs}. Estas herramientas permiten realizar tareas como procesamiento de imágenes, reconocimiento de objetos y seguimiento de movimiento, siendo compatibles con lenguajes de programación como Python y C++.  
+    
+    Gracias a su flexibilidad y facilidad de uso, OpenCV se adapta tanto a principiantes como a expertos. Además, sus algoritmos optimizados permiten ejecutar procesos en tiempo real, lo que la convierte en una herramienta ideal para proyectos de robótica y aplicaciones autónomas \cite{opencv_docs}.  
+    
     \subsubsection{Camera Calibration}
-
-    La calibración de cámaras es un proceso crucial en la visión por computadora, necesario para corregir distorsiones inherentes a las lentes de las cámaras y obtener mediciones precisas del entorno. Este proceso implica la obtención de parámetros intrínsecos y extrínsecos que permiten mapear las coordenadas 2D de una imagen a coordenadas 3D en el mundo real.
-
+    
+    Antes de implementar cualquier sistema de visión por computadora en aplicaciones que demanden precisión espacial, es fundamental realizar una calibración adecuada de las cámaras utilizadas. Este proceso corrige las distorsiones inherentes a las lentes y permite obtener mediciones precisas del entorno. Según la documentación de OpenCV, \textit{“Camera calibration is the process of estimating the parameters of the lens and the image sensor of an imaging device”} \cite{opencv_calib3d}.  
+    
+    La calibración implica determinar parámetros intrínsecos (como la distancia focal y el punto principal) y extrínsecos (relativos a la posición y orientación de la cámara) que permiten mapear las coordenadas 2D de las imágenes capturadas a coordenadas 3D del mundo real.  
+    
     \begin{figure}[h!] 
-    \centering 
-    \includegraphics[width=0.6\textwidth]{pictures/distortions.png} % Imagen de distorciones de barril y cojín inherentes a las cámaras 
-    \caption{Tipos de distorciones de cámaras}
-    \label{fig} 
-    \end{figure}
-
-    Según la documentación de OpenCV, \textit{“Camera calibration is the process of estimating the parameters of the lens and the image sensor of an imaging device”} \cite{opencv_calib3d}. OpenCV proporciona herramientas y funciones que permiten realizar este proceso de manera eficiente mediante la detección de patrones en imágenes, como tableros de ajedrez o círculos.
-
-    El flujo típico de calibración de una cámara con OpenCV incluye capturar imágenes de un patrón conocido, identificar los puntos de interés en cada imagen y utilizar algoritmos de optimización para calcular los parámetros de la cámara. Estos parámetros incluyen la distancia focal, el punto principal, y los coeficientes de distorsión radial y tangencial \cite{opencv_tutorial_calib}.
-
-    Además, se pueden utilizar los resultados de la calibración para corregir la distorsión en imágenes y videos, mejorando así la precisión de las aplicaciones de visión por computadora y el uso para calcular la pose o posiciónes de algunos objetos de interés. El uso de una cámara calibrada es fundamental en proyectos que requieren un análisis espacial preciso, como la navegación autónoma de robots y drones.
-
+        \centering 
+        \includegraphics[width=0.6\textwidth]{pictures/distortions.png} % Imagen de distorsiones de barril y cojín inherentes a las cámaras 
+        \caption{Tipos de distorsiones en las cámaras.} 
+        \label{fig:distortions} 
+    \end{figure}  
+    
+    OpenCV proporciona funciones que permiten realizar este proceso de manera eficiente mediante la detección de patrones en imágenes, como tableros de ajedrez o arreglos de círculos. El flujo típico de calibración incluye:  
+    
+    \begin{itemize}
+        \item Capturar imágenes de un patrón conocido desde diferentes ángulos.  
+        \item Identificar puntos de interés en las imágenes capturadas (esquinas del patrón).  
+        \item Usar algoritmos de optimización para calcular parámetros intrínsecos y coeficientes de distorsión.  
+    \end{itemize}  
+    
+    El resultado de la calibración permite corregir las distorsiones en imágenes y videos, mejorando la precisión de las aplicaciones de visión por computadora. Esto es especialmente útil en proyectos que requieren análisis espacial preciso, como la navegación autónoma y el posicionamiento de objetos en tiempo real.  
+    
     \begin{figure}[h!] 
-    \centering 
-    \includegraphics[width=0.4\textwidth]{pictures/calib_pattern.jpg} % Imagen ilustrativa de un tablero de ajedrez para calibración de cámaras 
-    \caption{Patrón de tablero de ajedrez utilizado en la calibración de cámaras con OpenCV.} \label{fig} 
-    \end{figure}
+        \centering 
+        \includegraphics[width=0.4\textwidth]{pictures/calib_pattern.jpg} % Imagen ilustrativa de un tablero de ajedrez para calibración de cámaras 
+        \caption{Patrón de tablero de ajedrez utilizado en la calibración de cámaras con OpenCV.} 
+        \label{fig:calib_pattern} 
+    \end{figure}  
 
 \subsection{What is an ArUco?}
     ArUco, cuyo nombre proviene de la combinación de "Artificial" y "Uco" (por la Universidad de Córdoba, donde se desarrolló), es una biblioteca de código abierto ampliamente reconocida en el ámbito de la visión por computadora para la detección de marcadores fiduciales en imágenes. Esta tecnología es fundamental para la estimación de la pose de la cámara con respecto a los marcadores cuando la cámara ha sido previamente calibrada. De acuerdo con la documentación, \textit{“ArUco is an OpenSource library for detecting squared fiducial markers in images”} \cite{aruco_docs}. La detección de estos marcadores es crucial en aplicaciones que requieren una estimación precisa de la posición y orientación de objetos en el espacio tridimensional.
@@ -209,21 +230,39 @@ A pesar de su utilidad durante las etapas de preparación y pruebas, el sistema 
     Los marcadores ArUco se originaron como una solución para superar las limitaciones de otras tecnologías de detección de patrones, colores o figuras. El objetivo era desarrollar una técnica que proporcionara alta fiabilidad incluso bajo oclusiones parciales y condiciones de iluminación variables. Los primeros estudios se centraron en la generación automática de marcadores con un diseño que asegurara su unicidad y facilidad de detección. Estos marcadores están compuestos por un patrón binario rodeado de un borde negro, lo que mejora su visibilidad y robustez en diferentes condiciones de iluminación \cite{aruco_docs}.
 
     \begin{figure}[h!] 
-    \centering 
-    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Ejemplo de marcadores ArUco 
-    \caption{ArUco example} 
-    \label{fig} 
+        \centering 
+        \includegraphics[width=0.8\textwidth]{pictures/arucos_ids.png} % Ejemplo de pose de un marcador ArUco siendo detectada 
+        \caption{ArUco's and ID's examples} 
+        \label{fig} 
     \end{figure}
 
     \subsubsection{Aplicaciones Comunes}
 
     Los marcadores ArUco se utilizan en una variedad de aplicaciones, que incluyen la calibración de cámaras, la realidad aumentada, y el control y navegación de robots y drones. Una de las ventajas de usar ArUco es su capacidad para actuar como puntos de referencia en entornos 3D, permitiendo a los sistemas de visión por computadora calcular la pose de la cámara. Según la documentación, \textit{“Markers can be used as 3D landmarks for camera pose estimation”} \cite{aruco_docs_pdf}. Esta característica hace que los marcadores sean esenciales en sistemas de seguimiento y posicionamiento donde la precisión es crítica.
 
-    \begin{figure}[h!] 
-    \centering 
-    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Ejemplo de pose de un marcador ArUco siendo detectada 
-    \caption{ArUco pose estimation} 
-    \label{fig} 
+    \begin{figure}
+        \centering
+        \begin{minipage}{0.3\textwidth}
+            \centering
+            \includegraphics[width=0.8\textwidth]{pictures/calibration_aruco.png}
+            \caption{Camera CAlibration with ArUco}
+            \label{fig:imagen1}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.3\textwidth}
+            \centering
+            \includegraphics[width=0.8\textwidth]{pictures/augmented_reality.jpg}
+            \caption{Augmented Reality with ArUco}
+            \label{fig:imagen2}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.3\textwidth}
+            \centering
+            \includegraphics[width=0.8\textwidth]{pictures/tracking_aruco.jpg}
+            \caption{Real Time Tracking with ArUco}
+            \label{fig:imagen2}
+        \end{minipage}
+        \caption{Common applications of ArUco markers.}
     \end{figure}
 
     \subsubsection{Formatos de Marcadores}
@@ -234,25 +273,19 @@ A pesar de su utilidad durante las etapas de preparación y pruebas, el sistema 
 
     \begin{figure}[h!] 
     \centering 
-    %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Ejemplo de marcador ArUco con su formato binario 
-    \caption{Imagen explicación de bits en ArUco} 
+    \includegraphics[width=0.8\textwidth]{pictures/bits_aruco.png} % Ejemplo de marcador ArUco con su formato binario 
+    \caption{Bits of a 7x7 ArUco marker} 
     \label{fig} 
     \end{figure}
 
 \subsection{Aruco vs Embedded Aruco}
-    Los marcadores ArUco y los marcadores Embedded ArUco (e-ArUco) son tecnologías utilizadas en visión por computadora para tareas de detección y estimación de pose. Aunque ambos comparten una base común en cuanto a su diseño y algoritmos de detección, tienen diferencias importantes que los hacen adecuados para distintas aplicaciones, especialmente en el contexto de operaciones de alta precisión y entornos desafiantes.
+    Los marcadores ArUco y los marcadores Embedded ArUco (e-ArUco) son tecnologías utilizadas en visión por computadora para tareas de detección y estimación de pose. Aunque ambos comparten una base común en cuanto a su diseño y algoritmos de detección, tienen diferencias importantes que los hacen adecuados para distintas aplicaciones, especialmente en el contexto de operaciones de alta precisión.
 
     \subsubsection{Diferencias Principales}
 
     La principal diferencia entre los marcadores ArUco tradicionales y los marcadores Embedded ArUco radica en la optimización de estos últimos para detecciones de alta precisión en un rango amplio de distancias. Según Khazetdinov et al. (2021), \textit{“a new type of fiducial marker called embedded ArUco (e-ArUco) was developed specially for a task of robust marker detection for a wide range of distances”} \cite{khazetdinov2021}. Los e-ArUco están diseñados para mantener su detectabilidad y precisión en escenarios donde los marcadores ArUco estándar podrían no ser tan efectivos, como cuando se requiere una precisión milimétrica en aplicaciones de aterrizaje de UAVs.
 
     Otra diferencia significativa es que los marcadores e-ArUco están diseñados para mejorar la robustez de la detección, minimizando los errores que podrían surgir por condiciones de iluminación cambiantes y oclusiones parciales. Estos marcadores se basan en los algoritmos de detección de ArUco, lo que permite su implementación sin cambios sustanciales en los sistemas existentes basados en ArUco \cite{khazetdinov2021}.
-
-    \subsubsection{Casos de Uso}
-
-    Los marcadores ArUco tradicionales como se mencionó en la sección anterior, se utilizan comúnmente en aplicaciones de realidad aumentada, estimacion de poses y navegación de robots y drones. Estos marcadores son versátiles y se pueden adaptar a diversas aplicaciones que no requieren una precisión extrema, siendo ideales para proyectos de investigación y desarrollo.
-
-    Por otro lado, los marcadores Embedded ArUco (e-ArUco) están específicamente diseñados para situaciones donde la precisión es más crítica. Un ejemplo destacado es el uso en el aterrizaje de UAVs (vehículos aéreos no tripulados), donde se necesita una detección precisa y confiable a diferentes distancias. En un estudio realizado por Khazetdinov et al., tuvo como resultado \textit{“an average landing accuracy was 2.03 cm with a standard deviation of 1.53 cm”} al usar marcadores e-ArUco y un algoritmo de aterrizaje implementado en ROS y probado en el simulador Gazebo \cite{khazetdinov2021}. Esta capacidad hace que los e-ArUco sean ideales para entornos donde se requiere una precisión milimétrica, como en operaciones de aterrizaje autónomo de alta precisión.
 
     \begin{figure}[h!]
         \centering
@@ -276,7 +309,16 @@ A pesar de su utilidad durante las etapas de preparación y pruebas, el sistema 
             \caption{Sobreposición del ArUco Chico en el centro del Grande}
             \label{fig:imagen2}
         \end{minipage}
+        \caption{Proceso de generación de marcadores e-ArUco.}
     \end{figure}
+
+    \subsubsection{Casos de Uso}
+
+    Los marcadores ArUco tradicionales como se mencionó en la sección anterior, se utilizan comúnmente en aplicaciones de realidad aumentada, estimacion de poses y navegación de robots y drones. Estos marcadores son versátiles y se pueden adaptar a diversas aplicaciones que no requieren una precisión extrema, siendo ideales para proyectos de localización, realidad aumentada, etc.
+
+    Por otro lado, los marcadores Embedded ArUco (e-ArUco) están específicamente diseñados para situaciones donde la precisión es más crítica. Un ejemplo destacado es el uso en el aterrizaje de UAVs (vehículos aéreos no tripulados), donde se necesita una detección precisa y confiable a diferentes distancias. En un estudio realizado por Khazetdinov et al., tuvo como resultado \textit{“an average landing accuracy was 2.03 cm with a standard deviation of 1.53 cm”} al usar marcadores e-ArUco y un algoritmo de aterrizaje implementado en ROS y probado en el simulador Gazebo \cite{khazetdinov2021}. Esta capacidad hace que los e-ArUco sean ideales para entornos donde se requiere una precisión milimétrica, como en operaciones de aterrizaje autónomo de alta precisión.
+
+    
 
 \subsection{Aruco Detection}
     La detección de marcadores ArUco es un proceso esencial en la visión por computadora que permite la identificación y estimación de la pose de los marcadores en imágenes. La siguiente sección detalla los algoritmos de detección, la implementación en OpenCV y los parámetros que afectan la precisión de la detección.
@@ -307,19 +349,30 @@ A pesar de su utilidad durante las etapas de preparación y pruebas, el sistema 
     Dibujar los marcadores detectados
     if ids is not None: aruco.drawDetectedMarkers(image, corners, ids) \end{verbatim}
 
-    Este código permite la detección y visualización de los marcadores ArUco en una imagen de una forma muy simple, devolviendo las posiciones de las esquinas y los IDs de los marcadores detectados.
+    Después de obtener las esquinas y los IDs de los marcadores, es posible utilizar esta información para calcular la pose de la cámara en relación con el/los marcadores detectados. Para calcular el centro de un marcador ArUco, se pueden utilizar las esquinas detectadas y el tamaño del marcador para estimar su posición en la imagen.
 
     \subsubsection{Parámetros de Precisión}
 
     La precisión de la detección de marcadores ArUco depende de varios factores, incluidos la calidad de la imagen, el tamaño del marcador, y los parámetros de calibración de la cámara. Según la documentación de OpenCV, la calibración precisa de la cámara es fundamental para minimizar los errores en la estimación de la pose \cite{opencv_docs_aruco}. Entre los parámetros que afectan la detección se encuentran:
 
-    \begin{itemize} \item \textbf{Distorsión de la lente}: La corrección de la distorsión de la lente mejora la precisión de la detección. \item \textbf{Resolución del marcador}: Marcadores con mayor resolución permiten una detección más precisa a distancias más largas, pero requieren más recursos de procesamiento. \item \textbf{Iluminación y contraste}: La detección puede verse afectada por condiciones de iluminación variables, por lo que es importante que la imagen tenga un buen contraste entre el marcador y el fondo. \end{itemize}
+    \begin{itemize} 
+        \item \textbf{Distorsión de la lente}: La corrección de la distorsión de la lente mejora la precisión de la detección. 
+        \item \textbf{Resolución del marcador}: Marcadores con mayor resolución permiten una detección más precisa a distancias más largas, pero requieren más recursos de procesamiento. 
+        \item \textbf{Iluminación y contraste}: La detección puede verse afectada por condiciones de iluminación variables, por lo que es importante que la imagen tenga un buen contraste entre el marcador y el fondo. 
+    \end{itemize}
 
     \begin{figure}[h!] 
         \centering 
-        %\includegraphics[width=0.8\textwidth]{example_image.jpg} % Ejemplo de detección de marcadores ArUco en una imagen 
-        \caption{Detección de marcadores ArUco con OpenCV mostrando los IDs y las esquinas detectadas.} 
-        \label{fig} 
+            \begin{minipage}{0.48\textwidth}
+                \includegraphics[width=0.8\textwidth]{pictures/aruco_no_pose_estimation.png} % Ejemplo de marcadores ArUco 
+                \caption{ArUco no pose estimation} 
+                \label{fig:aruco_no_pose_estimation}
+            \end{minipage}
+            \begin{minipage}{0.48\textwidth}
+                \includegraphics[width=0.8\textwidth]{pictures/aruco_pose_estimation.png} % Ejemplo de marcadores ArUco 
+                \caption{ArUco pose estimation} 
+                \label{fig:aruco_pose_estimation}
+            \end{minipage}
     \end{figure}
 
 \subsection{Comunicación ROS2 - Pixhawk}
@@ -334,36 +387,36 @@ A pesar de su utilidad durante las etapas de preparación y pruebas, el sistema 
         Para facilitar la integración de MAVLink con ROS 2, existen varias opciones de comunicación que permiten enviar y recibir datos entre una computadora auxiliar y el controlador de vuelo Pixhawk. Las dos soluciones más populares son MAVROS y Micro XRCE-DDS.
     
             \paragraph{MAVROS}
-            es un conjunto de nodos ROS que actúa como una interfaz entre ROS y MAVLink, permitiendo que ROS se comunique con Pixhawk mediante topics y servicios. MAVROS permite la publicación y suscripción de mensajes de MAVLink a través de topics en ROS, facilitando la ejecución de comandos de vuelo, obtención de datos de telemetría y control de misiones.
+            es un conjunto de nodos de ROS que actúa como una interfaz entre ROS y MAVLink, permitiendo que ROS se comunique con el controlador de vuelo mediante topics y servicios. MAVROS permite la publicación y suscripción de mensajes de MAVLink a través de topics en ROS, facilitando la ejecución de comandos de vuelo, obtención de datos de telemetría y control de misiones.
     
             MAVROS implementa una serie de topics predefinidos en ROS, tales como:
             \begin{itemize}
                 \item \texttt{/mavros/setpoint\_position/local}: Para establecer puntos de referencia de posición.
                 \item \texttt{/mavros/state}: Proporciona el estado actual del dron, incluyendo el modo de vuelo y si el vehículo está armado.
                 \item \texttt{/mavros/imu/data}: Datos de IMU para el monitoreo de la orientación y aceleración.
+                \item \texttt{/mavros/battery}: Muestra datos de la batería como porcentaje de carga y voltaje.
             \end{itemize}
             
             Con MAVROS, los desarrolladores pueden enviar comandos de control, como armar el dron, cambiar el modo de vuelo, o establecer puntos de referencia para la navegación autónoma. Esto se realiza publicando mensajes en los topics adecuados y ajustando parámetros en tiempo real mediante la interfaz de MAVLink \cite{px4_ros2}.
-    
+            
+            \begin{figure}
+                \centering
+                %\includegraphics[width=0.8\textwidth]{pictures/mavros.png} 
+                %\caption{Comunicación ROS 2 - Pixhawk con MAVROS.}
+                \label{fig:mavros}
+            \end{figure}
+
             \paragraph{Micro XRCE-DDS}
-            es una implementación ligera del DDS (Data Distribution Service) que permite la comunicación entre ROS 2 y Pixhawk de forma eficiente en sistemas con limitaciones de recursos. Esta opción es útil en contextos donde el tamaño y rendimiento del sistema son cruciales, como en drones pequeños o con hardware de procesamiento limitado.
+            es una implementación ligera del DDS (Data Distribution Service) que permite la comunicación entre ROS 2 y el controlador de vuelo de forma eficiente en sistemas con limitaciones de recursos. Esta opción es útil en contextos donde el tamaño y rendimiento del sistema son cruciales, como en drones pequeños o con hardware de procesamiento limitado.
     
             Con Micro XRCE-DDS, ROS 2 puede comunicarse directamente con PX4 utilizando el middleware DDS. Esto permite la creación de un sistema distribuido y escalable, en el cual los nodos de ROS 2 pueden enviar y recibir mensajes MAVLink a través de topics DDS, de manera similar a MAVROS, pero con una carga de procesamiento optimizada \cite{px4_ros2}.
     
-        \subsubsection{Envío de Comandos mediante ROS 2 usando MAVLink}
-        Tanto MAVROS como Micro XRCE-DDS ofrecen mecanismos para enviar comandos al dron a través de ROS 2 utilizando el protocolo MAVLink. A continuación se presentan algunos de los principales métodos para el envío de comandos:
-    
-        \begin{itemize}
-            \item \textbf{Setpoints de posición y velocidad}: Mediante la publicación en el topic \texttt{/mavros/setpoint\_position/local}, se pueden enviar comandos de posición específicos al dron, lo cual es esencial para la navegación autónoma. Similarmente, se pueden enviar velocidades deseadas publicando en \texttt{/mavros/setpoint\_velocity/cmd\_vel}.
-            
-            \item \textbf{Cambio de modos de vuelo}: Publicando mensajes en el topic de \texttt{/mavros/set\_mode}, ROS 2 puede cambiar el modo de vuelo del dron, seleccionando entre modos como \textit{loiter}, \textit{offboard}, \textit{auto}, entre otros, de acuerdo con los requisitos de la misión.
-    
-            \item \textbf{Armado y desarmado del dron}: Para armar o desarmar el dron, se utiliza el servicio \texttt{/mavros/cmd/arming}. Este servicio es crucial para la seguridad, ya que garantiza que el dron esté en una condición adecuada para iniciar el vuelo.
-    
-            \item \textbf{Lectura de telemetría en tiempo real}: MAVROS y Micro XRCE-DDS también permiten recibir información de telemetría mediante topics específicos, como \texttt{/mavros/state} para el estado general del dron y \texttt{/mavros/battery} para el estado de la batería, facilitando el monitoreo continuo del dron.
-        \end{itemize}
-    
-        La combinación de ROS 2 con MAVLink, ya sea mediante MAVROS o Micro XRCE-DDS, permite el desarrollo de sistemas complejos y personalizados para el control de drones. Ambas soluciones permiten la ejecución de misiones autónomas con ROS 2 y la integración de datos de sensores, proporcionando una plataforma robusta y versátil para el control y monitoreo de vehículos aéreos autónomos \cite{px4_ros2}.
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.8\textwidth]{pictures/xrce_dds.png} 
+                \caption{Comunicación ROS 2 - Pixhawk con Micro XRCE-DDS.}
+                \label{fig:xrce_dds}
+            \end{figure}
     
 \subsection{Sensores para la Navegación en Ambientes Exteriores e Interiores}
     Para lograr el control preciso de la posición del dron mediante los topics de ROS 2 como \texttt{/mavros/setpoint\_position/local}, es necesario contar con sensores que permitan obtener datos de posicionamiento confiables en función del entorno en el que opere el dron. A continuación, se describen los sensores comúnmente utilizados en ambientes exteriores e interiores para proporcionar información de posición.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.9)  19 NOV 2024 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.9)  20 NOV 2024 16:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -245,19 +245,19 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box53
 ) (./main.aux
 
-LaTeX Warning: Label `fig' multiply defined.
+LaTeX Warning: Label `fig:fixed_charging' multiply defined.
 
 
-LaTeX Warning: Label `fig' multiply defined.
+LaTeX Warning: Label `fig:fixed_charging' multiply defined.
 
 
-LaTeX Warning: Label `fig' multiply defined.
+LaTeX Warning: Label `fig:fixed_charging' multiply defined.
 
 
-LaTeX Warning: Label `fig' multiply defined.
+LaTeX Warning: Label `fig:mobile_charging' multiply defined.
 
 
-LaTeX Warning: Label `fig' multiply defined.
+LaTeX Warning: Label `fig:mobile_charging' multiply defined.
 
 
 LaTeX Warning: Label `fig:imagen1' multiply defined.
@@ -270,6 +270,15 @@ LaTeX Warning: Label `fig:imagen2' multiply defined.
 
 
 LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen1' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen2' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen2' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -381,7 +390,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.64 ...}ROS2 Distributions}{20}{subsection.2.4.4}
+l.58 ...}ROS2 Distributions}{24}{subsection.2.4.4}
                                                   % [1
 
 ] [2])
@@ -451,183 +460,368 @@ LaTeX Warning: Citation `cite4' on page 8 undefined on input line 99.
 
 [8]) [9]
 Chapter 2.
-(./chapters/estado_arte.tex (./chapters/hardware_soa.tex [10
+(./chapters/estado_arte.tex (./chapters/hardware_soa.tex
 
-] [11] [12] [13]) (./chapters/electronics_soa.tex
-
-LaTeX Warning: Citation `rohdE_ESC' on page 14 undefined on input line 9.
-
-[14]
-
-LaTeX Warning: Citation `pixhawk_docs' on page 15 undefined on input line 24.
+LaTeX Warning: Citation `ardupilot' on page 10 undefined on input line 5.
 
 
+LaTeX Warning: Citation `ardupilot' on page 10 undefined on input line 5.
+
+
+LaTeX Warning: Citation `piotr_drones' on page 10 undefined on input line 7.
+
+<pictures/multicopter.png, id=477, 528.47438pt x 374.90062pt>
+File: pictures/multicopter.png Graphic file (type png)
+<use pictures/multicopter.png>
+Package pdftex.def Info: pictures/multicopter.png  used on input line 11.
+(pdftex.def)             Requested size: 281.85587pt x 199.94917pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10
+
+]
+<pictures/quad_frame.png, id=489, 243.15843pt x 237.88875pt>
+File: pictures/quad_frame.png Graphic file (type png)
+<use pictures/quad_frame.png>
+Package pdftex.def Info: pictures/quad_frame.png  used on input line 27.
+(pdftex.def)             Requested size: 187.89914pt x 183.82463pt.
+<pictures/hexa_frame.png, id=490, 273.27094pt x 252.19218pt>
+File: pictures/hexa_frame.png Graphic file (type png)
+<use pictures/hexa_frame.png>
+Package pdftex.def Info: pictures/hexa_frame.png  used on input line 33.
+(pdftex.def)             Requested size: 187.89914pt x 173.40479pt.
+<pictures/octo_frame.png, id=491, 286.82156pt x 266.49562pt>
+File: pictures/octo_frame.png Graphic file (type png)
+<use pictures/octo_frame.png>
+Package pdftex.def Info: pictures/octo_frame.png  used on input line 39.
+(pdftex.def)             Requested size: 187.89914pt x 174.5864pt.
+<pictures/octo_quad_frame.png, id=492, 270.25969pt x 161.85469pt>
+File: pictures/octo_quad_frame.png Graphic file (type png)
+<use pictures/octo_quad_frame.png>
+Package pdftex.def Info: pictures/octo_quad_frame.png  used on input line 45.
+(pdftex.def)             Requested size: 187.89914pt x 112.53189pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 11 undefined on input line 55.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 11 undefined on input line 57.
+
+[11 <./pictures/multicopter.png>]
+<pictures/charging_classification.png, id=501, 469.00218pt x 210.7875pt>
+File: pictures/charging_classification.png Graphic file (type png)
+<use pictures/charging_classification.png>
+Package pdftex.def Info: pictures/charging_classification.png  used on input line 72.
+(pdftex.def)             Requested size: 328.82707pt x 147.78503pt.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 12 undefined on input line 73.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 12 undefined on input line 79.
+
+[12 <./pictures/quad_frame.png> <./pictures/hexa_frame.png> <./pictures/octo_frame.png> <./pictures/octo_quad_frame.png>]
+<pictures/fixed_charging_1.png, id=513, 452.4403pt x 291.33844pt>
+File: pictures/fixed_charging_1.png Graphic file (type png)
+<use pictures/fixed_charging_1.png>
+Package pdftex.def Info: pictures/fixed_charging_1.png  used on input line 87.
+(pdftex.def)             Requested size: 281.85587pt x 181.49483pt.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 88.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 88.
+
+<pictures/fixed_2.png, id=514, 407.27156pt x 167.87718pt>
+File: pictures/fixed_2.png Graphic file (type png)
+<use pictures/fixed_2.png>
+Package pdftex.def Info: pictures/fixed_2.png  used on input line 94.
+(pdftex.def)             Requested size: 281.85587pt x 116.18631pt.
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 95.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pictures/fixed_3.png, id=515, 325.215pt x 235.63031pt>
+File: pictures/fixed_3.png Graphic file (type png)
+<use pictures/fixed_3.png>
+Package pdftex.def Info: pictures/fixed_3.png  used on input line 101.
+(pdftex.def)             Requested size: 281.85587pt x 204.23088pt.
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 102.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 102.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pictures/fixed_4.png, id=516, 397.485pt x 176.15813pt>
+File: pictures/fixed_4.png Graphic file (type png)
+<use pictures/fixed_4.png>
+Package pdftex.def Info: pictures/fixed_4.png  used on input line 108.
+(pdftex.def)             Requested size: 281.85587pt x 124.91724pt.
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 109.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 109.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 115.
+
+[13 <./pictures/charging_classification.png> <./pictures/fixed_charging_1.png>] [14 <./pictures/fixed_2.png> <./pictures/fixed_3.png> <./pictures/fixed_4.png>]
+<pictures/mobile_1.png, id=537, 321.45094pt x 229.60782pt>
+File: pictures/mobile_1.png Graphic file (type png)
+<use pictures/mobile_1.png>
+Package pdftex.def Info: pictures/mobile_1.png  used on input line 122.
+(pdftex.def)             Requested size: 187.89914pt x 134.21667pt.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 15 undefined on input line 123.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 15 undefined on input line 123.
+
+<pictures/mobile_2.png, id=538, 291.33844pt x 288.3272pt>
+File: pictures/mobile_2.png Graphic file (type png)
+<use pictures/mobile_2.png>
+Package pdftex.def Info: pictures/mobile_2.png  used on input line 129.
+(pdftex.def)             Requested size: 187.89914pt x 185.963pt.
+<pictures/mobile_3.png, id=539, 348.55219pt x 108.405pt>
+File: pictures/mobile_3.png Graphic file (type png)
+<use pictures/mobile_3.png>
+Package pdftex.def Info: pictures/mobile_3.png  used on input line 136.
+(pdftex.def)             Requested size: 281.85587pt x 87.6653pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15 <./pictures/mobile_1.png> <./pictures/mobile_2.png>] [16 <./pictures/mobile_3.png>] [17]) (./chapters/electronics_soa.tex
+
+LaTeX Warning: Citation `rohdE_ESC' on page 18 undefined on input line 9.
+
+
+LaTeX Warning: Citation `pixhawk_docs' on page 18 undefined on input line 24.
+
+[18]
 Overfull \hbox (1.33888pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/n/10.95 CAN, lo cual fa-cilita su in-te-graci^^Son en sis-temas com-ple-jos como esta-ciones de carga aut^^Sonomas. 
  []
 
 
-LaTeX Warning: Citation `rasp_docs' on page 15 undefined on input line 38.
+LaTeX Warning: Citation `rasp_docs' on page 19 undefined on input line 38.
 
-[15] [16]) (./chapters/software_soa.tex
+[19] [20]) (./chapters/software_soa.tex
 Overfull \hbox (2.9738pt too wide) in paragraph at lines 11--12
 \OT1/cmr/m/it/10.95 in-clud-ing: mul-ti-copters, fixed-wing air-craft (planes), VTOLs (hy-brid multicopter/fixed-wing), ground
  []
 
-[17] [18]
-<pictures/qgc_interface.jpg, id=550, 1008.76875pt x 602.25pt>
+[21] [22]
+<pictures/qgc_interface.jpg, id=607, 1008.76875pt x 602.25pt>
 File: pictures/qgc_interface.jpg Graphic file (type jpg)
 <use pictures/qgc_interface.jpg>
 Package pdftex.def Info: pictures/qgc_interface.jpg  used on input line 41.
 (pdftex.def)             Requested size: 225.4804pt x 134.60901pt.
-<pictures/mission_planner.jpg, id=551, 1012.78375pt x 600.2425pt>
+<pictures/mission_planner.jpg, id=608, 1012.78375pt x 600.2425pt>
 File: pictures/mission_planner.jpg Graphic file (type jpg)
 <use pictures/mission_planner.jpg>
 Package pdftex.def Info: pictures/mission_planner.jpg  used on input line 48.
 (pdftex.def)             Requested size: 225.4804pt x 133.62909pt.
- [19 <./pictures/qgc_interface.jpg> <./pictures/mission_planner.jpg>] [20]
+ [23 <./pictures/qgc_interface.jpg> <./pictures/mission_planner.jpg>]
 
-LaTeX Warning: Citation `raspberry_docs' on page 21 undefined on input line 80.
+LaTeX Warning: Citation `humble_documentation' on page 24 undefined on input line 84.
+
+[24]
+
+LaTeX Warning: Citation `jazzy_documentation' on page 25 undefined on input line 100.
 
 
-LaTeX Warning: Citation `humble_documentation' on page 21 undefined on input line 83.
+Overfull \hbox (29.19502pt too wide) in paragraph at lines 104--105
+[]\OT1/cmr/bx/n/10.95 Nuevas fun-cional-i-dades: \OT1/cmr/m/n/10.95 In-tro-ducci^^Son de car-ac-ter^^S^^Psticas ex-per-i-men-tales y ajustes de rendimiento. 
+ []
 
-
-LaTeX Warning: Citation `jazzy_documentation' on page 21 undefined on input line 94.
-
-<pictures/humble_logo.png, id=572, 47.54605pt x 58.00618pt>
+<pictures/humble_logo.png, id=631, 47.54605pt x 58.00618pt>
 File: pictures/humble_logo.png Graphic file (type png)
 <use pictures/humble_logo.png>
-Package pdftex.def Info: pictures/humble_logo.png  used on input line 108.
+Package pdftex.def Info: pictures/humble_logo.png  used on input line 114.
 (pdftex.def)             Requested size: 105.69415pt x 128.96463pt.
-<pictures/jazzy_logo.png, id=574, 54.2025pt x 49.50494pt>
+<pictures/jazzy_logo.png, id=632, 54.2025pt x 49.50494pt>
 File: pictures/jazzy_logo.png Graphic file (type png)
 <use pictures/jazzy_logo.png>
-Package pdftex.def Info: pictures/jazzy_logo.png  used on input line 115.
+Package pdftex.def Info: pictures/jazzy_logo.png  used on input line 121.
 (pdftex.def)             Requested size: 126.83427pt x 115.85692pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21]
-Overfull \hbox (17.7748pt too wide) in paragraph at lines 133--151
+[25] [26 <./pictures/humble_logo.png> <./pictures/jazzy_logo.png>]
+<pictures/ros2_arch.png, id=650, 681.54625pt x 376.40625pt>
+File: pictures/ros2_arch.png Graphic file (type png)
+<use pictures/ros2_arch.png>
+Package pdftex.def Info: pictures/ros2_arch.png  used on input line 150.
+(pdftex.def)             Requested size: 281.85587pt x 155.66579pt.
+
+Overfull \hbox (29.33315pt too wide) in paragraph at lines 162--182
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <./pictures/humble_logo.png> <./pictures/jazzy_logo.png>]
-<pictures/ros2_arch.png, id=593, 681.54625pt x 376.40625pt>
-File: pictures/ros2_arch.png Graphic file (type png)
-<use pictures/ros2_arch.png>
-Package pdftex.def Info: pictures/ros2_arch.png  used on input line 165.
-(pdftex.def)             Requested size: 375.80544pt x 207.55247pt.
- [23 <./pictures/ros2_arch.png>]
+[27 <./pictures/ros2_arch.png>]
 
-LaTeX Warning: Citation `arevalo2004' on page 24 undefined on input line 179.
+LaTeX Warning: Citation `opencv_calib3d' on page 28 undefined on input line 197.
 
-<pictures/distortions.png, id=602, 429.605pt x 193.72375pt>
+<pictures/distortions.png, id=664, 429.605pt x 193.72375pt>
 File: pictures/distortions.png Graphic file (type png)
 <use pictures/distortions.png>
-Package pdftex.def Info: pictures/distortions.png  used on input line 187.
+Package pdftex.def Info: pictures/distortions.png  used on input line 203.
 (pdftex.def)             Requested size: 281.85587pt x 127.10133pt.
 
-LaTeX Warning: Citation `opencv_calib3d' on page 24 undefined on input line 192.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `opencv_tutorial_calib' on page 24 undefined on input line 194.
-
-[24 <./pictures/distortions.png>]
-<pictures/calib_pattern.jpg, id=613, 419.5675pt x 452.69125pt>
+[28]
+<pictures/calib_pattern.jpg, id=672, 419.5675pt x 452.69125pt>
 File: pictures/calib_pattern.jpg Graphic file (type jpg)
 <use pictures/calib_pattern.jpg>
-Package pdftex.def Info: pictures/calib_pattern.jpg  used on input line 200.
+Package pdftex.def Info: pictures/calib_pattern.jpg  used on input line 220.
 (pdftex.def)             Requested size: 187.89914pt x 202.7283pt.
- [25 <./pictures/calib_pattern.jpg>]
+ [29 <./pictures/distortions.png> <./pictures/calib_pattern.jpg>]
+<pictures/arucos_ids.png, id=682, 513.92pt x 289.08pt>
+File: pictures/arucos_ids.png Graphic file (type png)
+<use pictures/arucos_ids.png>
+Package pdftex.def Info: pictures/arucos_ids.png  used on input line 234.
+(pdftex.def)             Requested size: 375.80544pt x 211.39275pt.
 
-LaTeX Warning: Citation `aruco_docs_pdf' on page 26 undefined on input line 220.
+
+LaTeX Warning: Citation `aruco_docs_pdf' on page 30 undefined on input line 241.
+
+<pictures/calibration_aruco.png, id=683, 953.5625pt x 548.0475pt>
+File: pictures/calibration_aruco.png Graphic file (type png)
+<use pictures/calibration_aruco.png>
+Package pdftex.def Info: pictures/calibration_aruco.png  used on input line 247.
+(pdftex.def)             Requested size: 112.74277pt x 64.7928pt.
+<pictures/augmented_reality.jpg, id=684, 1284.8pt x 722.7pt>
+File: pictures/augmented_reality.jpg Graphic file (type jpg)
+<use pictures/augmented_reality.jpg>
+Package pdftex.def Info: pictures/augmented_reality.jpg  used on input line 254.
+(pdftex.def)             Requested size: 112.74277pt x 63.40811pt.
+<pictures/tracking_aruco.jpg, id=685, 2303.60625pt x 1591.9475pt>
+File: pictures/tracking_aruco.jpg Graphic file (type jpg)
+<use pictures/tracking_aruco.jpg>
+Package pdftex.def Info: pictures/tracking_aruco.jpg  used on input line 261.
+(pdftex.def)             Requested size: 112.74277pt x 77.90166pt.
+
+Underfull \hbox (badness 6236) in paragraph at lines 262--262
+[]\OT1/cmr/m/n/10.95 Figure 2.26: []Real Time
+ []
+
+[30 <./pictures/arucos_ids.png>]
+
+LaTeX Warning: Citation `aruco_docs_pdf' on page 31 undefined on input line 272.
+
+<pictures/bits_aruco.png, id=696, 204.765pt x 102.6234pt>
+File: pictures/bits_aruco.png Graphic file (type png)
+<use pictures/bits_aruco.png>
+Package pdftex.def Info: pictures/bits_aruco.png  used on input line 276.
+(pdftex.def)             Requested size: 375.80544pt x 188.35799pt.
+[31 <./pictures/calibration_aruco.png> <./pictures/augmented_reality.jpg> <./pictures/tracking_aruco.jpg> <./pictures/bits_aruco.png>]
+<pictures/pose_1.png, id=709, 247.92625pt x 192.72pt>
+File: pictures/pose_1.png Graphic file (type png)
+<use pictures/pose_1.png>
+Package pdftex.def Info: pictures/pose_1.png  used on input line 294.
+(pdftex.def)             Requested size: 91.6023pt x 71.20529pt.
+<pictures/pose_2.png, id=710, 210.7875pt x 203.76125pt>
+File: pictures/pose_2.png Graphic file (type png)
+<use pictures/pose_2.png>
+Package pdftex.def Info: pictures/pose_2.png  used on input line 301.
+(pdftex.def)             Requested size: 77.51079pt x 74.92722pt.
+<pictures/pose_3.png, id=711, 182.6825pt x 185.69376pt>
+File: pictures/pose_3.png Graphic file (type png)
+<use pictures/pose_3.png>
+Package pdftex.def Info: pictures/pose_3.png  used on input line 308.
+(pdftex.def)             Requested size: 70.46396pt x 71.62407pt.
+
+Underfull \hbox (badness 1502) in paragraph at lines 309--309
+[]\OT1/cmr/m/n/10.95 Figure 2.31: []Sobreposici^^Son
+ []
 
 
-LaTeX Warning: Citation `aruco_docs_pdf' on page 26 undefined on input line 233.
-
-[26]
-Overfull \hbox (2.64676pt too wide) in paragraph at lines 253--254
+Overfull \hbox (2.64676pt too wide) in paragraph at lines 317--318
 \OT1/cmr/m/n/10.95 Los mar-cadores ArUco tradi-cionales como se men-cion^^So en la secci^^Son an-te-rior, se uti-lizan com^^Sunmente
  []
 
-<pictures/pose_1.png, id=636, 247.92625pt x 192.72pt>
-File: pictures/pose_1.png Graphic file (type png)
-<use pictures/pose_1.png>
-Package pdftex.def Info: pictures/pose_1.png  used on input line 261.
-(pdftex.def)             Requested size: 91.6023pt x 71.20529pt.
-<pictures/pose_2.png, id=637, 210.7875pt x 203.76125pt>
-File: pictures/pose_2.png Graphic file (type png)
-<use pictures/pose_2.png>
-Package pdftex.def Info: pictures/pose_2.png  used on input line 268.
-(pdftex.def)             Requested size: 77.51079pt x 74.92722pt.
-<pictures/pose_3.png, id=638, 182.6825pt x 185.69376pt>
-File: pictures/pose_3.png Graphic file (type png)
-<use pictures/pose_3.png>
-Package pdftex.def Info: pictures/pose_3.png  used on input line 275.
-(pdftex.def)             Requested size: 70.46396pt x 71.62407pt.
+[32 <./pictures/pose_1.png> <./pictures/pose_2.png> <./pictures/pose_3.png>]
 
-Underfull \hbox (badness 1502) in paragraph at lines 276--276
-[]\OT1/cmr/m/n/10.95 Figure 2.14: []Sobreposici^^Son
- []
-
-[27 <./pictures/pose_1.png> <./pictures/pose_2.png> <./pictures/pose_3.png>]
-
-LaTeX Warning: Citation `opencv_docs_aruco' on page 28 undefined on input line 286.
+LaTeX Warning: Citation `opencv_docs_aruco' on page 33 undefined on input line 328.
 
 
-LaTeX Warning: Citation `opencv_tutorial_aruco' on page 28 undefined on input line 292.
+LaTeX Warning: Citation `opencv_tutorial_aruco' on page 33 undefined on input line 334.
 
-[28]
+[33]
 
-LaTeX Warning: Citation `opencv_docs_aruco' on page 29 undefined on input line 314.
+LaTeX Warning: Citation `opencv_docs_aruco' on page 34 undefined on input line 356.
+
+<pictures/aruco_no_pose_estimation.png, id=734, 315.1775pt x 282.05376pt>
+File: pictures/aruco_no_pose_estimation.png Graphic file (type png)
+<use pictures/aruco_no_pose_estimation.png>
+Package pdftex.def Info: pictures/aruco_no_pose_estimation.png  used on input line 367.
+(pdftex.def)             Requested size: 180.385pt x 161.42647pt.
+<pictures/aruco_pose_estimation.png, id=735, 338.26375pt x 277.035pt>
+File: pictures/aruco_pose_estimation.png Graphic file (type png)
+<use pictures/aruco_pose_estimation.png>
+Package pdftex.def Info: pictures/aruco_pose_estimation.png  used on input line 372.
+(pdftex.def)             Requested size: 180.385pt x 147.7367pt.
+[34 <./pictures/aruco_no_pose_estimation.png> <./pictures/aruco_pose_estimation.png>]
+
+LaTeX Warning: Citation `mavlink_docs' on page 35 undefined on input line 382.
 
 
-LaTeX Warning: Citation `mavlink_docs' on page 29 undefined on input line 329.
-
-[29]
-
-LaTeX Warning: Citation `px4_ros2' on page 30 undefined on input line 346.
-
-
-LaTeX Warning: Citation `px4_ros2' on page 30 undefined on input line 351.
-
-
-Overfull \hbox (86.64445pt too wide) in paragraph at lines 357--358
-[]\OT1/cmr/bx/n/10.95 Setpoints de posici^^Son y ve-loci-dad\OT1/cmr/m/n/10.95 : Me-di-ante la pub-li-caci^^Son en el topic \OT1/cmtt/m/n/10.95 /mavros/setpoint[]position/local\OT1/cmr/m/n/10.95 ,
+Overfull \hbox (6.2246pt too wide) in paragraph at lines 390--391
+\OT1/cmr/m/n/10.95 per-mi-tiendo que ROS se co-mu-nique con el con-tro-lador de vuelo me-di-ante top-ics y ser-vi-cios. MAVROS
  []
 
 
-Overfull \hbox (151.83322pt too wide) in paragraph at lines 357--358
-\OT1/cmr/m/n/10.95 gaci^^Son aut^^Sonoma. Sim-i-lar-mente, se pueden en-viar ve-loci-dades de-seadas pub-li-cando en \OT1/cmtt/m/n/10.95 /mavros/setpoint[]velocity/cmd[]vel\OT1/cmr/m/n/10.95 . 
- []
+LaTeX Warning: Citation `px4_ros2' on page 35 undefined on input line 400.
 
-[30]
+[35]
 
-LaTeX Warning: Citation `px4_ros2' on page 31 undefined on input line 366.
+LaTeX Warning: Citation `px4_ros2' on page 36 undefined on input line 412.
 
+<pictures/xrce_dds.png, id=753, 701.62125pt x 265.99374pt>
+File: pictures/xrce_dds.png Graphic file (type png)
+<use pictures/xrce_dds.png>
+Package pdftex.def Info: pictures/xrce_dds.png  used on input line 416.
+(pdftex.def)             Requested size: 375.80544pt x 142.47774pt.
 
-Overfull \hbox (117.89473pt too wide) in paragraph at lines 369--370
+Overfull \hbox (117.89473pt too wide) in paragraph at lines 422--423
 \OT1/cmr/m/n/10.95 Para lo-grar el con-trol pre-ciso de la posici^^Son del dron me-di-ante los top-ics de ROS 2 como \OT1/cmtt/m/n/10.95 /mavros/setpoint[]position/local\OT1/cmr/m/n/10.95 ,
  []
 
-[31] [32] [33] [34] [35])) [36]
+[36 <./pictures/xrce_dds.png>] [37] [38] [39] [40])) [41]
 Chapter 3.
-(./chapters/desarrollo.tex [37
+(./chapters/desarrollo.tex [42
 
-] [38] [39] [40] [41] [42] [43] [44]) [45]
+] [43] [44] [45] [46] [47] [48] [49]) [50]
 Chapter 4.
-(./chapters/resultados.tex) [46
+(./chapters/resultados.tex) [51
 
 ]
 Chapter 5.
-(./chapters/conclusiones.tex) (./chapters/bibliografía.tex [47
+(./chapters/conclusiones.tex) (./chapters/bibliografía.tex [52
 
-]) [48
+]) [53
 
 ] (./main.aux)
 
@@ -637,21 +831,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4AD67BCEF97CC9D4FBFC3BEC5F6F8C58;17304.
+(rerunfilecheck)             Checksum: 4678400E9ACFD65DF77E06CF04B000B3;17358.
  ) 
 Here is how much of TeX's memory you used:
- 10660 strings out of 480218
- 164472 string characters out of 5894882
- 463217 words of memory out of 5000000
- 28207 multiletter control sequences out of 15000+600000
+ 10848 strings out of 480218
+ 169224 string characters out of 5894882
+ 464210 words of memory out of 5000000
+ 28350 multiletter control sequences out of 15000+600000
  477492 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,11n,63p,992b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,63p,992b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/albertocastro/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (49 pages, 738606 bytes).
+Output written on main.pdf (54 pages, 4320835 bytes).
 PDF statistics:
- 884 PDF objects out of 1000 (max. 8388607)
- 793 compressed objects within 8 object streams
- 236 named destinations out of 1000 (max. 500000)
- 728 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 975 PDF objects out of 1000 (max. 8388607)
+ 841 compressed objects within 9 object streams
+ 260 named destinations out of 1000 (max. 500000)
+ 833 words of extra memory for PDF output out of 10000 (max. 10000000)
 
