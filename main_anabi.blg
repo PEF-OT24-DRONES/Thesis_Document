@@ -1,0 +1,20 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[1] Config.pm:310> INFO - Logfile is 'main_anabi.blg'
+[224] biber:340> INFO - === Wed Nov 20, 2024, 18:39:00
+[258] Biber.pm:418> INFO - Reading 'main_anabi.bcf'
+[475] Biber.pm:972> INFO - Found 16 citekeys in bib section 0
+[512] Biber.pm:4383> INFO - Processing section 0
+[540] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[544] bibtex.pm:1713> INFO - LaTeX decoding ...
+[599] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[1231] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1232] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1232] Biber.pm:4203> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1232] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[1294] bbl.pm:654> INFO - Writing 'main_anabi.bbl' with encoding 'UTF-8'
+[1324] bbl.pm:757> INFO - Output to main_anabi.bbl
+[1325] Biber.pm:130> WARN - ISBN '979-8-8688-0467-0' in entry 'Subero2024' is invalid - run biber with '--validate_datamodel' for details.
+[1325] Biber.pm:130> WARN - I didn't find a database entry for 'rohdE_ESC' (section 0)
+[1325] Biber.pm:130> WARN - I didn't find a database entry for 'pixhawk_docs' (section 0)
+[1325] Biber.pm:130> WARN - I didn't find a database entry for 'rasp_docs' (section 0)
+[1325] Biber.pm:132> INFO - WARNINGS: 4

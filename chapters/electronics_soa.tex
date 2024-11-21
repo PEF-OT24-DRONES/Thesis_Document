@@ -1,65 +1,90 @@
-% Description: This file contains the state of the art of the electronics.
-
 \section{Electronics}
 
-\subsection{Movimiento a Motores y Módulos ESC}
+\subsection{Motors and ESC Modules}
 
-En los drones, los motores sin escobillas (\textit{brushless}) requieren de módulos \textit{Electronic Speed Controller} (ESC) que permitan controlar su velocidad y dirección de rotación con precisión. Los ESC convierten la corriente directa (DC) de la batería en la corriente alterna (AC) que los motores necesitan, ajustando la frecuencia y voltaje de la señal para controlar su velocidad de giro. 
+In drones, brushless motors are essential components for flight due to their high efficiency and durability. These motors require Electronic Speed Controller (ESC) modules to precisely control their speed and direction of rotation. ESCs convert the direct current (DC) from the battery into the alternating current (AC) needed by the motors, adjusting the frequency and voltage of the signal to control their rotation speed.
 
-El funcionamiento del ESC depende de la tecnología de modulación de frecuencia, donde la tasa de cambio determina la velocidad del motor. Como señala Rohde y Schwarz, “los ESC modernos no solo regulan la velocidad, sino que también monitorean la temperatura y el voltaje, protegiendo el motor contra sobrecargas” \cite{rohdE_ESC}. En el contexto de un sistema de carga modular para drones, estos ESC permiten un control ágil y seguro del sistema de propulsión, esencial en las maniobras de aterrizaje y acoplamiento en la estación de carga.
+The operation of ESCs depends on frequency modulation technology, where the rate of change determines the motor's speed. As noted by Rohde and Schwarz, “modern ESCs not only regulate speed but also monitor temperature and voltage, protecting the motor from overloads” \cite{rohdE_ESC}. In the context of a modular drone charging system, ESCs enable agile and safe control of the propulsion system, which is critical for precise landing and docking maneuvers at the charging station.
 
-\subsection{Controladores de Vuelo}
+\subsection{Flight Controllers}
 
-Los controladores de vuelo son los componentes centrales que gestionan la estabilidad, navegación, y la ejecución de comandos de vuelo en los drones. Existen varios modelos en el mercado, cada uno con sus características específicas y aplicaciones recomendadas. Entre los controladores más relevantes destacan:
+Flight controllers are central components that manage stability, navigation, and the execution of flight commands in drones. Several models are available in the market, each with specific characteristics and recommended applications.
 
-\subsubsection{Principales Controladores de Vuelo}
+\subsubsection{Key Flight Controllers}
 \begin{itemize}
-    \item \textbf{DJI Naza}: Este controlador es ampliamente utilizado en drones comerciales debido a su facilidad de configuración y su sistema de estabilización mejorado. Sin embargo, presenta limitaciones en personalización y flexibilidad para proyectos de investigación avanzada.
-    \item \textbf{APM (ArduPilot Mega)}: La plataforma APM, desarrollada por ArduPilot, es una opción altamente personalizable y adecuada para proyectos de código abierto. No obstante, se enfrenta a restricciones en términos de potencia de procesamiento, limitando su uso en aplicaciones complejas.
-    \item \textbf{Holybro Kakute}: Este controlador ofrece buena integración de sensores y es ideal para drones pequeños y de carrera, pero carece de las capacidades avanzadas de procesamiento necesarias en aplicaciones autónomas y de carga pesada.
+    \item \textbf{DJI Naza}: Widely used in commercial drones due to its ease of configuration and enhanced stabilization system. However, it has limitations in customization and flexibility for advanced research projects.
+    \item \textbf{APM (ArduPilot Mega)}: Developed by ArduPilot, this platform is highly customizable and suitable for open-source projects. Nonetheless, it faces processing power limitations, restricting its use in complex applications.
+    \item \textbf{Holybro Kakute}: This controller offers good sensor integration and is ideal for small racing drones but lacks the advanced processing capabilities needed for autonomous and heavy-load applications.
 \end{itemize}
 
-\subsubsection{Pixhawk 6X: }
+\subsubsection{Pixhawk 6X}
 
-Entre todos los controladores mencionados, el \textbf{Pixhawk 6X} destaca como la opción más avanzada y robusta. Según el equipo de desarrollo de Pixhawk, “el Pixhawk 6X fue diseñado para proporcionar un alto nivel de procesamiento con la mayor compatibilidad para sensores avanzados y módulos de comunicación” \cite{pixhawk_docs}. Las principales ventajas del Pixhawk 6X incluyen:
+Among the available controllers, the \textbf{Pixhawk 6X} stands out as the most advanced and robust option. According to the Pixhawk development team, “the Pixhawk 6X was designed to provide high processing capabilities with maximum compatibility for advanced sensors and communication modules” \cite{pixhawk_docs}. The main advantages of the Pixhawk 6X include:
 \begin{itemize}
-    \item \textbf{Procesamiento y Estabilidad}: Equipado con procesadores de alto rendimiento que soportan algoritmos avanzados de estabilización y control de vuelo.
-    \item \textbf{Modularidad}: Permite una integración fluida con computadoras complementarias y sistemas externos, lo cual es fundamental para aplicaciones autónomas.
-    \item \textbf{Sensores Integrados}: Incluye un acelerómetro y giroscopio de alta precisión, además de soporte para sensores externos como magnetómetros y GPS.
-    \item \textbf{Compatibilidad}: Altamente compatible con sistemas de comunicación como UART, I2C, y CAN, lo cual facilita su integración en sistemas complejos como estaciones de carga autónomas.
+    \item \textbf{Processing and Stability}: Equipped with high-performance processors that support advanced stabilization and flight control algorithms.
+    \item \textbf{Modularity}: Allows seamless integration with companion computers and external systems, essential for autonomous applications.
+    \item \textbf{Integrated Sensors}: Includes high-precision accelerometers and gyroscopes, along with support for external sensors such as magnetometers and GPS.
+    \item \textbf{Compatibility}: Highly compatible with communication systems like UART, I2C, and CAN, facilitating its integration into complex systems such as autonomous charging stations.
 \end{itemize}
 
-\subsection{Computadoras Complementarias y Sistemas Embebidos}
+\subsection{Companion Computers and Embedded Systems}
 
-En aplicaciones avanzadas de drones, los controladores de vuelo a menudo necesitan el apoyo de sistemas embebidos adicionales, conocidos como computadoras complementarias o \textit{companion computers}, para gestionar procesamiento de datos intensivo, algoritmos de inteligencia artificial, o transmisión de video en tiempo real.
+In advanced drone applications, flight controllers often require the support of additional embedded systems, known as companion computers, to handle intensive data processing, artificial intelligence algorithms, or real-time video transmission.
 
-\subsubsection{Principales Computadoras Complementarias}
+\subsubsection{Main Companion Computers}
 \begin{itemize}
-    \item \textbf{Raspberry Pi 4 y 5}: La \textbf{Raspberry Pi 4} y su sucesora, la \textbf{Raspberry Pi 5}, son opciones económicas y potentes. Gracias a su procesador de 64 bits y sus 4 GB o más de RAM, estas computadoras pueden ejecutar sistemas operativos complejos y manejar procesamiento intensivo, como procesamiento de imágenes y algoritmos de reconocimiento de patrones. Según Raspbian, la Raspberry Pi 5 tiene un 30\% más de rendimiento comparado con la versión anterior, haciéndola ideal para drones que requieren alto rendimiento a bajo costo \cite{rasp_docs}.
-    \item \textbf{Odroid XU4}: Con un procesador Exynos 5422 octa-core, el Odroid XU4 ofrece un alto rendimiento en aplicaciones de procesamiento en tiempo real. Sin embargo, su consumo energético es mayor, lo cual limita su uso en aplicaciones de bajo consumo como drones ligeros.
-    \item \textbf{Jetson Nano}: Esta computadora, desarrollada por NVIDIA, incluye una GPU integrada que facilita tareas de inteligencia artificial y visión computacional. Aunque su potencia en procesamiento de gráficos es sobresaliente, su costo y complejidad de integración superan los beneficios en aplicaciones donde el costo es un factor limitante.
-    \item \textbf{Arduino}: En el contexto de una estación de carga, el Arduino es ideal para manejar tareas específicas de bajo procesamiento, como el control de motores de posicionamiento. Su simplicidad y bajo consumo energético lo hacen adecuado para tareas de control periférico, complementando bien a una Raspberry Pi que maneje la gestión central de la estación.
+    \item \textbf{Raspberry Pi 4 and 5}: Both models are cost-effective and powerful options. Their 64-bit processors and 4 GB (or more) of RAM allow them to run complex operating systems and handle intensive tasks, such as image processing and pattern recognition algorithms. According to Raspbian, the Raspberry Pi 5 offers a 30\% performance improvement over its predecessor, making it ideal for high-performance drones at low cost \cite{rasp_docs}.
+    \item \textbf{Odroid XU4}: Featuring an Exynos 5422 octa-core processor, this option provides high performance for real-time applications. However, its higher energy consumption limits its use in lightweight drone applications.
+    \item \textbf{Jetson Nano}: Developed by NVIDIA, it includes an integrated GPU that excels in artificial intelligence and computer vision tasks. Despite its outstanding graphical processing capabilities, its cost and integration complexity may outweigh its benefits in cost-sensitive projects.
+    \item \textbf{Arduino}: In the context of a charging station, Arduino is ideal for handling specific low-processing tasks, such as controlling positioning motors. Its simplicity and low power consumption make it a perfect complement to a Raspberry Pi managing the central system.
 \end{itemize}
 
-\subsection{Tipos de Protocolos de Comunicación}
+\subsection{Communication Protocols}
 
-Para conectar de manera efectiva los diferentes sistemas y módulos, es necesario implementar protocolos de comunicación estandarizados que aseguren una transmisión confiable de datos. En la estación de carga modular, estos protocolos permiten la comunicación entre la Raspberry Pi, el Arduino, y el controlador Pixhawk, creando un sistema integrado.
+Effective communication protocols are essential for connecting the various systems and modules in a modular charging station, enabling seamless interaction between the Raspberry Pi, Arduino, and Pixhawk flight controller.
 
-\subsubsection{Principales Protocolos de Comunicación}
+\subsubsection{Main Communication Protocols}
 \begin{itemize}
-    \item \textbf{UART (Universal Asynchronous Receiver-Transmitter)}: Ideal para conexiones simples de bajo costo, el UART permite la transmisión punto a punto de datos asíncronos entre dispositivos, lo cual es útil para comunicación básica entre la Raspberry Pi y el Arduino.
-    \item \textbf{SPI (Serial Peripheral Interface)}: Este protocolo permite una comunicación sincrónica de alta velocidad y es adecuado para aplicaciones que requieren transferencia de datos rápida y simultánea entre la Raspberry Pi y el Pixhawk.
-    \item \textbf{I2C (Inter-Integrated Circuit)}: Con solo dos líneas (SDA y SCL), I2C permite la conexión de múltiples dispositivos, haciéndolo ideal para la integración de sensores y periféricos adicionales en el sistema de carga.
+    \item \textbf{UART (Universal Asynchronous Receiver-Transmitter)}: Ideal for simple, low-cost connections, UART enables point-to-point asynchronous data transmission, useful for basic communication between the Raspberry Pi and Arduino \cite{Gupta2019}.
+    \item \textbf{SPI (Serial Peripheral Interface)}: This protocol supports high-speed synchronous communication and is suitable for applications requiring fast and simultaneous data transfers, such as between the Raspberry Pi and Pixhawk \cite{Wootton2016}.
+    \item \textbf{I2C (Inter-Integrated Circuit)}: With only two lines (SDA and SCL), I2C allows the connection of multiple devices, making it ideal for integrating sensors and additional peripherals in the charging system \cite{Gazi2021}.
 \end{itemize}
 
-\subsection{Sensores de Proximidad}
+\subsubsection{Challenges and Solutions}
 
-Para medir con precisión la posición de componentes móviles como el cajón de la estación de carga, se utilizan sensores de proximidad que detectan cuando el cajón está completamente extendido o retraído. Estos sensores garantizan una operación segura y evitan daños en el sistema al proporcionar retroalimentación precisa al controlador.
+Latency, noise, and data integrity are common issues in serial communication, especially in drone applications where reliability is critical. For UART, faster baud rates and optimized software help address latency, while shielding and error-checking protocols improve data integrity. SPI mitigates noise through robust grounding and low-skew clock drivers, while I2C uses pull-up resistors and error-detection mechanisms to maintain reliable communication \cite{CompComms2023}.
 
-\subsubsection{Tipos de Sensores de Proximidad}
+\subsection{Sensors}
+
+Sensors are devices that detect and measure physical properties such as temperature, pressure, motion, or light, converting them into signals that can be interpreted by a system. They are crucial in gathering environmental data and enabling drones to respond to changes or perform specific functions.
+
+\subsubsection{Types of Sensors}
 \begin{itemize}
-    \item \textbf{Interruptores de Límite (Limit Switches)}: Estos sensores mecánicos detectan la posición final del cajón mediante contacto físico y son ideales para aplicaciones de alta confiabilidad y bajo costo.
-    \item \textbf{Sensores Inductivos}: Son capaces de detectar objetos metálicos sin necesidad de contacto, lo cual es útil en aplicaciones donde se desea evitar el desgaste mecánico o en entornos con mucho movimiento.
-    \item \textbf{Sensores Capacitivos y Ópticos}: Adecuados para detectar objetos no metálicos, ofrecen una detección precisa y son comúnmente empleados en aplicaciones de precisión alta.
+    \item \textbf{Mechanical Sensors}: Rely on physical movement to detect changes and generate electrical signals.
+    \item \textbf{Motion Sensors}: Detect movement through parameters like infrared radiation or sound waves.
+    \item \textbf{Proximity Sensors}: Sense the presence of nearby objects without physical contact, using technologies like ultrasonic or magnetic fields.
+    \item \textbf{Optical Sensors}: Detect changes in light intensity, wavelength, or polarization for measuring events or properties \cite{dailysensors2021, huang2023, sensors2017}.
 \end{itemize}
+
+\subsection{Types of Chargers and Charging}
+\subsubsection{Technologies}
+For fast-charging technologies, the importance of amperage and voltage is the main output of the charger. The current or amperage is the amount of electricity flowing through the plug to the battery. The voltage is the strength of the electric current. In most cases, the fast charging cables or technologies change the voltage rather than the current to increase the amount of potential energy. For a long time, phones and other small portable devices were being charged by 5V/2.4A, but now, with the introduction of USB-C cables, these devices are being charged to up to 100W (20V/5A). Laptops, which are larger portable devices, can handle more power, hence faster charging and more amperage and voltage, than smaller devices. 
+\cite{fastchargers}
+
+Smart charging systems are new technologies designed to optimize the charging process for devices, including electric vehicles, drones, and other rechargeable batteries. These technologies incorporate algorithms, communication, and remote interactions to efficiently manage energy usage during charging. In battery swapping scenarios, vehicles or devices can replace their empty or low batteries with a fully recharged battery that was pre-charged and ready for immediate use. In this case, there would always be a backup battery charging while the first battery is in use in the device. The backup battery would then replace the first battery, which would then be placed back to charge as the backup battery is in use. This minimizes downtime and ensures continuous operation, especially in high-demand environments where quick turnaround is essential. 
+\cite{vehiclessmartcharge}
+
+\subsubsection{Wired vs. Wireless Charging}
+When comparing the wired vs. wireless types of charging in any rechargeable battery, it is essential to compare which method is more effective against which is more practical in everyday use. Wired charging is where a plug is directly in contact with the battery and then connected to a power adapter. The device draws power through the cable to charge its battery. 
+
+Wireless charging, as its name suggests, is where there are no cables involved in the charging process. In this case, power is transmitted via magnetic fields between two coils (one in the device and one in the charger) through a technology named inductive charging or resonant charging, where resonant frequencies are more efficient and can reach a longer distance. 
+
+When comparing both technologies, wireless is more convenient, eliminating the need for plugging and unplugging cables, but it can be slower and less efficient.
+\cite{wiredvwirelessMohammed}
+
+\subsubsection{Comparative Analysis}
+Wired charging is better for faster charging, efficient power transfer since there is less energy loss, more reliable since it does not depend on a specific position or distance, and more economic. However, dealing with cables can be difficult to deal with when they get tangled, lost or worn out, this technology is also inconvenient in a situation where it is frequently plugged or unplugged, and when charging, the device has limited mobility due to the need to stay connected to power through the cable. 
+
+Wired charging is more convenient since it was no need for cables which means it has reduced wear and tear, and its charging space is less cluttered due to the no cables. However, wireless charging tends to be slower, less efficient, requires precise alignment, generates more heat, and often comes at a higher cost compared to wired charging.
+\cite{wirelessLu}
 

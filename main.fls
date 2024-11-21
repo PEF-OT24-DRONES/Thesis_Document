@@ -693,11 +693,11 @@ INPUT ./chapters/electronics_soa.tex
 INPUT chapters/electronics_soa.tex
 INPUT ./chapters/electronics_soa.tex
 INPUT chapters/electronics_soa.tex
+INPUT ./chapters/software_soa.tex
+INPUT chapters/software_soa.tex
+INPUT ./chapters/software_soa.tex
+INPUT chapters/software_soa.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT ./chapters/software_soa.tex
-INPUT chapters/software_soa.tex
-INPUT ./chapters/software_soa.tex
-INPUT chapters/software_soa.tex
 INPUT ./pictures/qgc_interface.jpg
 INPUT ./pictures/qgc_interface.jpg
 INPUT pictures/qgc_interface.jpg

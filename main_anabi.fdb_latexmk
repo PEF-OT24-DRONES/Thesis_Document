@@ -1,13 +1,14 @@
 # Fdb version 3
-["biber main_anabi"] 1732045250 "main_anabi.bcf" "main_anabi.bbl" "main_anabi" 1732045254
-  "main_anabi.bcf" 1732045249 125327 a9f1e6e3c2fe4d316c924c37847592b6 "pdflatex"
+["biber main_anabi"] 1732149538 "main_anabi.bcf" "main_anabi.bbl" "main_anabi" 1732149544
+  "main_anabi.bcf" 1732149544 124977 7233153ec60577f44fc494fcba98bb12 "pdflatex"
+  "references.bib" 1732045223 10375 2474857f155912a904ac5497d8c2b3e4 ""
   (generated)
   "main_anabi.bbl"
   "main_anabi.blg"
-["pdflatex"] 1732045254 "/home/albertocastro/Documents/Thesis_Document/main_anabi.tex" "main_anabi.pdf" "main_anabi" 1732045254
+["pdflatex"] 1732149542 "/home/albertocastro/Documents/Thesis_Document/main_anabi.tex" "main_anabi.pdf" "main_anabi" 1732149544
   "/etc/texmf/web2c/texmf.cnf" 1726609615 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/albertocastro/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1732045250 11524 97e6d117eb8c8700f97e35b1e4cf561c ""
-  "/home/albertocastro/Documents/Thesis_Document/main_anabi.tex" 1732045203 18246 e21bca439c0775cb965f39a22e05010a ""
+  "/home/albertocastro/Documents/Thesis_Document/main_anabi.tex" 1732149536 18246 a50e8a81e03e06d127d6450ade994549 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -72,10 +73,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1731642287 128118 6ec7d30bbfaabcf22759560e331d2184 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1728481014 1412566 690b792799e7b4eee02128b727df3b3f ""
-  "main_anabi.aux" 0 -1 0 "pdflatex"
-  "main_anabi.bbl" 1732045252 32440 567a099d6a71b53c5611bb8cc64161d5 "biber main_anabi"
-  "main_anabi.run.xml" 1732045253 2469 4faa5966b77b2d0190d40009d8323f8b "pdflatex"
-  "main_anabi.tex" 1732045203 18246 e21bca439c0775cb965f39a22e05010a ""
+  "main_anabi.aux" 1732149544 3734 e796a3ad5bef2f50465ec74ba6b3b164 "pdflatex"
+  "main_anabi.bbl" 1732149541 32440 567a099d6a71b53c5611bb8cc64161d5 "biber main_anabi"
+  "main_anabi.run.xml" 1732149544 2469 043d3cb2094592b8d087a359e1a51ddb "pdflatex"
+  "main_anabi.tex" 1732149536 18246 a50e8a81e03e06d127d6450ade994549 ""
   (generated)
   "main_anabi.aux"
   "main_anabi.bcf"

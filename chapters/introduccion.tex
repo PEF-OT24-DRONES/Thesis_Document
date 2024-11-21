@@ -1,104 +1,64 @@
-% Introducción para la tesis
-% Documento independiente para la introducción
+\section{Problem Statement}
 
-\section{Contexto General y Motivación}
+\subsection{Clear Problem Definition}
 
-\subsection{Contexto del Problema}
+One of the main challenges in achieving continuous and autonomous operation of drone swarms is the lack of modular and autonomous charging stations capable of simultaneously recharging multiple drones. Current market solutions face significant limitations, such as the inability to efficiently manage the simultaneous charging of several drones and ensure precise landing in a shared space without human intervention. These limitations not only reduce drone autonomy but also impact operational efficiency, requiring frequent manual interventions to maneuver drones and taking up additional space due to the lack of modular solutions in existing market offerings.
 
-En los últimos años, los drones han evolucionado para convertirse en herramientas esenciales en una amplia gama de industrias. Estos vehículos aéreos no tripulados varían en tamaño y capacidad, pero comparten la característica de acceder a áreas difíciles o peligrosas, lo que ha impulsado su uso en sectores como la inspección de infraestructuras, la agricultura de precisión y las operaciones de vigilancia y seguridad. A nivel comercial, los drones están diseñados para realizar tareas repetitivas de manera autónoma, lo que ha revolucionado la eficiencia en dichas áreas.
-
-En el ámbito de la inspección de infraestructuras, los drones son utilizados para monitorear y evaluar el estado de torres eléctricas, aerogeneradores, líneas de transmisión y otras construcciones críticas, permitiendo detectar fallos estructurales sin la necesidad de exponer a los trabajadores a riesgos innecesarios \cite{cite1}. En agricultura, los drones facilitan la gestión de cultivos, monitoreo de riego y la topografía, lo que permite a los agricultores optimizar la productividad y reducir costos operativos \cite{cite2}. En vigilancia y seguridad, se emplean para monitorear incendios forestales, realizar labores de seguridad fronteriza y evaluar daños tras desastres naturales \cite{cite3}.
-
-A pesar de sus múltiples ventajas, uno de los mayores desafíos en la operación continua de drones es la duración limitada de la batería. En aplicaciones profesionales, los drones suelen tener una autonomía de vuelo entre 20 y 30 minutos, lo cual resulta insuficiente para operaciones prolongadas como la inspección de grandes áreas o la vigilancia a largo plazo \cite{cite4}. Además, las condiciones climáticas adversas pueden afectar significativamente el rendimiento y estabilidad de los drones en vuelo, lo que limita aún más su capacidad operativa \cite{cite5}. Estos factores hacen necesario interrumpir las operaciones para recargar las baterías, lo cual afecta tanto la eficiencia como los costos operativos.
-
-Para abordar esta limitación, se han diseñado estaciones de carga automáticas que permiten recargar las baterías sin intervención humana. Sin embargo, las estaciones actuales presentan varios inconvenientes: la mayoría no están diseñadas para gestionar múltiples drones de manera simultánea, lo que limita su eficiencia en operaciones a gran escala, como las que utilizan enjambres de drones \cite{cite6}. Además, el aterrizaje preciso sobre estas estaciones sigue siendo un reto importante, lo que puede afectar el éxito del proceso de carga \cite{cite7}.
-
-\subsection{Importancia del Problema}
-
-Con el creciente uso de drones en sectores como la agricultura, la logística y la vigilancia, la capacidad de mantener operaciones prolongadas y autónomas se ha vuelto crucial. Estos sectores demandan drones capaces de completar misiones largas sin interrupciones frecuentes para la recarga de baterías \cite{cite8}.
-
-Aquí es donde entra en juego la necesidad de un sistema de carga modular. En este contexto, la modularidad se refiere a la posibilidad de montar varios sistemas de carga en un mismo espacio físico, lo que permite a múltiples drones recargarse simultáneamente. Esto optimiza el uso de los recursos y maximiza la eficiencia operativa de los enjambres de drones, al reducir los tiempos de espera entre recargas \cite{cite9}. Esta solución es especialmente valiosa en aplicaciones que requieren la coordinación de varios drones en tiempo real, donde cualquier retraso en la recarga podría impactar negativamente en la misión.
-
-Además, un sistema de aterrizaje preciso es clave para garantizar que los drones se posen correctamente sobre las estaciones de carga, lo que permite automatizar completamente el proceso y reducir la necesidad de intervención humana. Este tipo de solución tiene el potencial de mejorar la eficiencia y autonomía de las operaciones con drones, abriendo nuevas posibilidades para su adopción en áreas donde las limitaciones actuales de autonomía y recarga son un obstáculo \cite{cite10}.
-
-\section{Planteamiento del Problema}
-
-\subsection{Definición Clara del Problema}
-
-Uno de los mayores desafíos para la operación continua y autónoma de enjambres de drones es la falta de estaciones de carga modulares y autónomas que permitan la recarga simultánea de múltiples drones. Actualmente, las soluciones de carga disponibles en el mercado presentan limitaciones significativas, como la imposibilidad de gestionar de manera eficiente la carga de varios drones al mismo tiempo, y que aseguren un aterrizaje preciso en un mismo espacio sin intervención humana. Estas limitaciones no solo disminuyen la autonomía de los drones, sino que también afectan la eficiencia operativa, ya que requieren intervenciones frecuentes para maniobrar los drones de manera manual y requiere mayor espacio en casi de utilizar las soluciones que se encuentran actualmente en el mercado.
-\subsection{Preguntas de Investigación}
-
-- ¿Cómo se puede desarrollar una estación de carga modular que permita la carga simultánea de múltiples drones?
-- ¿Qué tecnologías de localización y visión pueden ser implementadas para asegurar un aterrizaje preciso?
-- ¿Cuales serían los recursos necesarios para implementar una estación de carga y aterrizaje de precisión en un enjambre de drones?
-- ¿Qué tipo de carga es la más adecuada para la carga de un dron en cuestión de eficiencia y rendimiento?
-
-\section{Objetivos}
-
-\subsection{Objetivo General}
-
-Diseñar y manufacturar una base de carga para cuadricópteros de arquitectura abierta, desarrollar un sistema de comunicación entre el drone y la estación de carga, e instrumentar el drone con de sensores de localización y un sistema de visión, para asegurar una integración eficaz y segura entre el cuadricóptero y su sistema de carga.
-
-\subsection{Objetivos Específicos}
+\subsection{Research Questions}
 
 \begin{itemize}
-    \item Realizar un diseño CAD para la base de carga, asegurando que sea compatible con cuadricópteros de arquitectura abierta.
-    \item Manufacturar una base de carga para el enjambre de drones.
-    \item Adaptar el diseño actual del dron de arquitectura abierta a la base de carga.
-    \item Instrumentar un cuadricóptero con oboard computer, flight controler, cámara de visión and sensores de localización.
-    \item Programar un sistema de comunicación entre la base de carga y el cuadricóptero para la trasnferencia de datos relevantes para su interacción.
-    \item Programar un sistema que permita controlar el drone desde una onboard computer.
-    \item Programar un sistema de visión por computadora que detecte en tiempo real la pose de un Aruco Marker embebido en la base de carga.
-    %\item Complementar sistemas de control de motores con el sistema de vision por computadora para lograr un aterrizaje preciso.
+    \item How can a modular charging station be developed to enable simultaneous charging of multiple drones?
+    \item What localization and vision technologies can be implemented to ensure precise landing?
+    \item What resources are required to implement a precise landing and charging station for a drone swarm?
+    \item Which charging method is the most efficient and effective for drone recharging in terms of performance and reliability?
 \end{itemize}
 
-\section{Justificación}
+\section{Objectives}
 
-\subsection{Relevancia del Proyecto}
+\subsection{General Objective}
 
-La operación continua y autónoma de enjambres de drones enfrenta varios obstáculos, entre ellos, la falta de soluciones eficientes de carga que permitan la recarga simultánea de múltiples drones de manera autónoma y sin intervención humana. Aunque este proyecto no busca solucionar completamente este desafío, sí establece las bases fundamentales para desarrollar una solución viable. Al diseñar una estación de carga modular y autónoma con un sistema de aterrizaje preciso, este trabajo proporciona un punto de partida sobre el cual se pueden realizar futuras investigaciones y mejoras.
+To design and manufacture a charging station for open-architecture quadcopters, develop a communication system between the drone and the charging station, and instrument the drone with localization sensors and a vision system to ensure effective and safe integration between the quadcopter and its charging system.
 
-El proyecto es relevante para sectores como la logística, la vigilancia y la agricultura de precisión, donde la operación autónoma de drones puede generar grandes beneficios. Al presentar una solución modular que permite recargar varios drones en un mismo espacio físico, se sientan las bases para una futura implementación a mayor escala, lo que potencialmente podría reducir los costos operativos y mejorar la eficiencia de las operaciones \cite{cite1}. Aunque no se pretende resolver el problema de manera completa en este trabajo, los avances presentados contribuirán al desarrollo de soluciones reales en el futuro.
+\subsection{Specific Objectives}
 
-\subsection{Impacto Potencial}
+\begin{itemize}
+    \item Design a CAD model for the charging station, ensuring compatibility with open-architecture quadcopters.
+    \item Manufacture a charging station module for the drone swarm.
+    \item Adapt the current design of the open-architecture drone to the charging station.
+    \item Equip a quadcopter with an onboard computer, flight controller, vision camera, and localization sensors.
+    \item Develop a communication system between the charging station and the quadcopter for the transfer of relevant interaction data.
+    \item Program a system to control the drone from an onboard computer.
+    \item Develop a computer vision system capable of detecting in real-time the pose of an embedded ArUco marker on the charging station.
+\end{itemize}
 
-A pesar de que el sistema desarrollado en este proyecto no es una solución final, su implementación tiene el potencial de influir en futuras investigaciones y desarrollos en el campo de la autonomía de drones. Las tecnologías de aterrizaje preciso y carga simultánea que se exploran aquí podrían ser fundamentales para el diseño de soluciones más avanzadas y escalables, capaces de abordar las necesidades operativas de sectores que dependen cada vez más de los drones.
+\section{Justification}
 
-El impacto potencial de este proyecto se reflejará en la capacidad de inspirar investigaciones que mejoren la eficiencia de los enjambres de drones en aplicaciones como la entrega de mercancías, la vigilancia de grandes áreas y la optimización de recursos en la agricultura. Si bien las soluciones actuales enfrentan limitaciones, este trabajo ofrece una plataforma sólida sobre la cual se podrían implementar mejoras significativas en futuras etapas \cite{cite2}.
+\subsection{Project Relevance}
 
+The continuous and autonomous operation of drone swarms faces various challenges, including the lack of efficient charging solutions that allow the simultaneous recharging of multiple drones autonomously and without human intervention. While this project does not aim to fully solve this challenge, it lays the foundational groundwork for developing a viable solution. By designing a modular and autonomous charging station with a precise landing system, this project provides a starting point for future research and improvements.
 
-Memoria actualizada
-Gracias por la aclaración. Aquí tienes una versión ajustada de las secciones, teniendo en cuenta que el proyecto establece las bases para una solución real:
+The project is particularly relevant to industries such as logistics, surveillance, and precision agriculture, where autonomous drone operations can generate significant benefits. By presenting a modular solution capable of recharging multiple drones within the same physical space, this work sets the stage for future large-scale implementations, potentially reducing operational costs and improving efficiency \cite{cite1}. Although the problem is not entirely resolved in this work, the advancements presented here contribute to the development of practical solutions in the future.
 
-\section{Justificación}
+\subsection{Potential Impact}
 
-\subsection{Relevancia del Proyecto}
+Although the system developed in this project is not a final solution, its implementation has the potential to influence future research and developments in the field of drone autonomy. The precise landing and simultaneous charging technologies explored in this work could be fundamental in designing more advanced and scalable solutions to meet the operational needs of industries increasingly relying on drones.
 
-La operación continua y autónoma de enjambres de drones enfrenta varios obstáculos, entre ellos, la falta de soluciones eficientes de carga que permitan la recarga simultánea de múltiples drones de manera autónoma y sin intervención humana. Aunque este proyecto no busca solucionar completamente este desafío, sí establece las bases fundamentales para desarrollar una solución viable. Al diseñar una estación de carga modular y autónoma con un sistema de aterrizaje preciso, este trabajo proporciona un punto de partida sobre el cual se pueden realizar futuras investigaciones y mejoras.
+The potential impact of this project lies in its ability to inspire research that improves drone swarm efficiency in applications such as parcel delivery, large-area surveillance, and resource optimization in agriculture. While current solutions face limitations, this work provides a solid platform on which significant improvements can be implemented in future stages \cite{cite2}.
 
-El proyecto es relevante para sectores como la logística, la vigilancia y la agricultura de precisión, donde la operación autónoma de drones puede generar grandes beneficios. Al presentar una solución modular que permite recargar varios drones en un mismo espacio físico, se sientan las bases para una futura implementación a mayor escala, lo que potencialmente podría reducir los costos operativos y mejorar la eficiencia de las operaciones \cite{cite1}. Aunque no se pretende resolver el problema de manera completa en este trabajo, los avances presentados contribuirán al desarrollo de soluciones reales en el futuro.
+\section{Scope and Limitations}
 
-\subsection{Impacto Potencial}
+\subsection{Project Scope}
 
-A pesar de que el sistema desarrollado en este proyecto no es una solución final, su implementación tiene el potencial de influir en futuras investigaciones y desarrollos en el campo de la autonomía de drones. Las tecnologías de aterrizaje preciso y carga simultánea que se exploran aquí podrían ser fundamentales para el diseño de soluciones más avanzadas y escalables, capaces de abordar las necesidades operativas de sectores que dependen cada vez más de los drones.
+This project establishes the foundations for a modular and autonomous drone recharging solution. It focuses on the design, manufacture, and instrumentation of a charging station capable of managing multiple drones simultaneously, utilizing computer vision and localization sensors. The work will be conducted in a controlled environment and validated under simulated conditions to ensure the solution is technically feasible.
 
-El impacto potencial de este proyecto se reflejará en la capacidad de inspirar investigaciones que mejoren la eficiencia de los enjambres de drones en aplicaciones como la entrega de mercancías, la vigilancia de grandes áreas y la optimización de recursos en la agricultura. Si bien las soluciones actuales enfrentan limitaciones, este trabajo ofrece una plataforma sólida sobre la cual se podrían implementar mejoras significativas en futuras etapas \cite{cite2}.
+While the project does not address autonomous large-scale charging, it provides a preliminary step towards a more advanced solution. The system will include the design of a modular charging station capable of recharging multiple drones in the same space, with a functional prototype of one charging module being physically developed for a single drone. Testing will be carried out on an open-architecture quadcopter, incorporating design modifications to facilitate charging and accommodate the vision and localization sensors \cite{cite3}.
 
-\section{Alcance y Limitaciones}
+\subsection{Study Limitations}
 
-\subsection{Alcance del Trabajo}
+This study is limited to the technical validation of the system in a controlled environment with a specific type of drone (open-architecture quadcopter). It does not address scalability to other types of drones or implementation under adverse weather conditions. Additionally, the project does not include prolonged testing or commercial application implementation.
 
-Este proyecto establece las bases para una solución modular y autónoma de recarga de drones. Se enfoca en el diseño, manufactura e instrumentación de una estación de carga que permita gestionar múltiples drones simultáneamente, utilizando tecnologías de visión por computadora y sensores de localización. El trabajo se llevará a cabo dentro de un entorno controlado y se validará en condiciones simuladas para asegurar que la solución es viable desde un punto de vista técnico.
+The vision and localization technologies implemented will also be limited to the test conditions, and their accuracy in more complex scenarios will not be evaluated in this work. The objective is to demonstrate the technical feasibility of the key components rather than delivering a fully functional final solution \cite{cite4}.
 
-Aunque el proyecto no resuelve el problema de la carga autónoma a gran escala, proporciona un primer paso hacia una solución más avanzada. Se presentará el diseño de un sistema de carga modular que permita recargar varios drones en el mismo espacio, sentando así las bases para desarrollos posteriores, y físicamente se realizará un prototipo funcional de uno de los modulos de carga para un drone. Las pruebas se realizarán en un cuadricoptero de arquitectura abierta con algunas modificaciones en el diseño que ayudarán a la carga y a la localizacion de los sensores de visión y localización. \cite{cite3}.
+\section{Thesis Structure}
 
-\subsection{Limitaciones del Estudio}
-
-Este estudio se limita a la validación técnica del sistema en un entorno controlado y con un tipo de drone específico (cuadricóptero de arquitectura abierta). No se abordará la escalabilidad a otros tipos de drones ni su implementación en condiciones climáticas adversas. Además, el proyecto no incluye pruebas prolongadas ni la implementación en aplicaciones comerciales.
-
-Las tecnologías de visión y localización implementadas también estarán limitadas a las condiciones de prueba, y su precisión en escenarios más complejos no será evaluada en este trabajo. El objetivo es demostrar la viabilidad técnica de los componentes clave, más que ofrecer una solución final completamente funcional \cite{cite4}.
-
-\section{Estructura de la Tesis}
-
-El capítulo 2 presentará una revisión detallada del estado del arte en sistemas de carga para drones abarcando temas de mecánica, electrónica y programación. El capítulo 3 describirá la metodología empleada para el desarrollo del prototipo. El capítulo 4 discutirá los resultados obtenidos durante las pruebas, y el capítulo 5 incluirá las conclusiones y recomendaciones para futuros trabajos.
-
+Chapter 2 will present a detailed review of the state of the art in drone charging systems, covering mechanics, electronics, and programming. Chapter 3 will describe the methodology employed in developing the prototype. Chapter 4 will discuss the results obtained during testing, and Chapter 5 will include conclusions and recommendations for future work.
