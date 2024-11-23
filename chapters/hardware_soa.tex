@@ -50,6 +50,77 @@
         \label{fig:drone_frames}
     \end{figure}
 
+\subsection{Motors}
+
+Motors are an essential component for the flight of a drone, and they are typically brushless motors due to their high efficiency and durability. According to the guide, the selection of the motor depends on factors such as the drone's size, total weight, and the desired type of flight. Key considerations include:
+
+\begin{itemize}
+    \item \textbf{Kv Rating:} Indicates the revolutions per minute (RPM) per applied volt without load. A lower Kv provides more torque, making it ideal for larger drones with bigger propellers.
+    \item \textbf{Compatibility:} The motor must be compatible with the electronic speed controller (ESC) and the propellers.
+    \item \textbf{Mounting:} The drone's frame design should allow for a secure installation of the motors.
+\end{itemize}
+
+\subsection{Propellers}
+
+Propellers generate the necessary lift for flight. According to the guide, they are a critical factor for the drone's performance and should be selected based on the motors and the size of the drone. Important characteristics include:
+
+\begin{itemize}
+    \item \textbf{Size (diameter and pitch):} Larger propellers generate more lift but require more powerful motors. The "pitch" determines how much air the propeller displaces per revolution.
+    \item \textbf{Material:} Propellers can be made of plastic, wood, or carbon fiber. Carbon fiber propellers are lighter and stronger, making them ideal for high-performance drones.
+    \item \textbf{Balancing:} Poorly balanced propellers can cause vibrations, affecting stability and the quality of sensor data.
+\end{itemize}
+
+\subsection{LiPo Batteries}
+
+LiPo (Lithium Polymer) batteries are the primary energy source for most drones. They are lightweight, high-capacity, and capable of delivering the current required by the motors and other components. Key aspects include:
+
+\begin{itemize}
+    \item \textbf{Cells (S):} Each cell has a nominal voltage of 3.7V. For example, a 3S battery has 11.1V (3 × 3.7V). The number of cells must be compatible with the motors and ESCs.
+    \item \textbf{Capacity (mAh):} Determines the flight time. Higher capacity provides longer flights but also increases weight.
+    \item \textbf{Discharge Rate (C):} Indicates how much current the battery can safely provide. It must meet the motors' requirements.
+    \item \textbf{Charging and Safety:} LiPo batteries require specific chargers and must be handled carefully to prevent fires.
+\end{itemize}
+
+\subsection{Aplicaciones de los Drones}
+Los drones tienen una amplia variedad de aplicaciones en la actualidad y conforme pasa el tiempo se incrementan estas mismas gracias a su versatilidad y capacidad para acceder a áreas de difícil acceso. De acuerdo a la documentación oficial [ardupailot] las aplicaciones de los drones son [1]: Aerial Photography and Videography, First Person View (FPV), Disaster Response, Search and Rescue, Agricultural Applications, Wildfire Mitigation, Hazard Mitigation, 3D Mapping and Geographic Information Systems (GIS), Inspection and Verification, Cargo Delivery, among others.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{pictures/drone_aplication_1.jpg}
+    \caption{Esta imagen muestra el DJI AGRAS T50 siendo aplicado en la industria agricola. \cite{aplications_drones} }
+    \label{fig:drone_applications}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{pictures/drone_aplication_2.jpg}
+    \caption{Se muestra un dron de la empresa Amazon, el cual hace entregas de paquetes a domicilio. \cite{aplications_drones}}
+    \label{fig:drone_applications_2}
+\end{figure}
+
+\subsection{Swarming Drones}
+A diferencia del control individual de un dron, el concepto de enjambre de drones permite la colaboración entre múltiples unidades para ejecutar tareas complejas de manera eficiente y coordinada. A esta tecnología se le llama enjambres de drones que de acuerdo a los autores [4] respresenta “the true revolution in this field is the control of drone swarms, enabling multiple units to collaborate in executing more complex tasks”. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{pictures/swarm_diagram.png}
+    \caption{Diagrama que simula un modelo de enjambre de drones}
+    \label{fig:swarming_drones}
+\end{figure}
+
+El control de enjambres de drones requiere de sistemas sofisticados que incluyan comunicación bidireccional, tanto entre los drones como con la estación de control terrestre (Ground Control Station, GCS). Según los autores [4], estos sistemas permiten que los drones compartan información clave como posición, estado de batería y obstáculos detectados, lo que posibilita evitar colisiones, mantener formaciones específicas y adaptarse a condiciones dinámicas del entorno.
+
+Además, los autores [4] destacan que un elemento fundamental para el éxito de esta tecnología es la capacidad de posicionamiento y localización precisa, lograda a través de sistemas GPS avanzados. Esta precisión permite a los drones mantener distancias seguras entre sí y operar de forma autónoma en misiones complejas. Otro aspecto relevante es la implementación de sistemas de redundancia que garantizan la continuidad de las operaciones en caso de fallos en alguna unidad del enjambre.
+
+En el ámbito industrial, los enjambres de drones presentan un gran potencial en aplicaciones como inspecciones automatizadas, monitoreo ambiental, agricultura de precisión y gestión de desastres. Según los autores [4], el uso de enjambres de drones en estos escenarios no solo mejora la eficiencia operativa, sino que también abre nuevas oportunidades para el desarrollo de tecnologías autónomas en el contexto de la Industria 4.0.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{pictures/swarms.png}
+    \caption{Se muestra un ejambre de drones en la imagen. \cite{swarming_drones}}
+    \label{fig:swarming_drones_2}
+\end{figure}
+
 \subsection{Types of Drone Charging Stations}
 
     Currently, there is a growing trend towards the concept of charging or docking stations for drones. According to Grlj et al., "A docking station for UAVs is a multipurpose system that enables them to land safely, take off, recharge and/or replace batteries, and transfer data and payload" \cite{grlj_docking_stations}.
@@ -139,8 +210,8 @@
     \end{figure}
 
 
-\subsection{Automatic Drawer Mechanism}
-    \subsubsection{Types of Mechanisms}
+\subsection{Types of Mechanisms}
+    \subsubsection{Automatic Drawer Mechanism}
     The automatic drawer mechanism in the charging station for drone storage is similar to the mechanisms found in other automatic storage solutions. Here, we'll discuss the main mechanisms that could be used in this context, including the advantages and disadvantages of each. The mechanism chosen for this project was the belt and V-pulley due to its easy accessibility and low cost.
     
     \paragraph{Pistons} Pistons are a common choice for automated movement in many types of machinery. They use compressed air or hydraulic fluid to extend and retract, making them well-suited for precise and strong movements. For an automatic drawer for drones, pistons could provide a robust and stable means to open and close the drawer. However, this approach may have higher costs and complexity compared to other mechanisms, as it requires pneumatic or hydraulic infrastructure and regular maintenance.
@@ -150,39 +221,7 @@
     \paragraph{Belt and V-Pulley} This mechanism involves a belt shaped like a V and a pulley, which ensures good friction and prevents slipping while moving the drawer. The belt and V-pulley mechanism is simple, inexpensive, and easy to source, which made it the choice for this project. It offers a balance between precision and accessibility, being a practical solution for the needs of an automatic drone storage drawer. Its main disadvantage is that it may lack the precise positioning capabilities of toothed pulleys, but for the current application, this is acceptable.
 
     
-\subsection{Motors and Propellers}
 
-    \subsubsection{Motors}
-    
-    Motors are an essential component for the flight of a drone, and they are typically brushless motors due to their high efficiency and durability. According to the guide, the selection of the motor depends on factors such as the drone's size, total weight, and the desired type of flight. Key considerations include:
-    
-    \begin{itemize}
-        \item \textbf{Kv Rating:} Indicates the revolutions per minute (RPM) per applied volt without load. A lower Kv provides more torque, making it ideal for larger drones with bigger propellers.
-        \item \textbf{Compatibility:} The motor must be compatible with the electronic speed controller (ESC) and the propellers.
-        \item \textbf{Mounting:} The drone's frame design should allow for a secure installation of the motors.
-    \end{itemize}
-    
-    \subsubsection{Propellers}
-    
-    Propellers generate the necessary lift for flight. According to the guide, they are a critical factor for the drone's performance and should be selected based on the motors and the size of the drone. Important characteristics include:
-    
-    \begin{itemize}
-        \item \textbf{Size (diameter and pitch):} Larger propellers generate more lift but require more powerful motors. The "pitch" determines how much air the propeller displaces per revolution.
-        \item \textbf{Material:} Propellers can be made of plastic, wood, or carbon fiber. Carbon fiber propellers are lighter and stronger, making them ideal for high-performance drones.
-        \item \textbf{Balancing:} Poorly balanced propellers can cause vibrations, affecting stability and the quality of sensor data.
-    \end{itemize}
-    
-    \subsubsection{LiPo Batteries}
-    
-    LiPo (Lithium Polymer) batteries are the primary energy source for most drones. They are lightweight, high-capacity, and capable of delivering the current required by the motors and other components. Key aspects include:
-    
-    \begin{itemize}
-        \item \textbf{Cells (S):} Each cell has a nominal voltage of 3.7V. For example, a 3S battery has 11.1V (3 × 3.7V). The number of cells must be compatible with the motors and ESCs.
-        \item \textbf{Capacity (mAh):} Determines the flight time. Higher capacity provides longer flights but also increases weight.
-        \item \textbf{Discharge Rate (C):} Indicates how much current the battery can safely provide. It must meet the motors' requirements.
-        \item \textbf{Charging and Safety:} LiPo batteries require specific chargers and must be handled carefully to prevent fires.
-    \end{itemize}
-    
     
     
     

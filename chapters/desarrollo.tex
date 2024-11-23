@@ -172,35 +172,195 @@ El circuito de distribución de energía proporciona alimentación segura y esta
 
 \section{Software Configuration}
 
-\subsection{Configuración de la Computadora en Tierra} Se documenta la configuración de la computadora en tierra, incluyendo las herramientas y librerías necesarias para la comunicación y el procesamiento de datos:
+\subsection{Configuración de la Computadora Central en Tierra} 
+La computadora central se configuró para supervisar y procesar la información proveniente de la computadora auxiliar del dron. A continuación, se describen los pasos realizados para esta configuración:
 
-    \begin{itemize} 
-        \item Instalación de ROS 2 y configuración de nodos para la comunicación con el dron. 
-        \item Configuración de los parámetros de red para la comunicación WiFi. 
+\begin{itemize}
+    \item \textbf{Instalación de ROS 2 Humble:} 
+    Dado que la computadora central utiliza Ubuntu 22.04, se instaló ROS 2 Humble siguiendo las instrucciones oficiales. Los comandos utilizados fueron:
+    \begin{verbatim}
+    sudo apt update && sudo apt install -y software-properties-common
+    sudo add-apt-repository universe
+    sudo apt update
+    sudo apt install -y ros-humble-desktop
+    \end{verbatim}
+    Esto incluyó la instalación de las herramientas necesarias para desarrollar y ejecutar aplicaciones en ROS 2 Humble.
+
+    \item \textbf{Configuración del entorno:} 
+    Para facilitar el uso de ROS 2, se configuró el archivo \texttt{~/.bashrc}. Se agregó la siguiente línea al final del archivo:
+    \begin{verbatim}
+    source /opt/ros/humble/setup.bash
+    \end{verbatim}
+    Posteriormente, se ejecutó:
+    \begin{verbatim}
+    source ~/.bashrc
+    \end{verbatim}
+
+    \item \textbf{Clonación del repositorio de GitHub:} 
+    Se creó un espacio de trabajo para ROS 2 y se clonó el repositorio correspondiente. Los pasos realizados fueron:
+    \begin{verbatim}
+    mkdir -p ~/ros2_ws/src
+    cd ~/ros2_ws/src
+    git clone <URL_del_repositorio>
+    cd ..
+    colcon build
+    \end{verbatim}
+
+    \item \textbf{Configuración del \texttt{ROS\_DOMAIN\_ID}:} 
+    Para garantizar una correcta comunicación entre la computadora central y la computadora auxiliar del dron, se configuró el \texttt{ROS\_DOMAIN\_ID} con el valor 10. Esto se realizó añadiendo la siguiente línea al archivo \texttt{~/.bashrc}:
+    \begin{verbatim}
+    export ROS_DOMAIN_ID=10
+    \end{verbatim}
+    Luego, se ejecutó:
+    \begin{verbatim}
+    source ~/.bashrc
+    \end{verbatim}
+    
+    \item \textbf{Verificación del entorno de ROS 2:} 
+    Finalmente, se verificó que el entorno estuviera correctamente configurado utilizando los siguientes comandos:
+    \begin{verbatim}
+    ros2 doctor
+    \end{verbatim}
+    Esto permitió confirmar que todas las dependencias necesarias para ROS 2 Humble estuvieran instaladas y funcionando correctamente.
+    
+    \begin{center} 
+        \textit{Imagen de la configuración del entorno en la computadora central.} 
+    \end{center}
+\end{itemize}
+
+
+\subsection{Configuración de la Computadora Auxiliar del Dron} 
+    La Raspberry Pi 5 se configuró como computadora auxiliar para el procesamiento de datos y comunicación en tiempo real con la estación de carga. A continuación, se detallan los pasos realizados para su configuración:
+    
+    \begin{itemize}
+        \item \textbf{Instalación de Ubuntu 24.04:} 
+        Se utilizó la herramienta Raspberry Pi Imager para instalar Ubuntu Server 24.04 LTS (64-Bit) en la tarjeta SD. Durante la configuración inicial, se habilitó SSH, se definió un usuario con contraseña y se conectó la Raspberry Pi a la red WiFi.
+    
+        \item \textbf{Conexión inicial y SSH:} 
+        Después de insertar la tarjeta SD en la Raspberry Pi y conectarla a un monitor y teclado, se encendió el dispositivo e ingresaron las credenciales configuradas. Se obtuvo la dirección IP mediante el comando:
+        \begin{verbatim}
+        hostname -I
+        \end{verbatim}
+        Con esta información, se estableció una conexión SSH desde una computadora externa utilizando:
+        \begin{verbatim}
+        ssh <usuario>@<IP>
+        \end{verbatim}
+        Esto permitió continuar con la configuración de la Raspberry Pi de forma remota.
+    
+        \item \textbf{Actualización del sistema:} 
+        Se realizó una actualización completa del sistema operativo con los siguientes comandos:
+        \begin{verbatim}
+        sudo apt update && sudo apt upgrade -y
+        \end{verbatim}
+        También se instaló \texttt{raspi-config} para habilitar el puerto serial. Esta opción se configuró en \texttt{Interface Options > Serial Port}, seleccionando \texttt{No} y luego \texttt{Yes}.
+    
+        \item \textbf{Modificación de \texttt{bashrc} y configuración del ID:} 
+        Para garantizar la comunicación entre todos los dispositivos, se configuró el \texttt{ROS\_DOMAIN\_ID} con el valor 10. Se editó el archivo \texttt{~/.bashrc} con:
+        \begin{verbatim}
+        sudo vim ~/.bashrc
+        \end{verbatim}
+        Al final del archivo, se agregaron las siguientes líneas:
+        \begin{verbatim}
+        export ROS_DOMAIN_ID=10
+        source /opt/ros/jazzy/setup.bash
+        \end{verbatim}
+        Posteriormente, se guardaron los cambios y se ejecutó:
+        \begin{verbatim}
+        source ~/.bashrc
+        \end{verbatim}
+    
+        \item \textbf{Instalación de ROS 2 Jazzy:} 
+        Se siguieron las instrucciones oficiales para instalar ROS 2 Jazzy en Ubuntu 24.04. Esto incluyó los comandos:
+        \begin{verbatim}
+        sudo apt install -y software-properties-common
+        sudo add-apt-repository universe
+        sudo apt update
+        sudo apt install -y ros-jazzy-desktop
+        \end{verbatim}
+    
+        \item \textbf{Clonación del repositorio de GitHub:} 
+        Se creó un espacio de trabajo en ROS 2 para integrar los nodos personalizados. Los pasos realizados fueron:
+        \begin{verbatim}
+        mkdir -p ~/ros2_ws/src
+        cd ~/ros2_ws/src
+        git clone <URL_del_repositorio>
+        cd ..
+        colcon build
+        \end{verbatim}
+    
+        \item \textbf{Instalación de MAVROS y MAVProxy:} 
+        Para la comunicación con el Pixhawk, se instalaron MAVROS y MAVProxy. Los comandos utilizados fueron:
+        \begin{verbatim}
+        sudo apt install ros-jazzy-mavros ros-jazzy-mavros-extras
+        sudo rosdep init
+        rosdep update
+        sudo apt install python3-mavproxy
+        \end{verbatim}
+        Además, se configuraron los complementos geográficos necesarios:
+        \begin{verbatim}
+        sudo apt install geographiclib-tools
+        sudo geographiclib-get-geoids egm96-5
+        \end{verbatim}
+    
+        \item \textbf{Verificación de la comunicación:} 
+        Para garantizar que MAVROS y MAVProxy funcionaran correctamente, primero se inició MAVProxy con:
+        \begin{verbatim}
+        mavproxy.py --master=/dev/ttyAMA0 --baudrate 921600
+        \end{verbatim}
+        Posteriormente, se lanzó MAVROS utilizando:
+        \begin{verbatim}
+        ros2 launch mavros px4.launch fcu_url:=serial:///dev/ttyAMA0:921600
+        \end{verbatim}
+        Finalmente, se verificaron los tópicos disponibles con:
+        \begin{verbatim}
+        ros2 topic list
+        \end{verbatim}
+        y se confirmó la comunicación observando los mensajes de los tópicos relevantes.
+        
         \begin{center} 
-            \textit{Imagen del entorno de configuración en la computadora de tierra} 
-        \end{center} 
+            \textit{Imagen de la configuración del entorno en la Raspberry Pi 5.} 
+        \end{center}
     \end{itemize}
-
-\subsection{Configuración de la Computadora Auxiliar del Dron} La Raspberry Pi se configuró como una computadora auxiliar, encargada del procesamiento de datos y la comunicación en tiempo real con la estación de carga.
-
-    \begin{itemize} 
-        \item Instalación de ROS 2 y conexión de nodos de comunicación. 
-        \item Configuración de módulos de procesamiento de imágenes para la detección de Aruco. 
+    
+\subsection{Configuración de la Estación de Control en Tierra} 
+    Se detalla la configuración realizada para la estación de control en tierra utilizando las herramientas QGroundControl y Mission Planner. Ambas aplicaciones son similares en funcionalidad, permitiendo la visualización y gestión de parámetros de vuelo. Sin embargo, dado que se utilizó ArduPilot como firmware, se decidió priorizar Mission Planner debido a su optimización para este sistema.
+    
+    \begin{itemize}
+        \item \textbf{Instalación de Mission Planner y QGroundControl:} 
+        Se instalaron ambas herramientas en la computadora central para la gestión y monitoreo del Pixhawk. Mission Planner se utilizó principalmente por su compatibilidad directa con ArduPilot, mientras que QGroundControl fue útil en ciertas configuraciones iniciales.
+    
+        \item \textbf{Calibración de sensores:} 
+        La calibración de los sensores del Pixhawk se realizó desde Mission Planner, siguiendo estos pasos:
+        \begin{itemize}
+            \item Acceder a la sección de calibración en la pestaña \textit{Initial Setup}.
+            \item Seleccionar la opción de calibración para cada sensor:
+            \begin{itemize}
+                \item \textbf{Acelerómetro:} Se colocó el Pixhawk en diferentes orientaciones según las instrucciones en pantalla para calibrar correctamente.
+                \item \textbf{Giroscopio:} Se mantuvo el Pixhawk inmóvil durante el proceso de calibración.
+                \item \textbf{GPS:} Se verificó la recepción de satélites y se ajustaron los parámetros necesarios para una correcta ubicación.
+            \end{itemize}
+        \end{itemize}
         \begin{center} 
-            \textit{Imagen de la configuración del entorno en la Raspberry Pi 4} 
-        \end{center} 
+            \textit{Imagen de la configuración de sensores en Mission Planner.} 
+        \end{center}
+    
+        \item \textbf{Parámetros de comunicación:} 
+        Para establecer la comunicación entre la Raspberry Pi y el Pixhawk a través de MAVROS y MAVLink, se realizaron los siguientes ajustes en los parámetros utilizando Mission Planner:
+        \begin{itemize}
+            \item \texttt{SERIAL2\_PROTOCOL}: Configurado en 2 para habilitar MAVLink.
+            \item \texttt{SERIAL2\_BAUD}: Ajustado a 921600 para coincidir con la configuración de la Raspberry Pi.
+            \item \texttt{SYS\_ID}: Configurado en el ID correspondiente para garantizar una comunicación adecuada con el sistema.
+        \end{itemize}
+    
+        \item \textbf{Validación de la configuración:} 
+        Se verificó la conexión entre la Raspberry Pi y el Pixhawk mediante el comando:
+        \begin{verbatim}
+        ros2 topic list
+        \end{verbatim}
+        Además, se confirmaron los mensajes de MAVLink desde Mission Planner utilizando la consola de mensajes.
+    
     \end{itemize}
-
-\subsection{Configuración de la Estación de Control en Tierra} Se detalla la configuración de la estación de control utilizando Mission Planner:
-
-    \begin{itemize} 
-        \item Instalación de Mission Planner para la visualización y gestión de parámetros de vuelo. 
-        \item Configuración de la calibración de sensores, incluyendo el acelerómetro, el giroscopio y el GPS. 
-        \begin{center} 
-            \textit{Imagen de la configuración de sensores en Mission Planner} 
-        \end{center} 
-    \end{itemize}
+    
 
 \section{Sistema de Visión}
 \subsection{Especificaciones y Requerimientos} 
