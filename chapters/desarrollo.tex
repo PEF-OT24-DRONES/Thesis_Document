@@ -12,6 +12,46 @@ A continuación se presentan las especificaciones técnicas y los requisitos par
         \item Debe contar con por lo menos un método de posicionamiento visible para el drone.
     \end{enumerate}
 
+    \subsection{Lista de Materiales}
+    \begin{itemize}
+        \item Perfiles de Aluminio
+            \begin{itemize}
+                \item \textbf{30 mm:}
+                \begin{itemize}
+                \item 4 x Perfiles de 100 mm
+                \item 4 x Perfiles de 810 mm
+                \item 6 x Perfiles de 750 mm
+                \end{itemize}
+                \item \textbf{40 mm:}
+                \begin{itemize}
+                \item 2 x Perfiles de 1040 mm
+                \item 4 x Perfiles de 560 mm
+                \item 4 x Perfiles de 830 mm
+                \item 4 x Perfiles de 1120 mm
+                \end{itemize}
+            \end{itemize}
+        \item 16 x Codos para perfil de aluminio impresos en 3D
+        \item Tronillería para perfil de aluminio
+        \item 2 x Riel Corredera Telescópica
+        \item 1 x Motor de 12V
+        \item 1 x Soportes de Motor impresos en 3D
+        \item 1 x Banda de 1 m 
+        \item 2 x Polea tipo A con diámetro interno de 1/2"
+        \item 2 x Balero de DI: 15 mm y DE: 35 mm
+        \item 2 x Chumacera impresa en 3D
+        \item 2 x MDF de 9 mm de 75x75 cm
+        \item 8 x Separadores de MDF impresos en 3D
+        \item 1 x Fuente de Poder de 12V
+        \item 1 x Arduino Mega
+        \item 1 x Raspberry Pi 4
+        \item 1 x Puente H BTS7960 
+        \item 2 x Sensor de Proximidad Inductivo
+        \item 1 x Joystick
+        \item 1 x Router WiFi
+        \item 1 x BT3 Pro Compact Charger
+        \item 1 X Cable Carrier 1 m
+    \end{itemize}
+
 \subsection{Selección e Implementación del Mecanismo de Movimiento del Cajón}
 
 En la sección 2.2.3 se explican en detalle los diferentes mecanismos de movimiento que se consideraron para la estación de carga, evaluando sus ventajas y desventajas en términos de precisión, durabilidad, costo y facilidad de integración en el diseño modular. Se analizaron opciones como pistones lineales, bandas dentadas y otros sistemas de transmisión, con el objetivo de seleccionar una solución que cumpliera con los requisitos de funcionalidad sin elevar demasiado los costos. 
@@ -44,34 +84,7 @@ Para cumplir con los requerimientos de diseño modular / apilable y compatibilid
         imagen
     \end{itemize}
 
-\subsection{Lista de Materiales}
-\begin{itemize}
-    \item Perfiles de Aluminio
-        \begin{itemize}
-            \item 2 x Perfiles de 75 cm
-            \item 2 x Perfiles de 50 cm
-            \item 2 x Perfiles de 25 cm
-        \end{itemize}
-    \item 1 x Fuente de Poder de 12V
-    \item 1 x Arduino Mega
-    \item 1 x Raspberry Pi 4
-    \item 1 x Driver JBT 
-    \item 2 x Sensor de Proximidad Inductivo
-    \item 1 x Joystick
-    \item 1 x Cargador de Lipo battery
-    \item Tronillería para perfil de aluminio
-    \item 2 x Rieles de 75 cmd
-    \item 1 x Motor de 12V
-    \item 1 x Soporte de Motor impreso en 3D
-    \item 1 x Banda de 1 m
-    \item 2 x Poleas de 5 cm de diámetro
-    \item 2 x Baleros de 5 cm de diámetro
-    \item 2 x Chumacera de 5 cm de diámetro impresas en 3D
-    \item 2 x MDF de 9 mm de 50 x 50 cm
-    \item 8 x Separadores de MDF impresos en 3D
-    \item 1 x Router WiFi
-    \item 16 x Codos para perfil de aluminio impresos en 3D
-\end{itemize}
+
 
 \subsection{Proceso de Manufactura de la Estructura de la Base de Carga}
 
@@ -153,7 +166,7 @@ El circuito de distribución de energía proporciona alimentación segura y esta
         \end{center} 
     \end{itemize}
 
-    \subsection{Integración de Componentes Electrónicos} Cada componente fue ensamblado y cableado de acuerdo con el diseño modular del dron. A continuación se describen los pasos del proceso de integración:
+    \subsubsection{Integración de Componentes Electrónicos} Cada componente fue ensamblado y cableado de acuerdo con el diseño modular del dron. A continuación se describen los pasos del proceso de integración:
 
     \begin{enumerate} 
         \item \textbf{Montaje de la Cámara:} La cámara se fijó en la parte de abajo del dron, permitiendo una visibilidad óptima para la detección de marcadores Aruco. 
@@ -327,10 +340,10 @@ La computadora central se configuró para supervisar y procesar la información 
     
     \begin{itemize}
         \item \textbf{Instalación de Mission Planner y QGroundControl:} 
-        Se instalaron ambas herramientas en la computadora central para la gestión y monitoreo del Pixhawk. Mission Planner se utilizó principalmente por su compatibilidad directa con ArduPilot, mientras que QGroundControl fue útil en ciertas configuraciones iniciales.
+        Se instalaron ambas herramientas en la computadora central para la gestión y monitoreo del Pixhawk. Mission Planner se utilizó principalmente por su compatibilidad directa con ArduPilot, mientras que QGroundControl fue útil en ciertas configuraciones iniciales como algunas calibraciones redundates.
     
         \item \textbf{Calibración de sensores:} 
-        La calibración de los sensores del Pixhawk se realizó desde Mission Planner, siguiendo estos pasos:
+        La calibración de los sensores del Pixhawk que se realizó desde Mission Planner, siguiendo estos pasos:
         \begin{itemize}
             \item Acceder a la sección de calibración en la pestaña \textit{Initial Setup}.
             \item Seleccionar la opción de calibración para cada sensor:
@@ -340,10 +353,13 @@ La computadora central se configuró para supervisar y procesar la información 
                 \item \textbf{GPS:} Se verificó la recepción de satélites y se ajustaron los parámetros necesarios para una correcta ubicación.
             \end{itemize}
         \end{itemize}
-        \begin{center} 
-            \textit{Imagen de la configuración de sensores en Mission Planner.} 
-        \end{center}
-    
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.8\textwidth]{pictures/mp_calibration.png}
+            \caption{Imagen de la configuración de sensores en Mission Planner.}
+        \end{figure}
+
+        
         \item \textbf{Parámetros de comunicación:} 
         Para establecer la comunicación entre la Raspberry Pi y el Pixhawk a través de MAVROS y MAVLink, se realizaron los siguientes ajustes en los parámetros utilizando Mission Planner:
         \begin{itemize}
@@ -352,89 +368,285 @@ La computadora central se configuró para supervisar y procesar la información 
             \item \texttt{SYS\_ID}: Configurado en el ID correspondiente para garantizar una comunicación adecuada con el sistema.
         \end{itemize}
     
-        \item \textbf{Validación de la configuración:} 
-        Se verificó la conexión entre la Raspberry Pi y el Pixhawk mediante el comando:
-        \begin{verbatim}
-        ros2 topic list
-        \end{verbatim}
-        Además, se confirmaron los mensajes de MAVLink desde Mission Planner utilizando la consola de mensajes.
-    
     \end{itemize}
     
 
 \section{Sistema de Visión}
 \subsection{Especificaciones y Requerimientos} 
-El sistema de visión debe cumplir con los siguientes requisitos para asegurar la precisión en la detección de marcadores Aruco:
+El sistema de visión debe cumplir con los siguientes requisitos para garantizar la detección precisa de marcadores Aruco:
     \begin{itemize}
-        \item Obtención y aplicación de las matrices de calibración de la cámara.
-        \item Generar marcadores Aruco de diferentes tamaños (Embedded ArUcos) para su detección en tiempo real.
+        \item Obtener las matrices de calibración intrínsecas y extrínsecas de la cámara.
+        \item Generar y detectar marcadores Aruco de distintos tamaños en tiempo real.
     \end{itemize}
 
-\subsection{Calibración de la Cámara} El proceso de calibración incluyó la captura de múltiples imágenes de una cuadrícula de calibración y la generación de los parámetros intrínsecos y extrínsecos.
+\subsection{Calibración de la Cámara} 
+El proceso de calibración de la cámara se realizó utilizando un script en Python con la biblioteca OpenCV. Este procedimiento se detalla a continuación, combinando fragmentos del código y las imágenes obtenidas en cada etapa. El código completo se encuentra en los anexos del documento.
+    
+    \begin{enumerate}
+        \item \textbf{Captura de imágenes:} 
+        Se recopilaron múltiples imágenes del tablero de ajedrez desde diferentes ángulos y distancias para abarcar todo el campo de visión de la cámara. Estas imágenes presentaban distorsiones propias de la lente, como se observa en la Figura \ref{fig:imagen_descalibrada}.
 
-    \begin{center} 
-        % Imagen del proceso de calibración y los resultados obtenidos
-        \figurename{
-            \begin{figure}
+        \begin{center}
+            \begin{figure}[h!]
                 \centering
-                %\includegraphics[width=0.8\textwidth]{pictures/calibracion_camara.png}
-                \caption{Imagen del proceso de calibración y los resultados obtenidos}
+                %\includegraphics[width=0.8\textwidth]{pictures/imagen_descalibrada.png}
+                \caption{Ejemplo de imagen descalibrada tomada durante el proceso de captura.}
+                \label{fig:imagen_descalibrada}
             \end{figure}
-        }
+        \end{center}
+    
+        \item \textbf{Detección de esquinas:} 
+        El script detectó las esquinas internas del tablero de ajedrez mediante la función \texttt{cv2.findChessboardCorners}. Posteriormente, se refinaron las esquinas detectadas utilizando \texttt{cv2.cornerSubPix}, y se visualizaron las líneas superpuestas en las imágenes de calibración, como se muestra en la Figura \ref{fig:det_ejemplos}.
+        \begin{verbatim}
+        ret, corners = cv2.findChessboardCorners(gray, (ncols, nrows), None)
+        corners2 = cv2.cornerSubPix(gray, corners, (11, 11), (-1, -1), criteria)
+        \end{verbatim}
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width=0.8\textwidth]{pictures/calib_predictions.png}
+                \caption{Detección y refinamiento de esquinas en el tablero de ajedrez.}
+                \label{fig:det_ejemplos}
+            \end{figure}
+        \end{center}
+    
+        \item \textbf{Calibración de la cámara:} 
+        Utilizando \texttt{cv2.calibrateCamera}, se calcularon los parámetros intrínsecos de la cámara y los coeficientes de distorsión. Estos parámetros permiten corregir las distorsiones en las imágenes capturadas. La Figura \ref{fig:imagen_calibrada} muestra el resultado después de aplicar estos parámetros.
+        \begin{verbatim}
+        ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, 
+                                                           imgpoints, 
+                                                           img_size, 
+                                                           None, 
+                                                           None)
+        \end{verbatim}
+        Donde:
+        \begin{itemize}
+            \item \texttt{mtx}: Matriz intrínseca de la cámara.
+            \item \texttt{dist}: Coeficientes de distorsión.
+            \item \texttt{rvecs}, \texttt{tvecs}: Rotaciones y traslaciones.
+        \end{itemize}
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                %\includegraphics[width=0.8\textwidth]{pictures/imagen_calibrada.png}
+                \caption{Imagen calibrada después de aplicar los parámetros obtenidos.}
+                \label{fig:imagen_calibrada}
+            \end{figure}
+        \end{center}
+    
+        \item \textbf{Cálculo del error de calibración:} 
+        Se verificó la precisión del modelo calculando el error promedio mediante \texttt{cv2.projectPoints}. Este cálculo compara las esquinas detectadas y proyectadas.
+        \begin{verbatim}
+        error = cv2.norm(imgpoints[i], imgpoints2, cv2.NORM_L2) / len(imgpoints2)
+        print("Total error: {}".format(mean_error / len(objpoints)))
+        \end{verbatim}
+    
+        \item \textbf{Almacenamiento de parámetros:} 
+        Los parámetros de calibración obtenidos se guardaron en un archivo JSON, lo que permite su reutilización en futuros procesos de corrección de imágenes.
+        \begin{verbatim}
+        data = {"camera_matrix": mtx.tolist(), 
+                "distortion_coefficients": dist.tolist()}
+        with open(output_path, "w") as file:
+            json.dump(data, file, indent=4)
+        \end{verbatim}
+    \end{enumerate}
+    
+    
+\subsection{Generación de Marcadores ArUco} 
+    Se generaron marcadores ArUco adaptados al sistema, incluyendo tamaños y patrones específicos. En particular, se crearon marcadores embebidos, donde un marcador interno se incrusta dentro de un marcador externo para maximizar la precisión en la detección. A continuación, se describe el proceso paso a paso, destacando las partes importantes del código utilizado. El código completo se encuentra en los anexos del documento.
+    
+    \begin{enumerate}
+        \item \textbf{Carga del diccionario de ArUco:} 
+        Se utilizó el diccionario predefinido \texttt{DICT\_6X6\_250} de OpenCV, adecuado para generar marcadores con diferentes patrones y niveles de detalle.
+        \begin{verbatim}
+        aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_6X6_250)
+        \end{verbatim}
+    
+        \item \textbf{Generación del marcador externo:} 
+        Se definió un tamaño de 220 píxeles para el marcador externo (\texttt{outer\_marker\_size}) y se generó el marcador con un ID específico (\texttt{outer\_marker\_id}). Esto permitió crear un marcador grande que sirviera como contenedor.
+        \begin{verbatim}
+        outer_marker = aruco.generateImageMarker(aruco_dict, 
+                                                 outer_marker_id, 
+                                                 outer_marker_size)
+        \end{verbatim}
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width=0.4\textwidth]{pictures/aruco_marker_5.png}
+                \caption{Marcador ArUco externo generado.}
+            \end{figure}
+        \end{center}
+    
+        \item \textbf{Generación del marcador interno:} 
+        El marcador interno se generó con un tamaño de 50 píxeles (\texttt{inner\_marker\_size}) y un ID específico (\texttt{inner\_marker\_id}). Este marcador se diseñó para ser incrustado dentro del marcador externo.
+        \begin{verbatim}
+        inner_marker = aruco.generateImageMarker(aruco_dict, 
+                                                 inner_marker_id, 
+                                                 inner_marker_size)
+        \end{verbatim}
+
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width=0.2\textwidth]{pictures/aruco_marker_100.png}
+                \caption{Marcador interno con borde blanco añadido.}
+            \end{figure}
+        \end{center}
+    
+        \item \textbf{Creación del borde blanco alrededor del marcador interno:} 
+        Se añadió un borde blanco de un píxel alrededor del marcador interno utilizando \texttt{cv2.copyMakeBorder}, lo que facilita su incrustación y aumenta la visibilidad en diferentes condiciones de iluminación.
+        \begin{verbatim}
+        inner_marker_with_border = cv2.copyMakeBorder(
+            inner_marker,
+            top=border_size,
+            bottom=border_size,
+            left=border_size,
+            right=border_size,
+            borderType=cv2.BORDER_CONSTANT,
+            value=255  # Blanco
+        )
+        \end{verbatim}
         
-        \textit{Imagen del proceso de calibración y los resultados obtenidos} 
-    \end{center}
-
-\subsection{Generación de Marcadores Aruco} 
-Se generaron marcadores Aruco adaptados al sistema, incluyendo tamaños y patrones específicos para maximizar la precisión en la detección desde diferentes alturas.
-    \begin{center} 
-        \textit{Imagen de los diferentes tamaños y diseños de los marcadores Aruco} 
-    \end{center}
-
-\subsection{Detección de Marcadores e-Aruco en Tiempo Real} 
-El proceso que se llevó a cabo para la detección de marcadores Aruco en tiempo real se describe a continuación:
-
-    \begin{enumerate} 
-        \item \textbf{Captura de Imágenes:} Se capturaron imágenes de la cámara en tiempo real, utilizando la webcam concectada a la Raspberry Pi 5 que se encuentra en el drone. 
-        \item \textbf{Procesamiento de Pose de los ArUcos:} Se aplicó un algoritmo para la deteccion de la pose de los marcadores ArUco el cual se describe a continuación: 
-            \begin{itemize} 
-                \item Se utilizó la librería OpenCV para el procesamiento de imágenes y la detección de marcadores Aruco. 
-                \item Se implementó un algoritmo de detección de bordes y esquinas para identificar los marcadores en las imágenes. 
-                \item Se mide el centroide de los marcadores y se calcula la matriz de posición y orientación para determinar la ubicación del drone.
-             \end{itemize}
-        
-        \item \textbf{Visualización en Tiempo Real:} Se mostraron los marcadores detectados en tiempo real, permitiendo la interacción con el sistema de control en tierra.
+    
+        \item \textbf{Incrustación del marcador interno en el marcador externo:} 
+        Se calculó la posición central para incrustar el marcador interno con borde en el marcador externo. El marcador externo se modificó para incluir un fondo negro en el centro antes de insertar el marcador interno con borde.
+        \begin{verbatim}
+        center_position = (outer_marker_size - inner_marker_with_border_size) // 2
+        e_aruco_marker[center_position:center_position + inner_marker_with_border_size,
+                       center_position:center_position + inner_marker_with_border_size] = 0
+        e_aruco_marker[center_position:center_position + inner_marker_with_border_size,
+                       center_position:center_position + inner_marker_with_border_size] = inner_marker_with_border
+        \end{verbatim}
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width=0.4\textwidth]{pictures/embedded_aruco.png}
+                \caption{Marcador ArUco embebido generado.}
+            \end{figure}
+        \end{center}
+    
+        \item \textbf{Almacenamiento del marcador embebido:} 
+        Finalmente, el marcador generado se guardó como una imagen PNG para su uso posterior.
+        \begin{verbatim}
+        cv2.imwrite(f'embedded_aruco_marker_{outer_marker_id}_{inner_marker_id}.png', 
+                    e_aruco_marker)
+        \end{verbatim}
     \end{enumerate}
 
-    \begin{center} 
-        \textit{Imagen de la detección de marcadores Aruco en tiempo real} 
-    \end{center}
+
+\subsection{Detección de Marcadores e-Aruco en Tiempo Real} 
+    El sistema fue diseñado para detectar marcadores Aruco en tiempo real, utilizando imágenes capturadas por una cámara conectada al dron. Este proceso se llevó a cabo mediante un nodo en ROS2 que procesa las imágenes y estima la pose de los marcadores con respecto a la cámara. El código completo se encuentra en los anexos del documento. A continuación, se describe el paso a paso del sistema:
+    
+    \begin{enumerate}
+        \item \textbf{Publicación de imágenes desde el dron:} 
+        La computadora auxiliar en el dron (companion computer) publica imágenes comprimidas capturadas por la cámara a un tópico de ROS 2 (\texttt{/camera\_image/compressed}). Estas imágenes se envían a la computadora en tierra para su procesamiento.
+    
+        \item \textbf{Recepción de imágenes en la computadora en tierra:} 
+        Un nodo en la computadora en tierra se suscribe a las imágenes publicadas por el dron y realiza las siguientes tareas:
+        \begin{itemize}
+            \item Convierte las imágenes comprimidas en matrices utilizables para el procesamiento con OpenCV.
+            \item Redimensiona las imágenes y las convierte a escala de grises para optimizar la detección.
+        \end{itemize}
+    
+        \item \textbf{Detección de marcadores Aruco:} 
+        Se utiliza la biblioteca OpenCV para detectar los marcadores Aruco presentes en la imagen. Los pasos incluyen:
+        \begin{itemize}
+            \item Uso del diccionario \texttt{DICT\_6X6\_250} para identificar marcadores específicos.
+            \item Cálculo de las esquinas de los marcadores detectados mediante \texttt{aruco.detectMarkers}.
+            \item Dibujo de los marcadores detectados para su visualización.
+        \end{itemize}
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                %\includegraphics[width=0.8\textwidth]{pictures/deteccion_arucos.png}
+                \caption{Detección de marcadores Aruco en la imagen procesada.}
+            \end{figure}
+        \end{center}
+    
+        \item \textbf{Estimación de la pose:} 
+        Para cada marcador detectado, se calculó su posición y orientación en el espacio con respecto a la cámara. Esto se realizó utilizando la función \texttt{aruco.estimatePoseSingleMarkers}, que devuelve:
+        \begin{itemize}
+            \item \texttt{tvec}: Vector de traslación (\textit{x}, \textit{y}, \textit{z}) en metros.
+            \item \texttt{rvec}: Vector de rotación que se convierte en ángulos de Euler (\textit{roll}, \textit{pitch}, \textit{yaw}) mediante matrices de rotación.
+        \end{itemize}
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                %\includegraphics[width=0.8\textwidth]{pictures/calculo_pose.png}
+                \caption{Representación gráfica de la posición y orientación calculada de un marcador Aruco.}
+            \end{figure}
+        \end{center}
+    
+        \item \textbf{Visualización y publicación de resultados:} 
+        Los resultados obtenidos, incluyendo la pose de los marcadores, se visualizaron en tiempo real y se publicaron en un nuevo tópico de ROS 2 (\texttt{/aruco\_detection/compressed}). Las imágenes procesadas contenían:
+        \begin{itemize}
+            \item Marcadores detectados con esquinas resaltadas.
+            \item Ejes X, Y y Z proyectados para mostrar la orientación de cada marcador.
+        \end{itemize}
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                %\includegraphics[width=0.8\textwidth]{pictures/marcadores_ejes.png}
+                \caption{Imagen con marcadores detectados y ejes proyectados.}
+            \end{figure}
+        \end{center}
+    
+        \item \textbf{Correcciones de posición:} 
+        Basándose en los valores de \texttt{tvec}, se calcularon las correcciones necesarias para ajustar la posición del dron con respecto al marcador, incluyendo movimientos laterales (\textit{x}), verticales (\textit{y}) y de profundidad (\textit{z}).
+    
+        \item \textbf{Interacción con el sistema:} 
+        Los resultados de la detección de marcadores Aruco se utilizaron para visualizar la posición y orientación del drone en tiempo real, lo que permitirá posteriormente que el sistema de control pueda ajustar las mismas para su aterrizaje en la estación de carga.
+    \end{enumerate}
+    
 
 \section{Sistema de Comunicación}
-\subsection{Especificaciones y Requerimientos} 
-Para asegurar una comunicación efectiva entre el dron y la estación de carga, el sistema de comunicación debe cumplir con los siguientes requisitos:
 
-    \begin{itemize} 
-        \item Utilización de un protocolo basado en \textbf{WiFi} para la transferencia de datos entre el dron y la estación de carga. 
-        \item Implementación del middleware DDS (Data Distribution Service) de ROS 2 para publicación y suscripción de tópicos en tiempo real. 
+    \subsection{Especificaciones y Requerimientos} 
+    El sistema de comunicación entre el dron y la estación de carga fue diseñado para garantizar la transferencia eficiente y en tiempo real de datos críticos. Los requisitos principales son:
+    
+    \begin{itemize}
+        \item \textbf{Red local basada en WiFi:} 
+        Proporcionar una comunicación efectiva entre los dispositivos sin necesidad de acceso a Internet.
+        \item \textbf{Middleware DDS de ROS 2:} 
+        Utilizar la arquitectura de nodos y tópicos de ROS 2 para gestionar la comunicación de datos entre los dispositivos conectados.
     \end{itemize}
+    
+    \subsection{Estructura de Comunicación} 
+    
+    \subsubsection{Red Local WiFi} 
+    La red local fue creada utilizando un router WiFi que conecta todos los dispositivos involucrados en el sistema, incluyendo el dron, la estación de carga y la computadora en tierra. Esta configuración eliminó la necesidad de Internet, proporcionando un entorno seguro y aislado para la transmisión de datos. El dron, equipado con una computadora auxiliar, transmitió datos mediante tópicos de ROS 2, como imágenes comprimidas y mensajes de estado, hacia la estación de carga y la computadora en tierra.
+    
+    \begin{figure}
+        \centering
+        %\includegraphics[width=0.8\textwidth]{pictures/wifi_network.png}
+        \caption{Diagrama de la red local WiFi utilizada en el sistema.}
+    \end{figure}
+    
+    \subsubsection{Comunicación mediante ROS 2} 
+    El sistema utilizó la arquitectura de nodos y tópicos de ROS 2 para gestionar la comunicación entre los dispositivos. Cada dispositivo en la red cumplió funciones específicas relacionadas con la publicación y suscripción de datos relevantes:
+    
+    \begin{itemize}
+        \item \textbf{Dron:} 
+        Publicó imágenes de la cámara (\texttt{/camera\_image/compressed}) y datos de estado relacionados con la batería, posición y otros parámetros críticos.
+        \item \textbf{Computadora en tierra:} 
+        Contiene una interfaz que se suscribió a los tópicos publicados por el dron para:
+        \begin{itemize}
+            \item Procesar imágenes y calcular la posición de los marcadores Aruco.
+            \item Mostrar datos de estado del dron, como nivel de batería y modo de vuelo, etc. en tiempo real.
+            \item Publicar comandos hacia la estación de carga, como abrir o retraer el cajón de la estación, mediante tópicos específicos.
+        \end{itemize}
+        \item \textbf{Estación de carga:} 
+        Se suscribió a los comandos enviados desde la interfaz de la computadora en tierra para ejecutar las acciones necesarias, como la apertura y cierre del cajón.
+    \end{itemize}
+    
+    \begin{figure}
+        \centering
+        %\includegraphics[width=0.8\textwidth]{pictures/ros2_comms.png}
+        \caption{Diagrama de comunicación entre los dispositivos utilizando ROS 2.}
+    \end{figure}
+    
 
-\subsection{Protocolo de Comunicación entre el Dron y la Base de Carga} 
-El protocolo de comunicación establece la interacción entre el dron y la estación de carga, utilizando ROS 2 y DDS para la transmisión de mensajes en tiempo real.
-
-    \begin{center} 
-        \textit{Diagrama del flujo de comunicación entre el dron y la base de carga} 
-    \end{center}
-
-\subsubsection{Diagrama de Comunicación WiFi} 
-Este diagrama muestra la estructura de comunicación dentro de la red WiFi, destacando el flujo de datos desde el dron hasta la estación de carga.
-
-\subsubsection{Diagrama de Comunicación de Nodos ROS 2} 
-El esquema de nodos en ROS 2 especifica los tópicos y servicios clave utilizados para la comunicación entre el dron y la estación de carga.
-
-    \begin{center} 
-        \textit{Diagrama de comunicación de nodos en ROS 2} 
-    \end{center}
+    
 
 
 
