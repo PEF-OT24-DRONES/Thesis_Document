@@ -2,17 +2,20 @@
 
 Este capítulo describe el proceso de diseño, implementación y configuración de la estación de carga modular y la instrumentación del dron. Se detallan las metodologías y herramientas utilizadas para llevar a cabo el desarrollo, con un enfoque en la creación de una solución eficaz para el sistema de carga.
 
-\section{Diseño y Desarrollo de la Base de Carga}
-\subsection{Especificaciones y Requerimientos}
-A continuación se presentan las especificaciones técnicas y los requisitos para la base de carga, garantizando compatibilidad y eficiencia para un sistema de carga en enjambres de drones:
-    \begin{enumerate}
-        \item Diseño modular y apilable para facilitar el almacenamiento de múltiples drones en un mismo metro cuadrado.
-        \item Las dimensiones mínimas requeridas para la estacion de carga debe ser de mínimo 10 porciento mayores en ancho, largo y alto que las del drone.
-        \item La estacion de carga deberá contar con un mecanismo de carga para la recarga de la batería del dron.
-        \item Debe contar con por lo menos un método de posicionamiento visible para el drone.
-    \end{enumerate}
+\section{Diseño y Desarrollo de la Estación de Carga}
 
-    \subsection{Lista de Materiales}
+\subsection{Requerimientos}
+    A continuación se presentan las especificaciones técnicas y los requisitos para la estación de carga, garantizando compatibilidad y eficiencia para un sistema de carga en enjambres de drones:
+        \begin{enumerate}
+            \item El sistema deberá contar con un diseño que sea modular y apilable para la integración de multiples estaciones de carga. 
+            \item El sistema deberá tomar en cuenta y adaptarse a las dimensiones del dron propuesto para la aplicación.
+            \item El sistema deberá de contar con un mecanismo automático de apertura y cierre para el almacenamiento del dron.
+            \item El sistema deberá contar con un mecanismo de carga para la batería del dron.
+            \item El sistema deberá contener método de posicionamiento por visión para el dron. 
+        \end{enumerate}
+
+\subsection{Lista de Materiales}
+    A continuación, se presenta la lista de materiales utilizados para la construcción de la estación de carga modular. Cabe destacar que el diseño y desarrollo de este proyecto se basaron en gran medida en los recursos y materiales disponibles previamente, lo que permitió optimizar costos y aprovechar de manera eficiente los insumos existentes.
     \begin{itemize}
         \item Perfiles de Aluminio
             \begin{itemize}
@@ -35,7 +38,7 @@ A continuación se presentan las especificaciones técnicas y los requisitos par
         \item 2 x Riel Corredera Telescópica
         \item 1 x Motor de 12V
         \item 1 x Soportes de Motor impresos en 3D
-        \item 1 x Banda de 1 m 
+        \item 1 x A V-Belts 1 m 
         \item 2 x Polea tipo A con diámetro interno de 1/2"
         \item 2 x Balero de DI: 15 mm y DE: 35 mm
         \item 2 x Chumacera impresa en 3D
@@ -52,6 +55,55 @@ A continuación se presentan las especificaciones técnicas y los requisitos par
         \item 1 X Cable Carrier 1 m
     \end{itemize}
 
+\subsection{Diseño CAD de la Base de Carga}
+
+    Para cumplir con los requerimientos de diseño modular / apilable y compatibilidad con el drone en cuestión a las dimensiones de este. Se llevó a cabo el siguiente diseño en CAD:
+
+    Como se muestra en la Fig 1. Se diseñó la base conocida como "cajón interno", que sirve como plataforma para el despegue y aterrizaje del dron. Este diseño se realizó considerando las dimensiones del dron y asegurando la inclusión de tolerancias adecuadas para prevenir posibles colisiones. Se utilizó perfil de aluminio de 30 mm en este diseño aprovechando que es material con el que se contaba previamente. También se le integró otros perfiles por el medio del cajón y de manera horizontal, lo que sería el soporte de los rieles.
+            \begin{figure}[htpb]
+                \centering
+                \includegraphics[width=0.8\textwidth]{pictures/PLANOS_CAJON_INTERNO_1.png}
+                \caption{Plano del cajón interno de la Estación de Carga}
+                \label{fig:etiqueta}
+            \end{figure}
+            
+    Por consiguiente, tomando en cuenta las dimensiones del plano anterior, se realizó lo que es el "cajón externo" en el cual sirve para almacenar el dron y la electrónica de la estación de carga. Esto se puede observar en la Fig 2.
+            \begin{figure}[htpb]
+                \centering
+                \includegraphics[width=0.8\textwidth]{pictures/PLANOS_CAJON_EXTERNO_1.png}
+                \caption{Plano del cajón externo de la Estación de Carga}
+                \label{fig:etiqueta}
+            \end{figure}
+
+    Después, se tomaron en cuenta las dimensiones de las landing gear (patas del dron) para hacer unas guías mecánicas (Fig 3.) que ayuden a estas mismas a hacer una correcta conexión magnética con el sistema de carga.
+            \begin{figure}[htpb]
+                \centering
+                \includegraphics[width=0.8\textwidth]{pictures/PLANO_GUIAS_MECANICAS.png}
+                \caption{Plano de guía mecánica para la Estación de Carga}
+                \label{fig:etiqueta}
+            \end{figure}
+
+
+    Se desarrollaron los diseños CAD necesarios como se muestran en la Fig 4. y Fig 5. para garantizar la correcta integración y adaptación de los distintos componentes de la estación de carga. Estos diseños permitieron establecer las dimensiones, tolerancias y características esenciales para que cada elemento se ajustara de manera precisa, asegurando que la estación de carga cumpliera con su funcionalidad de forma eficiente y confiable.
+
+    \begin{figure}[h]
+        \centering
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{pictures/PLANO_PATAS_ESTABILIDAD_CAJON.png}
+            \caption{Guía mecánica diseñada para garantizar el correcto posicionamiento del dron, permitiendo que las patas del dron se conecten de manera magnética al sistema de alimentación de energía.}
+            \label{fig:imagen1}
+        \end{minipage}%
+        \hfill
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{pictures/PLANO_SENSOR.png}
+            \caption{Imagen 2}
+            \label{fig:imagen2}
+        \end{minipage}%
+        \hfill
+    \end{figure}
+
 \subsection{Selección e Implementación del Mecanismo de Movimiento del Cajón}
 
 En la sección 2.2.3 se explican en detalle los diferentes mecanismos de movimiento que se consideraron para la estación de carga, evaluando sus ventajas y desventajas en términos de precisión, durabilidad, costo y facilidad de integración en el diseño modular. Se analizaron opciones como pistones lineales, bandas dentadas y otros sistemas de transmisión, con el objetivo de seleccionar una solución que cumpliera con los requisitos de funcionalidad sin elevar demasiado los costos. 
@@ -59,30 +111,30 @@ Tras esta evaluación, se optó por un mecanismo de Polea y Banda tipo V, el cua
 
 Para este mecanismo, se seleccionaron diferentes componentes, incluyendo una banda de alta resistencia para soportar las cargas previstas, poleas (con baja fricción) para optimizar el movimiento y reducir el desgaste del sistema en operaciones continuas, y un motor ... que tiene un torque de ... y cumple con el torque necesario para mover los 3 kg de peso del drone.
 
-\subsubsection{Diseños CAD y Componentes}
-    \begin{enumerate}
-        \item Motor de 12V
-        \item Poleas
-        \item Banda
-        \item Baleros
-        \item Chumaceras 
-        \item Soporte del Motor
-    \end{enumerate}
+    \subsubsection{Diseños CAD y Componentes}
+        \begin{enumerate}
+            \item Motor de 12V
+            \item Poleas
+            \item Banda
+            \item Baleros
+            \item Chumaceras 
+            \item Soporte del Motor
+        \end{enumerate}
 
-\subsubsection{Mecanismo Polea y Banda tipo V}
-(Imagen del Mecanismo)
+    \subsubsection{Mecanismo Polea y Banda tipo V}
+    (Imagen del Mecanismo)
 
-\subsection{Diseño CAD de la Base de Carga}
-Para cumplir con los requerimientos de diseño modular / apilable y compatibilidad con el drone en cuestión a las dimensiones de este. Se llevó a cabo el siguiente diseño en CAD:
+    \subsection{Diseño CAD de la Base de Carga}
+    Para cumplir con los requerimientos de diseño modular / apilable y compatibilidad con el drone en cuestión a las dimensiones de este. Se llevó a cabo el siguiente diseño en CAD:
 
-    \begin{itemize}
-        \item     El diseño de la estructura principal de la estación de carga se realizó en Fusion 360, considerando las dimensiones mínimas requeridas para el dron y el mecanismo de carga.
-        Imagen
-        \item     Se tomó en cuenta la dimensión necesaria para que el drone tenga un espacio de por lo menos 10 cm de separacion con la pared del cajón, esto para evitar alguna colusión del drone con la estructura de la base de carga al momento de intentar aterrizar, además se disminuyú la altura del cajón para que el drone pueda aterrizar sin problemas. Por otro lado se usarón rieles que se obtuvieron previamente reutilizados, por lo cual la estacion de carga física se encuentra salida de la base de carga por unos 5 cm al momento de estar cerrada, pero en el diseño CAD el diseño si se encuentra cerrado por completo. 
-        Imagen
-        \item     Se añadió un espacio de 25 cm para colocar la parte electronica del cajón.
-        imagen
-    \end{itemize}
+        \begin{itemize}
+            \item     El diseño de la estructura principal de la estación de carga se realizó en Fusion 360, considerando las dimensiones mínimas requeridas para el dron y el mecanismo de carga.
+            Imagen
+            \item     Se tomó en cuenta la dimensión necesaria para que el drone tenga un espacio de por lo menos 10 cm de separacion con la pared del cajón, esto para evitar alguna colusión del drone con la estructura de la base de carga al momento de intentar aterrizar, además se disminuyú la altura del cajón para que el drone pueda aterrizar sin problemas. Por otro lado se usarón rieles que se obtuvieron previamente reutilizados, por lo cual la estacion de carga física se encuentra salida de la base de carga por unos 5 cm al momento de estar cerrada, pero en el diseño CAD el diseño si se encuentra cerrado por completo. 
+            Imagen
+            \item     Se añadió un espacio de 25 cm para colocar la parte electronica del cajón.
+            imagen
+        \end{itemize}
 
 
 
@@ -153,35 +205,38 @@ Se presentan a continuación los diseños CAD de las piezas que se han desarroll
         \end{center} 
     \end{itemize}
 
-
-
-\subsection{Circuito de Distribución de Energía} 
-El circuito de distribución de energía proporciona alimentación segura y estable a los componentes del dron. La selección de baterías y reguladores de voltaje fue optimizada para asegurar la duración de vuelo y protección de cada componente.
-
-    \begin{itemize} 
-        \item Se seleccionaron baterías de litio-polímero (LiPo) de alta capacidad para maximizar la autonomía. 
-        \item Reguladores de voltaje se añadieron para adaptar el suministro a la Raspberry Pi, la cámara y el controlador de vuelo. 
-        \begin{center} 
-            \textit{Imagen del circuito de distribución de energía en el dron} 
-        \end{center} 
-    \end{itemize}
-
-    \subsubsection{Integración de Componentes Electrónicos} Cada componente fue ensamblado y cableado de acuerdo con el diseño modular del dron. A continuación se describen los pasos del proceso de integración:
-
-    \begin{enumerate} 
-        \item \textbf{Montaje de la Cámara:} La cámara se fijó en la parte de abajo del dron, permitiendo una visibilidad óptima para la detección de marcadores Aruco. 
-            \begin{center} 
-                \textit{Imagen del montaje de la cámara en el dron} 
-            \end{center} 
-        \item \textbf{Instalación del Controlador de Vuelo y Módulo GPS:} El controlador de vuelo se instaló en el centro del frame para optimizar el balance y calibración, y el módulo GPS se colocó en una de las patas. 
-            \begin{center} 
-                \textit{Imagen del montaje del controlador de vuelo y módulo GPS} 
-            \end{center} 
-        \item \textbf{Instalación del Microprocesador:} La Raspberry Pi 4 se integró en un soporte impreso en 3D en la parte superior, y el microprocesador se colocó sobre este soporte. Un cable de comunicación serial se conectó entre la Raspberry Pi y el controlador de vuelo que se encuentra debajo de el microprocesador.
-            \begin{center} 
-                \textit{Imagen del montaje del microprocesador en el dron} 
-            \end{center} 
+    \subsection{Circuito de Distribución de Energía} 
+    El circuito de distribución de energía fue diseñado para proporcionar una alimentación segura y estable a los componentes críticos del dron, incluyendo los motores, el controlador de vuelo, la Raspberry Pi y la cámara. A continuación, se describe el funcionamiento de cada sección del circuito:
+    
+    \begin{enumerate}
+        \item \textbf{Batería LiPo 3S:} 
+        Se seleccionó una batería de litio-polímero (LiPo) de 3 celdas con una capacidad de 5200 mAh, un voltaje nominal de 11.1 V y una tasa de descarga de 50C. Esta batería es ideal para proporcionar la corriente necesaria para los motores y los componentes electrónicos sin comprometer la duración de vuelo.
+    
+        \item \textbf{Distribución de energía a los motores:} 
+        La energía de la batería se distribuye a través de una placa de distribución de energía, que conecta la batería a los cuatro controladores electrónicos de velocidad (ESC). Cada ESC regula la energía enviada a su respectivo motor A2212 10T, permitiendo un control preciso de la velocidad de los motores.
+    
+        \item \textbf{Regulador de voltaje XL4005 DC-DC:} 
+        Este regulador convierte el voltaje de 11.1 V de la batería a 5 V, proporcionando una alimentación estable y segura para la Raspberry Pi y la cámara conectada.
+    
+        \item \textbf{Controlador de vuelo Pixhawk 6X RT:} 
+        El controlador de vuelo está conectado directamente a la placa de distribución de energía para recibir la alimentación necesaria. Además, gestiona la comunicación con los ESC y otros sensores del dron, como el módulo GPS (M9N) conectado al puerto GPS1.
+    
+        \item \textbf{Raspberry Pi 5:} 
+        La Raspberry Pi está alimentada a través del regulador de voltaje y se conecta al controlador de vuelo mediante un puerto serial para recibir datos y enviar comandos al sistema. Además, gestiona la cámara conectada por USB, que captura imágenes para el procesamiento en tiempo real.
+    
+        \item \textbf{Módulo GPS M9N:} 
+        Este módulo se conecta al controlador Pixhawk a través del puerto GPS1 para proporcionar datos de posicionamiento en tiempo real en exterior, esenciales para la navegación del dron.
+    
     \end{enumerate}
+    
+    \begin{center}
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.8\textwidth]{pictures/drone_electronic_diagram.png}
+            \caption{Diagrama del circuito de distribución de energía del dron.}
+        \end{figure}
+    \end{center}
+        
 
 \section{Software Configuration}
 
