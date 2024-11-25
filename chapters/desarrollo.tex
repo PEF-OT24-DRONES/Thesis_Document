@@ -157,17 +157,89 @@ Para este mecanismo, se seleccionaron diferentes componentes, incluyendo una ban
     \end{enumerate}
 
 
+%%ANABI ENDS
 
-\subsection{Circuito Electrónico de la Estación de Carga}
+    \subsection{Electronic Circuit of the Charging Station}
 
-    \subsubsection{Diagrama de Conexiones}
-    Añadir diagrama de conexiones
-
-    \subsubsection{Contrucción del Circuito}
-    Añadir imágenes de la construcción del circuito
-
-    \subsubsection{Programación del Circuito}
-    Explicar el código de programación del circuito y su funcionamiento, mencionar que en los anexos se encuentra el código fuente del arduino y raspberry pi 4.
+    \subsubsection{Conection Diagram}
+    add diagram circuit
+    
+    \subsubsection{Circuit Construction}
+    add images
+    
+    \subsubsection{Circuit Programming}
+    
+    \paragraph{\textbf{General Description:}}
+    
+    
+    The described circuit uses a joystick to control a motor that moves a drawer back and forth. The joystick is connected to a microcontroller (Arduino Mega 2560), which reads the joystick's Y-axis values to determine the direction in which the motor should move. Depending on the position of the joystick, the motor moves forward, backward or stops. In addition, limit switches are used to ensure that the motor stops when the drawer reaches its extreme positions.
+    
+    
+    
+    \paragraph{\textbf{Main Components}
+    }
+    \begin{itemize}
+        \item \textbf{Arduino:} Microcontroller that manages the reading of the joystick values and controls the motor.
+        \item \textbf{Joystick:} Analog input device that allows the user to control the direction of movement.
+        \item \textbf{Motor and H-Bridge:} Driver system that moves the drawer. The H-bridge allows controlling the direction and speed of motion of the motor.
+        \item \textbf{Limit Switches:} Sensors that detect when the drawer has reached its extreme positions (forward and reverse).
+        \item \textbf{Power Supply:} Supplies power to the motor. The Arduino and RaspberryPi4 are supplied power by a plug-in charger.
+    \end{itemize}
+    
+    
+    \paragraph{\textbf{Arduino Code}
+    }
+    
+    The Arduino code performs the following functions:
+    
+    \begin{enumerate}
+        \item \textbf{Pin initialization:}
+        \begin{itemize}
+            \item The joystick pins (A1 for the Y-axis) are configured as inputs.
+            \item Motor pins 9 and 8 are configured as outputs.
+            \item The limit switch pins (10 and 11) are configured as inputs with internal pull-up resistors.
+        \end{itemize}
+        \item \textbf{Reading of Joystick:}
+        \begin{itemize}
+            \item At each loop cycle, the Arduino reads the analog value from the joystick's Y-axis.
+            \item Depending on the value read, the Arduino decides whether the motor should move forward, backward or stop.
+        \end{itemize}
+        \item \textbf{Motor Control:}
+        \begin{itemize}
+            \item If the value of the joystick Y-axis is greater than 512 (middle position) and the forward limit switch is not pressed, the motor moves forward.
+            \item If the Y-axis value is less than 512 and the backward limit switch is not pressed, the motor moves backward.
+            \item If the Y-axis value is approximately 512 or any limit switch is pressed, the motor stops.
+        \end{itemize}
+        \item \textbf{Limit Switch Verification:}
+        \begin{itemize}
+            \item If the motor is moving forward and the forward limit detects  metal (the drawer), the motor stops.
+            \item If the motor is moving backward and the backward limit switch detects  metal (the drawer), the motor stops.
+    
+        \end{itemize}
+        
+    \end{enumerate}
+    
+    %%%%%CODIGOOOOOOOO
+    
+    \paragraph{\textbf{Circuit Operation}
+    }
+    \begin{itemize}
+        \item Initialization: At startup, the Arduino configures the pins and establishes serial communication for debugging.
+    \item Continuous Readout: In the main loop, the Arduino continuously reads the value of the joystick Y-axis.
+    \item Dynamic Control: Based on the value read, the Arduino controls the motor to move the drawer forward, backward or stop it.
+    \item Safety Check: Limit switches ensure that the motor automatically stops when the drawer reaches its extreme positions, protecting the system from possible damage.
+    \item Debugging: Joystick values and motor status are printed on the serial monitor for easy debugging and system tuning.
+    \end{itemize}
+    
+    \paragraph{\textbf{Annex}
+    }
+    \paragraph{
+    The complete source code for both the Arduino and Raspberry Pi 4 is included in the appendices of this document, making it easy to review and modify as needed for implementation and control of the system.
+    
+    This approach ensures that the drawer moves in a precise and controlled manner based on the joystick position, providing an efficient solution for linear motion control using a motor and belt.}
+    
+%%ANABI ENDS
+    
 
 
 \section{Instrumentación del Dron}
