@@ -421,96 +421,26 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
             \end{figure}
 
     
-\subsection{Sensores para la Navegación en Ambientes Exteriores e Interiores}
-    Para lograr el control preciso de la posición del dron mediante los topics de ROS 2 como \texttt{/mavros/setpoint\_position/local}, es necesario contar con sensores que permitan obtener datos de posicionamiento confiables en función del entorno en el que opere el dron. A continuación, se describen los sensores comúnmente utilizados en ambientes exteriores e interiores para proporcionar información de posición.
+\subsection{Sensors for Navigation in Outdoor and Indoor Environments}
+To achieve precise control of the drone's position using ROS 2 topics such as Òtexture{/mavros/setpoint/position/local}, it is necessary to have sensors that provide reliable positioning data depending on the environment in which the drone is operating. Sensors commonly used in outdoor and indoor environments to provide position information are described below.    
+    \subsubsection{Outdoor Environment Sensors}
+    In outdoor environments, drones often use global positioning sensors (GPS) to determine their location in real time. The following are the most common outdoor sensors:
+    \begin{itemize}
+        \item \textbf{GPS (Global Positioning System):} GPS is the primary sensor for outdoor navigation. It provides latitude, longitude, and altitude coordinates that allow the drone to determine its global position. In ROS 2, this data is usually published in topics such as \texttt{/mavros/global\_position/global} and integrated into the position control systems \cite{gps_reference}.
+        \item \textbf{RTK-GPS (Real-Time Kinematic GPS):} For high-precision applications, such as precision landing or navigation in restricted areas, RTK-GPS is used. This system improves the accuracy of GPS by correcting data in real time, reaching centimeter accuracies. RTK-GPS is compatible with MAVLink and enables highly accurate position control in ROS 2 \cite{gps_reference}.
+        \item \textbf{IMU (Inertial Measurement Unit):} Besides it does not provide direct location data, the IMU complements GPS by detecting changes in orientation and acceleration. This data is crucial for maintaining stability and providing information about the drone's orientation during flight \cite{gps_reference}.
+    \end{itemize}
     
-    \subsubsection{Sensores para Ambientes Exteriores}
-    En entornos exteriores, los drones suelen utilizar sensores de posicionamiento global (GPS) para determinar su ubicación en tiempo real. A continuación se presentan los sensores más comunes en exteriores:
-        \begin{itemize}
-            \item \textbf{GPS (Sistema de Posicionamiento Global)}: El GPS es el sensor principal para la navegación en exteriores. Proporciona coordenadas de latitud, longitud y altitud que permiten al dron determinar su posición global. En ROS 2, estos datos se suelen publicar en topics como \texttt{/mavros/global\_position/global} y se integran en los sistemas de control de posición.
-            
-            \item \textbf{RTK-GPS (Real-Time Kinematic GPS)}: Para aplicaciones de alta precisión, como el aterrizaje de precisión o la navegación en áreas restringidas, se utiliza RTK-GPS. Este sistema mejora la precisión del GPS mediante la corrección de datos en tiempo real, alcanzando precisiones de centímetros. RTK-GPS es compatible con MAVLink y permite un control de posición altamente preciso en ROS 2.
-            
-            \item \textbf{IMU (Unidad de Medición Inercial)}: Aunque no proporciona datos de ubicación directa, la IMU complementa al GPS detectando cambios en orientación y aceleración. Estos datos son cruciales para mantener la estabilidad y proporcionar información sobre la orientación del dron durante el vuelo.
-        \end{itemize}
+    \subsubsection{Sensors for Indoor Environments}
+    In indoor environments, where GPS signals are often weak or non-existent, other sensors are used to determine the drone's position and navigation. Sensors used indoors include:
+    \begin{itemize}
+        \item \textbf{Vision Cameras (Monocular or Stereo):} Vision cameras allow visual localization using SLAM (Simultaneous Localization and Mapping) algorithms or marker detection, such as ArUco, to calculate the relative position of the drone indoors. With ROS 2, these cameras can be integrated with libraries such as OpenCV and use the image topics for real-time processing \cite{non_gps_navigation}.
     
-    \subsubsection{Sensores para Ambientes Interiores}
-    En ambientes interiores, donde las señales de GPS suelen ser débiles o inexistentes, se emplean otros sensores para determinar la posición y navegación del dron. Los sensores utilizados en interiores incluyen:
-        \begin{itemize}
-            \item \textbf{Cámaras de Visión (Monocular o Estéreo)}: Las cámaras de visión permiten la localización visual mediante algoritmos de SLAM (Simultaneous Localization and Mapping) o detección de marcadores, como ArUco, para calcular la posición relativa del dron en interiores. Con ROS 2, estas cámaras pueden integrarse con librerías como OpenCV y utilizar los topics de imagen para el procesamiento en tiempo real.
-            
-            \item \textbf{LIDAR (Light Detection and Ranging)}: Los sensores LIDAR emiten pulsos de luz para medir distancias y obtener mapas detallados del entorno. Estos sensores son útiles para la navegación y el mapeo en tiempo real en interiores y se integran en ROS 2 mediante topics de nube de puntos. Son particularmente efectivos para evitar obstáculos y realizar posicionamiento preciso en interiores.
+        \item \textbf{LIDAR (Light Detection and Ranging):} LIDAR sensors emit pulses of light to measure distances and obtain detailed maps of the environment. These sensors are useful for real-time indoor navigation and mapping and are integrated into ROS 2 using point cloud topics. They are particularly effective for obstacle avoidance and precise indoor positioning \cite{non_gps_navigation}.
         
-            \item \textbf{IMU (Unidad de Medición Inercial)}: En interiores, la IMU sigue siendo un componente esencial para detectar cambios de orientación y movimiento. La fusión de datos de la IMU con otros sensores, como LIDAR o cámaras, ayuda a mantener la estabilidad y proporciona estimaciones de posición precisas mediante filtros de fusión, como el filtro de Kalman.
-        \end{itemize}
-    
-\subsection{Fusión de Sensores usando el Filtro de Kalman en Pixhawk}
-    La fusión de sensores es un proceso crucial en la navegación de drones, permitiendo integrar datos de múltiples sensores para obtener una estimación de posición y orientación más precisa. En el Pixhawk, este proceso se realiza mediante el filtro de Kalman extendido (EKF), el cual combina datos de sensores como GPS, IMU, Barómetro, Compass y otros sensores adicionales que pueden fusionarse. A continuación, se detallan los requisitos y configuraciones necesarias para que el sistema de fusión de sensores funcione adecuadamente en cada tipo de entorno.
-    
-    \subsubsection{Fusión de GPS e IMU en Exteriores}
-    En entornos exteriores, el GPS es el sensor principal para la localización global, mientras que la IMU proporciona datos de orientación y aceleración. La fusión de estos sensores en Pixhawk se logra mediante el uso del EKF, que mejora la precisión y confiabilidad de la navegación al compensar posibles errores en las lecturas del GPS y la IMU.
-    
-    \begin{itemize}
-        \item \textbf{Configuración de Pixhawk para GPS e IMU}: Para activar la fusión de GPS e IMU en Pixhawk, es necesario habilitar el EKF y configurar parámetros específicos, tales como:
-            \begin{itemize}
-                \item \texttt{EKF2\_GPS\_CHECK}: Habilita la verificación de la calidad de la señal de GPS, garantizando que solo se utilicen datos de GPS cuando la señal sea suficiente.
-                \item \texttt{EKF2\_HGT\_MODE}: Establece la fuente de altitud para el filtro de Kalman. En exteriores, se recomienda configurarlo para usar datos de GPS o de barómetro.
-                \item \texttt{EKF2\_AID\_MASK}: Activa el soporte para sensores adicionales. Para la fusión de GPS e IMU, este parámetro debe incluir \textit{GPS} y \textit{IMU}.
-            \end{itemize}
-            
-        \item \textbf{Requisitos de Precisión de GPS e IMU}: 
-            \begin{itemize}
-                \item **GPS**: Es ideal contar con un GPS de alta precisión o un sistema RTK-GPS en aplicaciones donde se requiera una precisión de centímetros.
-                \item **IMU**: Es importante que la IMU esté correctamente calibrada y que el Pixhawk esté montado en una estructura estable para reducir el ruido de las lecturas.
-            \end{itemize}
-            
-        \item \textbf{Proceso de Fusión con EKF}: 
-            El EKF en Pixhawk realiza un cálculo continuo de la posición y velocidad del dron al combinar los datos de GPS e IMU. El GPS proporciona la ubicación global (latitud, longitud y altitud), mientras que la IMU contribuye con datos de orientación y aceleración. El EKF utiliza estos datos para reducir el error acumulativo y generar una estimación de posición precisa y estable.
+        \item \textbf{IMU (Inertial Measurement Unit):} Indoors, the IMU remains an essential component for detecting changes in orientation and motion. Fusion of IMU data with other sensors, such as LIDAR or cameras, helps maintain stability and provides accurate position estimates using fusion filters, such as the Kalman filter \cite{non_gps_navigation}.
+        
     \end{itemize}
     
-    \subsubsection{Desafíos en la Fusión de Sensores en Ambientes Dinámicos}
-    La fusión de sensores en Pixhawk enfrenta desafíos en entornos dinámicos o con interferencias, como en interiores con superficies reflectantes para LIDAR o en exteriores con pérdida de señal GPS. Para minimizar estos problemas, es importante realizar calibraciones periódicas de todos los sensores y ajustar los parámetros del EKF según el entorno y las condiciones de vuelo.
     
-    Mediante la fusión de sensores con el EKF en Pixhawk, los drones pueden operar de forma autónoma y precisa tanto en exteriores como en interiores, adaptándose a las condiciones y requerimientos específicos de cada entorno.
-    
-
-    \subsubsection{Fusión de Sensores en Interiores sin GPS}
-    Para lograr la navegación autónoma en interiores, donde el GPS no está disponible, se emplean sensores alternativos que permiten al dron estimar su posición relativa y mantener un vuelo estable. La fusión de estos sensores se realiza mediante el filtro de Kalman extendido (EKF) en el Pixhawk, que combina datos de diferentes sensores para obtener una estimación precisa de posición y orientación. A continuación se describen los sistemas de posicionamiento más destacados y los requisitos para lograr una fusión de sensores efectiva en interiores.
-    
-    \subsubsection{Sensores Alternativos para Navegación en Interiores}
-    En entornos cerrados, el uso de tecnologías como cámaras, beacons, y sistemas de seguimiento óptico permite al dron obtener información de posición sin depender del GPS. Estos sistemas requieren que se defina manualmente el origen de la posición inicial, usando una estación de control en tierra (GCS) como Mission Planner o mediante scripts en Lua. Algunos de los sensores más destacados incluyen:
-    
-    \begin{itemize}
-        \item \textbf{Intel RealSense T265 y Luxonis OAK-D}: Ambas son cámaras de visión estéreo que pueden proporcionar estimaciones de posición mediante técnicas de SLAM (Simultaneous Localization and Mapping). Estas cámaras permiten calcular la posición y la orientación del dron en tiempo real, y pueden integrarse en el Pixhawk usando el EKF para fusionar estos datos con la IMU. La configuración requiere calibrar correctamente las cámaras y establecer el origen de posición.
-    
-        \item \textbf{MarvelMind Beacons y Pozyx Beacons}: Estos sistemas basados en balizas (beacons) usan señales de radio para determinar la posición relativa del dron. Los beacons se instalan en ubicaciones fijas dentro del entorno, y el dron calcula su posición en función de la distancia a cada beacon. Este tipo de sistema es muy preciso y puede proporcionar una estimación de posición estable, aunque requiere de una infraestructura inicial de beacons correctamente ubicados en el área.
-    
-        \item \textbf{ModalAI VOXL y Nokov Indoor Optical Tracking}: Estos sistemas combinan visión por computadora y algoritmos de seguimiento óptico para proporcionar datos de posicionamiento precisos en interiores. ModalAI VOXL, por ejemplo, es un módulo que integra una computadora de alto rendimiento con cámaras de visión para permitir una navegación autónoma sin GPS. El Pixhawk puede fusionar estos datos de posición y orientación en tiempo real mediante el EKF, mejorando la estabilidad del vuelo en interiores.
-    
-        \item \textbf{Vicon Positioning System y OptiTrack Motion Capture System}: Estos sistemas de captura de movimiento utilizan cámaras de alta precisión colocadas en el entorno para rastrear marcadores ubicados en el dron. Estos sistemas son muy efectivos para aplicaciones de navegación de alta precisión, como en laboratorios o áreas de prueba, y permiten obtener una posición con precisión milimétrica. Sin embargo, requieren un entorno controlado y la instalación de múltiples cámaras en el área.
-    
-        \item \textbf{Optical Flow}: Este sensor detecta el movimiento relativo entre el dron y la superficie debajo de él. Aunque no proporciona una posición absoluta, el flujo óptico es útil para mantener la estabilidad del dron en interiores y para pequeñas correcciones de posición. La combinación de datos de flujo óptico con la IMU permite una navegación precisa a nivel local.
-    \end{itemize}
-    
-    \subsubsection{Requisitos para la Fusión de Sensores sin GPS}
-    La fusión de sensores sin GPS en interiores requiere de un entorno controlado donde estos sistemas de posicionamiento puedan operar de manera efectiva. Los siguientes son algunos de los requisitos necesarios para configurar y utilizar estos sensores en Pixhawk:
-    
-    \begin{itemize}
-        \item \textbf{Definir el Origen de la Posición}: Al utilizar sensores de visión, beacons o sistemas de captura de movimiento, el origen de la posición debe definirse manualmente a través del GCS o con un script en Lua para que el dron pueda interpretar correctamente su posición en relación con el entorno.
-    
-        \item \textbf{Calibración de Sensores de Visión y Beacons}: La precisión de los datos de posición depende de una calibración adecuada de los sistemas de visión y beacons. Esto incluye la alineación de cámaras y beacons, así como la configuración de parámetros en el EKF para optimizar la precisión de los datos.
-    
-        \item \textbf{Calidad de IMU}: La IMU es fundamental para la fusión de sensores en interiores, ya que proporciona datos de orientación y aceleración que complementan los datos de posicionamiento relativo. Las IMUs de bajo costo pueden experimentar un alto nivel de deriva, por lo que es recomendable utilizar IMUs de mayor calidad o realizar una calibración frecuente.
-    
-        \item \textbf{Uso del Filtro de Kalman (EKF) en Pixhawk}: El EKF en Pixhawk debe configurarse para aceptar las entradas de los sensores seleccionados. Esto incluye activar los parámetros necesarios en el Pixhawk, tales como \texttt{EKF2\_AID\_MASK} para habilitar \textit{VISION\_POSITION}, \textit{RANGE\_FINDER}, o \textit{FLOW} dependiendo del sensor utilizado, y ajustar los valores de ruido según las especificaciones del sistema de posicionamiento.
-    \end{itemize}
-    
-    Estos sensores y configuraciones permiten que el dron mantenga un vuelo autónomo y preciso en entornos interiores sin GPS, proporcionando alternativas para aplicaciones de navegación autónoma en espacios cerrados.
-    
-
-   
-
-
-
-
 

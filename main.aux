@@ -140,9 +140,6 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}Communication Protocols}{19}{subsection.2.3.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Main Communication Protocols}{19}{subsubsection*.27}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Challenges and Solutions}{19}{subsubsection*.28}\protected@file@percent }
-\citation{dailysensors2021}
-\citation{huang2023}
-\citation{sensors2017}
 \citation{fastchargers}
 \citation{vehiclessmartcharge}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}Sensors}{20}{subsection.2.3.5}\protected@file@percent }
@@ -269,90 +266,93 @@
 \newlabel{fig:xrce_dds}{{2.33}{36}{ROS 2 - Pixhawk communication using Micro XRCE-DDS.\relax }{figure.caption.70}{}}
 \@writefile{toc}{\contentsline {paragraph}{MAVROS}{36}{paragraph*.67}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Micro XRCE-DDS}{36}{paragraph*.69}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.11}Sensores para la Navegación en Ambientes Exteriores e Interiores}{37}{subsection.2.4.11}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Sensores para Ambientes Exteriores}{37}{subsubsection*.71}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Sensores para Ambientes Interiores}{37}{subsubsection*.72}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.12}Fusión de Sensores usando el Filtro de Kalman en Pixhawk}{38}{subsection.2.4.12}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Fusión de GPS e IMU en Exteriores}{38}{subsubsection*.73}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Desafíos en la Fusión de Sensores en Ambientes Dinámicos}{39}{subsubsection*.74}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Fusión de Sensores en Interiores sin GPS}{39}{subsubsection*.75}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Sensores Alternativos para Navegación en Interiores}{39}{subsubsection*.76}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Requisitos para la Fusión de Sensores sin GPS}{40}{subsubsection*.77}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Desarrollo}{42}{chapter.3}\protected@file@percent }
+\citation{gps_reference}
+\citation{gps_reference}
+\citation{gps_reference}
+\citation{non_gps_navigation}
+\citation{non_gps_navigation}
+\citation{non_gps_navigation}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.11}Sensors for Navigation in Outdoor and Indoor Environments}{37}{subsection.2.4.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Outdoor Environment Sensors}{37}{subsubsection*.71}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Sensors for Indoor Environments}{37}{subsubsection*.72}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Desarrollo}{39}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Diseño y Desarrollo de la Estación de Carga}{42}{section.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Requerimientos}{42}{subsection.3.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Lista de Materiales}{42}{subsection.3.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Diseño CAD de la Base de Carga}{44}{subsection.3.1.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Plano del cajón interno de la Estación de Carga\relax }}{44}{figure.caption.78}\protected@file@percent }
-\newlabel{fig:etiqueta}{{3.1}{44}{Plano del cajón interno de la Estación de Carga\relax }{figure.caption.78}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Plano del cajón externo de la Estación de Carga\relax }}{45}{figure.caption.79}\protected@file@percent }
-\newlabel{fig:etiqueta}{{3.2}{45}{Plano del cajón externo de la Estación de Carga\relax }{figure.caption.79}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Plano de guía mecánica para la Estación de Carga\relax }}{45}{figure.caption.80}\protected@file@percent }
-\newlabel{fig:etiqueta}{{3.3}{45}{Plano de guía mecánica para la Estación de Carga\relax }{figure.caption.80}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Guía mecánica diseñada para garantizar el correcto posicionamiento del dron, permitiendo que las patas del dron se conecten de manera magnética al sistema de alimentación de energía.\relax }}{46}{figure.caption.81}\protected@file@percent }
-\newlabel{fig:imagen1}{{3.4}{46}{Guía mecánica diseñada para garantizar el correcto posicionamiento del dron, permitiendo que las patas del dron se conecten de manera magnética al sistema de alimentación de energía.\relax }{figure.caption.81}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Imagen 2\relax }}{46}{figure.caption.81}\protected@file@percent }
-\newlabel{fig:imagen2}{{3.5}{46}{Imagen 2\relax }{figure.caption.81}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Selección e Implementación del Mecanismo de Movimiento del Cajón}{46}{subsection.3.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Diseños CAD y Componentes}{46}{subsubsection*.82}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Mecanismo Polea y Banda tipo V}{47}{subsubsection*.83}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Diseño CAD de la Base de Carga}{47}{subsection.3.1.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.6}Proceso de Manufactura de la Estructura de la Base de Carga}{47}{subsection.3.1.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.7}Circuito Electrónico de la Estación de Carga}{48}{subsection.3.1.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Diagrama de Conexiones}{48}{subsubsection*.84}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Contrucción del Circuito}{48}{subsubsection*.85}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Programación del Circuito}{48}{subsubsection*.86}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Instrumentación del Dron}{48}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Especificaciones y Requerimientos}{48}{subsection.3.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Lista de Materiales para la Instrumentación del Dron}{49}{subsection.3.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Diseños CAD del Dron}{49}{subsection.3.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Circuito de Distribución de Energía}{49}{subsection.3.2.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama del circuito de distribución de energía del dron.\relax }}{50}{figure.caption.87}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Software Configuration}{50}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Configuración de la Computadora Central en Tierra}{50}{subsection.3.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Configuración de la Computadora Auxiliar del Dron}{52}{subsection.3.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Configuración de la Estación de Control en Tierra}{54}{subsection.3.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Imagen de la configuración de sensores en Mission Planner.\relax }}{55}{figure.caption.88}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Sistema de Visión}{56}{section.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Especificaciones y Requerimientos}{56}{subsection.3.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Calibración de la Cámara}{56}{subsection.3.4.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Ejemplo de imagen descalibrada tomada durante el proceso de captura.\relax }}{56}{figure.caption.89}\protected@file@percent }
-\newlabel{fig:imagen_descalibrada}{{3.8}{56}{Ejemplo de imagen descalibrada tomada durante el proceso de captura.\relax }{figure.caption.89}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Detección y refinamiento de esquinas en el tablero de ajedrez.\relax }}{57}{figure.caption.90}\protected@file@percent }
-\newlabel{fig:det_ejemplos}{{3.9}{57}{Detección y refinamiento de esquinas en el tablero de ajedrez.\relax }{figure.caption.90}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Imagen calibrada después de aplicar los parámetros obtenidos.\relax }}{57}{figure.caption.91}\protected@file@percent }
-\newlabel{fig:imagen_calibrada}{{3.10}{57}{Imagen calibrada después de aplicar los parámetros obtenidos.\relax }{figure.caption.91}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Generación de Marcadores ArUco}{58}{subsection.3.4.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Marcador ArUco externo generado.\relax }}{59}{figure.caption.92}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Marcador interno con borde blanco añadido.\relax }}{59}{figure.caption.93}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Marcador ArUco embebido generado.\relax }}{60}{figure.caption.94}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Detección de Marcadores e-Aruco en Tiempo Real}{61}{subsection.3.4.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Detección de marcadores Aruco en la imagen procesada.\relax }}{61}{figure.caption.95}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces Representación gráfica de la posición y orientación calculada de un marcador Aruco.\relax }}{61}{figure.caption.96}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces Imagen con marcadores detectados y ejes proyectados.\relax }}{62}{figure.caption.97}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Sistema de Comunicación}{62}{section.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Especificaciones y Requerimientos}{62}{subsection.3.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Estructura de Comunicación}{62}{subsection.3.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Red Local WiFi}{62}{subsubsection*.98}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de la red local WiFi utilizada en el sistema.\relax }}{63}{figure.caption.99}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama de comunicación entre los dispositivos utilizando ROS 2.\relax }}{63}{figure.caption.101}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Comunicación mediante ROS 2}{63}{subsubsection*.100}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Resultados}{64}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Diseño y Desarrollo de la Estación de Carga}{39}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Requerimientos}{39}{subsection.3.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Lista de Materiales}{39}{subsection.3.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Diseño CAD de la Base de Carga}{41}{subsection.3.1.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Plano del cajón interno de la Estación de Carga\relax }}{41}{figure.caption.73}\protected@file@percent }
+\newlabel{fig:etiqueta}{{3.1}{41}{Plano del cajón interno de la Estación de Carga\relax }{figure.caption.73}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Plano del cajón externo de la Estación de Carga\relax }}{42}{figure.caption.74}\protected@file@percent }
+\newlabel{fig:etiqueta}{{3.2}{42}{Plano del cajón externo de la Estación de Carga\relax }{figure.caption.74}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Plano de guía mecánica para la Estación de Carga\relax }}{42}{figure.caption.75}\protected@file@percent }
+\newlabel{fig:etiqueta}{{3.3}{42}{Plano de guía mecánica para la Estación de Carga\relax }{figure.caption.75}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Guía mecánica diseñada para garantizar el correcto posicionamiento del dron, permitiendo que las patas del dron se conecten de manera magnética al sistema de alimentación de energía.\relax }}{43}{figure.caption.76}\protected@file@percent }
+\newlabel{fig:imagen1}{{3.4}{43}{Guía mecánica diseñada para garantizar el correcto posicionamiento del dron, permitiendo que las patas del dron se conecten de manera magnética al sistema de alimentación de energía.\relax }{figure.caption.76}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Imagen 2\relax }}{43}{figure.caption.76}\protected@file@percent }
+\newlabel{fig:imagen2}{{3.5}{43}{Imagen 2\relax }{figure.caption.76}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Selección e Implementación del Mecanismo de Movimiento del Cajón}{43}{subsection.3.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Diseños CAD y Componentes}{43}{subsubsection*.77}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Mecanismo Polea y Banda tipo V}{44}{subsubsection*.78}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Diseño CAD de la Base de Carga}{44}{subsection.3.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.6}Proceso de Manufactura de la Estructura de la Base de Carga}{44}{subsection.3.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.7}Circuito Electrónico de la Estación de Carga}{45}{subsection.3.1.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Diagrama de Conexiones}{45}{subsubsection*.79}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Contrucción del Circuito}{45}{subsubsection*.80}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Programación del Circuito}{45}{subsubsection*.81}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Instrumentación del Dron}{45}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Especificaciones y Requerimientos}{45}{subsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Lista de Materiales para la Instrumentación del Dron}{46}{subsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Diseños CAD del Dron}{46}{subsection.3.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Circuito de Distribución de Energía}{46}{subsection.3.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama del circuito de distribución de energía del dron.\relax }}{47}{figure.caption.82}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Software Configuration}{47}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Configuración de la Computadora Central en Tierra}{47}{subsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Configuración de la Computadora Auxiliar del Dron}{49}{subsection.3.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Configuración de la Estación de Control en Tierra}{51}{subsection.3.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Imagen de la configuración de sensores en Mission Planner.\relax }}{52}{figure.caption.83}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Sistema de Visión}{53}{section.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Especificaciones y Requerimientos}{53}{subsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Calibración de la Cámara}{53}{subsection.3.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Ejemplo de imagen descalibrada tomada durante el proceso de captura.\relax }}{53}{figure.caption.84}\protected@file@percent }
+\newlabel{fig:imagen_descalibrada}{{3.8}{53}{Ejemplo de imagen descalibrada tomada durante el proceso de captura.\relax }{figure.caption.84}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Detección y refinamiento de esquinas en el tablero de ajedrez.\relax }}{54}{figure.caption.85}\protected@file@percent }
+\newlabel{fig:det_ejemplos}{{3.9}{54}{Detección y refinamiento de esquinas en el tablero de ajedrez.\relax }{figure.caption.85}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Imagen calibrada después de aplicar los parámetros obtenidos.\relax }}{54}{figure.caption.86}\protected@file@percent }
+\newlabel{fig:imagen_calibrada}{{3.10}{54}{Imagen calibrada después de aplicar los parámetros obtenidos.\relax }{figure.caption.86}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Generación de Marcadores ArUco}{55}{subsection.3.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Marcador ArUco externo generado.\relax }}{56}{figure.caption.87}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Marcador interno con borde blanco añadido.\relax }}{56}{figure.caption.88}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Marcador ArUco embebido generado.\relax }}{57}{figure.caption.89}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Detección de Marcadores e-Aruco en Tiempo Real}{58}{subsection.3.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Detección de marcadores Aruco en la imagen procesada.\relax }}{58}{figure.caption.90}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces Representación gráfica de la posición y orientación calculada de un marcador Aruco.\relax }}{58}{figure.caption.91}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces Imagen con marcadores detectados y ejes proyectados.\relax }}{59}{figure.caption.92}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Sistema de Comunicación}{59}{section.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Especificaciones y Requerimientos}{59}{subsection.3.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Estructura de Comunicación}{59}{subsection.3.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Red Local WiFi}{59}{subsubsection*.93}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de la red local WiFi utilizada en el sistema.\relax }}{60}{figure.caption.94}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama de comunicación entre los dispositivos utilizando ROS 2.\relax }}{60}{figure.caption.96}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Comunicación mediante ROS 2}{60}{subsubsection*.95}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Resultados}{61}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Resultados del Diseño y Manufactura de la Base de Carga}{64}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Diseño CAD Final del 1er protopipo de la Estación de Carga}{64}{subsection.4.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Diseño e Instrumentación del Drone}{64}{subsection.4.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Movimiento del Cajón}{64}{subsection.4.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Vuelo del Drone}{64}{subsection.4.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.5}Carga y Descarga de Batería}{64}{subsection.4.1.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.6}Detección del ArUco}{64}{subsection.4.1.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.7}Sistema de Comunicación}{64}{subsection.4.1.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Análisis de Desempeño General}{64}{section.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Resultados de Integración Global}{64}{subsection.4.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusiones}{65}{chapter.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Resultados del Diseño y Manufactura de la Base de Carga}{61}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Diseño CAD Final del 1er protopipo de la Estación de Carga}{61}{subsection.4.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Diseño e Instrumentación del Drone}{61}{subsection.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Movimiento del Cajón}{61}{subsection.4.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Vuelo del Drone}{61}{subsection.4.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.5}Carga y Descarga de Batería}{61}{subsection.4.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.6}Detección del ArUco}{61}{subsection.4.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.7}Sistema de Comunicación}{61}{subsection.4.1.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Análisis de Desempeño General}{62}{section.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Resultados de Integración Global}{62}{subsection.4.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusiones}{63}{chapter.5}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Bibliography}{64}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibcite{px4_docs}{1}
@@ -364,4 +364,38 @@
 \bibcite{opencv_docs}{7}
 \bibcite{aruco_docs}{8}
 \bibcite{khazetdinov2021}{9}
-\gdef \@abspage@last{67}
+\bibcite{gps_reference}{10}
+\bibcite{non_gps_navigation}{11}
+\bibcite{Gupta2019}{12}
+\bibcite{Wootton2016}{13}
+\bibcite{Gazi2021}{14}
+\bibcite{Subero2024}{15}
+\bibcite{grlj_docking_stations}{16}
+\bibcite{aplications_drones}{17}
+\bibcite{amazon_prime_air}{18}
+\bibcite{swarming_drones}{19}
+\bibcite{military_swarm_drones}{20}
+\bibcite{piotr_drones}{21}
+\bibcite{ardupilot}{22}
+\bibcite{swarm_industrial}{23}
+\bibcite{charging_stations_review}{24}
+\bibcite{drone_motors}{25}
+\bibcite{drone_propellers}{26}
+\bibcite{lipo_batteries}{27}
+\bibcite{wirelessLu}{28}
+\bibcite{CompComms2023}{29}
+\bibcite{vehiclessmartcharge}{30}
+\bibcite{wiredvwirelessMohammed}{31}
+\bibcite{rohdE_ESC}{32}
+\bibcite{pixhawk_docs}{33}
+\bibcite{rasp_docs}{34}
+\bibcite{fastchargers}{35}
+\bibcite{humble_documentation}{36}
+\bibcite{jazzy_documentation}{37}
+\bibcite{opencv_calib3d}{38}
+\bibcite{aruco_docs_pdf}{39}
+\bibcite{mavlink_docs}{40}
+\bibcite{px4_ros2}{41}
+\bibcite{opencv_docs_aruco}{42}
+\bibcite{opencv_tutorial_aruco}{43}
+\gdef \@abspage@last{69}

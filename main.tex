@@ -15,6 +15,9 @@
 \usepackage{subcaption}
 \usepackage{float}
 
+% Eliminar el título automático de thebibliography
+\renewcommand{\bibname}{}
+
 
 % Información de la portada
 \title{Sistema de carga modular y aterrizaje de precisión para enjambre de drones} % Título de la tesis
@@ -87,6 +90,7 @@
 \input{chapters/conclusiones} % Llama al archivo 'conclusiones.tex' desde la carpeta 'chapters'
 
 % Bibliografía
+\chapter{Bibliography} % Capítulo de bibliografía
 \input{chapters/bibliografía.tex} % Llama al archivo 'bibliografía.tex' desde la carpeta 'chapters'
 
 \end{document}
