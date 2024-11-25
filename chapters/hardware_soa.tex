@@ -1,10 +1,11 @@
+
 \section{Hardware}
 
 \subsection{Drones}
 
     There are different categories or names for what can be considered a drone, such as UAV (Unmanned Aerial Vehicle), UAS (Unmanned Aerial Systems), RPAS (Remotely Piloted Aircraft System), or Multicopter (Figure \ref{fig:multicopter}). A specific definition is given by the official documentation \cite{ardupilot}, “A multicopter is a mechanically simple aerial vehicle whose motion is controlled by speeding or slowing multiple downward thrusting motor/propeller units.” It is known that each category has distinct functionalities, and therefore, a multicopter is not exactly the same as a UAV. According to the official documentation \cite{ardupilot}, “A multicopter becomes a UAV or Drone when it is capable of autonomous flight.”
 
-    Additionally, according to Piotr et al., "Drones or Unmanned Aerial Systems (UAV - Unmanned Aerial Vehicle or UAS - Unmanned Aerial Systems) are the aircrafts, which are able to fly without a pilot and passengers on board” \cite{piotr_drones}. Another definition comes from The Office of the Secretary of Defense of the United States of America: “A powered, aerial vehicle that does not carry a human operator, uses aerodynamic forces to provide vehicle lift, can fly autonomously or be piloted remotely, can be expendable or recoverable, and can carry a lethal or non-lethal payload.”
+    Additionally, according to Piotr et al., "Drones or Unmanned Aerial Systems (UAV - Unmanned Aerial Vehicle or UAS - Unmanned Aerial Systems) is the aircraft, which is able to fly without a pilot and passengers on board” \cite{piotr_drones}. Another definition comes from The Office of the Secretary of Defense of the United States of America: “A powered, aerial vehicle that does not carry a human operator, uses aerodynamic forces to provide vehicle lift, can fly autonomously or be piloted remotely, can be expendable or recoverable, and can carry a lethal or non-lethal payload.”
 
     \begin{figure}[h!]
         \centering
@@ -81,43 +82,43 @@ LiPo (Lithium Polymer) batteries are the primary energy source for most drones. 
     \item \textbf{Charging and Safety:} LiPo batteries require specific chargers and must be handled carefully to prevent fires.
 \end{itemize}
 
-\subsection{Aplicaciones de los Drones}
-Los drones tienen una amplia variedad de aplicaciones en la actualidad y conforme pasa el tiempo se incrementan estas mismas gracias a su versatilidad y capacidad para acceder a áreas de difícil acceso. De acuerdo a la documentación oficial [ardupailot] las aplicaciones de los drones son [1]: Aerial Photography and Videography, First Person View (FPV), Disaster Response, Search and Rescue, Agricultural Applications, Wildfire Mitigation, Hazard Mitigation, 3D Mapping and Geographic Information Systems (GIS), Inspection and Verification, Cargo Delivery, among others.
+\subsection{Drone Applications}
+Drones have a wide variety of applications nowadays and as time goes by these applications are increasing thanks to their versatility and ability to access difficult to reach areas. According to the official documentation [ardupailot] the applications of drones are [1]: Aerial Photography and Videography, First Person View (FPV), Disaster Response, Search and Rescue, Agricultural Applications, Wildfire Mitigation, Hazard Mitigation, 3D Mapping and Geographic Information Systems (GIS), Inspection and Verification, Cargo Delivery, among others.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{pictures/drone_aplication_1.jpg}
-    \caption{Esta imagen muestra el DJI AGRAS T50 siendo aplicado en la industria agricola. \cite{aplications_drones} }
+    \caption{This image shows the DJI AGRAS T50 being applied in the agricultural industry.  \cite{aplications_drones} }
     \label{fig:drone_applications}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{pictures/drone_aplication_2.jpg}
-    \caption{Se muestra un dron de la empresa Amazon, el cual hace entregas de paquetes a domicilio. \cite{aplications_drones}}
+    \caption{An Amazon drone is shown, which makes home package deliveries. \cite{aplications_drones}}
     \label{fig:drone_applications_2}
 \end{figure}
 
 \subsection{Swarming Drones}
-A diferencia del control individual de un dron, el concepto de enjambre de drones permite la colaboración entre múltiples unidades para ejecutar tareas complejas de manera eficiente y coordinada. A esta tecnología se le llama enjambres de drones que de acuerdo a los autores [4] respresenta “the true revolution in this field is the control of drone swarms, enabling multiple units to collaborate in executing more complex tasks”. 
+Unlike the individual control of a drone, the drone swarm concept allows collaboration between multiple units to execute complex tasks in an efficient and coordinated manner. This technology is called drone swarm, which according to the authors [4] represents “the true revolution in this field is the control of drone swarm, enabling multiple units to collaborate in executing more complex tasks”. 
 
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{pictures/swarm_diagram.png}
-    \caption{Diagrama que simula un modelo de enjambre de drones}
+    \caption{Diagram simulating a drone swarm model}
     \label{fig:swarming_drones}
 \end{figure}
 
-El control de enjambres de drones requiere de sistemas sofisticados que incluyan comunicación bidireccional, tanto entre los drones como con la estación de control terrestre (Ground Control Station, GCS). Según los autores [4], estos sistemas permiten que los drones compartan información clave como posición, estado de batería y obstáculos detectados, lo que posibilita evitar colisiones, mantener formaciones específicas y adaptarse a condiciones dinámicas del entorno.
+The control of drone swarms requires sophisticated systems that include bidirectional communication, both between the drones and the Ground Control Station (GCS). According to the authors [4], these systems allow drones to share key information such as position, battery status, and obstacles detected, making it possible to avoid collisions, maintain specific formations, and adapt to dynamic environmental conditions.
 
-Además, los autores [4] destacan que un elemento fundamental para el éxito de esta tecnología es la capacidad de posicionamiento y localización precisa, lograda a través de sistemas GPS avanzados. Esta precisión permite a los drones mantener distancias seguras entre sí y operar de forma autónoma en misiones complejas. Otro aspecto relevante es la implementación de sistemas de redundancia que garantizan la continuidad de las operaciones en caso de fallos en alguna unidad del enjambre.
+In addition, the authors [4] emphasize that a fundamental element for the success of this technology is the capacity for precise positioning and localization, achieved through advanced GPS systems. This precision allows drones to maintain safe distances from each other and operate autonomously in complex missions. Another relevant aspect is the implementation of redundancy systems that guarantee the continuity of operations in case of failure in any swarm unit.
 
-En el ámbito industrial, los enjambres de drones presentan un gran potencial en aplicaciones como inspecciones automatizadas, monitoreo ambiental, agricultura de precisión y gestión de desastres. Según los autores [4], el uso de enjambres de drones en estos escenarios no solo mejora la eficiencia operativa, sino que también abre nuevas oportunidades para el desarrollo de tecnologías autónomas en el contexto de la Industria 4.0.
+In the industrial domain, drone swarm present great potential in applications such as automated inspections, environmental monitoring, precision agriculture and disaster management. According to the authors [4], the use of drone swarm in these scenarios not only improves operational efficiency, but also opens new opportunities for the development of autonomous technologies in the context of Industry 4.0.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{pictures/swarms.png}
-    \caption{Se muestra un ejambre de drones en la imagen. \cite{swarming_drones}}
+    \caption{An example of drone swarm is shown in the image. \cite{swarming_drones}}
     \label{fig:swarming_drones_2}
 \end{figure}
 
@@ -214,7 +215,7 @@ En el ámbito industrial, los enjambres de drones presentan un gran potencial en
     \subsubsection{Automatic Drawer Mechanism}
     The automatic drawer mechanism in the charging station for drone storage is similar to the mechanisms found in other automatic storage solutions. Here, we'll discuss the main mechanisms that could be used in this context, including the advantages and disadvantages of each. The mechanism chosen for this project was the belt and V-pulley due to its easy accessibility and low cost.
     
-    \paragraph{Pistons} Pistons are a common choice for automated movement in many types of machinery. They use compressed air or hydraulic fluid to extend and retract, making them well-suited for precise and strong movements. For an automatic drawer for drones, pistons could provide a robust and stable means to open and close the drawer. However, this approach may have higher costs and complexity compared to other mechanisms, as it requires pneumatic or hydraulic infrastructure and regular maintenance.
+    \paragraph{Pistons} The pistons used are a common choice for automated movement in many types of machinery. They use compressed air or hydraulic fluid to extend and retract, making them well-suited for precise and strong movements. For an automatic drawer for drones, pistons could provide a robust and stable means to open and close the drawer. However, this approach may have higher costs and complexity compared to other mechanisms, as it requires pneumatic or hydraulic infrastructure and regular maintenance.
     
     \paragraph{Belt and Toothed Pulley} This mechanism uses a toothed belt and pulley to move the drawer. It offers greater precision compared to V-belts because the toothed design prevents slipping, making it a suitable choice for environments where precise positioning is critical. However, the increased complexity and cost of toothed belts make them less accessible, and they may require more maintenance due to the increased friction between the teeth.
     
@@ -224,6 +225,3 @@ En el ámbito industrial, los enjambres de drones presentan un gran potencial en
 
     
     
-    
-
-
