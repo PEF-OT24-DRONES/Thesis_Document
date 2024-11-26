@@ -103,7 +103,7 @@ As shown in \ref{fig:etiqueta1} The base known as the “inner drawer” was des
 
 Section 2.2.3 explains in detail the different motion mechanisms that were considered for the loading station, evaluating their advantages and disadvantages in terms of accuracy, durability, cost, and ease of integration into the modular design. Options such as linear pistons, toothed belts and other transmission systems were analyzed in order to select a solution that would meet the functionality requirements without increasing costs too much. Tras esta evaluación, se optó por un mecanismo de Polea y Banda tipo V, el cual, además de ser una opción económica, utiliza componentes ya disponibles, como el motor. Este sistema permite un movimiento horizontal suficiente para posicionar el dron con la precisión necesaria para el proceso de carga, a la vez que facilita el apilamiento modular de la estación. La orientación del movimiento no obstruye la estructura general de la estación, lo cual asegura que el diseño cumpla con el requisito de apilabilidad y compatibilidad en espacios compartidos, manteniéndose compacto y adaptable sin comprometer la estructura modular de la estación.
 
-For this mechanism, different components were selected, including a high-strength belt, pulleys, and a DC motor with torque of 0.082 Nm. The belt should support the expected loads, the pulleys (with low friction) would optimize the movement and reduce the wear of the system in continuous operations, and the motor would pull the 3 kg weight of the drone plus the weight of the drawer.
+For this mechanism, different components were selected, including a high-strength belt, pulleys, and a DC motor with torque of 3.42 Nm. The belt should support the expected loads, the pulleys (with low friction) would optimize the movement and reduce the wear of the system in continuous operations, and the motor would pull the 3 kg weight of the drone plus the weight of the drawer.
     \subsubsection{CAD Designs y Components}
         \begin{enumerate}
             \item 12V motor
@@ -235,62 +235,66 @@ For this mechanism, different components were selected, including a high-strengt
     
 
 
-\section{Instrumentación del Dron}
 
-\subsection{Especificaciones y Requerimientos}
-Para garantizar la compatibilidad y funcionalidad en el sistema de carga, el dron debe cumplir con las siguientes especificaciones:
+
+
+
+
+\section{Drone Instrumentation}
+
+\subsection{Specifications and Requirements}
+To ensure compatibility and functionality in the charging system, the drone must meet the following specifications:
     \begin{itemize}
-        \item Las dimensiones de las piezas deberán adaptarse al frame del drone cuadricoptero de arquitectura abierta que fue comprado.
-        \item El dron deberá tener un circuito de carga compatible con la estacion de carga.
-        \item El drone deberá contar con una cámara y un sistema de visión para la detección de marcadores Aruco.
-        \item Se deberán integrar sensores de localización para la navegación en exterior.
-        \item Se deberá integrar algún microprocesador como computadora auxiliar para el procesamiento de datos y la comunicación con la estación de carga.
+        \item The dimensions of the parts must be adapted to the frame of the quadcopter drone of open architecture that was purchased.
+        \item The drone must have a charging circuit compatible with the charging station.
+        \item The drone must have a camera and a vision system for the detection of ArUco markers.
+        \item Location sensors shall be integrated for outdoor navigation.
+        \item A microprocessor should be integrated as an auxiliary computer for data processing and communication with the charging station.
     \end{itemize}
 
-\subsection{Lista de Materiales para la Instrumentación del Dron} 
+\subsection{Drone Instrumentation Materials List} 
     \begin{itemize} 
-        \item 1 x Frame de cuadricóptero abierto (especificar modelo) 
-        \item 1 x Controlador de vuelo (especificar modelo) 
-        \item 1 x Cámara (compatible con detección Aruco) 
+        \item 1 x Open quadcopter frame (F450) 
+        \item 1 x Flight Controller (PIxHawk 6x) 
+        \item 1 x Camera (compatible with ArUco detection) 
         \item 1 x Raspberry Pi 4 (Companion Computer) 
-        \item 1 x Sensor de proximidad (modelo de preferencia) 
-        \item 1 x Módulo GPS (compatible con el controlador de vuelo) 
-        \item Cableado y conectores 
-        \item Material de montaje impreso en 3D (soportes específicos para cada componente) 
+        \item 1 x Proximity Sensor (model of preference) 
+        \item 1 x GPS Module (compatible with flight controller) 
+        \item Wiring and connectors 
+        \item 3D printed mounting hardware (specific brackets for each component) 
     \end{itemize}
 
-\subsection{Diseños CAD del Dron} 
-Se presentan a continuación los diseños CAD de las piezas que se han desarrollado para el dron, adaptadas a su frame original para integrar los componentes electrónicos necesarios y cumplir con los requisitos de carga y posicionamiento.
-
+\subsection{Drone CAD drawings} 
+Presented below are the CAD designs of the parts that have been developed for the drone, adapted to its original frame to integrate the necessary electronic components and meet the loading and positioning requirements.
     \begin{itemize} 
-        \item Se diseñaron nuevos soportes para el microprocesador y la cámara, asegurando una integración estable y precisa en el frame. 
-        \item Se implementó un espacio de montaje para los sensores de localización y el circuito de carga. 
+        \item New brackets were designed for the microprocessor and camera, ensuring stable and precise integration into the frame. 
+        \item A mounting space for the location sensors and charging circuitry was implemented. 
         \begin{center} 
-            \textit{Imagen de los diseños CAD del dron con las piezas modificadas} 
+            \textit{Image of the CAD designs of the drone with the modified parts.} 
         \end{center} 
     \end{itemize}
 
-    \subsection{Circuito de Distribución de Energía} 
-    El circuito de distribución de energía fue diseñado para proporcionar una alimentación segura y estable a los componentes críticos del dron, incluyendo los motores, el controlador de vuelo, la Raspberry Pi y la cámara. A continuación, se describe el funcionamiento de cada sección del circuito:
+    \subsection{Power Distribution Circuit} 
+    The power distribution circuit was designed to provide safe and stable power to the drone's critical components, including the motors, flight controller, Raspberry Pi 5, and camera. The operation of each section of the circuit is described below:
     
     \begin{enumerate}
-        \item \textbf{Batería LiPo 3S:} 
-        Se seleccionó una batería de litio-polímero (LiPo) de 3 celdas con una capacidad de 5200 mAh, un voltaje nominal de 11.1 V y una tasa de descarga de 50C. Esta batería es ideal para proporcionar la corriente necesaria para los motores y los componentes electrónicos sin comprometer la duración de vuelo.
+        \item \textbf{3S LiPo battery:} 
+        A 3-cell lithium-polymer (LiPo) battery with a capacity of 5200 mAh, a nominal voltage of 11.1 V and a discharge rate of 50 C was selected. This battery is ideal for providing the necessary current for the motors and electronics without compromising flight duration.
+
+        \item \textbf{Power distribution to the motors:} 
+        Power from the battery is distributed through a power distribution board, which connects the battery to the four electronic speed controllers (ESCs). Each ESC regulates the power sent to its respective A2212 10T motor, allowing precise speed control of the motors.
     
-        \item \textbf{Distribución de energía a los motores:} 
-        La energía de la batería se distribuye a través de una placa de distribución de energía, que conecta la batería a los cuatro controladores electrónicos de velocidad (ESC). Cada ESC regula la energía enviada a su respectivo motor A2212 10T, permitiendo un control preciso de la velocidad de los motores.
+        \item \textbf{Voltage regulator XL4005 DC-DC:} 
+        This regulator converts the 11.1 V battery voltage to 5 V, providing stable and safe power supply for the Raspberry Pi and the connected camera.
     
-        \item \textbf{Regulador de voltaje XL4005 DC-DC:} 
-        Este regulador convierte el voltaje de 11.1 V de la batería a 5 V, proporcionando una alimentación estable y segura para la Raspberry Pi y la cámara conectada.
-    
-        \item \textbf{Controlador de vuelo Pixhawk 6X RT:} 
-        El controlador de vuelo está conectado directamente a la placa de distribución de energía para recibir la alimentación necesaria. Además, gestiona la comunicación con los ESC y otros sensores del dron, como el módulo GPS (M9N) conectado al puerto GPS1.
-    
+        \item \textbf{Flight controller Pixhawk 6X RT:} 
+        The flight controller is connected directly to the power distribution board to receive the necessary power. It also manages communication with the ESCs and other sensors on the drone, such as the GPS module (M9N) connected to the GPS1 port.
+
         \item \textbf{Raspberry Pi 5:} 
-        La Raspberry Pi está alimentada a través del regulador de voltaje y se conecta al controlador de vuelo mediante un puerto serial para recibir datos y enviar comandos al sistema. Además, gestiona la cámara conectada por USB, que captura imágenes para el procesamiento en tiempo real.
+        The Raspberry Pi is powered through the voltage regulator and connects to the flight controller via a serial port to receive data and send commands to the system. It also manages the USB-connected camera, which captures images for real-time processing.
     
-        \item \textbf{Módulo GPS M9N:} 
-        Este módulo se conecta al controlador Pixhawk a través del puerto GPS1 para proporcionar datos de posicionamiento en tiempo real en exterior, esenciales para la navegación del dron.
+        \item \textbf{GPS Module M9N:} 
+        This module connects to the Pixhawk controller via the GPS1 port to provide real-time outdoor positioning data essential for drone navigation.
     
     \end{enumerate}
     
@@ -298,39 +302,37 @@ Se presentan a continuación los diseños CAD de las piezas que se han desarroll
         \begin{figure}[h!]
             \centering
             \includegraphics[width=0.8\textwidth]{pictures/drone_electronic_diagram.png}
-            \caption{Diagrama del circuito de distribución de energía del dron.}
+            \caption{Diagram of the power distribution circuit of the drone}.
         \end{figure}
     \end{center}
         
 
 \section{Software Configuration}
 
-\subsection{Configuración de la Computadora Central en Tierra} 
-La computadora central se configuró para supervisar y procesar la información proveniente de la computadora auxiliar del dron. A continuación, se describen los pasos realizados para esta configuración:
-
+\subsection{Ground Host Computer Configuration} 
+The central computer was configured to monitor and process the information coming from the drone's auxiliary computer. The steps performed for this configuration are described below:
 \begin{itemize}
-    \item \textbf{Instalación de ROS 2 Humble:} 
-    Dado que la computadora central utiliza Ubuntu 22.04, se instaló ROS 2 Humble siguiendo las instrucciones oficiales. Los comandos utilizados fueron:
-    \begin{verbatim}
+    \item \textbf{Installation of ROS 2 Humble:} 
+    Since the host computer is running Ubuntu 22.04, ROS 2 Humble was installed following the official instructions. The commands used were:    \begin{verbatim}
     sudo apt update && sudo apt install -y software-properties-common
     sudo add-apt-repository universe
     sudo apt update
     sudo apt install -y ros-humble-desktop
     \end{verbatim}
-    Esto incluyó la instalación de las herramientas necesarias para desarrollar y ejecutar aplicaciones en ROS 2 Humble.
+    This included the installation of the necessary tools to develop and run applications on ROS 2 Humble.
 
     \item \textbf{Configuración del entorno:} 
-    Para facilitar el uso de ROS 2, se configuró el archivo \texttt{~/.bashrc}. Se agregó la siguiente línea al final del archivo:
-    \begin{verbatim}
+    To facilitate the use of ROS 2, the file \texttt{~/.bashrc} was configured. The following line was added to the end of the file:
+        \begin{verbatim}
     source /opt/ros/humble/setup.bash
     \end{verbatim}
-    Posteriormente, se ejecutó:
+    It was subsequently executed:
     \begin{verbatim}
     source ~/.bashrc
     \end{verbatim}
 
-    \item \textbf{Clonación del repositorio de GitHub:} 
-    Se creó un espacio de trabajo para ROS 2 y se clonó el repositorio correspondiente. Los pasos realizados fueron:
+    \item \textbf{GitHub repository cloning:} 
+    A workspace was created for ROS 2 and the corresponding repository was cloned. The steps performed were:
     \begin{verbatim}
     mkdir -p ~/ros2_ws/src
     cd ~/ros2_ws/src
@@ -339,88 +341,83 @@ La computadora central se configuró para supervisar y procesar la información 
     colcon build
     \end{verbatim}
 
-    \item \textbf{Configuración del \texttt{ROS\_DOMAIN\_ID}:} 
-    Para garantizar una correcta comunicación entre la computadora central y la computadora auxiliar del dron, se configuró el \texttt{ROS\_DOMAIN\_ID} con el valor 10. Esto se realizó añadiendo la siguiente línea al archivo \texttt{~/.bashrc}:
-    \begin{verbatim}
+    \item \textbf{\texttt{ROS\_DOMAIN\_ID} Configuration:} 
+    To ensure proper communication between the host computer and the drone's auxiliary computer, the \texttt{ROSAIN_ID} was configured with the value 10. This was done by adding the following line to the \texttt{~/.bashrc} file:    \begin{verbatim}
     export ROS_DOMAIN_ID=10
     \end{verbatim}
-    Luego, se ejecutó:
-    \begin{verbatim}
+    It was then executed:    \begin{verbatim}
     source ~/.bashrc
     \end{verbatim}
     
-    \item \textbf{Verificación del entorno de ROS 2:} 
-    Finalmente, se verificó que el entorno estuviera correctamente configurado utilizando los siguientes comandos:
+    \item \textbf{ROS 2 environment Verification:} 
+    Finally, the environment was verified to be correctly configured using the following commands:
     \begin{verbatim}
     ros2 doctor
     \end{verbatim}
-    Esto permitió confirmar que todas las dependencias necesarias para ROS 2 Humble estuvieran instaladas y funcionando correctamente.
-    
+    This allowed us to confirm that all the necessary dependencies for ROS 2 Humble were installed and working correctly.    
     \begin{center} 
-        \textit{Imagen de la configuración del entorno en la computadora central.} 
+        \textit{Image of the environment configuration on the main computer.} 
     \end{center}
 \end{itemize}
 
 
-\subsection{Configuración de la Computadora Auxiliar del Dron} 
-    La Raspberry Pi 5 se configuró como computadora auxiliar para el procesamiento de datos y comunicación en tiempo real con la estación de carga. A continuación, se detallan los pasos realizados para su configuración:
-    
+\subsection{Configuration of the Drone Auxiliary Computer} 
+The Raspberry Pi 5 was configured as an auxiliary computer for data processing and real-time communication with the charging station. The steps performed for its configuration are detailed below:
+
     \begin{itemize}
-        \item \textbf{Instalación de Ubuntu 24.04:} 
-        Se utilizó la herramienta Raspberry Pi Imager para instalar Ubuntu Server 24.04 LTS (64-Bit) en la tarjeta SD. Durante la configuración inicial, se habilitó SSH, se definió un usuario con contraseña y se conectó la Raspberry Pi a la red WiFi.
+        \item \textbf{Installing Ubuntu 24.04:} 
+        The Raspberry Pi Imager tool was used to install Ubuntu Server 24.04 LTS (64-Bit) on the SD card. During the initial setup, SSH was enabled, a user with password was defined and the Raspberry Pi was connected to the Wi-Fi network.
     
-        \item \textbf{Conexión inicial y SSH:} 
-        Después de insertar la tarjeta SD en la Raspberry Pi y conectarla a un monitor y teclado, se encendió el dispositivo e ingresaron las credenciales configuradas. Se obtuvo la dirección IP mediante el comando:
+        \item \textbf{Initial connection and SSH:} 
+        After inserting the SD card into the Raspberry Pi and connecting it to a monitor and keyboard, the device was powered on, and the configured credentials were entered. The IP address was obtained using the command:
         \begin{verbatim}
         hostname -I
         \end{verbatim}
-        Con esta información, se estableció una conexión SSH desde una computadora externa utilizando:
-        \begin{verbatim}
+        With this information, an SSH connection was established from an external computer using:        \begin{verbatim}
         ssh <usuario>@<IP>
         \end{verbatim}
-        Esto permitió continuar con la configuración de la Raspberry Pi de forma remota.
-    
-        \item \textbf{Actualización del sistema:} 
-        Se realizó una actualización completa del sistema operativo con los siguientes comandos:
+        This allowed to continue with the configuration of the Raspberry Pi remotely.
+
+        \item \textbf{System upgrade:} 
+        A complete operating system upgrade was performed with the following commands:
         \begin{verbatim}
         sudo apt update && sudo apt upgrade -y
         \end{verbatim}
-        También se instaló \texttt{raspi-config} para habilitar el puerto serial. Esta opción se configuró en \texttt{Interface Options > Serial Port}, seleccionando \texttt{No} y luego \texttt{Yes}.
-    
-        \item \textbf{Modificación de \texttt{bashrc} y configuración del ID:} 
-        Para garantizar la comunicación entre todos los dispositivos, se configuró el \texttt{ROS\_DOMAIN\_ID} con el valor 10. Se editó el archivo \texttt{~/.bashrc} con:
-        \begin{verbatim}
+        \texttt{raspi-config} was also installed to enable the serial port. This option was configured in \texttt{Interface Options > Serial Port}, selecting \texttt{No} and then \texttt{Yes}.
+
+        \item \textbf{Modification of \texttt{bashrc} and ID configuration:} 
+        To ensure communication between all devices, the \texttt{ROSAIN_ID} was set to 10. The \texttt{~/.bashrc} file was edited with:        \begin{verbatim}
         sudo vim ~/.bashrc
         \end{verbatim}
-        Al final del archivo, se agregaron las siguientes líneas:
-        \begin{verbatim}
+        At the end of the file, the following lines were added:
+                \begin{verbatim}
         export ROS_DOMAIN_ID=10
         source /opt/ros/jazzy/setup.bash
         \end{verbatim}
-        Posteriormente, se guardaron los cambios y se ejecutó:
+        Subsequently, the changes were saved and executed:
         \begin{verbatim}
         source ~/.bashrc
         \end{verbatim}
     
-        \item \textbf{Instalación de ROS 2 Jazzy:} 
-        Se siguieron las instrucciones oficiales para instalar ROS 2 Jazzy en Ubuntu 24.04. Esto incluyó los comandos:
-        \begin{verbatim}
+        \item \textbf{ROS 2 Jazzy Installation:} 
+        Official instructions were followed to install ROS 2 Jazzy on Ubuntu 24.04. This included the commands:
+                \begin{verbatim}
         sudo apt install -y software-properties-common
         sudo add-apt-repository universe
         sudo apt update
         sudo apt install -y ros-jazzy-desktop
         \end{verbatim}
     
-        \item \textbf{Clonación del repositorio de GitHub:} 
-        Se creó un espacio de trabajo en ROS 2 para integrar los nodos personalizados. Los pasos realizados fueron:
-        \begin{verbatim}
+        \item \textbf{GitHub repository cloning:} 
+        A workspace was created in ROS 2 to integrate the custom nodes. The steps performed were:       
+         \begin{verbatim}
         mkdir -p ~/ros2_ws/src
         cd ~/ros2_ws/src
         git clone <URL_del_repositorio>
         cd ..
         colcon build
         \end{verbatim}
-    
+    %%%anabi aqui
         \item \textbf{Instalación de MAVROS y MAVProxy:} 
         Para la comunicación con el Pixhawk, se instalaron MAVROS y MAVProxy. Los comandos utilizados fueron:
         \begin{verbatim}
