@@ -1,173 +1,238 @@
 % Desarrollo
 
-Este capítulo describe el proceso de diseño, implementación y configuración de la estación de carga modular y la instrumentación del dron. Se detallan las metodologías y herramientas utilizadas para llevar a cabo el desarrollo, con un enfoque en la creación de una solución eficaz para el sistema de carga.
+This chapter describes the process of design, implementation and configuration of the modular charging station and drone instrumentation. It details the methodologies and tools used to carry out the development, with a focus on creating an effective solution for the charging system.
+\section{Charging Station Design and Development}
 
-\section{Diseño y Desarrollo de la Estación de Carga}
-
-\subsection{Requerimientos}
-    A continuación se presentan las especificaciones técnicas y los requisitos para la estación de carga, garantizando compatibilidad y eficiencia para un sistema de carga en enjambres de drones:
-        \begin{enumerate}
-            \item El sistema deberá contar con un diseño que sea modular y apilable para la integración de multiples estaciones de carga. 
-            \item El sistema deberá tomar en cuenta y adaptarse a las dimensiones del dron propuesto para la aplicación.
-            \item El sistema deberá de contar con un mecanismo automático de apertura y cierre para el almacenamiento del dron.
-            \item El sistema deberá contar con un mecanismo de carga para la batería del dron.
-            \item El sistema deberá contener método de posicionamiento por visión para el dron. 
+\subsection{Requirements}
+    The following are the technical specifications and requirements for the charging station, ensuring compatibility and efficiency for a drone swarm charging system:     
+       \begin{enumerate}
+            \item The system shall have a design that is modular and stackable for integration of multiple charging stations. 
+            \item The system shall take into account and adapt to the dimensions of the drone proposed for the application.
+            \item The system shall have an automatic opening and closing mechanism for the storage drawer of the drone.
+            \item The system shall have a charging mechanism for the drone battery.
+            \item The system shall contain vision positioning method for the drone.
         \end{enumerate}
 
-\subsection{Lista de Materiales}
-    A continuación, se presenta la lista de materiales utilizados para la construcción de la estación de carga modular. Cabe destacar que el diseño y desarrollo de este proyecto se basaron en gran medida en los recursos y materiales disponibles previamente, lo que permitió optimizar costos y aprovechar de manera eficiente los insumos existentes.
-    \begin{itemize}
-        \item Perfiles de Aluminio
+\subsection{Materials List}
+The following is the materials list used for the construction of the modular charging station. It should be noted that the design and development of this project were largely based on previously available resources and materials, which allowed cost optimization and efficient use of existing inputs.    \begin{itemize}
+        \item Aluminum Profiles
             \begin{itemize}
                 \item \textbf{30 mm:}
                 \begin{itemize}
-                \item 4 x Perfiles de 100 mm
-                \item 4 x Perfiles de 810 mm
-                \item 6 x Perfiles de 750 mm
+                \item 4 x Profiles de 100 mm
+                \item 4 x Profiles de 810 mm
+                \item 6 x Profiles de 750 mm
                 \end{itemize}
                 \item \textbf{40 mm:}
                 \begin{itemize}
-                \item 2 x Perfiles de 1040 mm
-                \item 4 x Perfiles de 560 mm
-                \item 4 x Perfiles de 830 mm
-                \item 4 x Perfiles de 1120 mm
+                \item 2 x Profiles de 1040 mm
+                \item 4 x Profiles de 560 mm
+                \item 4 x Profiles de 830 mm
+                \item 4 x Profiles de 1120 mm
                 \end{itemize}
             \end{itemize}
-        \item 16 x Codos para perfil de aluminio impresos en 3D
-        \item Tronillería para perfil de aluminio
-        \item 2 x Riel Corredera Telescópica
-        \item 1 x Motor de 12V
-        \item 1 x Soportes de Motor impresos en 3D
-        \item 1 x A V-Belts 1 m 
-        \item 2 x Polea tipo A con diámetro interno de 1/2"
-        \item 2 x Balero de DI: 15 mm y DE: 35 mm
-        \item 2 x Chumacera impresa en 3D
-        \item 2 x MDF de 9 mm de 75x75 cm
-        \item 8 x Separadores de MDF impresos en 3D
-        \item 1 x Fuente de Poder de 12V
-        \item 1 x Arduino Mega
-        \item 1 x Raspberry Pi 4
-        \item 1 x Puente H BTS7960 
-        \item 2 x Sensor de Proximidad Inductivo
-        \item 1 x Joystick
-        \item 1 x Router WiFi
-        \item 1 x BT3 Pro Compact Charger
-        \item 1 X Cable Carrier 1 m
+            \item 16 x 3D printed aluminum profile frames
+            \item Aluminum profile turning machine
+            \item 2 x Telescopic Correction Riel
+            \item 1 x 12V motor
+            \item 1 x 3D printed motor brackets
+            \item 1 x A V-Belts 1 m 
+            \item 2 x Pole type A with internal diameter of 1/2”
+            \item 2 x DI Bearing: 15 mm y DE: 35 mm
+            \item 2 x 3D printed bearings
+            \item 2 x 9 mm MDF 75x75 cm
+            \item 8 x 3D printed MDF dividers
+            \item 1 x 12V power supply
+            \item 1 x Arduino Mega
+            \item 1 x Raspberry Pi 4
+            \item 1 x H Bridge BTS7960 
+            \item 2 x Inductive Proximity Sensor
+            \item 1 x Joystick
+            \item 1 x WiFi Router
+            \item 1 x BT3 Pro Compact Charger
+            \item 1 X Cable Carrier 1 m
     \end{itemize}
 
-\subsection{Diseño CAD de la Base de Carga}
+\subsection{CAD Design of the Charging Base}
 
-    Para cumplir con los requerimientos de diseño modular / apilable y compatibilidad con el drone en cuestión a las dimensiones de este. Se llevó a cabo el siguiente diseño en CAD:
-
-    Como se muestra en la Fig 1. Se diseñó la base conocida como "cajón interno", que sirve como plataforma para el despegue y aterrizaje del dron. Este diseño se realizó considerando las dimensiones del dron y asegurando la inclusión de tolerancias adecuadas para prevenir posibles colisiones. Se utilizó perfil de aluminio de 30 mm en este diseño aprovechando que es material con el que se contaba previamente. También se le integró otros perfiles por el medio del cajón y de manera horizontal, lo que sería el soporte de los rieles.
-            \begin{figure}[htpb]
+To meet the requirements of modular / stackable design and compatibility with the drone in question to the dimensions of the drone. The following CAD design was carried out:
+As shown in \ref{fig:etiqueta1} The base known as the “inner drawer” was designed to serve as a platform for takeoff and landing of the drone. This design was made considering the dimensions of the drone and ensuring the inclusion of adequate tolerances to prevent possible collisions. A 30 mm aluminum profile was used in this design, taking advantage of the fact that this material was already available. Other profiles were also integrated in the middle of the box and horizontally, which would support the rails.           
+ \begin{figure}[htpb]
                 \centering
                 \includegraphics[width=0.8\textwidth]{pictures/PLANOS_CAJON_INTERNO_1.png}
-                \caption{Plano del cajón interno de la Estación de Carga}
-                \label{fig:etiqueta}
+                \caption{Drawing of the internal drawer of the Charging Station}
+                \label{fig:etiqueta1}
             \end{figure}
             
-    Por consiguiente, tomando en cuenta las dimensiones del plano anterior, se realizó lo que es el "cajón externo" en el cual sirve para almacenar el dron y la electrónica de la estación de carga. Esto se puede observar en la Fig 2.
+            Therefore, taking into account the dimensions of the previous plan, the “external drawer” was made, which is used to store the drone and the electronics of the charging station. This can be seen in \ref{fig:etiqueta2}.           
             \begin{figure}[htpb]
                 \centering
                 \includegraphics[width=0.8\textwidth]{pictures/PLANOS_CAJON_EXTERNO_1.png}
-                \caption{Plano del cajón externo de la Estación de Carga}
-                \label{fig:etiqueta}
+                \caption{Drawing of the external drawer of the Charging Station}
+                \label{fig:etiqueta2}
             \end{figure}
 
-    Después, se tomaron en cuenta las dimensiones de las landing gear (patas del dron) para hacer unas guías mecánicas (Fig 3.) que ayuden a estas mismas a hacer una correcta conexión magnética con el sistema de carga.
-            \begin{figure}[htpb]
+            Then, the dimensions of the landing gear (drone legs) were taken into account to make some mechanical guides (\ref{fig:etiqueta3}) that help them to make a correct magnetic connection with the charging system.            \begin{figure}[htpb]
                 \centering
                 \includegraphics[width=0.8\textwidth]{pictures/PLANO_GUIAS_MECANICAS.png}
-                \caption{Plano de guía mecánica para la Estación de Carga}
-                \label{fig:etiqueta}
+                \caption{Mechanical Guidance Drawing for Charging Station}
+                \label{fig:etiqueta3}
             \end{figure}
 
 
-    Se desarrollaron los diseños CAD necesarios como se muestran en la Fig 4. y Fig 5. para garantizar la correcta integración y adaptación de los distintos componentes de la estación de carga. Estos diseños permitieron establecer las dimensiones, tolerancias y características esenciales para que cada elemento se ajustara de manera precisa, asegurando que la estación de carga cumpliera con su funcionalidad de forma eficiente y confiable.
-
+            The necessary CAD designs were developed as shown in \ref{fig:imagen1} and \ref{fig:imagen2} to ensure the correct integration and adaptation of the different components of the charging station. These designs made it possible to establish the essential dimensions, tolerances and features so that each element would fit precisely, ensuring that the charging station would fulfill its functionality efficiently and reliably.The necessary CAD designs were developed as shown in Fig 4. and Fig 5. to ensure the correct integration and adaptation of the different components of the charging station. These designs made it possible to establish the essential dimensions, tolerances and features so that each element would fit precisely, ensuring that the charging station would fulfill its functionality efficiently and reliably.
     \begin{figure}[h]
         \centering
         \begin{minipage}{0.45\textwidth}
             \centering
             \includegraphics[width=\textwidth]{pictures/PLANO_PATAS_ESTABILIDAD_CAJON.png}
-            \caption{Guía mecánica diseñada para garantizar el correcto posicionamiento del dron, permitiendo que las patas del dron se conecten de manera magnética al sistema de alimentación de energía.}
+            \caption{Mechanical guide designed to ensure correct positioning of the drone, allowing the drone legs to be magnetically connected to the power supply system.}
             \label{fig:imagen1}
         \end{minipage}%
         \hfill
         \begin{minipage}{0.45\textwidth}
             \centering
             \includegraphics[width=\textwidth]{pictures/PLANO_SENSOR.png}
-            \caption{Imagen 2}
+            \caption{Image 2}
             \label{fig:imagen2}
         \end{minipage}%
         \hfill
     \end{figure}
 
-\subsection{Selección e Implementación del Mecanismo de Movimiento del Cajón}
+\subsection{Selection and Implementation of Drawer Motion Mechanism}
 
-En la sección 2.2.3 se explican en detalle los diferentes mecanismos de movimiento que se consideraron para la estación de carga, evaluando sus ventajas y desventajas en términos de precisión, durabilidad, costo y facilidad de integración en el diseño modular. Se analizaron opciones como pistones lineales, bandas dentadas y otros sistemas de transmisión, con el objetivo de seleccionar una solución que cumpliera con los requisitos de funcionalidad sin elevar demasiado los costos. 
-Tras esta evaluación, se optó por un mecanismo de Polea y Banda tipo V, el cual, además de ser una opción económica, utiliza componentes ya disponibles, como el motor. Este sistema permite un movimiento horizontal suficiente para posicionar el dron con la precisión necesaria para el proceso de carga, a la vez que facilita el apilamiento modular de la estación. La orientación del movimiento no obstruye la estructura general de la estación, lo cual asegura que el diseño cumpla con el requisito de apilabilidad y compatibilidad en espacios compartidos, manteniéndose compacto y adaptable sin comprometer la estructura modular de la estación.
+Section 2.2.3 explains in detail the different motion mechanisms that were considered for the loading station, evaluating their advantages and disadvantages in terms of accuracy, durability, cost, and ease of integration into the modular design. Options such as linear pistons, toothed belts and other transmission systems were analyzed in order to select a solution that would meet the functionality requirements without increasing costs too much. Tras esta evaluación, se optó por un mecanismo de Polea y Banda tipo V, el cual, además de ser una opción económica, utiliza componentes ya disponibles, como el motor. Este sistema permite un movimiento horizontal suficiente para posicionar el dron con la precisión necesaria para el proceso de carga, a la vez que facilita el apilamiento modular de la estación. La orientación del movimiento no obstruye la estructura general de la estación, lo cual asegura que el diseño cumpla con el requisito de apilabilidad y compatibilidad en espacios compartidos, manteniéndose compacto y adaptable sin comprometer la estructura modular de la estación.
 
-Para este mecanismo, se seleccionaron diferentes componentes, incluyendo una banda de alta resistencia para soportar las cargas previstas, poleas (con baja fricción) para optimizar el movimiento y reducir el desgaste del sistema en operaciones continuas, y un motor ... que tiene un torque de ... y cumple con el torque necesario para mover los 3 kg de peso del drone.
-
-    \subsubsection{Diseños CAD y Componentes}
+For this mechanism, different components were selected, including a high-strength belt, pulleys, and a DC motor with torque of 0.082 Nm. The belt should support the expected loads, the pulleys (with low friction) would optimize the movement and reduce the wear of the system in continuous operations, and the motor would pull the 3 kg weight of the drone plus the weight of the drawer.
+    \subsubsection{CAD Designs y Components}
         \begin{enumerate}
-            \item Motor de 12V
-            \item Poleas
-            \item Banda
+            \item 12V motor
+            \item Pole
+            \item Band
             \item Baleros
-            \item Chumaceras 
-            \item Soporte del Motor
+            \item Bearings 
+            \item Motor support
         \end{enumerate}
 
-    \subsubsection{Mecanismo Polea y Banda tipo V}
-    (Imagen del Mecanismo)
+    \subsubsection{V-type Belt and Pulley Mechanism}
+    (Mechanism Image)
 
-    \subsection{Diseño CAD de la Base de Carga}
-    Para cumplir con los requerimientos de diseño modular / apilable y compatibilidad con el drone en cuestión a las dimensiones de este. Se llevó a cabo el siguiente diseño en CAD:
+    \subsection{CAD Design of the Charging Base}
+    To meet the requirements of modular / stackable design and compatibility with the drone in question to the dimensions of the drone. The following CAD design was carried out:
 
         \begin{itemize}
-            \item     El diseño de la estructura principal de la estación de carga se realizó en Fusion 360, considerando las dimensiones mínimas requeridas para el dron y el mecanismo de carga.
-            Imagen
-            \item     Se tomó en cuenta la dimensión necesaria para que el drone tenga un espacio de por lo menos 10 cm de separacion con la pared del cajón, esto para evitar alguna colusión del drone con la estructura de la base de carga al momento de intentar aterrizar, además se disminuyú la altura del cajón para que el drone pueda aterrizar sin problemas. Por otro lado se usarón rieles que se obtuvieron previamente reutilizados, por lo cual la estacion de carga física se encuentra salida de la base de carga por unos 5 cm al momento de estar cerrada, pero en el diseño CAD el diseño si se encuentra cerrado por completo. 
-            Imagen
-            \item     Se añadió un espacio de 25 cm para colocar la parte electronica del cajón.
-            imagen
+            \item     The design of the main structure of the charging station was made in Fusion 360, considering the minimum dimensions required for the drone and the charging mechanism.
+            Image
+            \item     The necessary dimension was taken into account so that the drone has a space of at least 10 cm of separation with the wall of the box. This is to avoid any collusion of the drone with the structure of the cargo base when trying to land, also the height of the box was decreased so that the drone can land without problems. On the other hand, we used rails that were obtained previously reused, so the physical charging station is out of the charging base by about 5 cm at the time of being closed. However, in the CAD design, the design is completely closed. 
+            Image
+            \item     A space of 25 cm was added to place the electronic part of the drawer.
+            image
         \end{itemize}
 
 
 
-\subsection{Proceso de Manufactura de la Estructura de la Base de Carga}
+\subsection{Manufacturing Process of the Base Load Frame}
 
     \begin{enumerate}
-        \item \textbf{Corte del Material:} Para iniciar el proceso de manufactura, se realizaron cortes precisos de los perfiles de aluminio y las placas de MDF según las dimensiones especificadas en la lista de materiales. Este paso es fundamental para asegurar que todas las piezas se ensamblen correctamente en el diseño modular.
+        \item \textbf{Material Cutting:}  To start the manufacturing process, precise cuts of the aluminum profiles and MDF boards were made according to the dimensions specified in the materials list. This step is critical to ensure that all parts are assembled correctly in the modular design.
             \begin{center}
-                \textit{Imagen del proceso de corte de perfiles de aluminio y MDF}
+                \textit{Image of the cutting process of aluminum and MDF profiles}
             \end{center}
-        \item \textbf{Ensamblaje de la Estructura:} Una vez cortadas las piezas, se procedió a ensamblar la estructura principal de la estación de carga utilizando tornillos y tuercas para fijar los perfiles de aluminio y las placas de MDF usando los separadores impresos. Se verificó que todas las piezas estuvieran alineadas y niveladas para garantizar la estabilidad y resistencia de la base de carga.
-            \begin{center}
-                \textit{Imagen del proceso de ensamblaje de la estructura de la base de carga}
+        \item \textbf{Structure Assembly:} Once the parts were cut, the main structure of the loading station was assembled using bolts and nuts to fix the aluminum profiles and the MDF plates using the printed spacers. All parts were checked to ensure that they were aligned and leveled to guarantee the stability and strength of the loading base.
+        \begin{center}
+                \textit{Image of the assembly process of the load-bearing base structure}
             \end{center}
-        \item \textbf{Instalación del Mecanismo de Movimiento:} Después de ensamblar la estructura principal, se instaló el mecanismo de polea y banda tipo V para permitir el movimiento horizontal del cajón. Se colocaron las poleas, la banda y el motor en las ubicaciones previamente definidas, asegurando que el sistema de movimiento funcionara correctamente y sin obstrucciones.
-            \begin{center}
-                \textit{Imagen del proceso de instalación del mecanismo de movimiento}
+        \item \textbf{Installation of the Motion Mechanism:} After the main structure was assembled, the V-type pulley and belt mechanism was installed to allow horizontal movement of the caisson. The pulleys, belt, and motor were placed in the previously defined locations, ensuring that the motion system would function properly and without obstructions.
+        \begin{center}
+                \textit{Image of the installation process of the movement mechanism}
             \end{center}
         
     \end{enumerate}
 
 
+%%ANABI starts
 
-\subsection{Circuito Electrónico de la Estación de Carga}
+    \subsection{Electronic Circuit of the Charging Station}
 
-    \subsubsection{Diagrama de Conexiones}
-    Añadir diagrama de conexiones
-
-    \subsubsection{Contrucción del Circuito}
-    Añadir imágenes de la construcción del circuito
-
-    \subsubsection{Programación del Circuito}
-    Explicar el código de programación del circuito y su funcionamiento, mencionar que en los anexos se encuentra el código fuente del arduino y raspberry pi 4.
+    \subsubsection{Conection Diagram}
+    add diagram circuit
+    
+    \subsubsection{Circuit Construction}
+    add images
+    
+    \subsubsection{Circuit Programming}
+    
+    \paragraph{\textbf{General Description:}}
+    
+    
+    The described circuit uses a joystick to control a motor that moves a drawer back and forth. The joystick is connected to a microcontroller (Arduino Mega 2560), which reads the joystick's Y-axis values to determine the direction in which the motor should move. Depending on the position of the joystick, the motor moves forward, backward or stops. In addition, limit switches are used to ensure that the motor stops when the drawer reaches its extreme positions.
+    
+    
+    
+    \paragraph{\textbf{Main Components}
+    }
+    \begin{itemize}
+        \item \textbf{Arduino:} Microcontroller that manages the reading of the joystick values and controls the motor.
+        \item \textbf{Joystick:} Analog input device that allows the user to control the direction of movement.
+        \item \textbf{Motor and H-Bridge:} Driver system that moves the drawer. The H-bridge allows controlling the direction and speed of motion of the motor.
+        \item \textbf{Limit Switches:} Sensors that detect when the drawer has reached its extreme positions (forward and reverse).
+        \item \textbf{Power Supply:} Supplies power to the motor. The Arduino and RaspberryPi4 are supplied power by a plug-in charger.
+    \end{itemize}
+    
+    
+    \paragraph{\textbf{Arduino Code}
+    }
+    
+    The Arduino code performs the following functions:
+    
+    \begin{enumerate}
+        \item \textbf{Pin initialization:}
+        \begin{itemize}
+            \item The joystick pins (A1 for the Y-axis) are configured as inputs.
+            \item Motor pins 9 and 8 are configured as outputs.
+            \item The limit switch pins (10 and 11) are configured as inputs with internal pull-up resistors.
+        \end{itemize}
+        \item \textbf{Reading of Joystick:}
+        \begin{itemize}
+            \item At each loop cycle, the Arduino reads the analog value from the joystick's Y-axis.
+            \item Depending on the value read, the Arduino decides whether the motor should move forward, backward or stop.
+        \end{itemize}
+        \item \textbf{Motor Control:}
+        \begin{itemize}
+            \item If the value of the joystick Y-axis is greater than 512 (middle position) and the forward limit switch is not pressed, the motor moves forward.
+            \item If the Y-axis value is less than 512 and the backward limit switch is not pressed, the motor moves backward.
+            \item If the Y-axis value is approximately 512 or any limit switch is pressed, the motor stops.
+        \end{itemize}
+        \item \textbf{Limit Switch Verification:}
+        \begin{itemize}
+            \item If the motor is moving forward and the forward limit detects  metal (the drawer), the motor stops.
+            \item If the motor is moving backward and the backward limit switch detects  metal (the drawer), the motor stops.
+    
+        \end{itemize}
+        
+    \end{enumerate}
+    
+    %%%%%CODIGOOOOOOOO (??????)
+    
+    \paragraph{\textbf{Circuit Operation}
+    }
+    \begin{itemize}
+        \item Initialization: At startup, the Arduino configures the pins and establishes serial communication for debugging.
+    \item Continuous Readout: In the main loop, the Arduino continuously reads the value of the joystick Y-axis.
+    \item Dynamic Control: Based on the value read, the Arduino controls the motor to move the drawer forward, backward or stop it.
+    \item Safety Check: Limit switches ensure that the motor automatically stops when the drawer reaches its extreme positions, protecting the system from possible damage.
+    \item Debugging: Joystick values and motor status are printed on the serial monitor for easy debugging and system tuning.
+    \end{itemize}
+    
+    \paragraph{\textbf{Annex}
+    }
+    \paragraph{
+    The complete source code for both the Arduino and Raspberry Pi 4 is included in the appendices of this document, making it easy to review and modify as needed for implementation and control of the system.
+    
+    This approach ensures that the drawer moves in a precise and controlled manner based on the joystick position, providing an efficient solution for linear motion control using a motor and belt.}
+    
+%%ANABI ENDS
+    
 
 
 \section{Instrumentación del Dron}
