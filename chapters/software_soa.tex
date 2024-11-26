@@ -109,14 +109,14 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.5\textwidth]{pictures/humble_logo.png}
+    \includegraphics[width=0.3\textwidth]{pictures/humble_logo.png}
     \caption{ROS 2 Humble}
     \label{fig:imagen1}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.6\textwidth]{pictures/jazzy_logo.png}
+    \includegraphics[width=0.3\textwidth]{pictures/jazzy_logo.png}
     \caption{ROS 2 Jazzy Jalisco}
     \label{fig:imagen2}
 \end{figure}
@@ -438,6 +438,8 @@ To achieve precise control of the drone's position using ROS 2 topics such as Ò
     
         \item \textbf{LIDAR (Light Detection and Ranging):} LIDAR sensors emit pulses of light to measure distances and obtain detailed maps of the environment. These sensors are useful for real-time indoor navigation and mapping and are integrated into ROS 2 using point cloud topics. They are particularly effective for obstacle avoidance and precise indoor positioning \cite{non_gps_navigation}.
         
+        \item \textbf{Vicon Motion Capture System:} Vicon cameras are a high-precision motion capture system that utilize multiple cameras placed around a testing environment to track reflective markers attached to the drone. By triangulating the position of these markers, the Vicon system provides accurate 3D position and orientation data. This data can be used in ROS 2 for real-time drone control and navigation, typically by publishing the position data as a topic. The Vicon system is ideal for precise indoor positioning, particularly in controlled environments where high accuracy is required \cite{non_gps_navigation}.
+
         \item \textbf{IMU (Inertial Measurement Unit):} Indoors, the IMU remains an essential component for detecting changes in orientation and motion. Fusion of IMU data with other sensors, such as LIDAR or cameras, helps maintain stability and provides accurate position estimates using fusion filters, such as the Kalman filter \cite{non_gps_navigation}.
         
     \end{itemize}

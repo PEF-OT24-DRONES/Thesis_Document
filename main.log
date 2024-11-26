@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.9)  24 NOV 2024 20:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.9)  24 NOV 2024 22:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -445,18 +445,22 @@ Chapter 1.
 (./chapters/introduccion.tex [4
 
 ]
+Overfull \hbox (1.21603pt too wide) in paragraph at lines 24--25
+[]\OT1/cmr/m/n/10.95 To de-sign a CAD model for the charg-ing sta-tion, en-sur-ing com-pat-i-bil-ity with open-architecture
+ []
 
-LaTeX Warning: Citation `cite1' on page 5 undefined on input line 40.
+
+LaTeX Warning: Citation `cite1' on page 5 undefined on input line 39.
 
 [5]
 
-LaTeX Warning: Citation `cite2' on page 6 undefined on input line 46.
+LaTeX Warning: Citation `cite2' on page 6 undefined on input line 45.
 
 
-LaTeX Warning: Citation `cite3' on page 6 undefined on input line 54.
+LaTeX Warning: Citation `cite3' on page 6 undefined on input line 53.
 
 
-LaTeX Warning: Citation `cite4' on page 6 undefined on input line 60.
+LaTeX Warning: Citation `cite4' on page 6 undefined on input line 59.
 
 ) [6]
 Chapter 2.
@@ -464,7 +468,7 @@ Chapter 2.
 <pictures/multicopter.png, id=462, 528.47438pt x 374.90062pt>
 File: pictures/multicopter.png Graphic file (type png)
 <use pictures/multicopter.png>
-Package pdftex.def Info: pictures/multicopter.png  used on input line 11.
+Package pdftex.def Info: pictures/multicopter.png  used on input line 12.
 (pdftex.def)             Requested size: 281.85587pt x 199.94917pt.
 
 
@@ -476,22 +480,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <pictures/quad_frame.png, id=476, 243.15843pt x 237.88875pt>
 File: pictures/quad_frame.png Graphic file (type png)
 <use pictures/quad_frame.png>
-Package pdftex.def Info: pictures/quad_frame.png  used on input line 27.
+Package pdftex.def Info: pictures/quad_frame.png  used on input line 28.
 (pdftex.def)             Requested size: 187.89914pt x 183.82463pt.
 <pictures/hexa_frame.png, id=477, 273.27094pt x 252.19218pt>
 File: pictures/hexa_frame.png Graphic file (type png)
 <use pictures/hexa_frame.png>
-Package pdftex.def Info: pictures/hexa_frame.png  used on input line 33.
+Package pdftex.def Info: pictures/hexa_frame.png  used on input line 34.
 (pdftex.def)             Requested size: 187.89914pt x 173.40479pt.
 <pictures/octo_frame.png, id=478, 286.82156pt x 266.49562pt>
 File: pictures/octo_frame.png Graphic file (type png)
 <use pictures/octo_frame.png>
-Package pdftex.def Info: pictures/octo_frame.png  used on input line 39.
+Package pdftex.def Info: pictures/octo_frame.png  used on input line 40.
 (pdftex.def)             Requested size: 187.89914pt x 174.5864pt.
 <pictures/octo_quad_frame.png, id=479, 270.25969pt x 161.85469pt>
 File: pictures/octo_quad_frame.png Graphic file (type png)
 <use pictures/octo_quad_frame.png>
-Package pdftex.def Info: pictures/octo_quad_frame.png  used on input line 45.
+Package pdftex.def Info: pictures/octo_quad_frame.png  used on input line 46.
 (pdftex.def)             Requested size: 187.89914pt x 112.53189pt.
 
 
@@ -501,45 +505,45 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <pictures/drone_aplication_1.jpg, id=494, 181.6605pt x 122.859pt>
 File: pictures/drone_aplication_1.jpg Graphic file (type jpg)
 <use pictures/drone_aplication_1.jpg>
-Package pdftex.def Info: pictures/drone_aplication_1.jpg  used on input line 89.
+Package pdftex.def Info: pictures/drone_aplication_1.jpg  used on input line 90.
 (pdftex.def)             Requested size: 328.82707pt x 222.39264pt.
 <pictures/drone_aplication_2.jpg, id=497, 301.125pt x 168.63pt>
 File: pictures/drone_aplication_2.jpg Graphic file (type jpg)
 <use pictures/drone_aplication_2.jpg>
-Package pdftex.def Info: pictures/drone_aplication_2.jpg  used on input line 96.
+Package pdftex.def Info: pictures/drone_aplication_2.jpg  used on input line 97.
 (pdftex.def)             Requested size: 328.82707pt x 184.1607pt.
  [10 <./pictures/drone_aplication_1.jpg>]
 <pictures/swarm_diagram.png, id=506, 565.36218pt x 382.42876pt>
 File: pictures/swarm_diagram.png Graphic file (type png)
 <use pictures/swarm_diagram.png>
-Package pdftex.def Info: pictures/swarm_diagram.png  used on input line 106.
+Package pdftex.def Info: pictures/swarm_diagram.png  used on input line 107.
 (pdftex.def)             Requested size: 328.82707pt x 222.43321pt.
 <pictures/swarms.png, id=507, 451.6875pt x 301.125pt>
 File: pictures/swarms.png Graphic file (type png)
 <use pictures/swarms.png>
-Package pdftex.def Info: pictures/swarms.png  used on input line 119.
+Package pdftex.def Info: pictures/swarms.png  used on input line 120.
 (pdftex.def)             Requested size: 328.82707pt x 219.23128pt.
  [11 <./pictures/drone_aplication_2.jpg>] [12 <./pictures/swarm_diagram.png> <./pictures/swarms.png>]
 <pictures/charging_classification.png, id=526, 469.00218pt x 210.7875pt>
 File: pictures/charging_classification.png Graphic file (type png)
 <use pictures/charging_classification.png>
-Package pdftex.def Info: pictures/charging_classification.png  used on input line 143.
+Package pdftex.def Info: pictures/charging_classification.png  used on input line 144.
 (pdftex.def)             Requested size: 422.77664pt x 190.00934pt.
  [13 <./pictures/charging_classification.png>]
 <pictures/fixed_charging_1.png, id=538, 452.4403pt x 291.33844pt>
 File: pictures/fixed_charging_1.png Graphic file (type png)
 <use pictures/fixed_charging_1.png>
-Package pdftex.def Info: pictures/fixed_charging_1.png  used on input line 158.
+Package pdftex.def Info: pictures/fixed_charging_1.png  used on input line 159.
 (pdftex.def)             Requested size: 281.85587pt x 181.49483pt.
 <pictures/fixed_2.png, id=541, 407.27156pt x 167.87718pt>
 File: pictures/fixed_2.png Graphic file (type png)
 <use pictures/fixed_2.png>
-Package pdftex.def Info: pictures/fixed_2.png  used on input line 165.
+Package pdftex.def Info: pictures/fixed_2.png  used on input line 166.
 (pdftex.def)             Requested size: 281.85587pt x 116.18631pt.
 <pictures/fixed_3.png, id=544, 325.215pt x 235.63031pt>
 File: pictures/fixed_3.png Graphic file (type png)
 <use pictures/fixed_3.png>
-Package pdftex.def Info: pictures/fixed_3.png  used on input line 172.
+Package pdftex.def Info: pictures/fixed_3.png  used on input line 173.
 (pdftex.def)             Requested size: 281.85587pt x 204.23088pt.
 
 
@@ -548,7 +552,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <pictures/fixed_4.png, id=547, 397.485pt x 176.15813pt>
 File: pictures/fixed_4.png Graphic file (type png)
 <use pictures/fixed_4.png>
-Package pdftex.def Info: pictures/fixed_4.png  used on input line 179.
+Package pdftex.def Info: pictures/fixed_4.png  used on input line 180.
 (pdftex.def)             Requested size: 281.85587pt x 124.91724pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -557,7 +561,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <pictures/mobile_1.png, id=561, 321.45094pt x 229.60782pt>
 File: pictures/mobile_1.png Graphic file (type png)
 <use pictures/mobile_1.png>
-Package pdftex.def Info: pictures/mobile_1.png  used on input line 193.
+Package pdftex.def Info: pictures/mobile_1.png  used on input line 194.
 (pdftex.def)             Requested size: 187.89914pt x 134.21667pt.
 
 
@@ -566,7 +570,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <pictures/mobile_2.png, id=564, 291.33844pt x 288.3272pt>
 File: pictures/mobile_2.png Graphic file (type png)
 <use pictures/mobile_2.png>
-Package pdftex.def Info: pictures/mobile_2.png  used on input line 200.
+Package pdftex.def Info: pictures/mobile_2.png  used on input line 201.
 (pdftex.def)             Requested size: 187.89914pt x 185.963pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -574,7 +578,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <pictures/mobile_3.png, id=567, 348.55219pt x 108.405pt>
 File: pictures/mobile_3.png Graphic file (type png)
 <use pictures/mobile_3.png>
-Package pdftex.def Info: pictures/mobile_3.png  used on input line 207.
+Package pdftex.def Info: pictures/mobile_3.png  used on input line 208.
 (pdftex.def)             Requested size: 281.85587pt x 87.6653pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -599,18 +603,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: pictures/humble_logo.png Graphic file (type png)
 <use pictures/humble_logo.png>
 Package pdftex.def Info: pictures/humble_logo.png  used on input line 112.
-(pdftex.def)             Requested size: 234.8775pt x 286.63841pt.
+(pdftex.def)             Requested size: 140.92793pt x 171.985pt.
 <pictures/jazzy_logo.png, id=698, 54.2025pt x 49.50494pt>
 File: pictures/jazzy_logo.png Graphic file (type png)
 <use pictures/jazzy_logo.png>
 Package pdftex.def Info: pictures/jazzy_logo.png  used on input line 119.
-(pdftex.def)             Requested size: 281.85587pt x 257.49886pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[26 <./pictures/humble_logo.png>]
-<pictures/ros2_arch.png, id=708, 681.54625pt x 376.40625pt>
+(pdftex.def)             Requested size: 140.92793pt x 128.74905pt.
+ [26 <./pictures/humble_logo.png> <./pictures/jazzy_logo.png>]
+<pictures/ros2_arch.png, id=709, 681.54625pt x 376.40625pt>
 File: pictures/ros2_arch.png Graphic file (type png)
 <use pictures/ros2_arch.png>
 Package pdftex.def Info: pictures/ros2_arch.png  used on input line 147.
@@ -619,39 +619,34 @@ Package pdftex.def Info: pictures/ros2_arch.png  used on input line 147.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27 <./pictures/jazzy_logo.png>] [28 <./pictures/ros2_arch.png>]
-<pictures/distortions.png, id=730, 429.605pt x 193.72375pt>
+[27 <./pictures/ros2_arch.png>] [28]
+<pictures/distortions.png, id=733, 429.605pt x 193.72375pt>
 File: pictures/distortions.png Graphic file (type png)
 <use pictures/distortions.png>
 Package pdftex.def Info: pictures/distortions.png  used on input line 201.
 (pdftex.def)             Requested size: 281.85587pt x 127.10133pt.
-<pictures/calib_pattern.jpg, id=731, 419.5675pt x 452.69125pt>
+<pictures/calib_pattern.jpg, id=734, 419.5675pt x 452.69125pt>
 File: pictures/calib_pattern.jpg Graphic file (type jpg)
 <use pictures/calib_pattern.jpg>
 Package pdftex.def Info: pictures/calib_pattern.jpg  used on input line 218.
 (pdftex.def)             Requested size: 187.89914pt x 202.7283pt.
- [29 <./pictures/distortions.png>]
-<pictures/arucos_ids.png, id=743, 513.92pt x 289.08pt>
+ [29 <./pictures/distortions.png> <./pictures/calib_pattern.jpg>]
+<pictures/arucos_ids.png, id=744, 513.92pt x 289.08pt>
 File: pictures/arucos_ids.png Graphic file (type png)
 <use pictures/arucos_ids.png>
 Package pdftex.def Info: pictures/arucos_ids.png  used on input line 233.
 (pdftex.def)             Requested size: 375.80544pt x 211.39275pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[30 <./pictures/calib_pattern.jpg>]
-<pictures/calibration_aruco.png, id=753, 953.5625pt x 548.0475pt>
+<pictures/calibration_aruco.png, id=746, 953.5625pt x 548.0475pt>
 File: pictures/calibration_aruco.png Graphic file (type png)
 <use pictures/calibration_aruco.png>
 Package pdftex.def Info: pictures/calibration_aruco.png  used on input line 246.
 (pdftex.def)             Requested size: 112.74277pt x 64.7928pt.
-<pictures/augmented_reality.jpg, id=754, 1284.8pt x 722.7pt>
+<pictures/augmented_reality.jpg, id=747, 1284.8pt x 722.7pt>
 File: pictures/augmented_reality.jpg Graphic file (type jpg)
 <use pictures/augmented_reality.jpg>
 Package pdftex.def Info: pictures/augmented_reality.jpg  used on input line 253.
 (pdftex.def)             Requested size: 112.74277pt x 63.40811pt.
-<pictures/tracking_aruco.jpg, id=755, 2303.60625pt x 1591.9475pt>
+<pictures/tracking_aruco.jpg, id=748, 2303.60625pt x 1591.9475pt>
 File: pictures/tracking_aruco.jpg Graphic file (type jpg)
 <use pictures/tracking_aruco.jpg>
 Package pdftex.def Info: pictures/tracking_aruco.jpg  used on input line 260.
@@ -661,13 +656,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--261
 []\OT1/cmr/m/n/10.95 Figure 2.24: |Real-Time
  []
 
-[31 <./pictures/arucos_ids.png> <./pictures/calibration_aruco.png> <./pictures/augmented_reality.jpg> <./pictures/tracking_aruco.jpg>]
-<pictures/bits_aruco.png, id=768, 204.765pt x 102.6234pt>
+[30 <./pictures/arucos_ids.png>]
+<pictures/bits_aruco.png, id=760, 204.765pt x 102.6234pt>
 File: pictures/bits_aruco.png Graphic file (type png)
 <use pictures/bits_aruco.png>
 Package pdftex.def Info: pictures/bits_aruco.png  used on input line 275.
 (pdftex.def)             Requested size: 375.80544pt x 188.35799pt.
-<pictures/pose_1.png, id=771, 247.92625pt x 192.72pt>
+ [31 <./pictures/calibration_aruco.png> <./pictures/augmented_reality.jpg> <./pictures/tracking_aruco.jpg> <./pictures/bits_aruco.png>]
+<pictures/pose_1.png, id=772, 247.92625pt x 192.72pt>
 File: pictures/pose_1.png Graphic file (type png)
 <use pictures/pose_1.png>
 Package pdftex.def Info: pictures/pose_1.png  used on input line 294.
@@ -677,32 +673,29 @@ Underfull \hbox (badness 4726) in paragraph at lines 295--295
 []\OT1/cmr/m/n/10.95 Figure 2.27: |Large/Small
  []
 
-<pictures/pose_2.png, id=772, 210.7875pt x 203.76125pt>
+<pictures/pose_2.png, id=773, 210.7875pt x 203.76125pt>
 File: pictures/pose_2.png Graphic file (type png)
 <use pictures/pose_2.png>
 Package pdftex.def Info: pictures/pose_2.png  used on input line 301.
 (pdftex.def)             Requested size: 77.51079pt x 74.92722pt.
-<pictures/pose_3.png, id=773, 182.6825pt x 185.69376pt>
+<pictures/pose_3.png, id=774, 182.6825pt x 185.69376pt>
 File: pictures/pose_3.png Graphic file (type png)
 <use pictures/pose_3.png>
 Package pdftex.def Info: pictures/pose_3.png  used on input line 308.
 (pdftex.def)             Requested size: 70.46396pt x 71.62407pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[32 <./pictures/bits_aruco.png>] [33 <./pictures/pose_1.png> <./pictures/pose_2.png> <./pictures/pose_3.png>]
-<pictures/aruco_no_pose_estimation.png, id=796, 315.1775pt x 282.05376pt>
+[32 <./pictures/pose_1.png> <./pictures/pose_2.png> <./pictures/pose_3.png>] [33]
+<pictures/aruco_no_pose_estimation.png, id=799, 315.1775pt x 282.05376pt>
 File: pictures/aruco_no_pose_estimation.png Graphic file (type png)
 <use pictures/aruco_no_pose_estimation.png>
 Package pdftex.def Info: pictures/aruco_no_pose_estimation.png  used on input line 369.
 (pdftex.def)             Requested size: 180.385pt x 161.42647pt.
-<pictures/aruco_pose_estimation.png, id=797, 338.26375pt x 277.035pt>
+<pictures/aruco_pose_estimation.png, id=800, 338.26375pt x 277.035pt>
 File: pictures/aruco_pose_estimation.png Graphic file (type png)
 <use pictures/aruco_pose_estimation.png>
 Package pdftex.def Info: pictures/aruco_pose_estimation.png  used on input line 374.
 (pdftex.def)             Requested size: 180.385pt x 147.7367pt.
- [34] [35 <./pictures/aruco_no_pose_estimation.png> <./pictures/aruco_pose_estimation.png>]
-<pictures/xrce_dds.png, id=819, 701.62125pt x 265.99374pt>
+ [34 <./pictures/aruco_no_pose_estimation.png> <./pictures/aruco_pose_estimation.png>] [35]
+<pictures/xrce_dds.png, id=822, 701.62125pt x 265.99374pt>
 File: pictures/xrce_dds.png Graphic file (type png)
 <use pictures/xrce_dds.png>
 Package pdftex.def Info: pictures/xrce_dds.png  used on input line 418.
@@ -712,32 +705,32 @@ Overfull \hbox (85.34859pt too wide) in paragraph at lines 425--426
 \OT1/cmr/m/n/10.95 To achieve pre-cise con-trol of the drone's po-si-tion us-ing ROS 2 top-ics such as []Otexture/mavros/setpoint/position/local,
  []
 
-[36 <./pictures/xrce_dds.png>] [37])) [38]
+[36 <./pictures/xrce_dds.png>])) [37]
 Chapter 3.
-(./chapters/desarrollo.tex [39
+(./chapters/desarrollo.tex [38
 
-] [40]
-<pictures/PLANOS_CAJON_INTERNO_1.png, id=862, 514.05965pt x 319.24487pt>
+] [39]
+<pictures/PLANOS_CAJON_INTERNO_1.png, id=859, 514.05965pt x 319.24487pt>
 File: pictures/PLANOS_CAJON_INTERNO_1.png Graphic file (type png)
 <use pictures/PLANOS_CAJON_INTERNO_1.png>
 Package pdftex.def Info: pictures/PLANOS_CAJON_INTERNO_1.png  used on input line 65.
 (pdftex.def)             Requested size: 375.80544pt x 233.39755pt.
-<pictures/PLANOS_CAJON_EXTERNO_1.png, id=863, 324.90079pt x 261.42886pt>
+<pictures/PLANOS_CAJON_EXTERNO_1.png, id=860, 324.90079pt x 261.42886pt>
 File: pictures/PLANOS_CAJON_EXTERNO_1.png Graphic file (type png)
 <use pictures/PLANOS_CAJON_EXTERNO_1.png>
 Package pdftex.def Info: pictures/PLANOS_CAJON_EXTERNO_1.png  used on input line 73.
 (pdftex.def)             Requested size: 375.80544pt x 302.41199pt.
-<pictures/PLANO_GUIAS_MECANICAS.png, id=864, 299.7634pt x 213.0394pt>
+<pictures/PLANO_GUIAS_MECANICAS.png, id=861, 299.7634pt x 213.0394pt>
 File: pictures/PLANO_GUIAS_MECANICAS.png Graphic file (type png)
 <use pictures/PLANO_GUIAS_MECANICAS.png>
 Package pdftex.def Info: pictures/PLANO_GUIAS_MECANICAS.png  used on input line 81.
 (pdftex.def)             Requested size: 375.80544pt x 267.09175pt.
-<pictures/PLANO_PATAS_ESTABILIDAD_CAJON.png, id=865, 290.33687pt x 258.91513pt>
+<pictures/PLANO_PATAS_ESTABILIDAD_CAJON.png, id=862, 290.33687pt x 258.91513pt>
 File: pictures/PLANO_PATAS_ESTABILIDAD_CAJON.png Graphic file (type png)
 <use pictures/PLANO_PATAS_ESTABILIDAD_CAJON.png>
 Package pdftex.def Info: pictures/PLANO_PATAS_ESTABILIDAD_CAJON.png  used on input line 93.
 (pdftex.def)             Requested size: 211.38832pt x 188.51262pt.
-<pictures/PLANO_SENSOR.png, id=866, 222.46591pt x 179.10391pt>
+<pictures/PLANO_SENSOR.png, id=863, 222.46591pt x 179.10391pt>
 File: pictures/PLANO_SENSOR.png Graphic file (type png)
 <use pictures/PLANO_SENSOR.png>
 Package pdftex.def Info: pictures/PLANO_SENSOR.png  used on input line 100.
@@ -746,31 +739,31 @@ Package pdftex.def Info: pictures/PLANO_SENSOR.png  used on input line 100.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41 <./pictures/PLANOS_CAJON_INTERNO_1.png>] [42 <./pictures/PLANOS_CAJON_EXTERNO_1.png> <./pictures/PLANO_GUIAS_MECANICAS.png>] [43 <./pictures/PLANO_PATAS_ESTABILIDAD_CAJON.png> <./pictures/PLANO_SENSOR.png>] [44] [45] [46]
-<pictures/drone_electronic_diagram.png, id=918, 1444.39626pt x 815.045pt>
+[40 <./pictures/PLANOS_CAJON_INTERNO_1.png>] [41 <./pictures/PLANOS_CAJON_EXTERNO_1.png> <./pictures/PLANO_GUIAS_MECANICAS.png>] [42 <./pictures/PLANO_PATAS_ESTABILIDAD_CAJON.png> <./pictures/PLANO_SENSOR.png>] [43] [44] [45]
+<pictures/drone_electronic_diagram.png, id=915, 1444.39626pt x 815.045pt>
 File: pictures/drone_electronic_diagram.png Graphic file (type png)
 <use pictures/drone_electronic_diagram.png>
 Package pdftex.def Info: pictures/drone_electronic_diagram.png  used on input line 235.
 (pdftex.def)             Requested size: 375.80544pt x 212.05594pt.
- [47 <./pictures/drone_electronic_diagram.png>]
+ [46 <./pictures/drone_electronic_diagram.png>]
 Overfull \hbox (7.63977pt too wide) in paragraph at lines 257--259
 []\OT1/cmr/bx/n/10.95 Configuraci^^Son del en-torno: \OT1/cmr/m/n/10.95 Para fa-cil-i-tar el uso de ROS 2, se con-figur^^So el archivo  \OT1/cmtt/m/n/10.95 /.bashrc\OT1/cmr/m/n/10.95 .
  []
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 277.
-[48] [49] [50] [51]
-<pictures/mp_calibration.png, id=946, 1445.4pt x 903.375pt>
+[47] [48] [49] [50]
+<pictures/mp_calibration.png, id=943, 1445.4pt x 903.375pt>
 File: pictures/mp_calibration.png Graphic file (type png)
 <use pictures/mp_calibration.png>
 Package pdftex.def Info: pictures/mp_calibration.png  used on input line 413.
 (pdftex.def)             Requested size: 375.80544pt x 234.87196pt.
- [52 <./pictures/mp_calibration.png>]
+ [51 <./pictures/mp_calibration.png>]
 Overfull \hbox (17.51506pt too wide) in paragraph at lines 458--458
  []        \OT1/cmtt/m/n/10.95 corners2 = cv2.cornerSubPix(gray, corners, (11, 11), (-1, -1), criteria)[] 
  []
 
-<pictures/calib_predictions.png, id=955, 540.0175pt x 419.5675pt>
+<pictures/calib_predictions.png, id=952, 540.0175pt x 419.5675pt>
 File: pictures/calib_predictions.png Graphic file (type png)
 <use pictures/calib_predictions.png>
 Package pdftex.def Info: pictures/calib_predictions.png  used on input line 462.
@@ -778,17 +771,17 @@ Package pdftex.def Info: pictures/calib_predictions.png  used on input line 462.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[53]
+[52]
 Overfull \hbox (23.26375pt too wide) in paragraph at lines 497--497
  []        \OT1/cmtt/m/n/10.95 error = cv2.norm(imgpoints[i], imgpoints2, cv2.NORM_L2) / len(imgpoints2)[] 
  []
 
-[54 <./pictures/calib_predictions.png>]
+[53 <./pictures/calib_predictions.png>]
 Overfull \hbox (2.28824pt too wide) in paragraph at lines 520--522
 \OT1/cmr/m/n/10.95 ex-terno (\OT1/cmtt/m/n/10.95 outer[]marker[]size\OT1/cmr/m/n/10.95 ) y se gener^^So el mar-cador con un ID es-pec^^S^^Pfico (\OT1/cmtt/m/n/10.95 outer[]marker[]id\OT1/cmr/m/n/10.95 ).
  []
 
-<pictures/aruco_marker_5.png, id=974, 220.825pt x 220.825pt>
+<pictures/aruco_marker_5.png, id=970, 220.825pt x 220.825pt>
 File: pictures/aruco_marker_5.png Graphic file (type png)
 <use pictures/aruco_marker_5.png>
 Package pdftex.def Info: pictures/aruco_marker_5.png  used on input line 530.
@@ -796,13 +789,13 @@ Package pdftex.def Info: pictures/aruco_marker_5.png  used on input line 530.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[55]
-<pictures/aruco_marker_100.png, id=983, 50.1875pt x 50.1875pt>
+[54]
+<pictures/aruco_marker_100.png, id=980, 50.1875pt x 50.1875pt>
 File: pictures/aruco_marker_100.png Graphic file (type png)
 <use pictures/aruco_marker_100.png>
 Package pdftex.def Info: pictures/aruco_marker_100.png  used on input line 546.
 (pdftex.def)             Requested size: 93.94957pt x 93.96346pt.
- [56 <./pictures/aruco_marker_5.png (PNG copy)> <./pictures/aruco_marker_100.png (PNG copy)>]
+ [55 <./pictures/aruco_marker_5.png (PNG copy)> <./pictures/aruco_marker_100.png (PNG copy)>]
 Overfull \hbox (29.01244pt too wide) in paragraph at lines 574--574
  []        \OT1/cmtt/m/n/10.95 center_position = (outer_marker_size - inner_marker_with_border_size) // 2[] 
  []
@@ -827,7 +820,7 @@ Overfull \hbox (212.97044pt too wide) in paragraph at lines 574--574
  []                       \OT1/cmtt/m/n/10.95 center_position:center_position + inner_marker_with_border_size] = inner_marker_with_border[] 
  []
 
-<pictures/embedded_aruco.png, id=991, 220.825pt x 220.825pt>
+<pictures/embedded_aruco.png, id=988, 220.825pt x 220.825pt>
 File: pictures/embedded_aruco.png Graphic file (type png)
 <use pictures/embedded_aruco.png>
 Package pdftex.def Info: pictures/embedded_aruco.png  used on input line 578.
@@ -837,29 +830,29 @@ Overfull \hbox (46.2585pt too wide) in paragraph at lines 588--588
  []        \OT1/cmtt/m/n/10.95 cv2.imwrite(f'embedded_aruco_marker_{outer_marker_id}_{inner_marker_id}.png',[] 
  []
 
-[57 <./pictures/embedded_aruco.png (PNG copy)>]
+[56 <./pictures/embedded_aruco.png (PNG copy)>]
 Overfull \hbox (88.13586pt too wide) in paragraph at lines 621--623
 \OT1/cmr/m/n/10.95 en el es-pa-cio con re-specto a la c^^Samara. Esto se re-aliz^^So uti-lizando la funci^^Son \OT1/cmtt/m/n/10.95 aruco.estimatePoseSingleMarkers\OT1/cmr/m/n/10.95 ,
  []
 
-[58] [59]) [60]
+[57] [58]) [59]
 Chapter 4.
-(./chapters/resultados.tex) [61
+(./chapters/resultados.tex) [60
 
-] [62]
+] [61]
 Chapter 5.
-(./chapters/conclusiones.tex) [63
+(./chapters/conclusiones.tex) [62
 
 ]
 Chapter 6.
-(./chapters/bibliografía.tex [64
+(./chapters/bibliografía.tex [63
 
 ]
 Underfull \hbox (badness 1221) in paragraph at lines 8--9
 \OT1/cmr/m/n/10.95 hi-cle setup for PX4 or ArduPi-lot pow-ered ve-hi-cles.'' Disponible en: []$\OT1/cmtt/m/n/10.95 https : / / docs .
  []
 
-[65
+[64
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
@@ -876,12 +869,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 \OT1/cmtt/m/n/10.95 www . military . africa / 2024 / 10 / swarm-[]drones-[]a-[]new-[]phase-[]in-[]the-[]sudan-[]conflict/$[]\OT1/cmr/m/n/10.95 .
  []
 
-[66] [67]
+[65] [66]
 Underfull \hbox (badness 1874) in paragraph at lines 119--120
 \OT1/cmtt/m/n/10.95 opencv . org / 4 . x / d5 / dae / tutorial _ aruco _ detection . html$[]\OT1/cmr/m/n/10.95 . [[]\OT1/cmr/m/it/10.95 Ultimo ac-ceso: noviem-bre,
  []
 
-) [68] (./main.aux)
+) [67] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -889,21 +882,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5CF14F9396113D8EC046FAE4E71F866B;15797.
+(rerunfilecheck)             Checksum: 3F925C4F937D60DABB0908E7A0DA13ED;15736.
  ) 
 Here is how much of TeX's memory you used:
- 12444 strings out of 480218
- 201804 string characters out of 5894882
- 491766 words of memory out of 5000000
+ 12443 strings out of 480218
+ 201797 string characters out of 5894882
+ 491731 words of memory out of 5000000
  29848 multiletter control sequences out of 15000+600000
  477492 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 67i,10n,77p,1060b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,10n,77p,1060b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/albertocastro/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (69 pages, 6198333 bytes).
+Output written on main.pdf (68 pages, 6198337 bytes).
 PDF statistics:
- 1239 PDF objects out of 1440 (max. 8388607)
- 1051 compressed objects within 11 object streams
- 330 named destinations out of 1000 (max. 500000)
+ 1236 PDF objects out of 1440 (max. 8388607)
+ 1049 compressed objects within 11 object streams
+ 329 named destinations out of 1000 (max. 500000)
  900 words of extra memory for PDF output out of 10000 (max. 10000000)
 
