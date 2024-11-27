@@ -1,168 +1,169 @@
 % Desarrollo
 
 This chapter describes the process of design, implementation and configuration of the modular charging station and drone instrumentation. It details the methodologies and tools used to carry out the development, with a focus on creating an effective solution for the charging system.
-\section{Diseño y Desarrollo de la Estación de Carga}
-\subsection{Requerimientos}
-A continuación se presentan las especificaciones técnicas y los requisitos para la estación de carga, garantizando compatibilidad y eficiencia para un sistema de carga en enjambres de drones:
+
+\section{Design and Development of the Charging Station}
+\subsection{Requirements}
+The following outlines the technical specifications and requirements for the charging station, ensuring compatibility and efficiency for a drone swarm charging system:
     \begin{enumerate}
-        \item El sistema deberá contar con un diseño que sea modular y apilable para la integración de multiples estaciones de carga. 
-        \item El sistema deberá tomar en cuenta y adaptarse a las dimensiones del dron propuesto para la aplicación.
-        \item El sistema deberá de contar con un mecanismo automático de apertura y cierre para el almacenamiento del dron.
-        \item El sistema deberá contar con un mecanismo de carga para la batería del dron.
-        \item El sistema deberá contener método de posicionamiento por visión para el dron. 
+        \item The system must feature a modular and stackable design for integrating multiple charging stations.
+        \item The system must take into account and adapt to the dimensions of the proposed drone for the application.
+        \item The system must include an automatic mechanism for opening and closing to store the drone.
+        \item The system must have a charging mechanism for the drone's battery.
+        \item The system must incorporate a vision-based positioning method for the drone.
     \end{enumerate}
 
-\subsection{Lista de Materiales}
-A continuación, se presenta la lista de materiales utilizados para la construcción de la estación de carga modular. Cabe destacar que el diseño y desarrollo de este proyecto se basaron en gran medida en los recursos y materiales disponibles previamente, lo que permitió optimizar costos y aprovechar de manera eficiente los insumos existentes.
+\subsection{Bill of Materials}
+The following is the list of materials used for constructing the modular charging station. It is worth noting that the design and development of this project heavily relied on previously available resources and materials, enabling cost optimization and efficient use of existing supplies.
 \begin{itemize}
-    \item Perfiles de Aluminio
+    \item Aluminum Profiles
         \begin{itemize}
             \item \textbf{30 mm:}
             \begin{itemize}
-            \item 4 x Perfiles de 100 mm
-            \item 4 x Perfiles de 810 mm
-            \item 6 x Perfiles de 750 mm
+            \item 4 x Profiles of 100 mm
+            \item 4 x Profiles of 810 mm
+            \item 6 x Profiles of 750 mm
             \end{itemize}
             \item \textbf{40 mm:}
             \begin{itemize}
-            \item 2 x Perfiles de 1040 mm
-            \item 4 x Perfiles de 560 mm
-            \item 4 x Perfiles de 830 mm
-            \item 4 x Perfiles de 1120 mm
+            \item 2 x Profiles of 1040 mm
+            \item 4 x Profiles of 560 mm
+            \item 4 x Profiles of 830 mm
+            \item 4 x Profiles of 1120 mm
             \end{itemize}
         \end{itemize}
-    \item 16 x Codos para perfil de aluminio impresos en 3D
-    \item Tronillería para perfil de aluminio
-    \item 2 x Riel Corredera Telescópica
-    \item 1 x Motor de 12V
-    \item 1 x Soportes de Motor impresos en 3D
-    \item 1 x A V-Belts 1 m 
-    \item 2 x Polea tipo A con diámetro interno de 1/2"
-    \item 2 x Balero de DI: 15 mm y DE: 35 mm
-    \item 2 x Chumacera impresa en 3D
-    \item 2 x MDF de 9 mm de 75x75 cm
-    \item 8 x Separadores de MDF impresos en 3D
-    \item 1 x Fuente de Poder de 12V
+    \item 16 x 3D-Printed Aluminum Profile Elbows
+    \item Aluminum Profile Fasteners
+    \item 2 x Telescopic Slide Rails
+    \item 1 x 12V Motor
+    \item 1 x 3D-Printed Motor Bracket
+    \item 1 x V-Belt 1 m
+    \item 2 x Type A Pulleys with 1/2" Inner Diameter
+    \item 2 x Bearings with ID: 15 mm and OD: 35 mm
+    \item 2 x 3D-Printed Bearing Housings
+    \item 2 x 9 mm MDF Boards of 75x75 cm
+    \item 8 x 3D-Printed MDF Spacers
+    \item 1 x 12V Power Supply
     \item 1 x Arduino Mega
     \item 1 x Raspberry Pi 4
-    \item 1 x Puente H BTS7960 
-    \item 2 x Sensor de Proximidad Inductivo
+    \item 1 x BTS7960 H-Bridge
+    \item 2 x Inductive Proximity Sensors
     \item 1 x Joystick
-    \item 1 x Router WiFi
+    \item 1 x WiFi Router
     \item 1 x BT3 Pro Compact Charger
-    \item 1 X Cable Carrier 1 m
-    \item 1 X Eje de (falta poner dimensiones)
+    \item 1 x Cable Carrier 1 m
+    \item 1 x Shaft (dimensions pending)
 \end{itemize}
 
-\subsection{Diseño CAD de la Base de Carga}
+\subsection{CAD Design of the Charging Base}
 
-Para cumplir con los requerimientos de diseño modular / apilable y compatibilidad con el drone en cuestión a las dimensiones de este. Se llevó a cabo el siguiente diseño en CAD:
+To meet the modular/stackable design requirements and ensure compatibility with the drone's dimensions, the following CAD design was developed:
 
-Como se muestra en la Fig 1. Se diseñó la base conocida como "cajón interno", que sirve como plataforma para el despegue y aterrizaje del dron. Este diseño se realizó considerando las dimensiones del dron y asegurando la inclusión de tolerancias adecuadas para prevenir posibles colisiones. Se utilizó perfil de aluminio de 30 mm en este diseño aprovechando que es material con el que se contaba previamente. También se le integró otros perfiles por el medio del cajón y de manera horizontal, lo que sería el soporte de los rieles.
+As shown in Fig. 1, the base known as the "internal drawer" was designed to serve as a platform for the drone's takeoff and landing. This design was created considering the drone's dimensions and ensuring the inclusion of adequate tolerances to prevent potential collisions. A 30 mm aluminum profile was used in this design, taking advantage of previously available materials. Additional profiles were also integrated horizontally in the middle of the drawer to support the rails.
         \begin{figure}[htpb]
             \centering
             \includegraphics[width=0.8\textwidth]{PLANOS/PLANOS_CAJON_INTERNO_1.png}
-            \caption{Plano del cajón interno de la Estación de Carga}
+            \caption{Blueprint of the internal drawer for the Charging Station.}
             \label{fig:etiqueta}
         \end{figure}
         
- Por consiguiente, tomando en cuenta las dimensiones del plano anterior, se realizó lo que es el "cajón externo" en el cual sirve para almacenar el dron y la electrónica de la estación de carga. Esto se puede observar en la Fig 2.
+Consequently, based on the dimensions of the previous blueprint, the "external drawer" was designed. This drawer serves to house the drone and the electronics of the charging station, as shown in Fig. 2.
         \begin{figure}[htpb]
             \centering
             \includegraphics[width=0.8\textwidth]{PLANOS/PLANOS_CAJON_EXTERNO_1.png}
-            \caption{Plano del cajón externo de la Estación de Carga}
+            \caption{Blueprint of the external drawer for the Charging Station.}
             \label{fig:etiqueta}
         \end{figure}
 
-Después, se tomaron en cuenta las dimensiones de las landing gear (patas del dron) para imprimir en 3D unas guías mecánicas (Fig 3.) que ayuden a estas mismas a hacer una correcta conexión magnética con el sistema de carga.
+Next, the dimensions of the drone's landing gear were considered to 3D print mechanical guides (Fig. 3) that help align the landing gear for proper magnetic connection with the charging system.
         \begin{figure}[htpb]
             \centering
             \includegraphics[width=0.8\textwidth]{PLANOS/PLANO_GUIAS_MECANICAS.png}
-            \caption{Plano de guía mecánica para la Estación de Carga}
+            \caption{Blueprint of the mechanical guide for the Charging Station.}
             \label{fig:etiqueta}
         \end{figure}
 
-Tomando en cuenta los diseños de la Fig. 1 y la Fig. 3 se desarrolló por completo el diseño de el cajón interno (Fig. 4), cuenta con dos cortes de MDF de 9 mm de 810 mm x 810 mm y separadores internos con espacio de 20 mm de altura para proteger los cables del sistema de carga. 
+Using the designs from Fig. 1 and Fig. 3, the complete design of the internal drawer was developed (Fig. 4). It includes two 9 mm MDF cuts measuring 810 mm x 810 mm and internal spacers with a height of 20 mm to protect the system's cables. 
 
         \begin{figure}[htpb]
             \centering
             %\includegraphics[width=0.6\textwidth]{PLANOS/CAJON_INTERNO_FINAL.png}
-            \caption{Vista del cajón interno de la Estación de Carga.}
+            \caption{View of the internal drawer for the Charging Station.}
             \label{fig:etiqueta}
         \end{figure}
 
-
-Se desarrollaron los diseños CAD necesarios como se muestran en la Fig 5. y Fig 6. para garantizar la correcta integración y adaptación de los distintos componentes de la estación de carga. Estos diseños permitieron establecer las dimensiones, tolerancias y características esenciales para que cada elemento se ajustara de manera precisa, asegurando que la estación de carga cumpliera con su funcionalidad de forma eficiente y confiable.
+The necessary CAD designs, as shown in Fig. 5 and Fig. 6, were developed to ensure proper integration and adaptation of the various components of the charging station. These designs helped establish the essential dimensions, tolerances, and characteristics to ensure that each element fit precisely, guaranteeing that the charging station functioned efficiently and reliably.
 
 \begin{figure}[h]
     \centering
     \begin{minipage}{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{PLANOS/PLANO_PATAS_ESTABILIDAD_CAJON.png}
-        \caption{Soportes de piso para la estabilidad de la Estación de Carga.}
+        \caption{Floor supports for the stability of the Charging Station.}
         \label{fig:imagen1}
     \end{minipage}%
     \hfill
     \begin{minipage}{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{PLANOS/PLANO_SENSOR.png}
-        \caption{Sujetador impreso en 3D para los sensores de proximidad inductivos de la Estación de Carga.}
+        \caption{3D-printed holder for the inductive proximity sensors of the Charging Station.}
         \label{fig:imagen2}
     \end{minipage}%
     \hfill
 \end{figure}
 
-Por último del proceso de diseño, se desarrolló un modelo CAD que integra los componentes principales necesarios para el correcto funcionamiento de la estación de carga. Este diseño conceptual final, mostrado en la figura 7, representa la consolidación de las ideas iniciales, las iteraciones realizadas y las decisiones tomadas a lo largo del desarrollo. El modelo asegura la funcionalidad, compatibilidad y eficiencia de la estación, sirviendo como base para la fabricación e implementación del sistema.
+
+Lastly, as part of the design process, a CAD model was developed to integrate the main components necessary for the proper functioning of the charging station. This final conceptual design, shown in Figure 7, represents the consolidation of initial ideas, the iterations performed, and the decisions made throughout the development. The model ensures the functionality, compatibility, and efficiency of the station, serving as a basis for manufacturing and implementing the system.
 
         \begin{figure}[htpb]
             \centering
-            \includegraphics[width=1\textwidth]{pictures/ESTACION_FINAL.jpg}
-            \caption{Vista de la Estación de Carga.}
+            \includegraphics[width=0.5\textwidth]{pictures/ESTACION_FINAL.jpg}
+            \caption{View of the Charging Station.}
             \label{fig:etiqueta}
         \end{figure}
 
-\subsection{Selección e Implementación del Mecanismo de Movimiento del Cajón}
+\subsection{Selection and Implementation of the Drawer Movement Mechanism}
 
-El diseño del mecanismo de cajón automático para la estación de carga pasó por varias etapas de conceptualización, considerando diferentes opciones para garantizar un movimiento eficiente y económico. Inicialmente, se planteó utilizar una banda dentada similar al mecanismo de las impresoras 3D, permitiendo un desplazamiento preciso hacia adelante y hacia atrás; sin embargo, esta solución resultaba costosa y compleja debido a las dimensiones requeridas. Como alternativa, se evaluó el uso de pistones, pero estos incrementaban aún más los costos del proyecto. Finalmente, se optó por implementar un sistema de banda y polea tipo V, clasificación A, debido a su rápida disponibilidad y considerable reducción en costos, logrando así un equilibrio entre funcionalidad, simplicidad y economía.
+The design of the automatic drawer mechanism for the charging station went through several conceptual stages, considering different options to ensure efficient and cost-effective movement. Initially, a toothed belt mechanism, similar to those used in 3D printers, was proposed to allow precise forward and backward movement. However, this solution proved costly and complex due to the required dimensions. As an alternative, pistons were considered, but they further increased the project's costs. Finally, a V-belt and pulley system (Type A) was chosen due to its quick availability and significant cost reduction, achieving a balance between functionality, simplicity, and economy.
 
-\subsubsection{Componentes y Diseños CAD}
+\subsubsection{Components and CAD Designs}
     \begin{enumerate}
-        \item Motor de 12V
+        \item 12V Motor
             \begin{figure}[htpb]
                 \centering
                 \includegraphics[width=0.4\textwidth]{MECANISMO/MOTOR_12V.jpg}
-                \caption{Motor de 12 Volts utilizado para la Estación de Carga.}
+                \caption{12V Motor used for the Charging Station.}
                 \label{fig:etiqueta}
             \end{figure}
-        \item Poleas
+        \item Pulleys
             \begin{figure}[htpb]
                 \centering
                 %\includegraphics[width=0.35\textwidth]{MECANISMO/POLEA_ALUMINIO-removebg-preview.png}
-                \caption{Polea de aluminio con diametro interno de 1/2"}
+                \caption{Aluminum pulley with 1/2" inner diameter.}
                 \label{fig:etiqueta}
             \end{figure}
-        \item Banda V Tipo A
+        \item V-Belt Type A
         \begin{figure}[htpb]
                 \centering
                 \includegraphics[width=0.35\textwidth]{MECANISMO/BANDA_V_TIPOA-transformed.jpg}
-                \caption{V-Belt Type }
+                \caption{V-Belt Type A.}
                 \label{fig:etiqueta}
             \end{figure}
-        \item Baleros
+        \item Bearings
         \begin{figure}[htpb]
                 \centering
                 \includegraphics[width=0.35\textwidth]{MECANISMO/balero.jpeg}
-                \caption{Baleros de..}
+                \caption{Bearings for...}
                 \label{fig:etiqueta}
             \end{figure}
-        \item Chumaceras 
+        \item Bearing Housings
         \begin{figure}[htpb]
                 \centering
                 \includegraphics[width=0.35\textwidth]{PLANOS/PLANO_CHUMACERA.png}
-                \caption{Plano de chumaceras para el mecanismo de movimiento del cajón interno.}
+                \caption{Blueprint of bearing housings for the internal drawer movement mechanism.}
                 \label{fig:etiqueta}
             \end{figure}
-        \item Sujetadores de Motor 12 V
+        \item 12V Motor Mounts
             \begin{figure}[h]
             \centering
             \begin{minipage}{0.45\textwidth}
@@ -180,7 +181,7 @@ El diseño del mecanismo de cajón automático para la estación de carga pasó 
             \end{minipage}%
             \hfill
             \end{figure}
-        \item Sujetador de Banda V para cajón interno.
+        \item V-Belt Holder for the internal drawer
             \begin{figure}[h]
             \centering
             \begin{minipage}{0.45\textwidth}
@@ -200,28 +201,28 @@ El diseño del mecanismo de cajón automático para la estación de carga pasó 
             \end{figure}
     \end{enumerate}
 
-\subsubsection{Mecanismo Polea y Banda tipo V}
+\subsubsection{V-Belt and Pulley Mechanism}
 
 \begin{figure}[h]
     \centering
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{MECANISMO/MOTOR_MECANISMO.jpg}
-        \caption{Vista del mecanismo para el movimiento del cajón interno, donde se muestran los sujetadores del motor impresos en 3D y el motor con la polea y la banda integradas al sistema.}
+        \caption{View of the internal drawer movement mechanism, showing the 3D-printed motor mounts and the motor with the pulley and belt integrated into the system.}
         \label{fig:imagen1}
     \end{minipage}%
     \hfill
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{MECANISMO/MECANISMO_CHUMACERAS.jpg}
-        \caption{Vista del mecanismo para el movimiento del cajón interno, donde se muestran las chumaceras impresas en 3D, con...}
+        \caption{View of the internal drawer movement mechanism, showing the 3D-printed bearing housings with...}
         \label{fig:imagen2}
     \end{minipage}%
     \hfill
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{MECANISMO/MECANISMO_AGARRE.jpg}
-        \caption{Vista del mecanismo para el movimiento del cajón interno, donde se muestran la sujeción que se imprimió en 3D para abrazar la banda con el cajón interno.}
+        \caption{View of the internal drawer movement mechanism, showing the 3D-printed holder designed to secure the belt to the internal drawer.}
         \label{fig:imagen1}
     \end{minipage}%
     \hfill
@@ -230,19 +231,19 @@ El diseño del mecanismo de cajón automático para la estación de carga pasó 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=0.35\textwidth]{PLANOS/PLANO_CHUMACERA.png}
-    \caption{Plano de chumaceras para el mecanismo de movimiento del cajón interno.}
+    \caption{Blueprint of bearing housings for the internal drawer movement mechanism.}
     \label{fig:etiqueta}
 \end{figure}
 
 
-\subsection{Proceso de Manufactura de la Estructura de la Base de Carga}
+\subsection{Manufacturing Process of the Charging Base Structure}
 
     \begin{enumerate}
-        \item \textbf{Corte del Material:} Para iniciar el proceso de manufactura, se realizaron cortes precisos de los perfiles de aluminio y las placas de MDF según las dimensiones especificadas en la lista de materiales. Este paso es fundamental para asegurar que todas las piezas se ensamblen correctamente en el diseño modular. Se puede observar este preoceso en la Figura ? a) 
+        \item \textbf{Material Cutting:} To begin the manufacturing process, precise cuts were made on the aluminum profiles and MDF plates according to the dimensions specified in the bill of materials. This step is crucial to ensure that all pieces assemble correctly in the modular design. This process can be observed in Figure ? a).
             
-        \item \textbf{Ensamblaje de la Estructura:} Una vez cortadas las piezas, se procedió a ensamblar la estructura principal de la estación de carga utilizando tornillos y tuercas para fijar los perfiles de aluminio y las placas de MDF usando separadores de 20 mm impresos en 3D. Se verificó que todas las piezas estuvieran alineadas y niveladas para garantizar la estabilidad y resistencia de la base de carga. Esto se muestra en las Figura ? b) y c).
+        \item \textbf{Structure Assembly:} Once the pieces were cut, the main structure of the charging station was assembled using screws and nuts to secure the aluminum profiles and MDF plates with 3D-printed 20 mm spacers. It was verified that all components were aligned and leveled to ensure the stability and strength of the charging base. This is shown in Figures ? b) and c).
             
-        \item \textbf{Instalación del Mecanismo de Movimiento:} Después de ensamblar la estructura principal, se instaló el mecanismo de polea y banda tipo V para permitir el movimiento horizontal del cajón. Se colocaron las poleas, la banda y el motor en las ubicaciones previamente definidas, asegurando que el sistema de movimiento funcionara correctamente y sin obstrucciones. Figura ? d).
+        \item \textbf{Installation of the Movement Mechanism:} After assembling the main structure, the V-belt and pulley mechanism was installed to enable the horizontal movement of the drawer. The pulleys, belt, and motor were placed in their predefined locations, ensuring that the movement system operated correctly and without obstructions. Figure ? d).
         
     \end{enumerate}
 
@@ -274,6 +275,7 @@ El diseño del mecanismo de cajón automático para la estación de carga pasó 
         \caption{Drone configurations.}
         \label{fig:drone_frames}
     \end{figure}
+
 
 %%ANABI starts
 
@@ -358,290 +360,286 @@ El diseño del mecanismo de cajón automático para la estación de carga pasó 
 
 %%ANABI ENDS
     
+\section{Drone Instrumentation}
 
-
-\section{Instrumentación del Dron}
-
-\subsection{Especificaciones y Requerimientos}
-Para garantizar la compatibilidad y funcionalidad en el sistema de carga, el dron debe cumplir con las siguientes especificaciones:
+\subsection{Specifications and Requirements}
+To ensure compatibility and functionality within the charging system, the drone must meet the following specifications:
     \begin{itemize}
-        \item Las dimensiones de las piezas deberán adaptarse al frame del drone cuadricoptero de arquitectura abierta que fue comprado.
-        \item El dron deberá tener un circuito de carga compatible con la estacion de carga.
-        \item El drone deberá contar con una cámara y un sistema de visión para la detección de marcadores Aruco.
-        \item Se deberán integrar sensores de localización para la navegación en exterior.
-        \item Se deberá integrar algún microprocesador como computadora auxiliar para el procesamiento de datos y la comunicación con la estación de carga.
+        \item The dimensions of the components must adapt to the frame of the open-architecture quadcopter purchased.
+        \item The drone must have a charging circuit compatible with the charging station.
+        \item The drone must include a camera and vision system for detecting Aruco markers.
+        \item Localization sensors must be integrated for outdoor navigation.
+        \item A microprocessor must be integrated as an auxiliary computer for data processing and communication with the charging station.
     \end{itemize}
 
-\subsection{Lista de Materiales para la Instrumentación del Dron} 
+\subsection{Bill of Materials for Drone Instrumentation}
     \begin{itemize} 
-        \item 1 x Frame de cuadricóptero abierto (especificar modelo) 
-        \item 1 x Controlador de vuelo (especificar modelo) 
-        \item 1 x Cámara (compatible con detección Aruco) 
+        \item 1 x Open-architecture quadcopter frame (specify model) 
+        \item 1 x Flight controller (specify model) 
+        \item 1 x Camera (compatible with Aruco detection) 
         \item 1 x Raspberry Pi 4 (Companion Computer) 
-        \item 1 x Sensor de proximidad (modelo de preferencia) 
-        \item 1 x Módulo GPS (compatible con el controlador de vuelo) 
-        \item Cableado y conectores 
-        \item Material de montaje impreso en 3D (soportes específicos para cada componente) 
+        \item 1 x Proximity sensor (preferred model) 
+        \item 1 x GPS module (compatible with the flight controller) 
+        \item Wiring and connectors 
+        \item 3D-printed mounting material (specific mounts for each component) 
     \end{itemize}
 
-\subsection{Diseños CAD del Dron} 
-Se presentan a continuación los diseños CAD de las piezas que se han desarrollado para el dron, adaptadas a su frame original para integrar los componentes electrónicos necesarios y cumplir con los requisitos de carga y posicionamiento.
 
-    \begin{itemize} 
-        \item Se diseñaron nuevos soportes para el microprocesador y la cámara, asegurando una integración estable y precisa en el frame. 
-        \item Se implementó un espacio de montaje para los sensores de localización y el circuito de carga. 
-        \begin{center} 
-            \textit{Imagen de los diseños CAD del dron con las piezas modificadas} 
-        \end{center} 
-    \end{itemize}
-
-    \subsection{Circuito de Distribución de Energía} 
-    El circuito de distribución de energía fue diseñado para proporcionar una alimentación segura y estable a los componentes críticos del dron, incluyendo los motores, el controlador de vuelo, la Raspberry Pi y la cámara. A continuación, se describe el funcionamiento de cada sección del circuito:
+    \subsection{Drone CAD Designs} 
+    Below are the CAD designs of the components developed for the drone, adapted to its original frame to integrate the necessary electronic components and meet the requirements for charging and positioning.
     
-    \begin{enumerate}
-        \item \textbf{Batería LiPo 3S:} 
-        Se seleccionó una batería de litio-polímero (LiPo) de 3 celdas con una capacidad de 5200 mAh, un voltaje nominal de 11.1 V y una tasa de descarga de 50C. Esta batería es ideal para proporcionar la corriente necesaria para los motores y los componentes electrónicos sin comprometer la duración de vuelo.
+        \begin{itemize} 
+            \item New mounts were designed for the microprocessor and camera, ensuring stable and precise integration into the frame. 
+            \item A mounting space was implemented for the localization sensors and the charging circuit. 
+            \begin{center} 
+                \textit{Image of the drone CAD designs with the modified components.} 
+            \end{center} 
+        \end{itemize}
     
-        \item \textbf{Distribución de energía a los motores:} 
-        La energía de la batería se distribuye a través de una placa de distribución de energía, que conecta la batería a los cuatro controladores electrónicos de velocidad (ESC). Cada ESC regula la energía enviada a su respectivo motor A2212 10T, permitiendo un control preciso de la velocidad de los motores.
+        \subsection{Power Distribution Circuit} 
+        The power distribution circuit was designed to provide safe and stable power to the drone's critical components, including the motors, flight controller, Raspberry Pi, and camera. Below is a description of each section of the circuit:
     
-        \item \textbf{Regulador de voltaje XL4005 DC-DC:} 
-        Este regulador convierte el voltaje de 11.1 V de la batería a 5 V, proporcionando una alimentación estable y segura para la Raspberry Pi y la cámara conectada.
+        \begin{enumerate}
+            \item \textbf{LiPo 3S Battery:} 
+            A 3-cell lithium-polymer (LiPo) battery with a capacity of 5200 mAh, a nominal voltage of 11.1 V, and a discharge rate of 50C was selected. This battery is ideal for providing the necessary current to the motors and electronic components without compromising flight duration.
+        
+            \item \textbf{Power distribution to the motors:} 
+            Power from the battery is distributed through a power distribution board that connects the battery to the four electronic speed controllers (ESC). Each ESC regulates the power sent to its respective A2212 10T motor, allowing precise control of the motor speeds.
+        
+            \item \textbf{XL4005 DC-DC Voltage Regulator:} 
+            This regulator converts the battery’s 11.1 V output to 5 V, providing stable and safe power for the Raspberry Pi and the connected camera.
+        
+            \item \textbf{Pixhawk 6X RT Flight Controller:} 
+            The flight controller is connected directly to the power distribution board to receive the necessary power. It also manages communication with the ESCs and other sensors on the drone, such as the GPS module (M9N) connected to the GPS1 port.
+        
+            \item \textbf{Raspberry Pi 5:} 
+            The Raspberry Pi is powered through the voltage regulator and connects to the flight controller via a serial port to receive data and send commands to the system. It also manages the camera connected via USB, which captures images for real-time processing.
+        
+            \item \textbf{M9N GPS Module:} 
+            This module connects to the Pixhawk controller via the GPS1 port to provide real-time positioning data outdoors, essential for drone navigation.
+        
+        \end{enumerate}
+        
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width=0.8\textwidth]{pictures/drone_electronic_diagram.png}
+                \caption{Diagram of the drone's power distribution circuit.}
+            \end{figure}
+        \end{center}
     
-        \item \textbf{Controlador de vuelo Pixhawk 6X RT:} 
-        El controlador de vuelo está conectado directamente a la placa de distribución de energía para recibir la alimentación necesaria. Además, gestiona la comunicación con los ESC y otros sensores del dron, como el módulo GPS (M9N) conectado al puerto GPS1.
-    
-        \item \textbf{Raspberry Pi 5:} 
-        La Raspberry Pi está alimentada a través del regulador de voltaje y se conecta al controlador de vuelo mediante un puerto serial para recibir datos y enviar comandos al sistema. Además, gestiona la cámara conectada por USB, que captura imágenes para el procesamiento en tiempo real.
-    
-        \item \textbf{Módulo GPS M9N:} 
-        Este módulo se conecta al controlador Pixhawk a través del puerto GPS1 para proporcionar datos de posicionamiento en tiempo real en exterior, esenciales para la navegación del dron.
-    
-    \end{enumerate}
-    
-    \begin{center}
-        \begin{figure}[h!]
-            \centering
-            \includegraphics[width=0.8\textwidth]{pictures/drone_electronic_diagram.png}
-            \caption{Diagrama del circuito de distribución de energía del dron.}
-        \end{figure}
-    \end{center}
         
 
 \section{Software Configuration}
 
-\subsection{Configuración de la Computadora Central en Tierra} 
-La computadora central se configuró para supervisar y procesar la información proveniente de la computadora auxiliar del dron. A continuación, se describen los pasos realizados para esta configuración:
+\subsection{Configuration of the Ground Control Computer} 
+The ground control computer was configured to monitor and process information from the drone's companion computer. Below are the steps performed for this configuration:
 
 \begin{itemize}
-    \item \textbf{Instalación de ROS 2 Humble:} 
-    Dado que la computadora central utiliza Ubuntu 22.04, se instaló ROS 2 Humble siguiendo las instrucciones oficiales. Los comandos utilizados fueron:
+    \item \textbf{Installation of ROS 2 Humble:} 
+    Since the ground control computer uses Ubuntu 22.04, ROS 2 Humble was installed following the official instructions. The commands used were:
     \begin{verbatim}
     sudo apt update && sudo apt install -y software-properties-common
     sudo add-apt-repository universe
     sudo apt update
     sudo apt install -y ros-humble-desktop
     \end{verbatim}
-    Esto incluyó la instalación de las herramientas necesarias para desarrollar y ejecutar aplicaciones en ROS 2 Humble.
+    This included the installation of the necessary tools to develop and run applications in ROS 2 Humble.
 
-    \item \textbf{Configuración del entorno:} 
-    Para facilitar el uso de ROS 2, se configuró el archivo \texttt{~/.bashrc}. Se agregó la siguiente línea al final del archivo:
+    \item \textbf{Environment Setup:} 
+    To simplify the use of ROS 2, the \texttt{~/.bashrc} file was configured. The following line was added to the end of the file:
     \begin{verbatim}
     source /opt/ros/humble/setup.bash
     \end{verbatim}
-    Posteriormente, se ejecutó:
+    Then, the following command was executed:
     \begin{verbatim}
     source ~/.bashrc
     \end{verbatim}
 
-    \item \textbf{Clonación del repositorio de GitHub:} 
-    Se creó un espacio de trabajo para ROS 2 y se clonó el repositorio correspondiente. Los pasos realizados fueron:
+    \item \textbf{Cloning the GitHub Repository:} 
+    A ROS 2 workspace was created, and the corresponding repository was cloned. The steps performed were:
     \begin{verbatim}
     mkdir -p ~/ros2_ws/src
     cd ~/ros2_ws/src
-    git clone <URL_del_repositorio>
+    git clone <repository_URL>
     cd ..
     colcon build
     \end{verbatim}
 
-    \item \textbf{Configuración del \texttt{ROS\_DOMAIN\_ID}:} 
-    Para garantizar una correcta comunicación entre la computadora central y la computadora auxiliar del dron, se configuró el \texttt{ROS\_DOMAIN\_ID} con el valor 10. Esto se realizó añadiendo la siguiente línea al archivo \texttt{~/.bashrc}:
+    \item \textbf{Configuration of \texttt{ROS\_DOMAIN\_ID}:} 
+    To ensure proper communication between the ground control computer and the drone's companion computer, the \texttt{ROS\_DOMAIN\_ID} was set to 10. This was done by adding the following line to the \texttt{~/.bashrc} file:
     \begin{verbatim}
     export ROS_DOMAIN_ID=10
     \end{verbatim}
-    Luego, se ejecutó:
+    Then, the following command was executed:
     \begin{verbatim}
     source ~/.bashrc
     \end{verbatim}
     
-    \item \textbf{Verificación del entorno de ROS 2:} 
-    Finalmente, se verificó que el entorno estuviera correctamente configurado utilizando los siguientes comandos:
+    \item \textbf{Verification of the ROS 2 Environment:} 
+    Finally, the environment was verified to be properly configured using the following command:
     \begin{verbatim}
     ros2 doctor
     \end{verbatim}
-    Esto permitió confirmar que todas las dependencias necesarias para ROS 2 Humble estuvieran instaladas y funcionando correctamente.
+    This confirmed that all necessary dependencies for ROS 2 Humble were installed and functioning correctly.
     
     \begin{center} 
-        \textit{Imagen de la configuración del entorno en la computadora central.} 
+        \textit{Image of the environment setup on the ground control computer.} 
     \end{center}
 \end{itemize}
 
+\subsection{Configuration of the Drone's Companion Computer} 
+The Raspberry Pi 5 was configured as a companion computer for real-time data processing and communication with the charging station. The steps performed for its configuration are detailed below:
 
-\subsection{Configuración de la Computadora Auxiliar del Dron} 
-    La Raspberry Pi 5 se configuró como computadora auxiliar para el procesamiento de datos y comunicación en tiempo real con la estación de carga. A continuación, se detallan los pasos realizados para su configuración:
+\begin{itemize}
+    \item \textbf{Installation of Ubuntu 24.04:} 
+    The Raspberry Pi Imager tool was used to install Ubuntu Server 24.04 LTS (64-Bit) on the SD card. During the initial setup, SSH was enabled, a user with a password was defined, and the Raspberry Pi was connected to the WiFi network.
     
+    \item \textbf{Initial Connection and SSH:} 
+    After inserting the SD card into the Raspberry Pi and connecting it to a monitor and keyboard, the device was powered on, and the configured credentials were entered. The IP address was obtained using the command:
+    \begin{verbatim}
+    hostname -I
+    \end{verbatim}
+    Using this information, an SSH connection was established from an external computer with:
+    \begin{verbatim}
+    ssh <user>@<IP>
+    \end{verbatim}
+    This allowed the Raspberry Pi to be configured remotely.
+    
+    \item \textbf{System Update:} 
+    A full system update was performed using the following commands:
+    \begin{verbatim}
+    sudo apt update && sudo apt upgrade -y
+    \end{verbatim}
+    Additionally, \texttt{raspi-config} was installed to enable the serial port. This option was configured in \texttt{Interface Options > Serial Port} by selecting \texttt{No} and then \texttt{Yes}.
+    
+    \item \textbf{Modification of \texttt{bashrc} and ID Configuration:} 
+    To ensure communication between all devices, the \texttt{ROS\_DOMAIN\_ID} was set to 10. The \texttt{~/.bashrc} file was edited with:
+    \begin{verbatim}
+    sudo vim ~/.bashrc
+    \end{verbatim}
+    At the end of the file, the following lines were added:
+    \begin{verbatim}
+    export ROS_DOMAIN_ID=10
+    source /opt/ros/jazzy/setup.bash
+    \end{verbatim}
+    Changes were saved, and the following command was executed:
+    \begin{verbatim}
+    source ~/.bashrc
+    \end{verbatim}
+    
+    \item \textbf{Installation of ROS 2 Jazzy:} 
+    The official instructions were followed to install ROS 2 Jazzy on Ubuntu 24.04. The commands included:
+    \begin{verbatim}
+    sudo apt install -y software-properties-common
+    sudo add-apt-repository universe
+    sudo apt update
+    sudo apt install -y ros-jazzy-desktop
+    \end{verbatim}
+    
+    \item \textbf{Cloning the GitHub Repository:} 
+    A ROS 2 workspace was created to integrate custom nodes. The steps performed were:
+    \begin{verbatim}
+    mkdir -p ~/ros2_ws/src
+    cd ~/ros2_ws/src
+    git clone <repository_URL>
+    cd ..
+    colcon build
+    \end{verbatim}
+    
+    \item \textbf{Installation of MAVROS and MAVProxy:} 
+    MAVROS and MAVProxy were installed for communication with the Pixhawk. The commands used were:
+    \begin{verbatim}
+    sudo apt install ros-jazzy-mavros ros-jazzy-mavros-extras
+    sudo rosdep init
+    rosdep update
+    sudo apt install python3-mavproxy
+    \end{verbatim}
+    Additionally, geographic plugins were configured:
+    \begin{verbatim}
+    sudo apt install geographiclib-tools
+    sudo geographiclib-get-geoids egm96-5
+    \end{verbatim}
+    
+    \item \textbf{Communication Verification:} 
+    To ensure MAVROS and MAVProxy worked correctly, MAVProxy was started first with:
+    \begin{verbatim}
+    mavproxy.py --master=/dev/ttyAMA0 --baudrate 921600
+    \end{verbatim}
+    Then, MAVROS was launched using:
+    \begin{verbatim}
+    ros2 launch mavros px4.launch fcu_url:=serial:///dev/ttyAMA0:921600
+    \end{verbatim}
+    Finally, the available topics were verified with:
+    \begin{verbatim}
+    ros2 topic list
+    \end{verbatim}
+    and communication was confirmed by observing the relevant topic messages.
+    
+    \begin{center} 
+        \textit{Image of the environment configuration on the Raspberry Pi 5.} 
+    \end{center}
+\end{itemize}
+    
+\subsection{Configuration of the Ground Control Station} 
+The configuration performed for the ground control station using QGroundControl and Mission Planner tools is detailed below. Both applications offer similar functionality, allowing for flight parameter visualization and management. However, since ArduPilot was used as the firmware, Mission Planner was prioritized due to its optimization for this system.
+    
+\begin{itemize}
+    \item \textbf{Installation of Mission Planner and QGroundControl:} 
+    Both tools were installed on the central computer for managing and monitoring the Pixhawk. Mission Planner was primarily used for its direct compatibility with ArduPilot, while QGroundControl was helpful for some initial configurations and redundant calibrations.
+    
+    \item \textbf{Sensor Calibration:} 
+    Sensor calibration for the Pixhawk was performed using Mission Planner, following these steps:
     \begin{itemize}
-        \item \textbf{Instalación de Ubuntu 24.04:} 
-        Se utilizó la herramienta Raspberry Pi Imager para instalar Ubuntu Server 24.04 LTS (64-Bit) en la tarjeta SD. Durante la configuración inicial, se habilitó SSH, se definió un usuario con contraseña y se conectó la Raspberry Pi a la red WiFi.
-    
-        \item \textbf{Conexión inicial y SSH:} 
-        Después de insertar la tarjeta SD en la Raspberry Pi y conectarla a un monitor y teclado, se encendió el dispositivo e ingresaron las credenciales configuradas. Se obtuvo la dirección IP mediante el comando:
-        \begin{verbatim}
-        hostname -I
-        \end{verbatim}
-        Con esta información, se estableció una conexión SSH desde una computadora externa utilizando:
-        \begin{verbatim}
-        ssh <usuario>@<IP>
-        \end{verbatim}
-        Esto permitió continuar con la configuración de la Raspberry Pi de forma remota.
-    
-        \item \textbf{Actualización del sistema:} 
-        Se realizó una actualización completa del sistema operativo con los siguientes comandos:
-        \begin{verbatim}
-        sudo apt update && sudo apt upgrade -y
-        \end{verbatim}
-        También se instaló \texttt{raspi-config} para habilitar el puerto serial. Esta opción se configuró en \texttt{Interface Options > Serial Port}, seleccionando \texttt{No} y luego \texttt{Yes}.
-    
-        \item \textbf{Modificación de \texttt{bashrc} y configuración del ID:} 
-        Para garantizar la comunicación entre todos los dispositivos, se configuró el \texttt{ROS\_DOMAIN\_ID} con el valor 10. Se editó el archivo \texttt{~/.bashrc} con:
-        \begin{verbatim}
-        sudo vim ~/.bashrc
-        \end{verbatim}
-        Al final del archivo, se agregaron las siguientes líneas:
-        \begin{verbatim}
-        export ROS_DOMAIN_ID=10
-        source /opt/ros/jazzy/setup.bash
-        \end{verbatim}
-        Posteriormente, se guardaron los cambios y se ejecutó:
-        \begin{verbatim}
-        source ~/.bashrc
-        \end{verbatim}
-    
-        \item \textbf{Instalación de ROS 2 Jazzy:} 
-        Se siguieron las instrucciones oficiales para instalar ROS 2 Jazzy en Ubuntu 24.04. Esto incluyó los comandos:
-        \begin{verbatim}
-        sudo apt install -y software-properties-common
-        sudo add-apt-repository universe
-        sudo apt update
-        sudo apt install -y ros-jazzy-desktop
-        \end{verbatim}
-    
-        \item \textbf{Clonación del repositorio de GitHub:} 
-        Se creó un espacio de trabajo en ROS 2 para integrar los nodos personalizados. Los pasos realizados fueron:
-        \begin{verbatim}
-        mkdir -p ~/ros2_ws/src
-        cd ~/ros2_ws/src
-        git clone <URL_del_repositorio>
-        cd ..
-        colcon build
-        \end{verbatim}
-    
-        \item \textbf{Instalación de MAVROS y MAVProxy:} 
-        Para la comunicación con el Pixhawk, se instalaron MAVROS y MAVProxy. Los comandos utilizados fueron:
-        \begin{verbatim}
-        sudo apt install ros-jazzy-mavros ros-jazzy-mavros-extras
-        sudo rosdep init
-        rosdep update
-        sudo apt install python3-mavproxy
-        \end{verbatim}
-        Además, se configuraron los complementos geográficos necesarios:
-        \begin{verbatim}
-        sudo apt install geographiclib-tools
-        sudo geographiclib-get-geoids egm96-5
-        \end{verbatim}
-    
-        \item \textbf{Verificación de la comunicación:} 
-        Para garantizar que MAVROS y MAVProxy funcionaran correctamente, primero se inició MAVProxy con:
-        \begin{verbatim}
-        mavproxy.py --master=/dev/ttyAMA0 --baudrate 921600
-        \end{verbatim}
-        Posteriormente, se lanzó MAVROS utilizando:
-        \begin{verbatim}
-        ros2 launch mavros px4.launch fcu_url:=serial:///dev/ttyAMA0:921600
-        \end{verbatim}
-        Finalmente, se verificaron los tópicos disponibles con:
-        \begin{verbatim}
-        ros2 topic list
-        \end{verbatim}
-        y se confirmó la comunicación observando los mensajes de los tópicos relevantes.
-        
-        \begin{center} 
-            \textit{Imagen de la configuración del entorno en la Raspberry Pi 5.} 
-        \end{center}
-    \end{itemize}
-    
-\subsection{Configuración de la Estación de Control en Tierra} 
-    Se detalla la configuración realizada para la estación de control en tierra utilizando las herramientas QGroundControl y Mission Planner. Ambas aplicaciones son similares en funcionalidad, permitiendo la visualización y gestión de parámetros de vuelo. Sin embargo, dado que se utilizó ArduPilot como firmware, se decidió priorizar Mission Planner debido a su optimización para este sistema.
-    
-    \begin{itemize}
-        \item \textbf{Instalación de Mission Planner y QGroundControl:} 
-        Se instalaron ambas herramientas en la computadora central para la gestión y monitoreo del Pixhawk. Mission Planner se utilizó principalmente por su compatibilidad directa con ArduPilot, mientras que QGroundControl fue útil en ciertas configuraciones iniciales como algunas calibraciones redundates.
-    
-        \item \textbf{Calibración de sensores:} 
-        La calibración de los sensores del Pixhawk que se realizó desde Mission Planner, siguiendo estos pasos:
+        \item Access the calibration section in the \textit{Initial Setup} tab.
+        \item Select the calibration option for each sensor:
         \begin{itemize}
-            \item Acceder a la sección de calibración en la pestaña \textit{Initial Setup}.
-            \item Seleccionar la opción de calibración para cada sensor:
-            \begin{itemize}
-                \item \textbf{Acelerómetro:} Se colocó el Pixhawk en diferentes orientaciones según las instrucciones en pantalla para calibrar correctamente.
-                \item \textbf{Giroscopio:} Se mantuvo el Pixhawk inmóvil durante el proceso de calibración.
-                \item \textbf{GPS:} Se verificó la recepción de satélites y se ajustaron los parámetros necesarios para una correcta ubicación.
-            \end{itemize}
+            \item \textbf{Accelerometer:} The Pixhawk was placed in different orientations as instructed on-screen to ensure proper calibration.
+            \item \textbf{Gyroscope:} The Pixhawk was kept stationary during the calibration process.
+            \item \textbf{GPS:} Satellite reception was verified, and necessary parameters were adjusted for accurate positioning.
         \end{itemize}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.8\textwidth]{pictures/mp_calibration.png}
-            \caption{Imagen de la configuración de sensores en Mission Planner.}
-        \end{figure}
-
-        
-        \item \textbf{Parámetros de comunicación:} 
-        Para establecer la comunicación entre la Raspberry Pi y el Pixhawk a través de MAVROS y MAVLink, se realizaron los siguientes ajustes en los parámetros utilizando Mission Planner:
-        \begin{itemize}
-            \item \texttt{SERIAL2\_PROTOCOL}: Configurado en 2 para habilitar MAVLink.
-            \item \texttt{SERIAL2\_BAUD}: Ajustado a 921600 para coincidir con la configuración de la Raspberry Pi.
-            \item \texttt{SYS\_ID}: Configurado en el ID correspondiente para garantizar una comunicación adecuada con el sistema.
-        \end{itemize}
-    
     \end{itemize}
-    
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{pictures/mp_calibration.png}
+        \caption{Image of sensor configuration in Mission Planner.}
+    \end{figure}
 
-\section{Sistema de Visión}
-\subsection{Especificaciones y Requerimientos} 
-El sistema de visión debe cumplir con los siguientes requisitos para garantizar la detección precisa de marcadores Aruco:
+    \item \textbf{Communication Parameters:} 
+    To establish communication between the Raspberry Pi and the Pixhawk via MAVROS and MAVLink, the following parameter adjustments were made using Mission Planner:
     \begin{itemize}
-        \item Obtener las matrices de calibración intrínsecas y extrínsecas de la cámara.
-        \item Generar y detectar marcadores Aruco de distintos tamaños en tiempo real.
+        \item \texttt{SERIAL2\_PROTOCOL}: Set to 2 to enable MAVLink.
+        \item \texttt{SERIAL2\_BAUD}: Set to 921600 to match the Raspberry Pi configuration.
+        \item \texttt{SYS\_ID}: Set to the corresponding ID to ensure proper system communication.
+    \end{itemize}
+\end{itemize}
+
+\section{Vision System}
+\subsection{Specifications and Requirements} 
+The vision system must meet the following requirements to ensure accurate detection of Aruco markers:
+    \begin{itemize}
+        \item Obtain the intrinsic and extrinsic calibration matrices of the camera.
+        \item Generate and detect Aruco markers of various sizes in real time.
     \end{itemize}
 
-\subsection{Calibración de la Cámara} 
-El proceso de calibración de la cámara se realizó utilizando un script en Python con la biblioteca OpenCV. Este procedimiento se detalla a continuación, combinando fragmentos del código y las imágenes obtenidas en cada etapa. El código completo se encuentra en los anexos del documento.
-    
+\subsection{Camera Calibration} 
+The camera calibration process was carried out using a Python script with the OpenCV library. This procedure is detailed below, combining code snippets and the images obtained at each stage. The full code can be found in the appendices of the document.
+
     \begin{enumerate}
-        \item \textbf{Captura de imágenes:} 
-        Se recopilaron múltiples imágenes del tablero de ajedrez desde diferentes ángulos y distancias para abarcar todo el campo de visión de la cámara. Estas imágenes presentaban distorsiones propias de la lente, como se observa en la Figura \ref{fig:imagen_descalibrada}.
+        \item \textbf{Image Capture:} 
+        Multiple images of the chessboard were collected from different angles and distances to cover the entire field of view of the camera. These images exhibited inherent lens distortions, as shown in Figure \ref{fig:imagen_descalibrada}.
 
         \begin{center}
             \begin{figure}[h!]
                 \centering
                 %\includegraphics[width=0.8\textwidth]{pictures/imagen_descalibrada.png}
-                \caption{Ejemplo de imagen descalibrada tomada durante el proceso de captura.}
+                \caption{Example of an uncalibrated image captured during the process.}
                 \label{fig:imagen_descalibrada}
             \end{figure}
         \end{center}
     
-        \item \textbf{Detección de esquinas:} 
-        El script detectó las esquinas internas del tablero de ajedrez mediante la función \texttt{cv2.findChessboardCorners}. Posteriormente, se refinaron las esquinas detectadas utilizando \texttt{cv2.cornerSubPix}, y se visualizaron las líneas superpuestas en las imágenes de calibración, como se muestra en la Figura \ref{fig:det_ejemplos}.
+        \item \textbf{Corner Detection:} 
+        The script detected the internal corners of the chessboard using the \texttt{cv2.findChessboardCorners} function. The detected corners were then refined with \texttt{cv2.cornerSubPix}, and the calibration images were overlaid with the detected lines, as shown in Figure \ref{fig:det_ejemplos}.
         \begin{verbatim}
         ret, corners = cv2.findChessboardCorners(gray, (ncols, nrows), None)
         corners2 = cv2.cornerSubPix(gray, corners, (11, 11), (-1, -1), criteria)
@@ -650,13 +648,13 @@ El proceso de calibración de la cámara se realizó utilizando un script en Pyt
             \begin{figure}[h!]
                 \centering
                 \includegraphics[width=0.8\textwidth]{pictures/calib_predictions.png}
-                \caption{Detección y refinamiento de esquinas en el tablero de ajedrez.}
+                \caption{Detection and refinement of chessboard corners.}
                 \label{fig:det_ejemplos}
             \end{figure}
         \end{center}
     
-        \item \textbf{Calibración de la cámara:} 
-        Utilizando \texttt{cv2.calibrateCamera}, se calcularon los parámetros intrínsecos de la cámara y los coeficientes de distorsión. Estos parámetros permiten corregir las distorsiones en las imágenes capturadas. La Figura \ref{fig:imagen_calibrada} muestra el resultado después de aplicar estos parámetros.
+        \item \textbf{Camera Calibration:} 
+        Using \texttt{cv2.calibrateCamera}, the camera's intrinsic parameters and distortion coefficients were calculated. These parameters allow for the correction of distortions in the captured images. Figure \ref{fig:imagen_calibrada} shows the result after applying these parameters.
         \begin{verbatim}
         ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, 
                                                            imgpoints, 
@@ -664,30 +662,30 @@ El proceso de calibración de la cámara se realizó utilizando un script en Pyt
                                                            None, 
                                                            None)
         \end{verbatim}
-        Donde:
+        Where:
         \begin{itemize}
-            \item \texttt{mtx}: Matriz intrínseca de la cámara.
-            \item \texttt{dist}: Coeficientes de distorsión.
-            \item \texttt{rvecs}, \texttt{tvecs}: Rotaciones y traslaciones.
+            \item \texttt{mtx}: Camera intrinsic matrix.
+            \item \texttt{dist}: Distortion coefficients.
+            \item \texttt{rvecs}, \texttt{tvecs}: Rotations and translations.
         \end{itemize}
         \begin{center}
             \begin{figure}[h!]
                 \centering
                 %\includegraphics[width=0.8\textwidth]{pictures/imagen_calibrada.png}
-                \caption{Imagen calibrada después de aplicar los parámetros obtenidos.}
+                \caption{Calibrated image after applying the obtained parameters.}
                 \label{fig:imagen_calibrada}
             \end{figure}
         \end{center}
     
-        \item \textbf{Cálculo del error de calibración:} 
-        Se verificó la precisión del modelo calculando el error promedio mediante \texttt{cv2.projectPoints}. Este cálculo compara las esquinas detectadas y proyectadas.
+        \item \textbf{Calibration Error Calculation:} 
+        The accuracy of the model was verified by calculating the average error using \texttt{cv2.projectPoints}. This calculation compares the detected and projected corners.
         \begin{verbatim}
         error = cv2.norm(imgpoints[i], imgpoints2, cv2.NORM_L2) / len(imgpoints2)
         print("Total error: {}".format(mean_error / len(objpoints)))
         \end{verbatim}
     
-        \item \textbf{Almacenamiento de parámetros:} 
-        Los parámetros de calibración obtenidos se guardaron en un archivo JSON, lo que permite su reutilización en futuros procesos de corrección de imágenes.
+        \item \textbf{Parameter Storage:} 
+        The obtained calibration parameters were saved in a JSON file for reuse in future image correction processes.
         \begin{verbatim}
         data = {"camera_matrix": mtx.tolist(), 
                 "distortion_coefficients": dist.tolist()}
@@ -695,51 +693,51 @@ El proceso de calibración de la cámara se realizó utilizando un script en Pyt
             json.dump(data, file, indent=4)
         \end{verbatim}
     \end{enumerate}
-    
-    
-\subsection{Generación de Marcadores ArUco} 
-    Se generaron marcadores ArUco adaptados al sistema, incluyendo tamaños y patrones específicos. En particular, se crearon marcadores embebidos, donde un marcador interno se incrusta dentro de un marcador externo para maximizar la precisión en la detección. A continuación, se describe el proceso paso a paso, destacando las partes importantes del código utilizado. El código completo se encuentra en los anexos del documento.
-    
+
+
+\subsection{Generation of ArUco Markers} 
+Custom ArUco markers were generated for the system, including specific sizes and patterns. In particular, embedded markers were created, where an inner marker is embedded within an outer marker to maximize detection accuracy. The step-by-step process is described below, highlighting important parts of the code used. The full code can be found in the appendices of the document.
+
     \begin{enumerate}
-        \item \textbf{Carga del diccionario de ArUco:} 
-        Se utilizó el diccionario predefinido \texttt{DICT\_6X6\_250} de OpenCV, adecuado para generar marcadores con diferentes patrones y niveles de detalle.
+        \item \textbf{Loading the ArUco Dictionary:} 
+        The predefined \texttt{DICT\_6X6\_250} dictionary from OpenCV was used, suitable for generating markers with different patterns and levels of detail.
         \begin{verbatim}
         aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_6X6_250)
         \end{verbatim}
     
-        \item \textbf{Generación del marcador externo:} 
-        Se definió un tamaño de 220 píxeles para el marcador externo (\texttt{outer\_marker\_size}) y se generó el marcador con un ID específico (\texttt{outer\_marker\_id}). Esto permitió crear un marcador grande que sirviera como contenedor.
+        \item \textbf{Generation of the Outer Marker:} 
+        A size of 220 pixels (\texttt{outer\_marker\_size}) was defined for the outer marker, and it was generated with a specific ID (\texttt{outer\_marker\_id}). This allowed for creating a large marker to serve as a container.
         \begin{verbatim}
         outer_marker = aruco.generateImageMarker(aruco_dict, 
-                                                 outer_marker_id, 
-                                                 outer_marker_size)
+                                                    outer_marker_id, 
+                                                    outer_marker_size)
         \end{verbatim}
         \begin{center}
             \begin{figure}[h!]
                 \centering
                 \includegraphics[width=0.4\textwidth]{pictures/aruco_marker_5.png}
-                \caption{Marcador ArUco externo generado.}
+                \caption{Generated outer ArUco marker.}
             \end{figure}
         \end{center}
     
-        \item \textbf{Generación del marcador interno:} 
-        El marcador interno se generó con un tamaño de 50 píxeles (\texttt{inner\_marker\_size}) y un ID específico (\texttt{inner\_marker\_id}). Este marcador se diseñó para ser incrustado dentro del marcador externo.
+        \item \textbf{Generation of the Inner Marker:} 
+        The inner marker was generated with a size of 50 pixels (\texttt{inner\_marker\_size}) and a specific ID (\texttt{inner\_marker\_id}). This marker was designed to be embedded within the outer marker.
         \begin{verbatim}
         inner_marker = aruco.generateImageMarker(aruco_dict, 
-                                                 inner_marker_id, 
-                                                 inner_marker_size)
+                                                    inner_marker_id, 
+                                                    inner_marker_size)
         \end{verbatim}
 
         \begin{center}
             \begin{figure}[h!]
                 \centering
                 \includegraphics[width=0.2\textwidth]{pictures/aruco_marker_100.png}
-                \caption{Marcador interno con borde blanco añadido.}
+                \caption{Inner marker with added white border.}
             \end{figure}
         \end{center}
     
-        \item \textbf{Creación del borde blanco alrededor del marcador interno:} 
-        Se añadió un borde blanco de un píxel alrededor del marcador interno utilizando \texttt{cv2.copyMakeBorder}, lo que facilita su incrustación y aumenta la visibilidad en diferentes condiciones de iluminación.
+        \item \textbf{Adding a White Border Around the Inner Marker:} 
+        A one-pixel white border was added around the inner marker using \texttt{cv2.copyMakeBorder}, which facilitates embedding and improves visibility under varying lighting conditions.
         \begin{verbatim}
         inner_marker_with_border = cv2.copyMakeBorder(
             inner_marker,
@@ -748,148 +746,147 @@ El proceso de calibración de la cámara se realizó utilizando un script en Pyt
             left=border_size,
             right=border_size,
             borderType=cv2.BORDER_CONSTANT,
-            value=255  # Blanco
+            value=255  # White
         )
         \end{verbatim}
         
     
-        \item \textbf{Incrustación del marcador interno en el marcador externo:} 
-        Se calculó la posición central para incrustar el marcador interno con borde en el marcador externo. El marcador externo se modificó para incluir un fondo negro en el centro antes de insertar el marcador interno con borde.
+        \item \textbf{Embedding the Inner Marker into the Outer Marker:} 
+        The central position was calculated to embed the bordered inner marker into the outer marker. The outer marker was modified to include a black background in the center before inserting the bordered inner marker.
         \begin{verbatim}
         center_position = (outer_marker_size - inner_marker_with_border_size) // 2
         e_aruco_marker[center_position:center_position + inner_marker_with_border_size,
-                       center_position:center_position + inner_marker_with_border_size] = 0
+                        center_position:center_position + inner_marker_with_border_size] = 0
         e_aruco_marker[center_position:center_position + inner_marker_with_border_size,
-                       center_position:center_position + inner_marker_with_border_size] = inner_marker_with_border
+                        center_position:center_position + inner_marker_with_border_size] = inner_marker_with_border
         \end{verbatim}
         \begin{center}
             \begin{figure}[h!]
                 \centering
                 \includegraphics[width=0.4\textwidth]{pictures/embedded_aruco.png}
-                \caption{Marcador ArUco embebido generado.}
+                \caption{Generated embedded ArUco marker.}
             \end{figure}
         \end{center}
     
-        \item \textbf{Almacenamiento del marcador embebido:} 
-        Finalmente, el marcador generado se guardó como una imagen PNG para su uso posterior.
+        \item \textbf{Saving the Embedded Marker:} 
+        Finally, the generated marker was saved as a PNG image for later use.
         \begin{verbatim}
         cv2.imwrite(f'embedded_aruco_marker_{outer_marker_id}_{inner_marker_id}.png', 
                     e_aruco_marker)
         \end{verbatim}
-    \end{enumerate}
+    \end{enumerate}    
 
+\subsection{Real-Time Detection of e-ArUco Markers} 
+The system was designed to detect ArUco markers in real-time using images captured by a camera attached to the drone. This process was carried out via a ROS 2 node that processes images and estimates the pose of the markers relative to the camera. The full code is included in the appendices of the document. Below is the step-by-step description of the system:
 
-\subsection{Detección de Marcadores e-Aruco en Tiempo Real} 
-    El sistema fue diseñado para detectar marcadores Aruco en tiempo real, utilizando imágenes capturadas por una cámara conectada al dron. Este proceso se llevó a cabo mediante un nodo en ROS2 que procesa las imágenes y estima la pose de los marcadores con respecto a la cámara. El código completo se encuentra en los anexos del documento. A continuación, se describe el paso a paso del sistema:
-    
     \begin{enumerate}
-        \item \textbf{Publicación de imágenes desde el dron:} 
-        La computadora auxiliar en el dron (companion computer) publica imágenes comprimidas capturadas por la cámara a un tópico de ROS 2 (\texttt{/camera\_image/compressed}). Estas imágenes se envían a la computadora en tierra para su procesamiento.
+        \item \textbf{Image Publishing from the Drone:} 
+        The companion computer on the drone publishes compressed images captured by the camera to a ROS 2 topic (\texttt{/camera\_image/compressed}). These images are sent to the ground computer for processing.
     
-        \item \textbf{Recepción de imágenes en la computadora en tierra:} 
-        Un nodo en la computadora en tierra se suscribe a las imágenes publicadas por el dron y realiza las siguientes tareas:
+        \item \textbf{Image Reception on the Ground Computer:} 
+        A node on the ground computer subscribes to the images published by the drone and performs the following tasks:
         \begin{itemize}
-            \item Convierte las imágenes comprimidas en matrices utilizables para el procesamiento con OpenCV.
-            \item Redimensiona las imágenes y las convierte a escala de grises para optimizar la detección.
+            \item Converts the compressed images into matrices for processing with OpenCV.
+            \item Resizes the images and converts them to grayscale to optimize detection.
         \end{itemize}
     
-        \item \textbf{Detección de marcadores Aruco:} 
-        Se utiliza la biblioteca OpenCV para detectar los marcadores Aruco presentes en la imagen. Los pasos incluyen:
+        \item \textbf{Aruco Marker Detection:} 
+        The OpenCV library is used to detect the ArUco markers present in the image. The steps include:
         \begin{itemize}
-            \item Uso del diccionario \texttt{DICT\_6X6\_250} para identificar marcadores específicos.
-            \item Cálculo de las esquinas de los marcadores detectados mediante \texttt{aruco.detectMarkers}.
-            \item Dibujo de los marcadores detectados para su visualización.
-        \end{itemize}
-        \begin{center}
-            \begin{figure}[h!]
-                \centering
-                %\includegraphics[width=0.8\textwidth]{pictures/deteccion_arucos.png}
-                \caption{Detección de marcadores Aruco en la imagen procesada.}
-            \end{figure}
-        \end{center}
-    
-        \item \textbf{Estimación de la pose:} 
-        Para cada marcador detectado, se calculó su posición y orientación en el espacio con respecto a la cámara. Esto se realizó utilizando la función \texttt{aruco.estimatePoseSingleMarkers}, que devuelve:
-        \begin{itemize}
-            \item \texttt{tvec}: Vector de traslación (\textit{x}, \textit{y}, \textit{z}) en metros.
-            \item \texttt{rvec}: Vector de rotación que se convierte en ángulos de Euler (\textit{roll}, \textit{pitch}, \textit{yaw}) mediante matrices de rotación.
+            \item Using the \texttt{DICT\_6X6\_250} dictionary to identify specific markers.
+            \item Calculating the corners of the detected markers using \texttt{aruco.detectMarkers}.
+            \item Drawing the detected markers for visualization.
         \end{itemize}
         \begin{center}
             \begin{figure}[h!]
                 \centering
-                %\includegraphics[width=0.8\textwidth]{pictures/calculo_pose.png}
-                \caption{Representación gráfica de la posición y orientación calculada de un marcador Aruco.}
+                %\includegraphics[width=0.8\textwidth]{pictures/detection_arucos.png}
+                \caption{Detection of ArUco markers in the processed image.}
             \end{figure}
         \end{center}
     
-        \item \textbf{Visualización y publicación de resultados:} 
-        Los resultados obtenidos, incluyendo la pose de los marcadores, se visualizaron en tiempo real y se publicaron en un nuevo tópico de ROS 2 (\texttt{/aruco\_detection/compressed}). Las imágenes procesadas contenían:
+        \item \textbf{Pose Estimation:} 
+        For each detected marker, its position and orientation in space relative to the camera were calculated using the \texttt{aruco.estimatePoseSingleMarkers} function, which returns:
         \begin{itemize}
-            \item Marcadores detectados con esquinas resaltadas.
-            \item Ejes X, Y y Z proyectados para mostrar la orientación de cada marcador.
+            \item \texttt{tvec}: Translation vector (\textit{x}, \textit{y}, \textit{z}) in meters.
+            \item \texttt{rvec}: Rotation vector, converted to Euler angles (\textit{roll}, \textit{pitch}, \textit{yaw}) using rotation matrices.
         \end{itemize}
         \begin{center}
             \begin{figure}[h!]
                 \centering
-                %\includegraphics[width=0.8\textwidth]{pictures/marcadores_ejes.png}
-                \caption{Imagen con marcadores detectados y ejes proyectados.}
+                %\includegraphics[width=0.8\textwidth]{pictures/pose_calculation.png}
+                \caption{Graphical representation of the calculated position and orientation of an ArUco marker.}
             \end{figure}
         \end{center}
     
-        \item \textbf{Correcciones de posición:} 
-        Basándose en los valores de \texttt{tvec}, se calcularon las correcciones necesarias para ajustar la posición del dron con respecto al marcador, incluyendo movimientos laterales (\textit{x}), verticales (\textit{y}) y de profundidad (\textit{z}).
+        \item \textbf{Visualization and Publication of Results:} 
+        The obtained results, including the pose of the markers, were visualized in real-time and published to a new ROS 2 topic (\texttt{/aruco\_detection/compressed}). The processed images included:
+        \begin{itemize}
+            \item Detected markers with highlighted corners.
+            \item Projected X, Y, and Z axes showing each marker's orientation.
+        \end{itemize}
+        \begin{center}
+            \begin{figure}[h!]
+                \centering
+                %\includegraphics[width=0.8\textwidth]{pictures/markers_axes.png}
+                \caption{Image with detected markers and projected axes.}
+            \end{figure}
+        \end{center}
     
-        \item \textbf{Interacción con el sistema:} 
-        Los resultados de la detección de marcadores Aruco se utilizaron para visualizar la posición y orientación del drone en tiempo real, lo que permitirá posteriormente que el sistema de control pueda ajustar las mismas para su aterrizaje en la estación de carga.
+        \item \textbf{Position Corrections:} 
+        Based on the \texttt{tvec} values, the necessary corrections were calculated to adjust the drone's position relative to the marker, including lateral (\textit{x}), vertical (\textit{y}), and depth (\textit{z}) movements.
+    
+        \item \textbf{System Interaction:} 
+        The results of ArUco marker detection were used to visualize the drone's position and orientation in real-time, enabling the control system to adjust these parameters for landing on the charging station.
     \end{enumerate}
-    
+            
+        
+\section{Communication System}
 
-\section{Sistema de Comunicación}
-
-    \subsection{Especificaciones y Requerimientos} 
-    El sistema de comunicación entre el dron y la estación de carga fue diseñado para garantizar la transferencia eficiente y en tiempo real de datos críticos. Los requisitos principales son:
+    \subsection{Specifications and Requirements} 
+    The communication system between the drone and the charging station was designed to ensure efficient, real-time transfer of critical data. The main requirements are:
     
     \begin{itemize}
-        \item \textbf{Red local basada en WiFi:} 
-        Proporcionar una comunicación efectiva entre los dispositivos sin necesidad de acceso a Internet.
-        \item \textbf{Middleware DDS de ROS 2:} 
-        Utilizar la arquitectura de nodos y tópicos de ROS 2 para gestionar la comunicación de datos entre los dispositivos conectados.
+        \item \textbf{WiFi-Based Local Network:} 
+        Provide effective communication between devices without requiring Internet access.
+        \item \textbf{ROS 2 DDS Middleware:} 
+        Use ROS 2's node and topic architecture to manage data communication between connected devices.
     \end{itemize}
     
-    \subsection{Estructura de Comunicación} 
+    \subsection{Communication Structure} 
     
-    \subsubsection{Red Local WiFi} 
-    La red local fue creada utilizando un router WiFi que conecta todos los dispositivos involucrados en el sistema, incluyendo el dron, la estación de carga y la computadora en tierra. Esta configuración eliminó la necesidad de Internet, proporcionando un entorno seguro y aislado para la transmisión de datos. El dron, equipado con una computadora auxiliar, transmitió datos mediante tópicos de ROS 2, como imágenes comprimidas y mensajes de estado, hacia la estación de carga y la computadora en tierra.
+    \subsubsection{WiFi Local Network} 
+    The local network was created using a WiFi router that connects all devices in the system, including the drone, the charging station, and the ground computer. This configuration eliminated the need for Internet access, providing a secure, isolated environment for data transmission. The drone, equipped with a companion computer, transmitted data via ROS 2 topics, such as compressed images and status messages, to the charging station and ground computer.
     
     \begin{figure}
         \centering
         %\includegraphics[width=0.8\textwidth]{pictures/wifi_network.png}
-        \caption{Diagrama de la red local WiFi utilizada en el sistema.}
+        \caption{Diagram of the WiFi local network used in the system.}
     \end{figure}
     
-    \subsubsection{Comunicación mediante ROS 2} 
-    El sistema utilizó la arquitectura de nodos y tópicos de ROS 2 para gestionar la comunicación entre los dispositivos. Cada dispositivo en la red cumplió funciones específicas relacionadas con la publicación y suscripción de datos relevantes:
+    \subsubsection{Communication via ROS 2} 
+    The system used ROS 2's node and topic architecture to manage communication between devices. Each device in the network performed specific functions related to publishing and subscribing to relevant data:
     
     \begin{itemize}
-        \item \textbf{Dron:} 
-        Publicó imágenes de la cámara (\texttt{/camera\_image/compressed}) y datos de estado relacionados con la batería, posición y otros parámetros críticos.
-        \item \textbf{Computadora en tierra:} 
-        Contiene una interfaz que se suscribió a los tópicos publicados por el dron para:
+        \item \textbf{Drone:} 
+        Published camera images (\texttt{/camera\_image/compressed}) and status data related to battery, position, and other critical parameters.
+        \item \textbf{Ground Computer:} 
+        Contains an interface that subscribed to topics published by the drone to:
         \begin{itemize}
-            \item Procesar imágenes y calcular la posición de los marcadores Aruco.
-            \item Mostrar datos de estado del dron, como nivel de batería y modo de vuelo, etc. en tiempo real.
-            \item Publicar comandos hacia la estación de carga, como abrir o retraer el cajón de la estación, mediante tópicos específicos.
+            \item Process images and calculate the position of ArUco markers.
+            \item Display drone status data, such as battery level and flight mode, in real-time.
+            \item Publish commands to the charging station, such as opening or retracting the drawer, via specific topics.
         \end{itemize}
-        \item \textbf{Estación de carga:} 
-        Se suscribió a los comandos enviados desde la interfaz de la computadora en tierra para ejecutar las acciones necesarias, como la apertura y cierre del cajón.
+        \item \textbf{Charging Station:} 
+        Subscribed to commands sent from the ground computer's interface to execute necessary actions, such as opening and closing the drawer.
     \end{itemize}
     
     \begin{figure}
         \centering
         %\includegraphics[width=0.8\textwidth]{pictures/ros2_comms.png}
-        \caption{Diagrama de comunicación entre los dispositivos utilizando ROS 2.}
+        \caption{Communication diagram between devices using ROS 2.}
     \end{figure}
-    
+
 
     
 
