@@ -14,6 +14,15 @@
 \usepackage{url}
 \usepackage{subcaption}
 \usepackage{float}
+\usepackage{titlesec}
+
+\titleformat{\chapter}[block]
+  {\normalfont\huge\bfseries}{\thechapter.}{1em}{}
+\titlespacing*{\chapter}{0pt}{-10pt}{20pt}
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
 
 % Eliminar el título automático de thebibliography
 \renewcommand{\bibname}{}
@@ -85,6 +94,9 @@
 
 \chapter{Results} % Capítulo principal de desarrollo
 \input{chapters/resultados} % Llama al archivo 'resultados.tex' desde la carpeta 'chapters'
+
+\chapter{Discussion} % Capítulo de discusión
+\input{chapters/discussion} % Llama al archivo 'discussion.tex' desde la carpeta 'chapters'
 
 \chapter{Conclusions} % Capítulo de conclusiones
 \input{chapters/conclusiones} % Llama al archivo 'conclusiones.tex' desde la carpeta 'chapters'
