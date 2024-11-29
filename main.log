@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.9)  29 NOV 2024 00:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.9)  29 NOV 2024 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -743,23 +743,28 @@ File: pictures/station_electronics_diagram.png Graphic file (type png)
 <use pictures/station_electronics_diagram.png>
 Package pdftex.def Info: pictures/station_electronics_diagram.png  used on input line 165.
 (pdftex.def)             Requested size: 328.82707pt x 185.54117pt.
- [44 <./pictures/station_electronics_diagram.png>] [45] [46] [47] [48]
-<pictures/drone_electronic_diagram.png, id=1051, 1444.39626pt x 815.045pt>
+<pictures/station_electronics_circuit.jpeg, id=999, 1606.0pt x 1204.5pt>
+File: pictures/station_electronics_circuit.jpeg Graphic file (type jpg)
+<use pictures/station_electronics_circuit.jpeg>
+Package pdftex.def Info: pictures/station_electronics_circuit.jpeg  used on input line 173.
+(pdftex.def)             Requested size: 234.8775pt x 176.14592pt.
+ [44 <./pictures/station_electronics_diagram.png>] [45 <./pictures/station_electronics_circuit.jpeg>] [46] [47] [48]
+<pictures/drone_electronic_diagram.png, id=1050, 1444.39626pt x 815.045pt>
 File: pictures/drone_electronic_diagram.png Graphic file (type png)
 <use pictures/drone_electronic_diagram.png>
 Package pdftex.def Info: pictures/drone_electronic_diagram.png  used on input line 333.
 (pdftex.def)             Requested size: 375.80544pt x 212.05594pt.
- [49 <./pictures/drone_electronic_diagram.png>]
+ [49] [50 <./pictures/drone_electronic_diagram.png>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 376.
- [50] [51] [52]
-<pictures/mp_calibration.png, id=1074, 1445.4pt x 903.375pt>
+ [51] [52] [53]
+<pictures/mp_calibration.png, id=1079, 1445.4pt x 903.375pt>
 File: pictures/mp_calibration.png Graphic file (type png)
 <use pictures/mp_calibration.png>
 Package pdftex.def Info: pictures/mp_calibration.png  used on input line 506.
 (pdftex.def)             Requested size: 375.80544pt x 234.87196pt.
- [53] [54 <./pictures/mp_calibration.png>]
-<pictures/imagen_descalibrada.jpg, id=1087, 2569.6pt x 963.6pt>
+ [54] [55 <./pictures/mp_calibration.png>]
+<pictures/imagen_descalibrada.jpg, id=1092, 2569.6pt x 963.6pt>
 File: pictures/imagen_descalibrada.jpg Graphic file (type jpg)
 <use pictures/imagen_descalibrada.jpg>
 Package pdftex.def Info: pictures/imagen_descalibrada.jpg  used on input line 537.
@@ -774,34 +779,34 @@ Overfull \hbox (17.51506pt too wide) in paragraph at lines 548--548
  []        \OT1/cmtt/m/n/10.95 corners2 = cv2.cornerSubPix(gray, corners, (11, 11), (-1, -1), criteria)[] 
  []
 
-<pictures/calib_predictions.png, id=1089, 540.0175pt x 419.5675pt>
+<pictures/calib_predictions.png, id=1094, 540.0175pt x 419.5675pt>
 File: pictures/calib_predictions.png Graphic file (type png)
 <use pictures/calib_predictions.png>
 Package pdftex.def Info: pictures/calib_predictions.png  used on input line 552.
 (pdftex.def)             Requested size: 375.80544pt x 291.98589pt.
-[55 <./pictures/imagen_descalibrada.jpg>]
-<pictures/imagenes_calibradas.jpg, id=1099, 2569.6pt x 963.6pt>
+[56 <./pictures/imagen_descalibrada.jpg>]
+<pictures/imagenes_calibradas.jpg, id=1104, 2569.6pt x 963.6pt>
 File: pictures/imagenes_calibradas.jpg Graphic file (type jpg)
 <use pictures/imagenes_calibradas.jpg>
 Package pdftex.def Info: pictures/imagenes_calibradas.jpg  used on input line 576.
 (pdftex.def)             Requested size: 375.80544pt x 140.91673pt.
- [56 <./pictures/calib_predictions.png>]
+ [57 <./pictures/calib_predictions.png>]
 Overfull \hbox (23.26375pt too wide) in paragraph at lines 587--587
  []        \OT1/cmtt/m/n/10.95 error = cv2.norm(imgpoints[i], imgpoints2, cv2.NORM_L2) / len(imgpoints2)[] 
  []
 
-[57 <./pictures/imagenes_calibradas.jpg>]
-<pictures/aruco_marker_5.png, id=1114, 220.825pt x 220.825pt>
+[58 <./pictures/imagenes_calibradas.jpg>]
+<pictures/aruco_marker_5.png, id=1119, 220.825pt x 220.825pt>
 File: pictures/aruco_marker_5.png Graphic file (type png)
 <use pictures/aruco_marker_5.png>
 Package pdftex.def Info: pictures/aruco_marker_5.png  used on input line 620.
 (pdftex.def)             Requested size: 187.89914pt x 187.90765pt.
-<pictures/aruco_marker_100.png, id=1115, 50.1875pt x 50.1875pt>
+<pictures/aruco_marker_100.png, id=1120, 50.1875pt x 50.1875pt>
 File: pictures/aruco_marker_100.png Graphic file (type png)
 <use pictures/aruco_marker_100.png>
 Package pdftex.def Info: pictures/aruco_marker_100.png  used on input line 636.
 (pdftex.def)             Requested size: 93.94957pt x 93.96346pt.
- [58 <./pictures/aruco_marker_5.png (PNG copy)> <./pictures/aruco_marker_100.png (PNG copy)>]
+ [59 <./pictures/aruco_marker_5.png (PNG copy)> <./pictures/aruco_marker_100.png (PNG copy)>]
 Overfull \hbox (29.01244pt too wide) in paragraph at lines 664--664
  []        \OT1/cmtt/m/n/10.95 center_position = (outer_marker_size - inner_marker_with_border_size) // 2[] 
  []
@@ -826,91 +831,91 @@ Overfull \hbox (218.71913pt too wide) in paragraph at lines 664--664
  []                        \OT1/cmtt/m/n/10.95 center_position:center_position + inner_marker_with_border_size] = inner_marker_with_border[] 
  []
 
-<pictures/embedded_aruco.png, id=1124, 220.825pt x 220.825pt>
+<pictures/embedded_aruco.png, id=1129, 220.825pt x 220.825pt>
 File: pictures/embedded_aruco.png Graphic file (type png)
 <use pictures/embedded_aruco.png>
 Package pdftex.def Info: pictures/embedded_aruco.png  used on input line 668.
 (pdftex.def)             Requested size: 187.89914pt x 187.90765pt.
-[59]
+[60]
 Overfull \hbox (46.2585pt too wide) in paragraph at lines 678--678
  []        \OT1/cmtt/m/n/10.95 cv2.imwrite(f'embedded_aruco_marker_{outer_marker_id}_{inner_marker_id}.png',[] 
  []
 
-[60 <./pictures/embedded_aruco.png (PNG copy)>]
+[61 <./pictures/embedded_aruco.png (PNG copy)>]
 Overfull \hbox (64.45296pt too wide) in paragraph at lines 724--726
 \OT1/cmr/m/n/10.95 mark-ers, were vi-su-al-ized in real-time and pub-lished to a new ROS 2 topic (\OT1/cmtt/m/n/10.95 /aruco[]detection/compressed\OT1/cmr/m/n/10.95 ).
  []
 
-<pictures/aruco_detection.png, id=1141, 235.88126pt x 230.8625pt>
+<pictures/aruco_detection.png, id=1146, 235.88126pt x 230.8625pt>
 File: pictures/aruco_detection.png Graphic file (type png)
 <use pictures/aruco_detection.png>
 Package pdftex.def Info: pictures/aruco_detection.png  used on input line 733.
 (pdftex.def)             Requested size: 187.89914pt x 183.90468pt.
-[61 <./pictures/aruco_detection.png>] [62]
-<pictures/complete_node_diagram.png, id=1159, 1184.425pt x 283.0575pt>
+[62 <./pictures/aruco_detection.png>] [63]
+<pictures/complete_node_diagram.png, id=1164, 1184.425pt x 283.0575pt>
 File: pictures/complete_node_diagram.png Graphic file (type png)
 <use pictures/complete_node_diagram.png>
 Package pdftex.def Info: pictures/complete_node_diagram.png  used on input line 788.
 (pdftex.def)             Requested size: 375.80544pt x 89.81143pt.
-) [63 <./pictures/complete_node_diagram.png>]
+) [64 <./pictures/complete_node_diagram.png>]
 Chapter 4.
 (./chapters/resultados.tex
 File: pictures/ESTACION_FINAL.jpg Graphic file (type jpg)
 <use pictures/ESTACION_FINAL.jpg>
 Package pdftex.def Info: pictures/ESTACION_FINAL.jpg  used on input line 10.
 (pdftex.def)             Requested size: 187.89914pt x 250.5203pt.
-<pictures/charg_station_top.jpeg, id=1168, 1339.0025pt x 1606.0pt>
+<pictures/charg_station_top.jpeg, id=1173, 1339.0025pt x 1606.0pt>
 File: pictures/charg_station_top.jpeg Graphic file (type jpg)
 <use pictures/charg_station_top.jpeg>
 Package pdftex.def Info: pictures/charg_station_top.jpeg  used on input line 17.
 (pdftex.def)             Requested size: 187.89914pt x 225.35309pt.
- [64
+ [65
 
 ]
-<pictures/drone_side_view.jpeg, id=1177, 1606.0pt x 1098.1025pt>
+<pictures/drone_side_view.jpeg, id=1182, 1606.0pt x 1098.1025pt>
 File: pictures/drone_side_view.jpeg Graphic file (type jpg)
 <use pictures/drone_side_view.jpeg>
 Package pdftex.def Info: pictures/drone_side_view.jpeg  used on input line 28.
 (pdftex.def)             Requested size: 187.89914pt x 128.46574pt.
-<pictures/drone_top_view.jpeg, id=1178, 1606.0pt x 1571.8725pt>
+<pictures/drone_top_view.jpeg, id=1183, 1606.0pt x 1571.8725pt>
 File: pictures/drone_top_view.jpeg Graphic file (type jpg)
 <use pictures/drone_top_view.jpeg>
 Package pdftex.def Info: pictures/drone_top_view.jpeg  used on input line 35.
 (pdftex.def)             Requested size: 187.89914pt x 183.89156pt.
- [65 <./pictures/charg_station_top.jpeg> <./pictures/drone_side_view.jpeg>]
-<pictures/drawer_open.jpeg, id=1186, 1134.2375pt x 955.57pt>
+ [66 <./pictures/charg_station_top.jpeg> <./pictures/drone_side_view.jpeg>]
+<pictures/drawer_open.jpeg, id=1192, 1134.2375pt x 955.57pt>
 File: pictures/drawer_open.jpeg Graphic file (type jpg)
 <use pictures/drawer_open.jpeg>
 Package pdftex.def Info: pictures/drawer_open.jpeg  used on input line 48.
 (pdftex.def)             Requested size: 169.1113pt x 142.46904pt.
-<pictures/drawer_closed.jpeg, id=1187, 1360.08125pt x 1140.26pt>
+<pictures/drawer_closed.jpeg, id=1193, 1360.08125pt x 1140.26pt>
 File: pictures/drawer_closed.jpeg Graphic file (type jpg)
 <use pictures/drawer_closed.jpeg>
 Package pdftex.def Info: pictures/drawer_closed.jpeg  used on input line 53.
 (pdftex.def)             Requested size: 169.1113pt x 141.76659pt.
-<pictures/drone_volando.jpeg, id=1189, 804.00375pt x 1299.85625pt>
+<pictures/drone_volando.jpeg, id=1195, 804.00375pt x 1299.85625pt>
 File: pictures/drone_volando.jpeg Graphic file (type jpg)
 <use pictures/drone_volando.jpeg>
 Package pdftex.def Info: pictures/drone_volando.jpeg  used on input line 68.
 (pdftex.def)             Requested size: 187.89914pt x 303.78035pt.
- [66 <./pictures/drone_top_view.jpeg> <./pictures/drawer_open.jpeg> <./pictures/drawer_closed.jpeg>]
-<pictures/Battery_Discharge_Outside.png, id=1198, 620.7993pt x 397.84634pt>
+ [67 <./pictures/drone_top_view.jpeg> <./pictures/drawer_open.jpeg> <./pictures/drawer_closed.jpeg>]
+<pictures/Battery_Discharge_Outside.png, id=1203, 620.7993pt x 397.84634pt>
 File: pictures/Battery_Discharge_Outside.png Graphic file (type png)
 <use pictures/Battery_Discharge_Outside.png>
 Package pdftex.def Info: pictures/Battery_Discharge_Outside.png  used on input line 83.
 (pdftex.def)             Requested size: 234.8775pt x 150.52147pt.
- [67 <./pictures/drone_volando.jpeg>]
-<pictures/Battery_Discharge_Inside.png, id=1205, 620.7993pt x 397.84634pt>
+ [68 <./pictures/drone_volando.jpeg>]
+<pictures/Battery_Discharge_Inside.png, id=1210, 620.7993pt x 397.84634pt>
 File: pictures/Battery_Discharge_Inside.png Graphic file (type png)
 <use pictures/Battery_Discharge_Inside.png>
 Package pdftex.def Info: pictures/Battery_Discharge_Inside.png  used on input line 94.
 (pdftex.def)             Requested size: 187.89914pt x 120.41718pt.
- [68 <./pictures/Battery_Discharge_Outside.png> <./pictures/Battery_Discharge_Inside.png>]
+ [69 <./pictures/Battery_Discharge_Outside.png> <./pictures/Battery_Discharge_Inside.png>]
 File: pictures/aruco_detection.png Graphic file (type png)
 <use pictures/aruco_detection.png>
 Package pdftex.def Info: pictures/aruco_detection.png  used on input line 128.
 (pdftex.def)             Requested size: 187.89914pt x 183.90468pt.
- [69] [70]
+ [70] [71]
 Overfull \hbox (48.3638pt too wide) in paragraph at lines 168--169
 []\OT1/cmr/m/n/10.95 Verifying that the charg-ing sta-tion re-sponded to com-mands sent on \OT1/cmtt/m/n/10.95 /charging[]station/commands\OT1/cmr/m/n/10.95 . 
  []
@@ -919,118 +924,118 @@ File: pictures/complete_node_diagram.png Graphic file (type png)
 <use pictures/complete_node_diagram.png>
 Package pdftex.def Info: pictures/complete_node_diagram.png  used on input line 193.
 (pdftex.def)             Requested size: 375.80544pt x 89.81143pt.
-[71]) [72]
+[72]) [73]
 Chapter 5.
-(./chapters/discussion.tex [73
+(./chapters/discussion.tex [74
 
-]) [74]
+]) [75]
 Chapter 6.
-(./chapters/conclusiones.tex) [75
+(./chapters/conclusiones.tex) [76
 
-]
+] [77]
 Chapter 7.
-(./chapters/bibliografía.tex
-Underfull \hbox (badness 1221) in paragraph at lines 10--11
+(./chapters/bibliografía.tex [78
+
+] [79]
+Underfull \hbox (badness 1221) in paragraph at lines 70--71
 \OT1/cmr/m/n/10.95 hi-cle setup for PX4 or ArduPi-lot pow-ered ve-hi-cles.'' Disponible en: []$\OT1/cmtt/m/n/10.95 https : / / docs .
  []
 
-[76
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 1874) in paragraph at lines 85--86
+\OT1/cmtt/m/n/10.95 opencv . org / 4 . x / d5 / dae / tutorial _ aruco _ detection . html$[]\OT1/cmr/m/n/10.95 . [[]\OT1/cmr/m/it/10.95 Ultimo ac-ceso: noviem-bre,
+ []
+
+[80]
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 []\OT1/cmr/m/n/10.95 Amazon Prime Air, ``Prepar-a-tivos para en-tre-gas de pa-que-tes con drones,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 \OT1/cmr/m/n/10.95 Disponible en: []$\OT1/cmtt/m/n/10.95 https : / / www . aboutamazon . com / news / transportation /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 \OT1/cmtt/m/n/10.95 www . military . africa / 2024 / 10 / swarm-[]drones-[]a-[]new-[]phase-[]in-[]the-[]sudan-[]conflict/$[]\OT1/cmr/m/n/10.95 .
  []
 
-[77] [78]
-Underfull \hbox (badness 1874) in paragraph at lines 121--122
-\OT1/cmtt/m/n/10.95 opencv . org / 4 . x / d5 / dae / tutorial _ aruco _ detection . html$[]\OT1/cmr/m/n/10.95 . [[]\OT1/cmr/m/it/10.95 Ultimo ac-ceso: noviem-bre,
- []
-
-[79]) [80]
+[81]) [82]
 Chapter 8.
 (./chapters/anexos.tex
-<MECANISMO/MOTOR_12V.jpg, id=1361, 1284.8pt x 1021.8175pt>
+<MECANISMO/MOTOR_12V.jpg, id=1370, 1284.8pt x 1021.8175pt>
 File: MECANISMO/MOTOR_12V.jpg Graphic file (type jpg)
 <use MECANISMO/MOTOR_12V.jpg>
 Package pdftex.def Info: MECANISMO/MOTOR_12V.jpg  used on input line 4.
 (pdftex.def)             Requested size: 187.89914pt x 149.43047pt.
-<MECANISMO/POLEA_ALUMINIO.jpeg, id=1362, 376.40625pt x 376.40625pt>
+<MECANISMO/POLEA_ALUMINIO.jpeg, id=1371, 376.40625pt x 376.40625pt>
 File: MECANISMO/POLEA_ALUMINIO.jpeg Graphic file (type jpg)
 <use MECANISMO/POLEA_ALUMINIO.jpeg>
 Package pdftex.def Info: MECANISMO/POLEA_ALUMINIO.jpeg  used on input line 11.
 (pdftex.def)             Requested size: 164.41711pt x 164.41887pt.
-<MECANISMO/BANDA_V_TIPOA-transformed.jpg, id=1363, 351.3125pt x 351.3125pt>
+<MECANISMO/BANDA_V_TIPOA-transformed.jpg, id=1372, 351.3125pt x 351.3125pt>
 File: MECANISMO/BANDA_V_TIPOA-transformed.jpg Graphic file (type jpg)
 <use MECANISMO/BANDA_V_TIPOA-transformed.jpg>
 Package pdftex.def Info: MECANISMO/BANDA_V_TIPOA-transformed.jpg  used on input line 18.
 (pdftex.def)             Requested size: 164.41711pt x 164.42001pt.
- [81
+ [83
 
  <./MECANISMO/MOTOR_12V.jpg> <./MECANISMO/POLEA_ALUMINIO.jpeg>]
-<MECANISMO/balero.jpeg, id=1368, 225.84375pt x 225.84375pt>
+<MECANISMO/balero.jpeg, id=1377, 225.84375pt x 225.84375pt>
 File: MECANISMO/balero.jpeg Graphic file (type jpg)
 <use MECANISMO/balero.jpeg>
 Package pdftex.def Info: MECANISMO/balero.jpeg  used on input line 25.
 (pdftex.def)             Requested size: 164.41711pt x 164.4269pt.
-<PLANOS/PLANOS_CAJON_INTERNO_1.png, id=1369, 514.05965pt x 319.24487pt>
+<PLANOS/PLANOS_CAJON_INTERNO_1.png, id=1378, 514.05965pt x 319.24487pt>
 File: PLANOS/PLANOS_CAJON_INTERNO_1.png Graphic file (type png)
 <use PLANOS/PLANOS_CAJON_INTERNO_1.png>
 Package pdftex.def Info: PLANOS/PLANOS_CAJON_INTERNO_1.png  used on input line 32.
 (pdftex.def)             Requested size: 375.80544pt x 233.39755pt.
- [82 <./MECANISMO/BANDA_V_TIPOA-transformed.jpg> <./MECANISMO/balero.jpeg>]
-<PLANOS/PLANOS_CAJON_EXTERNO_1.png, id=1374, 324.90079pt x 261.42886pt>
+ [84 <./MECANISMO/BANDA_V_TIPOA-transformed.jpg> <./MECANISMO/balero.jpeg>]
+<PLANOS/PLANOS_CAJON_EXTERNO_1.png, id=1384, 324.90079pt x 261.42886pt>
 File: PLANOS/PLANOS_CAJON_EXTERNO_1.png Graphic file (type png)
 <use PLANOS/PLANOS_CAJON_EXTERNO_1.png>
 Package pdftex.def Info: PLANOS/PLANOS_CAJON_EXTERNO_1.png  used on input line 40.
 (pdftex.def)             Requested size: 375.80544pt x 302.41199pt.
-<PLANOS/PLANO_GUIAS_MECANICAS.png, id=1375, 299.7634pt x 213.0394pt>
+<PLANOS/PLANO_GUIAS_MECANICAS.png, id=1385, 299.7634pt x 213.0394pt>
 File: PLANOS/PLANO_GUIAS_MECANICAS.png Graphic file (type png)
 <use PLANOS/PLANO_GUIAS_MECANICAS.png>
 Package pdftex.def Info: PLANOS/PLANO_GUIAS_MECANICAS.png  used on input line 48.
 (pdftex.def)             Requested size: 375.80544pt x 267.09175pt.
- [83 <./PLANOS/PLANOS_CAJON_INTERNO_1.png> <./PLANOS/PLANOS_CAJON_EXTERNO_1.png>]
-<PLANOS/PLANO_PATAS_ESTABILIDAD_CAJON.png, id=1382, 290.33687pt x 258.91513pt>
+ [85 <./PLANOS/PLANOS_CAJON_INTERNO_1.png> <./PLANOS/PLANOS_CAJON_EXTERNO_1.png>]
+<PLANOS/PLANO_PATAS_ESTABILIDAD_CAJON.png, id=1392, 290.33687pt x 258.91513pt>
 File: PLANOS/PLANO_PATAS_ESTABILIDAD_CAJON.png Graphic file (type png)
 <use PLANOS/PLANO_PATAS_ESTABILIDAD_CAJON.png>
 Package pdftex.def Info: PLANOS/PLANO_PATAS_ESTABILIDAD_CAJON.png  used on input line 60.
 (pdftex.def)             Requested size: 211.38832pt x 188.51262pt.
-<PLANOS/PLANO_SENSOR.png, id=1383, 222.46591pt x 179.10391pt>
+<PLANOS/PLANO_SENSOR.png, id=1393, 222.46591pt x 179.10391pt>
 File: PLANOS/PLANO_SENSOR.png Graphic file (type png)
 <use PLANOS/PLANO_SENSOR.png>
 Package pdftex.def Info: PLANOS/PLANO_SENSOR.png  used on input line 67.
 (pdftex.def)             Requested size: 211.38832pt x 170.1942pt.
-<PLANOS/PLANO_CHUMACERA.png, id=1384, 369.51965pt x 250.11705pt>
+<PLANOS/PLANO_CHUMACERA.png, id=1394, 369.51965pt x 250.11705pt>
 File: PLANOS/PLANO_CHUMACERA.png Graphic file (type png)
 <use PLANOS/PLANO_CHUMACERA.png>
 Package pdftex.def Info: PLANOS/PLANO_CHUMACERA.png  used on input line 77.
 (pdftex.def)             Requested size: 164.41711pt x 111.28836pt.
- [84 <./PLANOS/PLANO_GUIAS_MECANICAS.png> <./PLANOS/PLANO_PATAS_ESTABILIDAD_CAJON.png> <./PLANOS/PLANO_SENSOR.png>]
-<PLANOS/PLANO_SOPORTE_MOTOR_1.png, id=1393, 382.08835pt x 307.93304pt>
+ [86 <./PLANOS/PLANO_GUIAS_MECANICAS.png> <./PLANOS/PLANO_PATAS_ESTABILIDAD_CAJON.png> <./PLANOS/PLANO_SENSOR.png>]
+<PLANOS/PLANO_SOPORTE_MOTOR_1.png, id=1402, 382.08835pt x 307.93304pt>
 File: PLANOS/PLANO_SOPORTE_MOTOR_1.png Graphic file (type png)
 <use PLANOS/PLANO_SOPORTE_MOTOR_1.png>
 Package pdftex.def Info: PLANOS/PLANO_SOPORTE_MOTOR_1.png  used on input line 87.
 (pdftex.def)             Requested size: 211.38832pt x 170.3645pt.
-<PLANOS/PLANO_SOPORTE_MOTOR_2.png, id=1394, 303.534pt x 270.22696pt>
+<PLANOS/PLANO_SOPORTE_MOTOR_2.png, id=1403, 303.534pt x 270.22696pt>
 File: PLANOS/PLANO_SOPORTE_MOTOR_2.png Graphic file (type png)
 <use PLANOS/PLANO_SOPORTE_MOTOR_2.png>
 Package pdftex.def Info: PLANOS/PLANO_SOPORTE_MOTOR_2.png  used on input line 94.
 (pdftex.def)             Requested size: 211.38832pt x 188.19272pt.
-<PLANOS/PLANO_SUJ_BANDA_1.png, id=1395, 411.62479pt x 356.32253pt>
+<PLANOS/PLANO_SUJ_BANDA_1.png, id=1404, 411.62479pt x 356.32253pt>
 File: PLANOS/PLANO_SUJ_BANDA_1.png Graphic file (type png)
 <use PLANOS/PLANO_SUJ_BANDA_1.png>
 Package pdftex.def Info: PLANOS/PLANO_SUJ_BANDA_1.png  used on input line 106.
 (pdftex.def)             Requested size: 211.38832pt x 182.99434pt.
-<PLANOS/PLANO_SUJ_BANDA_2.png, id=1396, 450.58774pt x 284.05252pt>
+<PLANOS/PLANO_SUJ_BANDA_2.png, id=1405, 450.58774pt x 284.05252pt>
 File: PLANOS/PLANO_SUJ_BANDA_2.png Graphic file (type png)
 <use PLANOS/PLANO_SUJ_BANDA_2.png>
 Package pdftex.def Info: PLANOS/PLANO_SUJ_BANDA_2.png  used on input line 113.
@@ -1039,34 +1044,67 @@ File: PLANOS/PLANO_CHUMACERA.png Graphic file (type png)
 <use PLANOS/PLANO_CHUMACERA.png>
 Package pdftex.def Info: PLANOS/PLANO_CHUMACERA.png  used on input line 122.
 (pdftex.def)             Requested size: 164.41711pt x 111.28836pt.
- [85 <./PLANOS/PLANO_CHUMACERA.png> <./PLANOS/PLANO_SOPORTE_MOTOR_1.png> <./PLANOS/PLANO_SOPORTE_MOTOR_2.png> <./PLANOS/PLANO_SUJ_BANDA_1.png> <./PLANOS/PLANO_SUJ_BANDA_2.png>]
-<pictures/PLANO_FLECHA.jpeg, id=1406, 329.73187pt x 225.84375pt>
+ [87 <./PLANOS/PLANO_CHUMACERA.png> <./PLANOS/PLANO_SOPORTE_MOTOR_1.png> <./PLANOS/PLANO_SOPORTE_MOTOR_2.png> <./PLANOS/PLANO_SUJ_BANDA_1.png> <./PLANOS/PLANO_SUJ_BANDA_2.png>]
+<pictures/PLANO_FLECHA.jpeg, id=1415, 329.73187pt x 225.84375pt>
 File: pictures/PLANO_FLECHA.jpeg Graphic file (type jpg)
 <use pictures/PLANO_FLECHA.jpeg>
 Package pdftex.def Info: pictures/PLANO_FLECHA.jpeg  used on input line 129.
 (pdftex.def)             Requested size: 329.73105pt x 225.84319pt.
-<pictures/f450.jpeg, id=1407, 225.84375pt x 225.84375pt>
+<pictures/f450.jpeg, id=1416, 225.84375pt x 225.84375pt>
 File: pictures/f450.jpeg Graphic file (type jpg)
 <use pictures/f450.jpeg>
 Package pdftex.def Info: pictures/f450.jpeg  used on input line 142.
 (pdftex.def)             Requested size: 164.41711pt x 164.4269pt.
- [86 <./pictures/PLANO_FLECHA.jpeg>] [87 <./pictures/f450.jpeg>]
-<PLANOS/PLANO_DRONE_PATA.png, id=1426, 252.63078pt x 273.36913pt>
+ [88 <./pictures/PLANO_FLECHA.jpeg>]
+<pictures/pixhawk6x.png, id=1422, 289.83281pt x 527.72156pt>
+File: pictures/pixhawk6x.png Graphic file (type png)
+<use pictures/pixhawk6x.png>
+Package pdftex.def Info: pictures/pixhawk6x.png  used on input line 149.
+(pdftex.def)             Requested size: 164.41711pt x 299.3711pt.
+<pictures/camara.png, id=1423, 1606.0pt x 1379.1525pt>
+File: pictures/camara.png Graphic file (type png)
+<use pictures/camara.png>
+Package pdftex.def Info: pictures/camara.png  used on input line 156.
+(pdftex.def)             Requested size: 164.41711pt x 141.18517pt.
+ [89 <./pictures/f450.jpeg> <./pictures/pixhawk6x.png>]
+<pictures/rpi5.jpeg, id=1431, 202.356pt x 134.904pt>
+File: pictures/rpi5.jpeg Graphic file (type jpg)
+<use pictures/rpi5.jpeg>
+Package pdftex.def Info: pictures/rpi5.jpeg  used on input line 163.
+(pdftex.def)             Requested size: 164.41711pt x 109.61746pt.
+<pictures/lipo_baterry.jpg, id=1432, 501.875pt x 501.875pt>
+File: pictures/lipo_baterry.jpg Graphic file (type jpg)
+<use pictures/lipo_baterry.jpg>
+Package pdftex.def Info: pictures/lipo_baterry.jpg  used on input line 191.
+(pdftex.def)             Requested size: 164.41711pt x 164.41695pt.
+ [90 <./pictures/camara.png> <./pictures/rpi5.jpeg> <./pictures/lipo_baterry.jpg>]
+<PLANOS/PLANO_DRONE_COVER_1.png, id=1445, 265.82791pt x 251.37392pt>
+File: PLANOS/PLANO_DRONE_COVER_1.png Graphic file (type png)
+<use PLANOS/PLANO_DRONE_COVER_1.png>
+Package pdftex.def Info: PLANOS/PLANO_DRONE_COVER_1.png  used on input line 205.
+(pdftex.def)             Requested size: 164.41711pt x 155.48198pt.
+<PLANOS/PLANO_DRONE_COVER_2.png, id=1446, 253.25922pt x 258.2867pt>
+File: PLANOS/PLANO_DRONE_COVER_2.png Graphic file (type png)
+<use PLANOS/PLANO_DRONE_COVER_2.png>
+Package pdftex.def Info: PLANOS/PLANO_DRONE_COVER_2.png  used on input line 212.
+(pdftex.def)             Requested size: 164.41711pt x 167.68335pt.
+<PLANOS/PLANO_DRONE_PATA.png, id=1447, 252.63078pt x 273.36913pt>
 File: PLANOS/PLANO_DRONE_PATA.png Graphic file (type png)
 <use PLANOS/PLANO_DRONE_PATA.png>
 Package pdftex.def Info: PLANOS/PLANO_DRONE_PATA.png  used on input line 219.
 (pdftex.def)             Requested size: 164.41711pt x 177.91724pt.
-<PLANOS/camera_holder.jpeg, id=1427, 404.26031pt x 246.9225pt>
+<PLANOS/camera_holder.jpeg, id=1448, 404.26031pt x 246.9225pt>
 File: PLANOS/camera_holder.jpeg Graphic file (type jpg)
 <use PLANOS/camera_holder.jpeg>
 Package pdftex.def Info: PLANOS/camera_holder.jpeg  used on input line 226.
 (pdftex.def)             Requested size: 164.41711pt x 100.42503pt.
-<PLANOS/rpi_mount.jpeg, id=1428, 394.47375pt x 259.7203pt>
+ [91 <./PLANOS/PLANO_DRONE_COVER_1.png> <./PLANOS/PLANO_DRONE_COVER_2.png> <./PLANOS/PLANO_DRONE_PATA.png>]
+<PLANOS/rpi_mount.jpeg, id=1457, 394.47375pt x 259.7203pt>
 File: PLANOS/rpi_mount.jpeg Graphic file (type jpg)
 <use PLANOS/rpi_mount.jpeg>
-Package pdftex.def Info: PLANOS/rpi_mount.jpeg  used on input line 247.
+Package pdftex.def Info: PLANOS/rpi_mount.jpeg  used on input line 233.
 (pdftex.def)             Requested size: 164.41711pt x 108.24954pt.
-) [88 <./PLANOS/PLANO_DRONE_PATA.png> <./PLANOS/camera_holder.jpeg> <./PLANOS/rpi_mount.jpeg>] [89] (./main.aux)
+) [92 <./PLANOS/camera_holder.jpeg> <./PLANOS/rpi_mount.jpeg>] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1074,18 +1112,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C4E1D75A35BA5C91C05011ED5D6A41A9;16610.
  ) 
 Here is how much of TeX's memory you used:
- 14706 strings out of 480218
- 238597 string characters out of 5894882
- 524933 words of memory out of 5000000
- 31955 multiletter control sequences out of 15000+600000
+ 14754 strings out of 480218
+ 239991 string characters out of 5894882
+ 524904 words of memory out of 5000000
+ 31995 multiletter control sequences out of 15000+600000
  477492 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  67i,10n,77p,1129b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/albertocastro/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (90 pages, 11796471 bytes).
+Output written on main.pdf (93 pages, 13794196 bytes).
 PDF statistics:
- 1567 PDF objects out of 1728 (max. 8388607)
- 1312 compressed objects within 14 object streams
- 419 named destinations out of 1000 (max. 500000)
- 1132 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1589 PDF objects out of 1728 (max. 8388607)
+ 1320 compressed objects within 14 object streams
+ 420 named destinations out of 1000 (max. 500000)
+ 1167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
