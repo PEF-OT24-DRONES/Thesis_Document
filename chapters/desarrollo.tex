@@ -95,34 +95,12 @@ The design of the automatic drawer mechanism for the charging station went throu
 
 \subsubsection{Components and CAD Designs}
     \begin{enumerate}
-        \item 12V Motor
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width=0.4\textwidth]{MECANISMO/MOTOR_12V.jpg}
-                \caption{12V Motor used for the Charging Station.}
-                \label{fig:motor}
-            \end{figure}
-        \item Pulleys
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width=0.35\textwidth]{MECANISMO/POLEA_ALUMINIO.jpeg}
-                \caption{Aluminum pulley with 1/2" inner diameter.}
-                \label{fig:polea_aluminio}
-            \end{figure}
-        \item V-Belt Type A
-        \begin{figure}[H]
-                \centering
-                \includegraphics[width=0.35\textwidth]{MECANISMO/BANDA_V_TIPOA-transformed.jpg}
-                \caption{V-Belt Type A.}
-                \label{fig:banda_v}
-            \end{figure}
-        \item Bearings
-        \begin{figure}[H]
-                \centering
-                \includegraphics[width=0.35\textwidth]{MECANISMO/balero.jpeg}
-                \caption{Bearings for the internal drawer movement mechanism.}
-                \label{fig:balero}
-            \end{figure}
+        \item 12V Motor (see Appendix, Figure \ref{fig:motor}).
+            
+        \item Pulleys (see Appendix, Figure \ref{fig:polea_aluminio}).
+    
+        \item V-Belt Type A (see Appendix, Figure \ref{fig:banda_v}).
+        
         \item Bearings (see Appendix, Figure \ref{fig:balero}).
 
         \item Bearing Housings (see Appendix, Figure \ref{fig:chumacera}).
@@ -162,12 +140,6 @@ The design of the automatic drawer mechanism for the charging station went throu
     \hfill
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.35\textwidth]{PLANOS/PLANO_CHUMACERA.png}
-    \caption{Blueprint of bearing housings for the internal drawer movement mechanism.}
-    \label{fig:mecanismo_chumacera}
-\end{figure}
 
 
 \subsection{Manufacturing Process of the Charging Base Structure}
@@ -290,30 +262,46 @@ To ensure compatibility and functionality within the charging system, the drone 
 
 \subsection{Bill of Materials for Drone Instrumentation}
     \begin{itemize} 
-        \item 1 x Open-architecture quadcopter frame  
+        \item 1 x Open-architecture quadcopter frame (F450)
         \item 1 x Flight controller (Pixhawk 6x) 
         \item 1 x Camera 
         \item 1 x Raspberry Pi 4 
         \item 1 x Voltage Regulator
         \item 4 x Brushless motors
         \item 4 x ESC Modules
-        \item 
+        \item 1 x Lipo Battery 5200 mAh
         \item 1 x GPS module (compatible with the flight controller) 
-        \item Wiring and connectors 
-        \item 3D-printed mounting material (specific mounts for each component) 
+        \item 1 x 3D Microprocessor Mount 
+        \item 4 x 3D Drone Cover 1
+        \item 4 x 3D Drone Cover 2
+        \item 4 x 3D Drone landing gear
+        \item 1 x 3D Camera Holder
     \end{itemize}
 
 
     \subsection{Drone CAD Designs} 
-    Below are the CAD designs of the components developed for the drone, adapted to its original frame to integrate the necessary electronic components and meet the requirements for charging and positioning.
-    
+        The design and instrumentation of the drone began with the selection of an F450 open-source frame, a versatile and widely used option in drone development due to its compatibility with various components. The frame was equipped with brushless motors, ESC modules, a flight controller (Pixhawk 6x), a Raspberry Pi 4 as a companion computer, a GPS module, and a vision system. These components provided the drone with the necessary functionality for navigation, control, and interaction with the charging station.
+
+        To adapt the drone for integration with the modular charging station, several 3D-printed components were designed and fabricated. These modifications improved the structural stability, protected critical elements, and ensured the drone could align with the station's charging system. Each component was custom-designed to fit the F450 frame and meet the specific requirements of the project.
+
+        The following 3D-printed components were developed:
+
         \begin{itemize} 
-            \item New mounts were designed for the microprocessor and camera, ensuring stable and precise integration into the frame. 
-            \item A mounting space was implemented for the localization sensors and the charging circuit. 
-            \begin{center} 
-                \textit{Image of the drone CAD designs with the modified components.} 
-            \end{center} 
+            \item \textbf{1 x 3D Microprocessor Mount:}  
+            A custom mount was created to securely hold the Raspberry Pi 5. This design ensures support and maintains accessibility for wiring and connectivity (see Appendix, Figure \ref{fig:rpi_mount}).
+            
+            \item \textbf{1 x 3D Camera Holder:}  
+            This holder aligns the camera with the drone's forward direction, facilitating accurate detection of ArUco markers. The design includes adjustable angles to optimize the field of view (see Appendix, Figure \ref{fig:camera_holder}).
+
+            \item \textbf{4 x 3D Drone Cover 1 and 4 x 3D Drone Cover 2:}  
+            These two complementary covers were designed to secure the landing gear to the frame. **Drone Cover 1** and **Drone Cover 2** clasp the legs of the F450 frame from opposite sides, forming a secure connection. Together, they create a threaded joint, allowing the landing gear to be screwed into place. This modular approach ensures a firm attachment while enabling quick disassembly for maintenance or upgrades (see Appendix, Figures \ref{fig:drone_cover_1} and \ref{fig:drone_cover_2}).
+
+            \item \textbf{4 x 3D Drone Landing Gear:}  
+            The landing gear was designed to screw into the combined **Drone Cover 1** and **Drone Cover 2**, forming a robust and stable structure. The gear ensures improved balance during takeoff and landing, with anti-slip features and shock absorption to protect the frame and electronics on uneven surfaces (see Appendix, Figure \ref{fig:landing_gear}).
         \end{itemize}
+
+        These 3D-printed designs allowed for significant improvements in the drone’s functionality and adaptability. Each component was tailored to ensure seamless integration with the charging station and to enhance the overall durability and performance of the drone. Detailed CAD designs and blueprints for these components can be found in the appendices of this document.
+
     
     \subsection{Power Distribution Circuit} 
         The power distribution circuit was designed to provide safe and stable power to the drone's critical components, including the motors, flight controller, Raspberry Pi, and camera. Below is a description of each section of the circuit:
@@ -402,9 +390,6 @@ The ground control computer was configured to monitor and process information fr
     \end{verbatim}
     This confirmed that all necessary dependencies for ROS 2 Humble were installed and functioning correctly.
     
-    \begin{center} 
-        \textit{Image of the environment setup on the ground control computer.} 
-    \end{center}
 \end{itemize}
 
 \subsection{Configuration of the Drone's Companion Computer} 
@@ -495,9 +480,7 @@ The Raspberry Pi 5 was configured as a companion computer for real-time data pro
     \end{verbatim}
     and communication was confirmed by observing the relevant topic messages.
     
-    \begin{center} 
-        \textit{Image of the environment configuration on the Raspberry Pi 5.} 
-    \end{center}
+    
 \end{itemize}
     
 \subsection{Configuration of the Ground Control Station} 
