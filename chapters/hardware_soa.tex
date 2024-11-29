@@ -7,7 +7,7 @@
 
     Additionally, according to Piotr et al., "Drones or Unmanned Aerial Systems (UAV - Unmanned Aerial Vehicle or UAS - Unmanned Aerial Systems) is the aircraft, which is able to fly without a pilot and passengers on board” \cite{piotr_drones}. Another definition comes from The Office of the Secretary of Defense of the United States of America: “A powered, aerial vehicle that does not carry a human operator, uses aerodynamic forces to provide vehicle lift, can fly autonomously or be piloted remotely, can be expendable or recoverable, and can carry a lethal or non-lethal payload.”
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/multicopter.png}
         \caption{Multicopter.}
@@ -22,7 +22,7 @@
 
     Finally, Figure \ref{fig:octo_quad_frame} shows the Octo Quad Frame, combining the advantages of eight motors with the efficiency of a compact configuration. These types of drones are used when high payload capacity and precise stability control are required.
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \begin{subfigure}[b]{0.4\textwidth}
             \includegraphics[width=\textwidth]{pictures/quad_frame.png}
@@ -53,7 +53,7 @@
 
 \subsection{Motors}
 
-Motors are an essential component for the flight of a drone, and they are typically brushless motors due to their high efficiency and durability. According to the guide, the selection of the motor depends on factors such as the drone's size, total weight, and the desired type of flight. Key considerations include:
+Motors are an essential component for the flight of a drone, and they are typically brushless motors due to their high efficiency and durability. According to the guide \cite{ardupilot}, the selection of the motor depends on factors such as the drone's size, total weight, and the desired type of flight. Key considerations include:
 
 \begin{itemize}
     \item \textbf{Kv Rating:} Indicates the revolutions per minute (RPM) per applied volt without load. A lower Kv provides more torque, making it ideal for larger drones with bigger propellers.
@@ -63,7 +63,7 @@ Motors are an essential component for the flight of a drone, and they are typica
 
 \subsection{Propellers}
 
-Propellers generate the necessary lift for flight. According to the guide, they are a critical factor for the drone's performance and should be selected based on the motors and the size of the drone. Important characteristics include:
+Propellers generate the necessary lift for flight. According to the guide \cite{ardupilot}, they are a critical factor for the drone's performance and should be selected based on the motors and the size of the drone. Important characteristics include:
 
 \begin{itemize}
     \item \textbf{Size (diameter and pitch):} Larger propellers generate more lift but require more powerful motors. The "pitch" determines how much air the propeller displaces per revolution.
@@ -73,7 +73,7 @@ Propellers generate the necessary lift for flight. According to the guide, they 
 
 \subsection{LiPo Batteries}
 
-LiPo (Lithium Polymer) batteries are the primary energy source for most drones. They are lightweight, high-capacity, and capable of delivering the current required by the motors and other components. Key aspects include:
+LiPo (Lithium Polymer) batteries are the primary energy source for most drones. They are lightweight, high-capacity, and capable of delivering the current required by the motors and other components \cite{lipo_batteries}. Key aspects include:
 
 \begin{itemize}
     \item \textbf{Cells (S):} Each cell has a nominal voltage of 3.7V. For example, a 3S battery has 11.1V (3 × 3.7V). The number of cells must be compatible with the motors and ESCs.
@@ -83,39 +83,39 @@ LiPo (Lithium Polymer) batteries are the primary energy source for most drones. 
 \end{itemize}
 
 \subsection{Drone Applications}
-Drones have a wide variety of applications nowadays and as time goes by these applications are increasing thanks to their versatility and ability to access difficult to reach areas. According to the official documentation [ardupailot] the applications of drones are [1]: Aerial Photography and Videography, First Person View (FPV), Disaster Response, Search and Rescue, Agricultural Applications, Wildfire Mitigation, Hazard Mitigation, 3D Mapping and Geographic Information Systems (GIS), Inspection and Verification, Cargo Delivery, among others.
+Drones have a wide variety of applications nowadays and as time goes by these applications are increasing thanks to their versatility and ability to access difficult to reach areas. According to the official documentation \cite{ardupilot} the applications of drones are : Aerial Photography and Videography, First Person View (FPV), Disaster Response, Search and Rescue, Agricultural Applications \ref{fig:drone_applications}, Wildfire Mitigation, Hazard Mitigation, 3D Mapping and Geographic Information Systems (GIS), Inspection and Verification, Cargo Delivery \ref{fig:drone_applications_2}, among others.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{pictures/drone_aplication_1.jpg}
+    \includegraphics[width=0.5\textwidth]{pictures/drone_aplication_1.jpg}
     \caption{This image shows the DJI AGRAS T50 being applied in the agricultural industry.  \cite{aplications_drones} }
     \label{fig:drone_applications}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{pictures/drone_aplication_2.jpg}
+    \includegraphics[width=0.5\textwidth]{pictures/drone_aplication_2.jpg}
     \caption{An Amazon drone is shown, which makes home package deliveries. \cite{aplications_drones}}
     \label{fig:drone_applications_2}
 \end{figure}
 
 \subsection{Swarming Drones}
-Unlike the individual control of a drone, the drone swarm concept allows collaboration between multiple units to execute complex tasks in an efficient and coordinated manner. This technology is called drone swarm, which according to the authors [4] represents “the true revolution in this field is the control of drone swarm, enabling multiple units to collaborate in executing more complex tasks”. 
+Unlike the individual control of a drone, the drone swarm concept allows collaboration between multiple units to execute complex tasks in an efficient and coordinated manner. This technology is called drone swarm, which according to the authors \cite{swarm_industrial} represents “the true revolution in this field is the control of drone swarm, enabling multiple units to collaborate in executing more complex tasks”. 
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{pictures/swarm_diagram.png}
+    \includegraphics[width=0.5\textwidth]{pictures/swarm_diagram.png}
     \caption{Diagram simulating a drone swarm model}
     \label{fig:swarming_drones}
 \end{figure}
 
-The control of drone swarms requires sophisticated systems that include bidirectional communication, both between the drones and the Ground Control Station (GCS). According to the authors [4], these systems allow drones to share key information such as position, battery status, and obstacles detected, making it possible to avoid collisions, maintain specific formations, and adapt to dynamic environmental conditions.
+The control of drone swarms requires sophisticated systems that include bidirectional communication, both between the drones and the Ground Control Station (GCS). According to the authors \cite{swarming_drones}, these systems allow drones to share key information such as position, battery status, and obstacles detected, making it possible to avoid collisions, maintain specific formations, and adapt to dynamic environmental conditions.
 
-In addition, the authors [4] emphasize that a fundamental element for the success of this technology is the capacity for precise positioning and localization, achieved through advanced GPS systems. This precision allows drones to maintain safe distances from each other and operate autonomously in complex missions. Another relevant aspect is the implementation of redundancy systems that guarantee the continuity of operations in case of failure in any swarm unit.
+In addition, the authors \cite{swarming_drones} emphasize that a fundamental element for the success of this technology is the capacity for precise positioning and localization, achieved through advanced GPS systems. This precision allows drones to maintain safe distances from each other and operate autonomously in complex missions. Another relevant aspect is the implementation of redundancy systems that guarantee the continuity of operations in case of failure in any swarm unit.
 
-In the industrial domain, drone swarm present great potential in applications such as automated inspections, environmental monitoring, precision agriculture and disaster management. According to the authors [4], the use of drone swarm in these scenarios not only improves operational efficiency, but also opens new opportunities for the development of autonomous technologies in the context of Industry 4.0.
+In the industrial domain, drone swarm present great potential in applications such as automated inspections, environmental monitoring, precision agriculture and disaster management. According to the authors \cite{swarming_drones}, the use of drone swarm in these scenarios not only improves operational efficiency, but also opens new opportunities for the development of autonomous technologies in the context of Industry 4.0.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{pictures/swarms.png}
     \caption{An example of drone swarm is shown in the image. \cite{swarming_drones}}
@@ -139,7 +139,7 @@ In the industrial domain, drone swarm present great potential in applications su
         \item Type of landing platform (self-leveling)
     \end{itemize}
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.9\textwidth]{pictures/charging_classification.png}
         \caption{Drone Charging Stations Classification \cite{grlj_docking_stations}.}
@@ -152,30 +152,30 @@ In the industrial domain, drone swarm present great potential in applications su
 
 \subsubsection{Advantages of Fixed Charging Stations}
 
-    Fixed stations are particularly useful in situations where the drone needs a precise landing in a constant location. These stations can use visual markers, such as ArUco [2] markers, to guide the drone during the final landing phase, ensuring high accuracy in the maneuver. Additionally, they may include self-leveling platform systems to guarantee the stability of the drone upon landing, especially on uneven terrain.
+    Fixed stations are particularly useful in situations where the drone needs a precise landing in a constant location. These stations can use visual markers, such as ArUco \cite{grlj_docking_stations} markers, to guide the drone during the final landing phase, ensuring high accuracy in the maneuver. Additionally, they may include self-leveling platform systems to guarantee the stability of the drone upon landing, especially on uneven terrain.
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/fixed_charging_1.png}
         \caption{Fixed docking station with its subsystems. The labels (1–4) show the battery replacement mechanism in operation \cite{grlj_docking_stations}.}
         \label{fig:fixed_charging}
     \end{figure}
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/fixed_2.png}
         \caption{Battery replacement docking station \cite{grlj_docking_stations}.}
         \label{fig:fixed_charging}
     \end{figure}
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/fixed_3.png}
         \caption{Endless Flyer \cite{grlj_docking_stations}, docking station with battery replacement mechanism. The labels in the center show the different landing stages and the order in which they are realized.}
         \label{fig:fixed_charging}
     \end{figure}
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/fixed_4.png}
         \caption{ Docking station with recharging pad with the custom made UAV from \cite{grlj_docking_stations}. In the figure, the QR codes used in the approach and landing phase can be seen .}
@@ -189,21 +189,21 @@ In the industrial domain, drone swarm present great potential in applications su
 \subsubsection{Advantages of Mobile Charging Stations}
     Mobile stations provide a dynamic alternative for supporting drones in missions that require continuous movement. For example, some stations are mounted on autonomous ground vehicles that can move to locations where the drone requires assistance, significantly increasing the operational range of the UAV. These types of stations can also incorporate complex systems to exchange batteries, such as robotic arms that ensure the safe removal and insertion of the drone's battery without needing to pause the mission for long recharge periods.
     
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.4\textwidth]{pictures/mobile_1.png}
         \caption{Moving docking station with storage system and battery replacement system. Labels in the figure (1–4) show the order in which the active positioning mechanism and storing mechanism take place \cite{grlj_docking_stations}.}
         \label{fig:mobile_charging}
     \end{figure}
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.4\textwidth]{pictures/mobile_2.png}
         \caption{UGV–UAV proposed moving docking station solution \cite{grlj_docking_stations}.}
         \label{fig:mobile_charging}
     \end{figure}
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/mobile_3.png}
         \caption{USV–UAV landing system \cite{grlj_docking_stations}.}
@@ -212,6 +212,7 @@ In the industrial domain, drone swarm present great potential in applications su
 
 
 \subsection{Types of Mechanisms}
+
     \subsubsection{Automatic Drawer Mechanism}
     The automatic drawer mechanism in the charging station for drone storage is similar to the mechanisms found in other automatic storage solutions. Here, we'll discuss the main mechanisms that could be used in this context, including the advantages and disadvantages of each. The mechanism chosen for this project was the belt and V-pulley due to its easy accessibility and low cost.
     

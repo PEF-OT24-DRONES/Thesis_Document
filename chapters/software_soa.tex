@@ -35,7 +35,7 @@ Among the tools used are QGroundControl and Mission Planner, which stand out for
 
 Despite their usefulness during the preparation and testing stages, the proposed system does not directly rely on these tools for its final operation. The autonomous operation of the drone and the charging station is based on direct interaction between the firmware, vision systems, and flight controllers, without requiring continuous intervention from a ground control station.
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \begin{subfigure}{0.48\textwidth}
         \centering
@@ -109,14 +109,14 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
     \item \textbf{Hardware-oriented design:} Designed for devices such as the Raspberry Pi 5, offering greater processing capacity.
 \end{itemize}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.3\textwidth]{pictures/humble_logo.png}
     \caption{ROS 2 Humble}
     \label{fig:imagen1}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.3\textwidth]{pictures/jazzy_logo.png}
     \caption{ROS 2 Jazzy Jalisco}
@@ -144,7 +144,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
     The combination of these elements allows robotic systems designed in ROS 2 to be highly scalable and flexible, adapting to both small projects and complex systems.  
     
     % Image of ROS 2 Architecture
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/ros2_arch.png}
         \caption{ROS 2 Architecture \cite{ros_docs}.}
@@ -155,7 +155,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
     
     The architecture of ROS 2 brings several advantages that make it ideal for modern distributed robotic systems. Among the key benefits are the following \cite{ros_docs}:  
     
-    \begin{table}[h!]
+    \begin{table}[H]
     \centering
     \caption{Key Benefits of ROS 2}
     \begin{tabular}{|l|p{10cm}|}
@@ -198,7 +198,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
     
     Calibration involves determining intrinsic parameters (such as focal length and principal point) and extrinsic parameters (relative to the camera's position and orientation) that map 2D coordinates from captured images to real-world 3D coordinates.  
     
-    \begin{figure}[h!] 
+    \begin{figure}[H] 
         \centering 
         \includegraphics[width=0.6\textwidth]{pictures/distortions.png} % Image of barrel and pincushion distortions inherent to cameras 
         \caption{Types of camera distortions.} 
@@ -215,7 +215,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
     
     The result of calibration corrects distortions in images and videos, improving the accuracy of computer vision applications. This is especially useful in projects requiring precise spatial analysis, such as autonomous navigation and real-time object positioning.  
     
-    \begin{figure}[h!] 
+    \begin{figure}[H] 
         \centering 
         \includegraphics[width=0.4\textwidth]{pictures/calib_pattern.jpg} % Illustrative image of a chessboard used for camera calibration 
         \caption{Chessboard pattern used in camera calibration with OpenCV.} 
@@ -230,7 +230,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
 
     ArUco markers were developed as a solution to overcome the limitations of other technologies for detecting patterns, colors, or shapes. The goal was to create a technique that provides high reliability even under partial occlusions and varying lighting conditions. Early studies focused on the automatic generation of markers with a design that ensured their uniqueness and ease of detection. These markers consist of a binary pattern surrounded by a black border, enhancing their visibility and robustness under different lighting conditions \cite{aruco_docs}.
 
-    \begin{figure}[h!] 
+    \begin{figure}[H] 
         \centering 
         \includegraphics[width=0.8\textwidth]{pictures/arucos_ids.png} % Example of ArUco marker pose detection 
         \caption{Examples of ArUco markers and IDs.} 
@@ -241,7 +241,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
 
     ArUco markers are used in various applications, including camera calibration, augmented reality, and robot and drone navigation and control. One of the advantages of using ArUco is their ability to act as reference points in 3D environments, enabling computer vision systems to calculate the camera pose. According to the documentation, \textit{“Markers can be used as 3D landmarks for camera pose estimation”} \cite{aruco_docs_pdf}. This feature makes markers essential in tracking and positioning systems where precision is critical.
 
-    \begin{figure}
+    \begin{figure}[H]
         \centering
         \begin{minipage}{0.3\textwidth}
             \centering
@@ -272,7 +272,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
 
     The ArUco library also supports creating custom dictionaries, allowing developers to adapt markers to the specific needs of their projects. \textit{“The design of a dictionary is important since the idea is that their markers should be as different as possible to avoid confusions”} \cite{aruco_docs_pdf}. This flexibility is especially useful in projects where ensuring the uniqueness and reliability of marker detection in complex environments is crucial.
 
-    \begin{figure}[h!] 
+    \begin{figure}[H] 
     \centering 
     \includegraphics[width=0.8\textwidth]{pictures/bits_aruco.png} % Example of an ArUco marker with its binary format 
     \caption{Bits of a 7x7 ArUco marker.} 
@@ -289,7 +289,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
 
     Another significant difference is that e-ArUco markers are designed to improve detection robustness, minimizing errors that could arise from changing lighting conditions and partial occlusions. These markers build upon ArUco detection algorithms, allowing implementation without substantial changes to existing ArUco-based systems \cite{khazetdinov2021}.
 
-    \begin{figure}[h!]
+    \begin{figure}[H]
         \centering
         \begin{minipage}{0.3\textwidth}
             \centering
@@ -365,7 +365,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
         \item \textbf{Lighting and contrast}: Detection can be affected by varying lighting conditions, so it is important for the image to have good contrast between the marker and the background.
     \end{itemize}
 
-    \begin{figure}[h!] 
+    \begin{figure}[H] 
         \centering 
             \begin{minipage}{0.48\textwidth}
                 \includegraphics[width=0.8\textwidth]{pictures/aruco_no_pose_estimation.png} % Example of ArUco markers 
@@ -415,7 +415,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
     
             With Micro XRCE-DDS, ROS 2 can directly communicate with PX4 using the DDS middleware. This enables the creation of a distributed and scalable system, where ROS 2 nodes can send and receive MAVLink messages via DDS topics, similar to MAVROS but with optimized processing overhead \cite{px4_ros2}.
     
-            \begin{figure}
+            \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.8\textwidth]{pictures/xrce_dds.png} 
                 \caption{ROS 2 - Pixhawk communication using Micro XRCE-DDS.}
