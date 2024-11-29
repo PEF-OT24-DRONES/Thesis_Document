@@ -52,74 +52,41 @@ The following is the list of materials used for constructing the modular chargin
     \item 1 x WiFi Router
     \item 1 x BT3 Pro Compact Charger
     \item 1 x Cable Carrier 1 m
-    \item 1 x Shaft (dimensions pending)
+    \item 1 x Shaft
 \end{itemize}
 
 \subsection{CAD Design of the Charging Base}
 
 To meet the modular/stackable design requirements and ensure compatibility with the drone's dimensions, the following CAD design was developed:
 
-As shown in Fig. 1, the base known as the "internal drawer" was designed to serve as a platform for the drone's takeoff and landing. This design was created considering the drone's dimensions and ensuring the inclusion of adequate tolerances to prevent potential collisions. A 30 mm aluminum profile was used in this design, taking advantage of previously available materials. Additional profiles were also integrated horizontally in the middle of the drawer to support the rails.
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.8\textwidth]{PLANOS/PLANOS_CAJON_INTERNO_1.png}
-            \caption{Blueprint of the internal drawer for the Charging Station.}
-            \label{fig:etiqueta}
-        \end{figure}
+As shown in \ref{fig:cajon_interno}, the base known as the "internal drawer" was designed to serve as a platform for the drone's takeoff and landing. This design was created considering the drone's dimensions and ensuring the inclusion of adequate tolerances to prevent potential collisions. A 30 mm aluminum profile was used in this design, taking advantage of previously available materials. Additional profiles were also integrated horizontally in the middle of the drawer to support the rails.
         
-Consequently, based on the dimensions of the previous blueprint, the "external drawer" was designed. This drawer serves to house the drone and the electronics of the charging station, as shown in Fig. 2.
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.8\textwidth]{PLANOS/PLANOS_CAJON_EXTERNO_1.png}
-            \caption{Blueprint of the external drawer for the Charging Station.}
-            \label{fig:etiqueta}
-        \end{figure}
+        
+Consequently, based on the dimensions of the previous blueprint, the "external drawer" was designed. This drawer serves to house the drone and the electronics of the charging station, as shown in \ref{fig:cajon_externo}.
+    
 
-Next, the dimensions of the drone's landing gear were considered to 3D print mechanical guides (Fig. 3) that help align the landing gear for proper magnetic connection with the charging system.
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.8\textwidth]{PLANOS/PLANO_GUIAS_MECANICAS.png}
-            \caption{Blueprint of the mechanical guide for the Charging Station.}
-            \label{fig:etiqueta}
-        \end{figure}
+Next, the dimensions of the drone's landing gear were considered to 3D print mechanical guides (\ref{fig:guias_mecanicas}) that help align the landing gear for proper magnetic connection with the charging system.
+    
 
-Using the designs from Fig. 1 and Fig. 3, the complete design of the internal drawer was developed (Fig. 4). It includes two 9 mm MDF cuts measuring 810 mm x 810 mm and internal spacers with a height of 20 mm to protect the system's cables. 
+Using the designs from \ref{fig:cajon_interno} and \ref{fig:guias_mecanicas}, the complete design of the internal drawer was developed (\ref{fig:final_interno}). It includes two 9 mm MDF cuts measuring 810 mm x 810 mm and internal spacers with a height of 20 mm to protect the system's cables. 
 
         \begin{figure}[H]
             \centering
-            %\includegraphics[width=0.6\textwidth]{PLANOS/CAJON_INTERNO_FINAL.png}
+            \includegraphics[width=0.6\textwidth]{pictures/CAJON_INTERNO_FINAL.jpeg}
             \caption{View of the internal drawer for the Charging Station.}
-            \label{fig:etiqueta}
+            \label{fig:final_interno}
         \end{figure}
 
-The necessary CAD designs, as shown in Fig. 5 and Fig. 6, were developed to ensure proper integration and adaptation of the various components of the charging station. These designs helped establish the essential dimensions, tolerances, and characteristics to ensure that each element fit precisely, guaranteeing that the charging station functioned efficiently and reliably.
-
-\begin{figure}[H]
-    \centering
-    \begin{minipage}{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{PLANOS/PLANO_PATAS_ESTABILIDAD_CAJON.png}
-        \caption{Floor supports for the stability of the Charging Station.}
-        \label{fig:imagen1}
-    \end{minipage}%
-    \hfill
-    \begin{minipage}{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{PLANOS/PLANO_SENSOR.png}
-        \caption{3D-printed holder for the inductive proximity sensors of the Charging Station.}
-        \label{fig:imagen2}
-    \end{minipage}%
-    \hfill
-\end{figure}
+The necessary CAD designs, as shown in \ref{fig:patas_estabilidad} and \ref{fig:inductive_holder}, were developed to ensure proper integration and adaptation of the various components of the charging station. These designs helped establish the essential dimensions, tolerances, and characteristics to ensure that each element fit precisely, guaranteeing that the charging station functioned efficiently and reliably.
 
 
-Lastly, as part of the design process, a CAD model was developed to integrate the main components necessary for the proper functioning of the charging station. This final conceptual design, shown in Figure 7, represents the consolidation of initial ideas, the iterations performed, and the decisions made throughout the development. The model ensures the functionality, compatibility, and efficiency of the station, serving as a basis for manufacturing and implementing the system.
+Lastly, as part of the design process, a CAD model was developed to integrate the main components necessary for the proper functioning of the charging station. This final conceptual design, shown in \ref{fig:final_estacion}, represents the consolidation of initial ideas, the iterations performed, and the decisions made throughout the development. The model ensures the functionality, compatibility, and efficiency of the station, serving as a basis for manufacturing and implementing the system.
 
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\textwidth]{pictures/ESTACION_FINAL.jpg}
             \caption{View of the Charging Station.}
-            \label{fig:etiqueta}
+            \label{fig:final_estacion}
         \end{figure}
 
 \subsection{Selection and Implementation of the Drawer Movement Mechanism}
@@ -133,72 +100,39 @@ The design of the automatic drawer mechanism for the charging station went throu
                 \centering
                 \includegraphics[width=0.4\textwidth]{MECANISMO/MOTOR_12V.jpg}
                 \caption{12V Motor used for the Charging Station.}
-                \label{fig:etiqueta}
+                \label{fig:motor}
             \end{figure}
         \item Pulleys
             \begin{figure}[H]
                 \centering
-                %\includegraphics[width=0.35\textwidth]{MECANISMO/POLEA_ALUMINIO-removebg-preview.png}
+                \includegraphics[width=0.35\textwidth]{MECANISMO/POLEA_ALUMINIO.jpeg}
                 \caption{Aluminum pulley with 1/2" inner diameter.}
-                \label{fig:etiqueta}
+                \label{fig:polea_aluminio}
             \end{figure}
         \item V-Belt Type A
         \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.35\textwidth]{MECANISMO/BANDA_V_TIPOA-transformed.jpg}
                 \caption{V-Belt Type A.}
-                \label{fig:etiqueta}
+                \label{fig:banda_v}
             \end{figure}
         \item Bearings
         \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.35\textwidth]{MECANISMO/balero.jpeg}
-                \caption{Bearings for...}
-                \label{fig:etiqueta}
+                \caption{Bearings for the internal drawer movement mechanism.}
+                \label{fig:balero}
             \end{figure}
-        \item Bearing Housings
-        \begin{figure}[H]
-                \centering
-                \includegraphics[width=0.35\textwidth]{PLANOS/PLANO_CHUMACERA.png}
-                \caption{Blueprint of bearing housings for the internal drawer movement mechanism.}
-                \label{fig:etiqueta}
-            \end{figure}
-        \item 12V Motor Mounts
-            \begin{figure}[H]
-            \centering
-            \begin{minipage}{0.45\textwidth}
-                \centering
-                \includegraphics[width=\textwidth]{PLANOS/PLANO_SOPORTE_MOTOR_1.png}
-                \caption{}
-                \label{fig:imagen1}
-            \end{minipage}%
-            \hfill
-            \begin{minipage}{0.45\textwidth}
-                \centering
-                \includegraphics[width=\textwidth]{PLANOS/PLANO_SOPORTE_MOTOR_2.png}
-                \caption{}
-                \label{fig:imagen2}
-            \end{minipage}%
-            \hfill
-            \end{figure}
-        \item V-Belt Holder for the internal drawer
-            \begin{figure}[H]
-            \centering
-            \begin{minipage}{0.45\textwidth}
-                \centering
-                \includegraphics[width=\textwidth]{PLANOS/PLANO_SUJ_BANDA_1.png}
-                \caption{}
-                \label{fig:imagen1}
-            \end{minipage}%
-            \hfill
-            \begin{minipage}{0.45\textwidth}
-                \centering
-                \includegraphics[width=\textwidth]{PLANOS/PLANO_SUJ_BANDA_2.png}
-                \caption{}
-                \label{fig:imagen2}
-            \end{minipage}%
-            \hfill
-            \end{figure}
+        \item Bearings (see Appendix, Figure \ref{fig:balero}).
+
+        \item Bearing Housings (see Appendix, Figure \ref{fig:chumacera}).
+        
+        \item 12V Motor Mounts (see Appendix, Figures \ref{fig:soporte_motor} and \ref{fig:soporte_motor2}).
+        
+        \item V-Belt Holder for the internal drawer (see Appendix, Figures \ref{fig:suj_banda} and \ref{fig:suj_banda2}).
+        
+        \item Shaft (see Appendix, Figure \ref{fig:flecha}).
+            
     \end{enumerate}
 
 \subsubsection{V-Belt and Pulley Mechanism}
@@ -209,21 +143,21 @@ The design of the automatic drawer mechanism for the charging station went throu
         \centering
         \includegraphics[width=\textwidth]{MECANISMO/MOTOR_MECANISMO.jpg}
         \caption{View of the internal drawer movement mechanism, showing the 3D-printed motor mounts and the motor with the pulley and belt integrated into the system.}
-        \label{fig:imagen1}
+        \label{fig:motor_mecanismo}
     \end{minipage}%
     \hfill
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{MECANISMO/MECANISMO_CHUMACERAS.jpg}
         \caption{View of the internal drawer movement mechanism, showing the 3D-printed bearing housings with...}
-        \label{fig:imagen2}
+        \label{fig:mecanismo_chumaceras}
     \end{minipage}%
     \hfill
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\textwidth]{MECANISMO/MECANISMO_AGARRE.jpg}
         \caption{View of the internal drawer movement mechanism, showing the 3D-printed holder designed to secure the belt to the internal drawer.}
-        \label{fig:imagen1}
+        \label{fig:mecanismo_agarre}
     \end{minipage}%
     \hfill
 \end{figure}
@@ -232,7 +166,7 @@ The design of the automatic drawer mechanism for the charging station went throu
     \centering
     \includegraphics[width=0.35\textwidth]{PLANOS/PLANO_CHUMACERA.png}
     \caption{Blueprint of bearing housings for the internal drawer movement mechanism.}
-    \label{fig:etiqueta}
+    \label{fig:mecanismo_chumacera}
 \end{figure}
 
 
@@ -247,46 +181,27 @@ The design of the automatic drawer mechanism for the charging station went throu
         
     \end{enumerate}
 
-    
-    % \begin{figure}[H]
-%         \centering
-%         \begin{subfigure}[b]{0.4\textwidth}
-%             \includegraphics[width=\textwidth]{pictures/quad_frame.png}
-%             \caption{Quad X Frame.}
-%             \label{fig:quad_frame}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.4\textwidth}
-%             \includegraphics[width=\textwidth]{pictures/hexa_frame.png}
-%             \caption{Hexa X Frame.}
-%             \label{fig:hexa_frame}
-%         \end{subfigure}
-%         \vskip\baselineskip
-%         \begin{subfigure}[b]{0.4\textwidth}
-%             \includegraphics[width=\textwidth]{pictures/octo_frame.png}
-%             \caption{Octo X Frame.}
-%             \label{fig:octo_frame}
-%         \end{subfigure}
-%         \hfill
-%         \begin{subfigure}[b]{0.4\textwidth}
-%             \includegraphics[width=\textwidth]{pictures/octo_quad_frame.png}
-%             \caption{Octo Quad X Frame.}
-%             \label{fig:octo_quad_frame}
-%         \end{subfigure}
-%         \caption{Drone configurations.}
-%         \label{fig:drone_frames}
-%     \end{figure}
-
 
 %%ANABI starts
 
-    \subsection{Electronic Circuit of the Charging Station}
+\subsection{Electronic Circuit of the Charging Station}
 
     \subsubsection{Conection Diagram}
-    add diagram circuit
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{pictures/station_electronics_diagram.png}
+        \caption{Charging Station Electronics Diagram}
+        \label{fig:station_electronics_diagram}
+    \end{figure}
     
     \subsubsection{Circuit Construction}
-    add images
+    \begin{figure}[H]
+        \centering
+        %\includegraphics[width=0.5\textwidth]{pictures/station_electronics_circuit.png}
+        \caption{Charging Station Electronics Circuit}
+        \label{fig:station_electronics_circuit}
+    \end{figure}
     
     \subsubsection{Circuit Programming}
     
@@ -375,11 +290,14 @@ To ensure compatibility and functionality within the charging system, the drone 
 
 \subsection{Bill of Materials for Drone Instrumentation}
     \begin{itemize} 
-        \item 1 x Open-architecture quadcopter frame (specify model) 
-        \item 1 x Flight controller (specify model) 
-        \item 1 x Camera (compatible with Aruco detection) 
-        \item 1 x Raspberry Pi 4 (Companion Computer) 
-        \item 1 x Proximity sensor (preferred model) 
+        \item 1 x Open-architecture quadcopter frame  
+        \item 1 x Flight controller (Pixhawk 6x) 
+        \item 1 x Camera 
+        \item 1 x Raspberry Pi 4 
+        \item 1 x Voltage Regulator
+        \item 4 x Brushless motors
+        \item 4 x ESC Modules
+        \item 
         \item 1 x GPS module (compatible with the flight controller) 
         \item Wiring and connectors 
         \item 3D-printed mounting material (specific mounts for each component) 
@@ -397,7 +315,7 @@ To ensure compatibility and functionality within the charging system, the drone 
             \end{center} 
         \end{itemize}
     
-        \subsection{Power Distribution Circuit} 
+    \subsection{Power Distribution Circuit} 
         The power distribution circuit was designed to provide safe and stable power to the drone's critical components, including the motors, flight controller, Raspberry Pi, and camera. Below is a description of each section of the circuit:
     
         \begin{enumerate}
@@ -802,7 +720,7 @@ The system was designed to detect ArUco markers in real-time using images captur
             \begin{figure}[H]
                 \centering
                 %\includegraphics[width=0.8\textwidth]{pictures/detection_arucos.png}
-                \caption{Detection of ArUco markers in the processed image.}
+                %\caption{Detection of ArUco markers in the processed image.}
             \end{figure}
         \end{center}
     

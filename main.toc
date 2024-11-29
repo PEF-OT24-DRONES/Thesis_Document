@@ -90,55 +90,56 @@
 \contentsline {subsection}{\numberline {3.1.1}Requirements}{39}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Bill of Materials}{39}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}CAD Design of the Charging Base}{41}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Selection and Implementation of the Drawer Movement Mechanism}{45}{subsection.3.1.4}%
-\contentsline {subsubsection}{Components and CAD Designs}{45}{subsubsection*.79}%
-\contentsline {subsubsection}{V-Belt and Pulley Mechanism}{49}{subsubsection*.87}%
-\contentsline {subsection}{\numberline {3.1.5}Manufacturing Process of the Charging Base Structure}{50}{subsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.1.6}Electronic Circuit of the Charging Station}{50}{subsection.3.1.6}%
-\contentsline {subsubsection}{Conection Diagram}{50}{subsubsection*.90}%
-\contentsline {subsubsection}{Circuit Construction}{50}{subsubsection*.91}%
-\contentsline {subsubsection}{Circuit Programming}{50}{subsubsection*.92}%
-\contentsline {paragraph}{\textbf {General Description:}}{50}{paragraph*.93}%
-\contentsline {paragraph}{\textbf {Main Components} }{51}{paragraph*.94}%
-\contentsline {paragraph}{\textbf {Arduino Code} }{51}{paragraph*.95}%
-\contentsline {paragraph}{\textbf {Circuit Operation} }{52}{paragraph*.96}%
-\contentsline {paragraph}{\textbf {Annex} }{52}{paragraph*.97}%
-\contentsline {section}{\numberline {3.2}Drone Instrumentation}{52}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Specifications and Requirements}{52}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Bill of Materials for Drone Instrumentation}{53}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Drone CAD Designs}{53}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Power Distribution Circuit}{53}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Software Configuration}{54}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Configuration of the Ground Control Computer}{54}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Configuration of the Drone's Companion Computer}{56}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Configuration of the Ground Control Station}{58}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Vision System}{59}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Specifications and Requirements}{59}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Camera Calibration}{60}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Generation of ArUco Markers}{62}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Real-Time Detection of e-ArUco Markers}{65}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}Communication System}{67}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Specifications and Requirements}{67}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Communication Architecture}{67}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Key Features}{68}{subsection.3.5.3}%
-\contentsline {chapter}{\numberline {4}Results}{69}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Final Design of the First Prototype of the Charging Station}{69}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Design and Instrumentation of the Drone}{70}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Drawer Movement}{71}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Drone Flight}{71}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Battery Charging and Discharging}{72}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Battery Duration Without Charging}{72}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Battery Duration While Inside the Charging Station}{73}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Flight Duration}{73}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Recommendations for Improvement}{73}{subsection.4.5.4}%
-\contentsline {section}{\numberline {4.6}ArUco Marker Detection}{74}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Limitations and Observations}{75}{subsection.4.6.1}%
-\contentsline {section}{\numberline {4.7}Communication System}{75}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Validation of Communication System}{76}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Results of Communication Validation}{76}{subsection.4.7.2}%
-\contentsline {section}{\numberline {4.8}General Performance Analysis}{77}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Global Integration Results}{77}{subsection.4.8.1}%
-\contentsline {chapter}{\numberline {5}Discussion}{78}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusions}{80}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Bibliography}{81}{chapter.7}%
+\contentsline {subsection}{\numberline {3.1.4}Selection and Implementation of the Drawer Movement Mechanism}{42}{subsection.3.1.4}%
+\contentsline {subsubsection}{Components and CAD Designs}{42}{subsubsection*.75}%
+\contentsline {subsubsection}{V-Belt and Pulley Mechanism}{45}{subsubsection*.80}%
+\contentsline {subsection}{\numberline {3.1.5}Manufacturing Process of the Charging Base Structure}{46}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Electronic Circuit of the Charging Station}{47}{subsection.3.1.6}%
+\contentsline {subsubsection}{Conection Diagram}{47}{subsubsection*.83}%
+\contentsline {subsubsection}{Circuit Construction}{47}{subsubsection*.85}%
+\contentsline {subsubsection}{Circuit Programming}{47}{subsubsection*.87}%
+\contentsline {paragraph}{\textbf {General Description:}}{47}{paragraph*.88}%
+\contentsline {paragraph}{\textbf {Main Components} }{47}{paragraph*.89}%
+\contentsline {paragraph}{\textbf {Arduino Code} }{48}{paragraph*.90}%
+\contentsline {paragraph}{\textbf {Circuit Operation} }{48}{paragraph*.91}%
+\contentsline {paragraph}{\textbf {Annex} }{49}{paragraph*.92}%
+\contentsline {section}{\numberline {3.2}Drone Instrumentation}{49}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Specifications and Requirements}{49}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Bill of Materials for Drone Instrumentation}{49}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Drone CAD Designs}{50}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Power Distribution Circuit}{50}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Software Configuration}{51}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Configuration of the Ground Control Computer}{51}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Configuration of the Drone's Companion Computer}{53}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Configuration of the Ground Control Station}{55}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Vision System}{56}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Specifications and Requirements}{56}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Camera Calibration}{56}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Generation of ArUco Markers}{59}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Real-Time Detection of e-ArUco Markers}{62}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Communication System}{64}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Specifications and Requirements}{64}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Communication Architecture}{64}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Key Features}{65}{subsection.3.5.3}%
+\contentsline {chapter}{\numberline {4}Results}{66}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Final Design of the First Prototype of the Charging Station}{66}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Design and Instrumentation of the Drone}{67}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Drawer Movement}{68}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Drone Flight}{68}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Battery Charging and Discharging}{69}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Battery Duration Without Charging}{69}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Battery Duration While Inside the Charging Station}{70}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Flight Duration}{70}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Recommendations for Improvement}{70}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}ArUco Marker Detection}{71}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Limitations and Observations}{72}{subsection.4.6.1}%
+\contentsline {section}{\numberline {4.7}Communication System}{72}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Validation of Communication System}{73}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Results of Communication Validation}{73}{subsection.4.7.2}%
+\contentsline {section}{\numberline {4.8}General Performance Analysis}{74}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Global Integration Results}{74}{subsection.4.8.1}%
+\contentsline {chapter}{\numberline {5}Discussion}{75}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions}{77}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Bibliography}{78}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Anexos}{83}{chapter.8}%
 \contentsfinish 
