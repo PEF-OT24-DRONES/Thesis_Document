@@ -203,7 +203,7 @@ The design of the automatic drawer mechanism for the charging station went throu
 
 \subsubsection{V-Belt and Pulley Mechanism}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{minipage}{0.49\textwidth}
         \centering
@@ -633,7 +633,7 @@ The camera calibration process was carried out using a Python script with the Op
         \begin{center}
             \begin{figure}[H]
                 \centering
-                %\includegraphics[width=0.8\textwidth]{pictures/imagen_descalibrada.png}
+                \includegraphics[width=0.8\textwidth]{pictures/imagen_descalibrada.jpg}
                 \caption{Example of an uncalibrated image captured during the process.}
                 \label{fig:imagen_descalibrada}
             \end{figure}
@@ -672,7 +672,7 @@ The camera calibration process was carried out using a Python script with the Op
         \begin{center}
             \begin{figure}[H]
                 \centering
-                %\includegraphics[width=0.8\textwidth]{pictures/imagen_calibrada.png}
+                \includegraphics[width=0.8\textwidth]{pictures/imagenes_calibradas.jpg}
                 \caption{Calibrated image after applying the obtained parameters.}
                 \label{fig:imagen_calibrada}
             \end{figure}
@@ -816,7 +816,7 @@ The system was designed to detect ArUco markers in real-time using images captur
             \begin{figure}[H]
                 \centering
                 %\includegraphics[width=0.8\textwidth]{pictures/pose_calculation.png}
-                \caption{Graphical representation of the calculated position and orientation of an ArUco marker.}
+                %\caption{Graphical representation of the calculated position and orientation of an ArUco marker.}
             \end{figure}
         \end{center}
     
@@ -829,7 +829,7 @@ The system was designed to detect ArUco markers in real-time using images captur
         \begin{center}
             \begin{figure}[H]
                 \centering
-                %\includegraphics[width=0.8\textwidth]{pictures/markers_axes.png}
+                \includegraphics[width=0.4\textwidth]{pictures/aruco_detection.png}
                 \caption{Image with detected markers and projected axes.}
             \end{figure}
         \end{center}
@@ -838,45 +838,56 @@ The system was designed to detect ArUco markers in real-time using images captur
         Based on the \texttt{tvec} values, the necessary corrections were calculated to adjust the drone's position relative to the marker, including lateral (\textit{x}), vertical (\textit{y}), and depth (\textit{z}) movements.
     
         \item \textbf{System Interaction:} 
-        The results of ArUco marker detection were used to visualize the drone's position and orientation in real-time, enabling the control system to adjust these parameters for landing on the charging station.
+        The results of ArUco marker detection were primarily used for real-time visualization of the drone's position and orientation. The system was not designed or implemented for precise landing. However, the detection system provides a foundation for potential future developments involving precise drone landing.
     \end{enumerate}
             
         
 \section{Communication System}
 
     \subsection{Specifications and Requirements} 
-    The communication system between the drone and the charging station was designed to ensure efficient, real-time transfer of critical data. The main requirements are:
+    The communication system between the drone, the charging station, and the ground computer is designed to ensure efficient, real-time transfer of critical data. The main requirements are:
     
-    \begin{itemize}
-        \item \textbf{WiFi-Based Local Network:} 
-        Provide effective communication between devices without requiring Internet access.
-        \item \textbf{ROS 2 DDS Middleware:} 
-        Use ROS 2's node and topic architecture to manage data communication between connected devices.
+    \begin{itemize} 
+        \item \textbf{WiFi-Based Local Network:} Ensures effective communication between devices without the need for Internet access, creating a secure and self-contained system. 
+        \item \textbf{ROS 2 DDS Middleware:} Utilizes ROS 2's distributed node and topic architecture to facilitate robust and reliable data exchange between all connected devices. 
     \end{itemize}
     
-    \subsubsection{Communication via ROS 2} 
-    The system used ROS 2's node and topic architecture to manage communication between devices. Each device in the network performed specific functions related to publishing and subscribing to relevant data:
+    \subsection{Communication Architecture} 
+    The system is built on ROS 2's capabilities to enable seamless interaction between devices through nodes and topics. Each component has specific roles and responsibilities within the communication architecture:
     
-    \begin{itemize}
-        \item \textbf{Drone:} 
-        Published camera images (\texttt{/camera\_image/compressed}) and status data related to battery, position, and other critical parameters.
-        \item \textbf{Ground Computer:} 
-        Contains an interface that subscribed to topics published by the drone to:
-        \begin{itemize}
-            \item Process images and calculate the position of ArUco markers.
-            \item Display drone status data, such as battery level and flight mode, in real-time.
-            \item Publish commands to the charging station, such as opening or retracting the drawer, via specific topics.
+    \begin{itemize} 
+        \item \textbf{Drone:} Acts as a mobile node that: 
+        \begin{itemize} 
+            \item Publishes compressed camera images (\texttt{/camera\_image/compressed}) for visual processing.
+            \item Transmits status data, including battery level, position, and other critical parameters, for real-time monitoring.
         \end{itemize}
-        \item \textbf{Charging Station:} 
-        Subscribed to commands sent from the ground computer's interface to execute necessary actions, such as opening and closing the drawer.
+
+        \item \textbf{Ground Computer:} Functions as the control and monitoring hub, running an interface that: 
+        \begin{itemize} 
+            \item Subscribes to topics published by the drone for processing camera images and calculating the position of ArUco markers. 
+            \item Displays drone status information, such as battery level and flight mode, in real-time. 
+            \item Publishes control commands to the charging station (e.g., opening or closing the drawer) via dedicated topics. 
+        \end{itemize} 
+        \item \textbf{Charging Station:} Operates as a stationary node that: 
+        \begin{itemize} 
+            \item Subscribes to control commands from the ground computer's interface. 
+            \item Executes specific actions, such as opening and closing the drawer, to accommodate the drone. 
+        \end{itemize} 
     \end{itemize}
     
-    \begin{figure}[H]
-        \centering
-        %\includegraphics[width=0.8\textwidth]{pictures/ros2_comms.png}
-        \caption{Communication diagram between devices using ROS 2.}
+    \subsection{Key Features} The communication system leverages ROS 2's distributed architecture to provide the following capabilities: 
+    \begin{itemize} 
+        \item \textbf{Real-time Monitoring:} Enables continuous tracking of drone parameters, ensuring precise and efficient operations. 
+        \item \textbf{Concurrent Task Execution:} Supports multithreading to allow simultaneous data processing, camera control, and station operations without delays. 
+        \item \textbf{Scalability and Reliability:} Facilitates synchronized operations across multiple devices, ensuring robust communication and rapid response to commands. 
+    \end{itemize}
+    
+    \begin{figure}[H] 
+        \centering 
+        \includegraphics[width=0.8\textwidth]{pictures/complete_node_diagram.png} 
+        \caption{Communication diagram showcasing the interaction between devices using ROS 2.} 
+        \label{fig:communication_architecture} 
     \end{figure}
-
 
     
 
