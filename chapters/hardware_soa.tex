@@ -47,11 +47,11 @@
             \caption{Octo Quad X Frame.}
             \label{fig:octo_quad_frame}
         \end{subfigure}
-        \caption{Drone configurations.}
+        \caption{Drone configurations. \cite{ardupilot_docs}}
         \label{fig:drone_frames}
     \end{figure}
 
-\subsection{Motors}
+\subsection{Actuators}
 
 Motors are an essential component for the flight of a drone, and they are typically brushless motors due to their high efficiency and durability. According to the guide \cite{ardupilot}, the selection of the motor depends on factors such as the drone's size, total weight, and the desired type of flight. Key considerations include:
 
@@ -83,28 +83,28 @@ LiPo (Lithium Polymer) batteries are the primary energy source for most drones. 
 \end{itemize}
 
 \subsection{Drone Applications}
-Drones have a wide variety of applications nowadays and as time goes by these applications are increasing thanks to their versatility and ability to access difficult to reach areas. According to the official documentation \cite{ardupilot} the applications of drones are : Aerial Photography and Videography, First Person View (FPV), Disaster Response, Search and Rescue, Agricultural Applications \ref{fig:drone_applications}, Wildfire Mitigation, Hazard Mitigation, 3D Mapping and Geographic Information Systems (GIS), Inspection and Verification, Cargo Delivery \ref{fig:drone_applications_2}, among others.
+Drones have a wide variety of applications nowadays and as time goes by these applications are increasing thanks to their versatility and ability to access difficult to reach areas. According to the official documentation \cite{ardupilot} the applications of drones are : Aerial Photography and Videography, First Person View (FPV), Disaster Response, Search and Rescue, Agricultural Applications (Figure \ref{fig:drone_applications}), Wildfire Mitigation, Hazard Mitigation, 3D Mapping and Geographic Information Systems (GIS), Inspection and Verification, Cargo Delivery (Figure \ref{fig:drone_applications_2}), among others.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{pictures/drone_aplication_1.jpg}
-    \caption{This image shows the DJI AGRAS T50 being applied in the agricultural industry.  \cite{aplications_drones} }
+    \caption{This image shows the DJI AGRAS T50 being applied in the agricultural industry \cite{aplications_drones} }.
     \label{fig:drone_applications}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{pictures/drone_aplication_2.jpg}
-    \caption{An Amazon drone is shown, which makes home package deliveries. \cite{aplications_drones}}
+    \caption{An Amazon drone is shown, which makes home package deliveries \cite{aplications_drones}}.
     \label{fig:drone_applications_2}
 \end{figure}
 
 \subsection{Swarming Drones}
-Unlike the individual control of a drone, the drone swarm concept allows collaboration between multiple units to execute complex tasks in an efficient and coordinated manner. This technology is called drone swarm, which according to the authors \cite{swarm_industrial} represents “the true revolution in this field is the control of drone swarm, enabling multiple units to collaborate in executing more complex tasks”. 
+Unlike the individual control of a drone, the drone swarm concept (Figure \ref{fig:swarming_drones}) allows collaboration between multiple units to execute complex tasks in an efficient and coordinated manner. This technology is called drone swarm, which according to the authors \cite{swarm_industrial} represents “the true revolution in this field is the control of drone swarm, enabling multiple units to collaborate in executing more complex tasks”. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{pictures/swarm_diagram.png}
+    \includegraphics[width=0.8\textwidth]{pictures/swarm_diagram.png}
     \caption{Diagram simulating a drone swarm model}
     \label{fig:swarming_drones}
 \end{figure}
@@ -148,38 +148,43 @@ In the industrial domain, drone swarm present great potential in applications su
 
 \subsubsection{Fixed Charging Stations}
 
-    The main objective of fixed charging stations is to provide a stable platform that allows drones to recharge without needing to move the infrastructure during the operation process. These stations are often simpler in design and are placed in strategic locations, such as cities or industrial areas. According to Grlj et al., many of these fixed stations use an active or passive positioning system to ensure the drone lands accurately, and they may feature charging options through electrical contacts or even wireless charging \cite{grlj_docking_stations}.
+The main objective of fixed charging stations is to provide a stable platform that allows drones to recharge without needing to move the infrastructure during the operation process. These stations are often simpler in design and are placed in strategic locations, such as cities or industrial areas. As shown in Figure \ref{fig:fixed_charging1}, these fixed stations may include a landing site elevation unit, a fixation and centering system, and an automatic battery replacement mechanism to facilitate maintenance tasks. Additionally, such systems often integrate technologies for battery swapping, as detailed in the Endless Flyer system (Figure \ref{fig:fixed_charging3}), which highlights the process of landing, correcting position, and replacing batteries in sequential steps.
+
+These systems often rely on active or passive positioning mechanisms, such as visual markers like ArUco, to ensure the drone lands accurately. As illustrated in Figure \ref{fig:fixed_charging4}, fixed stations can also integrate visual guidance systems like QR codes to improve the approach and landing phases \cite{grlj_docking_stations}.
+
+
 
 \subsubsection{Advantages of Fixed Charging Stations}
 
-    Fixed stations are particularly useful in situations where the drone needs a precise landing in a constant location. These stations can use visual markers, such as ArUco \cite{grlj_docking_stations} markers, to guide the drone during the final landing phase, ensuring high accuracy in the maneuver. Additionally, they may include self-leveling platform systems to guarantee the stability of the drone upon landing, especially on uneven terrain.
+Fixed stations are particularly useful in situations where the drone needs a precise landing in a constant location. These stations can use visual markers, such as ArUco \cite{grlj_docking_stations}, to guide the drone during the final landing phase, ensuring high accuracy in the maneuver. For example, Figure \ref{fig:fixed_charging2} demonstrates a battery replacement docking station designed to streamline the recharging process by automating the battery exchange.
 
+Moreover, systems like the one illustrated in Figure \ref{fig:fixed_charging4} incorporate innovative designs with recharging pads and QR codes, which simplify integration in environments requiring minimal manual intervention. Self-leveling platforms, as seen in several fixed designs, ensure stability even on uneven terrain, further enhancing the efficiency and reliability of these stations.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/fixed_charging_1.png}
-        \caption{Fixed docking station with its subsystems. The labels (1–4) show the battery replacement mechanism in operation \cite{grlj_docking_stations}.}
-        \label{fig:fixed_charging}
+        \caption{Fixed docking station with its subsystems. The labels (1-4) show the battery replacement mechanism in operation \cite{grlj_docking_stations}.}
+        \label{fig:fixed_charging1}
     \end{figure}
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/fixed_2.png}
         \caption{Battery replacement docking station \cite{grlj_docking_stations}.}
-        \label{fig:fixed_charging}
+        \label{fig:fixed_charging2}
     \end{figure}
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/fixed_3.png}
         \caption{Endless Flyer \cite{grlj_docking_stations}, docking station with battery replacement mechanism. The labels in the center show the different landing stages and the order in which they are realized.}
-        \label{fig:fixed_charging}
+        \label{fig:fixed_charging3}
     \end{figure}
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/fixed_4.png}
         \caption{ Docking station with recharging pad with the custom made UAV from \cite{grlj_docking_stations}. In the figure, the QR codes used in the approach and landing phase can be seen .}
-        \label{fig:fixed_charging}
+        \label{fig:fixed_charging4}
     \end{figure}
 
 \subsubsection{Mobile Charging Stations}
@@ -193,21 +198,21 @@ In the industrial domain, drone swarm present great potential in applications su
         \centering
         \includegraphics[width=0.4\textwidth]{pictures/mobile_1.png}
         \caption{Moving docking station with storage system and battery replacement system. Labels in the figure (1–4) show the order in which the active positioning mechanism and storing mechanism take place \cite{grlj_docking_stations}.}
-        \label{fig:mobile_charging}
+        \label{fig:mobile_charging1}
     \end{figure}
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.4\textwidth]{pictures/mobile_2.png}
-        \caption{UGV–UAV proposed moving docking station solution \cite{grlj_docking_stations}.}
-        \label{fig:mobile_charging}
+        \caption{UGV-UAV proposed moving docking station solution \cite{grlj_docking_stations}.}
+        \label{fig:mobile_charging2}
     \end{figure}
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.6\textwidth]{pictures/mobile_3.png}
-        \caption{USV–UAV landing system \cite{grlj_docking_stations}.}
-        \label{fig:mobile_charging}
+        \caption{USV-UAV landing system \cite{grlj_docking_stations}.}
+        \label{fig:mobile_charging3}
     \end{figure}
 
 

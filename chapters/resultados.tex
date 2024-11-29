@@ -78,12 +78,13 @@ Battery charging and discharging tests were conducted to measure the station's e
 
 When the drone operates outside the charging station and without motor activity, the battery discharges at a faster rate due to the constant consumption by the Pixhawk and Raspberry Pi. Under these conditions, the battery lasts approximately 110 minutes before reaching the critical voltage of 9.8 V, at which point the system shuts down completely. Figure \ref{fig:battery_charging_curve} illustrates the discharge curve for this scenario.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{pictures/Battery_Discharge_Outside.png}
-    \caption{Battery discharging curve outside the charging station, showing voltage over time.}
-    \label{fig:battery_charging_curve}
+\begin{figure}[H] 
+    \centering \includegraphics[width=0.8\textwidth]{pictures/Battery_Discharge_Outside.png} 
+    \caption{Battery discharging curve outside the charging station, showing voltage over time.} 
+    \label{fig:battery_charging_curve} 
 \end{figure}
+
+Figure 4.8 demonstrates the battery discharging curve while connected to the station. The graph shows that even with the connection to a small charger, the battery continues to discharge, though at a slower rate. This indicates that the charger's capacity is insufficient to fully counterbalance the power consumption, merely reducing the discharge rate rather than preventing it entirely.
 
 \subsection{Battery Duration While Inside the Charging Station}
 
@@ -91,7 +92,7 @@ While inside the charging station, the small charger provides some support to th
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{pictures/Battery_Discharge_Inside.png}
+    \includegraphics[width=0.8\textwidth]{pictures/Battery_Discharge_Inside.png}
     \caption{Battery discharging curve while connected to the station. The small charger only slows the discharge rate.}
     \label{fig:battery_discharge_curve}
 \end{figure}
@@ -114,7 +115,16 @@ To enhance the charging system:
 The vision system successfully detected ArUco markers in real-time, providing accurate position and orientation data for the drone. Using the camera mounted on the drone and the OpenCV ArUco library, the system calculated the following parameters relative to the detected markers:
 \begin{itemize}
     \item \textbf{Position (X, Y, Z):} The system determined the translation vector (\texttt{tvec}) representing the drone's position in meters relative to the marker.
+    
     \item \textbf{Orientation (Pitch, Roll, Yaw):} The rotation vector (\texttt{rvec}) was converted into Euler angles to represent the drone's orientation in 3D space.
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{pictures/pitch-roll-yaw.png.png}
+        \caption{Example of drone orientation detection, showing the conversion of rotation vector (\texttt{rvec}) into Euler angles (Pitch, Roll, Yaw) \cite{researchgate_orientation}.}
+        \label{fig:drone_orientation}
+    \end{figure}
+
     \item \textbf{Yaw Validation:} The yaw angle (\texttt{yaw}) was particularly important to ensure the drone was correctly oriented to align with the charging station connectors. This orientation was visually validated on the interface, where the system displayed whether the drone's yaw was in the correct or incorrect orientation.
     \item \textbf{Detection Accuracy:} The markers were consistently detected under varying lighting conditions and angles, ensuring reliable data capture.
 \end{itemize}
@@ -190,7 +200,7 @@ This validation process demonstrated that the communication system met the desig
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{pictures/complete_node_diagram.png}
+    \includegraphics[width=1\textwidth]{pictures/complete_node_diagram.png}
     \caption{Diagram showcasing the communication architecture between the drone, charging station, and ground computer using ROS 2.}
     \label{fig:communication_validation}
 \end{figure}

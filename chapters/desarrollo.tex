@@ -68,16 +68,16 @@ Consequently, based on the dimensions of the previous blueprint, the "external d
 Next, the dimensions of the drone's landing gear were considered to 3D print mechanical guides (\ref{fig:guias_mecanicas}) that help align the landing gear for proper magnetic connection with the charging system.
     
 
-Using the designs from \ref{fig:cajon_interno} and \ref{fig:guias_mecanicas}, the complete design of the internal drawer was developed (\ref{fig:final_interno}). It includes two 9 mm MDF cuts measuring 810 mm x 810 mm and internal spacers with a height of 20 mm to protect the system's cables. 
+With the designs shown in annexed Figures \ref{fig:cajon_interno} and \ref{fig:guias_mecanicas}, the complete design of the internal drawer was developed (\ref{fig:final_interno}). It includes two 9 mm MDF cuts measuring 810 mm x 810 mm and internal spacers with a height of 20 mm to protect the system's cables. 
 
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.6\textwidth]{pictures/CAJON_INTERNO_FINAL.jpeg}
-            \caption{View of the internal drawer for the Charging Station.}
+            \caption{View of the internal drawer for the Charging Station (October 2024).}
             \label{fig:final_interno}
         \end{figure}
 
-The necessary CAD designs, as shown in \ref{fig:patas_estabilidad} and \ref{fig:inductive_holder}, were developed to ensure proper integration and adaptation of the various components of the charging station. These designs helped establish the essential dimensions, tolerances, and characteristics to ensure that each element fit precisely, guaranteeing that the charging station functioned efficiently and reliably.
+The necessary CAD designs, as shown in annexed Figures \ref{fig:patas_estabilidad} and \ref{fig:inductive_holder}, were developed to ensure proper integration and adaptation of the various components of the charging station. These designs helped establish the essential dimensions, tolerances, and characteristics to ensure that each element fit precisely, guaranteeing that the charging station functioned efficiently and reliably.
 
 
 Lastly, as part of the design process, a CAD model was developed to integrate the main components necessary for the proper functioning of the charging station. This final conceptual design, shown in \ref{fig:final_estacion}, represents the consolidation of initial ideas, the iterations performed, and the decisions made throughout the development. The model ensures the functionality, compatibility, and efficiency of the station, serving as a basis for manufacturing and implementing the system.
@@ -85,7 +85,7 @@ Lastly, as part of the design process, a CAD model was developed to integrate th
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.5\textwidth]{pictures/ESTACION_FINAL.jpg}
-            \caption{View of the Charging Station.}
+            \caption{View of the Charging Station (November 2024).}
             \label{fig:final_estacion}
         \end{figure}
 
@@ -114,32 +114,43 @@ The design of the automatic drawer mechanism for the charging station went throu
     \end{enumerate}
 
 \subsubsection{V-Belt and Pulley Mechanism}
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+\begin{document}
+
+The following images illustrate the key components of the internal drawer movement mechanism used in the project. Figure \ref{fig:mecanismo_views} shows three critical views: the motor mounts, bearing housings, and belt holder, all of which are 3D-printed and integral to the system's functionality.
 
 \begin{figure}[H]
     \centering
-    \begin{minipage}{0.49\textwidth}
+    \begin{minipage}{0.32\textwidth}
         \centering
         \includegraphics[width=\textwidth]{MECANISMO/MOTOR_MECANISMO.jpg}
-        \caption{View of the internal drawer movement mechanism, showing the 3D-printed motor mounts and the motor with the pulley and belt integrated into the system.}
+        \subcaption{Motor mounts.}
         \label{fig:motor_mecanismo}
     \end{minipage}%
     \hfill
-    \begin{minipage}{0.49\textwidth}
+    \begin{minipage}{0.32\textwidth}
         \centering
         \includegraphics[width=\textwidth]{MECANISMO/MECANISMO_CHUMACERAS.jpg}
-        \caption{View of the internal drawer movement mechanism, showing the 3D-printed bearing housings with...}
+        \subcaption{Bearing housings.}
         \label{fig:mecanismo_chumaceras}
     \end{minipage}%
     \hfill
-    \begin{minipage}{0.49\textwidth}
+    \begin{minipage}{0.32\textwidth}
         \centering
         \includegraphics[width=\textwidth]{MECANISMO/MECANISMO_AGARRE.jpg}
-        \caption{View of the internal drawer movement mechanism, showing the 3D-printed holder designed to secure the belt to the internal drawer.}
+        \subcaption{Belt holder.}
         \label{fig:mecanismo_agarre}
     \end{minipage}%
-    \hfill
+    \caption{Views of the internal drawer movement mechanism: (a) motor mounts, (b) bearing housings, and (c) belt holder.}
+    \label{fig:mecanismo_views}
 \end{figure}
 
+\end{document}
 
 
 \subsection{Manufacturing Process of the Charging Base Structure}
@@ -162,7 +173,7 @@ The design of the automatic drawer mechanism for the charging station went throu
     
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.7\textwidth]{pictures/station_electronics_diagram.png}
+        \includegraphics[width=0.7\textwidth]{pictures/circuito charging st (1).png}
         \caption{Charging Station Electronics Diagram}
         \label{fig:station_electronics_diagram}
     \end{figure}
@@ -330,7 +341,7 @@ To ensure compatibility and functionality within the charging system, the drone 
         \begin{center}
             \begin{figure}[H]
                 \centering
-                \includegraphics[width=0.8\textwidth]{pictures/drone_electronic_diagram.png}
+                \includegraphics[width=0.8\textwidth]{pictures/Circuito RasPi5 (4).png}
                 \caption{Diagram of the drone's power distribution circuit.}
             \end{figure}
         \end{center}
