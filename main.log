@@ -1,0 +1,1114 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.9)  29 NOV 2024 14:48
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/albertocastro/Documents/Thesis_Document/main.tex
+(/home/albertocastro/Documents/Thesis_Document/main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count194
+\Gm@cntv=\count195
+\c@Gm@tempcnt=\count196
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen149
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen150
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count197
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count198
+\leftroot@=\count199
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count266
+\DOTSCASE@=\count267
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen151
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count268
+\c@MaxMatrixCols=\count269
+\dotsspace@=\muskip16
+\c@parentequation=\count270
+\dspbrk@lvl=\count271
+\tag@help=\toks19
+\row@=\count272
+\column@=\count273
+\maxfields@=\count274
+\andhelp@=\toks20
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
+\@envbody=\toks21
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box52
+\beforetitleunit=\skip52
+\aftertitleunit=\skip53
+\ttl@plus=\dimen158
+\ttl@minus=\dimen159
+\ttl@toksa=\toks23
+\titlewidth=\dimen160
+\titlewidthlast=\dimen161
+\titlewidthfirst=\dimen162
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen163
+\Hy@linkcounter=\count275
+\Hy@pagecounter=\count276
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel languages
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count277
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count278
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen164
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count279
+\Field@Width=\dimen165
+\Fld@charsize=\dimen166
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count280
+\c@Item=\count281
+\c@Hfootnote=\count282
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count283
+\c@bookmark@seq@number=\count284
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip54
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen167
+\captionmargin@=\dimen168
+\captionwidth=\dimen169
+\caption@tempdima=\dimen170
+\caption@indent=\dimen171
+\caption@parindent=\dimen172
+\caption@hangindent=\dimen173
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count285
+\c@continuedfloat=\count286
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count287
+\c@subtable=\count288
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count289
+\float@exts=\toks24
+\float@box=\box53
+\@float@everytoks=\toks25
+\@floatcapt=\box54
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2021/07/05 v2.14 TOC entries
+\ttl@leftsep=\dimen174
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count290
+\lst@gtempboxa=\box55
+\lst@token=\toks26
+\lst@length=\count291
+\lst@currlwidth=\dimen175
+\lst@column=\count292
+\lst@pos=\count293
+\lst@lostspace=\dimen176
+\lst@width=\dimen177
+\lst@newlines=\count294
+\lst@lineno=\count295
+\lst@maxwidth=\dimen178
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count296
+\lst@skipnumbers=\count297
+\lst@framebox=\box56
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen179
+\lightrulewidth=\dimen180
+\cmidrulewidth=\dimen181
+\belowrulesep=\dimen182
+\belowbottomsep=\dimen183
+\aboverulesep=\dimen184
+\abovetopsep=\dimen185
+\cmidrulesep=\dimen186
+\cmidrulekern=\dimen187
+\defaultaddspace=\dimen188
+\@cmidla=\count298
+\@cmidlb=\count299
+\@aboverulesep=\dimen189
+\@belowrulesep=\dimen190
+\@thisruleclass=\count300
+\@lastruleclass=\count301
+\@thisrulewidth=\dimen191
+) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count302
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count303
+\l__pdf_internal_box=\box57
+) (./main.aux
+
+LaTeX Warning: Label `fig:imagen2' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen1' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen2' multiply defined.
+
+
+LaTeX Warning: Label `fig:imagen2' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count304
+\scratchdimen=\dimen192
+\scratchbox=\box58
+\nofMPsegments=\count305
+\nofMParguments=\count306
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count307
+\MPscratchDim=\dimen193
+\MPnumerator=\count308
+\makeMPintoPDFobject=\count309
+\everyMPtoPDFconversion=\toks28
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring OFF on input line 41.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count310
+)
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
+ (./main.out) (./main.out)
+\@outlinefile=\write3
+\openout3 = `main.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count311
+<pictures/logo_udem.png, id=205, 301.125pt x 142.5325pt>
+File: pictures/logo_udem.png Graphic file (type png)
+<use pictures/logo_udem.png>
+Package pdftex.def Info: pictures/logo_udem.png  used on input line 63.
+(pdftex.def)             Requested size: 187.89914pt x 88.94121pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pictures/logo_udem.png>] (./main.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.85 ...ndoor Environments}{36}{subsection.2.4.11}
+                                                  % [1
+
+])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [2]
+Chapter 1.
+(./chapters/introduccion.tex
+Overfull \hbox (1.21603pt too wide) in paragraph at lines 24--25
+[]\OT1/cmr/m/n/10.95 To de-sign a CAD model for the charg-ing sta-tion, en-sur-ing com-pat-i-bil-ity with open-architecture
+ []
+
+[3
+
+]
+
+LaTeX Warning: Citation `marek2023' on page 4 undefined on input line 39.
+
+
+LaTeX Warning: Citation `bene2023' on page 4 undefined on input line 45.
+
+[4]
+
+LaTeX Warning: Citation `desilva2022' on page 5 undefined on input line 53.
+
+) [5]
+Chapter 2.
+(./chapters/estado_arte.tex (./chapters/hardware_soa.tex
+
+LaTeX Warning: Citation `ardupilot' on page 6 undefined on input line 6.
+
+
+LaTeX Warning: Citation `ardupilot' on page 6 undefined on input line 6.
+
+
+LaTeX Warning: Citation `piotr_drones' on page 6 undefined on input line 8.
+
+<pictures/multicopter.png, id=288, 528.47438pt x 374.90062pt>
+File: pictures/multicopter.png Graphic file (type png)
+<use pictures/multicopter.png>
+Package pdftex.def Info: pictures/multicopter.png  used on input line 12.
+(pdftex.def)             Requested size: 281.85587pt x 199.94917pt.
+[6
+
+]
+<pictures/quad_frame.png, id=300, 243.15843pt x 237.88875pt>
+File: pictures/quad_frame.png Graphic file (type png)
+<use pictures/quad_frame.png>
+Package pdftex.def Info: pictures/quad_frame.png  used on input line 28.
+(pdftex.def)             Requested size: 187.89914pt x 183.82463pt.
+<pictures/hexa_frame.png, id=301, 273.27094pt x 252.19218pt>
+File: pictures/hexa_frame.png Graphic file (type png)
+<use pictures/hexa_frame.png>
+Package pdftex.def Info: pictures/hexa_frame.png  used on input line 34.
+(pdftex.def)             Requested size: 187.89914pt x 173.40479pt.
+<pictures/octo_frame.png, id=302, 286.82156pt x 266.49562pt>
+File: pictures/octo_frame.png Graphic file (type png)
+<use pictures/octo_frame.png>
+Package pdftex.def Info: pictures/octo_frame.png  used on input line 40.
+(pdftex.def)             Requested size: 187.89914pt x 174.5864pt.
+<pictures/octo_quad_frame.png, id=303, 270.25969pt x 161.85469pt>
+File: pictures/octo_quad_frame.png Graphic file (type png)
+<use pictures/octo_quad_frame.png>
+Package pdftex.def Info: pictures/octo_quad_frame.png  used on input line 46.
+(pdftex.def)             Requested size: 187.89914pt x 112.53189pt.
+
+
+LaTeX Warning: Citation `ardupilot_docs' on page 7 undefined on input line 50.
+
+
+LaTeX Warning: Citation `ardupilot_docs' on page 7 undefined on input line 50.
+
+[7 <./pictures/multicopter.png>]
+
+LaTeX Warning: Citation `ardupilot' on page 8 undefined on input line 56.
+
+
+LaTeX Warning: Citation `ardupilot' on page 8 undefined on input line 66.
+
+[8 <./pictures/quad_frame.png> <./pictures/hexa_frame.png> <./pictures/octo_frame.png> <./pictures/octo_quad_frame.png>]
+
+LaTeX Warning: Citation `lipo_batteries' on page 9 undefined on input line 76.
+
+
+LaTeX Warning: Citation `ardupilot' on page 9 undefined on input line 86.
+
+<pictures/drone_aplication_1.jpg, id=321, 181.6605pt x 122.859pt>
+File: pictures/drone_aplication_1.jpg Graphic file (type jpg)
+<use pictures/drone_aplication_1.jpg>
+Package pdftex.def Info: pictures/drone_aplication_1.jpg  used on input line 90.
+(pdftex.def)             Requested size: 234.8775pt x 158.85242pt.
+
+LaTeX Warning: Citation `aplications_drones' on page 9 undefined on input line 91.
+
+
+LaTeX Warning: Citation `aplications_drones' on page 9 undefined on input line 91.
+
+[9]
+<pictures/drone_aplication_2.jpg, id=328, 301.125pt x 168.63pt>
+File: pictures/drone_aplication_2.jpg Graphic file (type jpg)
+<use pictures/drone_aplication_2.jpg>
+Package pdftex.def Info: pictures/drone_aplication_2.jpg  used on input line 97.
+(pdftex.def)             Requested size: 234.8775pt x 131.53601pt.
+
+
+LaTeX Warning: Citation `aplications_drones' on page 10 undefined on input line 98.
+
+
+LaTeX Warning: Citation `aplications_drones' on page 10 undefined on input line 98.
+
+
+LaTeX Warning: Citation `swarm_industrial' on page 10 undefined on input line 103.
+
+<pictures/swarm_diagram.png, id=330, 565.36218pt x 382.42876pt>
+File: pictures/swarm_diagram.png Graphic file (type png)
+<use pictures/swarm_diagram.png>
+Package pdftex.def Info: pictures/swarm_diagram.png  used on input line 107.
+(pdftex.def)             Requested size: 375.80544pt x 254.21272pt.
+[10 <./pictures/drone_aplication_1.jpg> <./pictures/drone_aplication_2.jpg>]
+
+LaTeX Warning: Citation `swarming_drones' on page 11 undefined on input line 112.
+
+
+LaTeX Warning: Citation `swarming_drones' on page 11 undefined on input line 114.
+
+
+LaTeX Warning: Citation `swarming_drones' on page 11 undefined on input line 116.
+
+<pictures/swarms.png, id=336, 451.6875pt x 301.125pt>
+File: pictures/swarms.png Graphic file (type png)
+<use pictures/swarms.png>
+Package pdftex.def Info: pictures/swarms.png  used on input line 120.
+(pdftex.def)             Requested size: 328.82707pt x 219.23128pt.
+
+LaTeX Warning: Citation `swarming_drones' on page 11 undefined on input line 121.
+
+
+LaTeX Warning: Citation `swarming_drones' on page 11 undefined on input line 121.
+
+[11 <./pictures/swarm_diagram.png>]
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 12 undefined on input line 127.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 12 undefined on input line 129.
+
+<pictures/charging_classification.png, id=342, 469.00218pt x 210.7875pt>
+File: pictures/charging_classification.png Graphic file (type png)
+<use pictures/charging_classification.png>
+Package pdftex.def Info: pictures/charging_classification.png  used on input line 144.
+(pdftex.def)             Requested size: 422.77664pt x 190.00934pt.
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 12 undefined on input line 145.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 12 undefined on input line 145.
+
+[12 <./pictures/swarms.png>]
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 153.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 159.
+
+<pictures/fixed_charging_1.png, id=354, 452.4403pt x 291.33844pt>
+File: pictures/fixed_charging_1.png Graphic file (type png)
+<use pictures/fixed_charging_1.png>
+Package pdftex.def Info: pictures/fixed_charging_1.png  used on input line 164.
+(pdftex.def)             Requested size: 281.85587pt x 181.49483pt.
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 165.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 13 undefined on input line 165.
+
+[13 <./pictures/charging_classification.png>]
+<pictures/fixed_2.png, id=367, 407.27156pt x 167.87718pt>
+File: pictures/fixed_2.png Graphic file (type png)
+<use pictures/fixed_2.png>
+Package pdftex.def Info: pictures/fixed_2.png  used on input line 171.
+(pdftex.def)             Requested size: 281.85587pt x 116.18631pt.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 14 undefined on input line 172.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 14 undefined on input line 172.
+
+<pictures/fixed_3.png, id=368, 325.215pt x 235.63031pt>
+File: pictures/fixed_3.png Graphic file (type png)
+<use pictures/fixed_3.png>
+Package pdftex.def Info: pictures/fixed_3.png  used on input line 178.
+(pdftex.def)             Requested size: 281.85587pt x 204.23088pt.
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 14 undefined on input line 179.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 14 undefined on input line 179.
+
+<pictures/fixed_4.png, id=369, 397.485pt x 176.15813pt>
+File: pictures/fixed_4.png Graphic file (type png)
+<use pictures/fixed_4.png>
+Package pdftex.def Info: pictures/fixed_4.png  used on input line 185.
+(pdftex.def)             Requested size: 281.85587pt x 124.91724pt.
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 14 undefined on input line 186.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 14 undefined on input line 186.
+
+[14 <./pictures/fixed_charging_1.png> <./pictures/fixed_2.png> <./pictures/fixed_3.png>]
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 15 undefined on input line 192.
+
+<pictures/mobile_1.png, id=377, 321.45094pt x 229.60782pt>
+File: pictures/mobile_1.png Graphic file (type png)
+<use pictures/mobile_1.png>
+Package pdftex.def Info: pictures/mobile_1.png  used on input line 199.
+(pdftex.def)             Requested size: 187.89914pt x 134.21667pt.
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 15 undefined on input line 200.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 15 undefined on input line 200.
+
+<pictures/mobile_2.png, id=378, 291.33844pt x 288.3272pt>
+File: pictures/mobile_2.png Graphic file (type png)
+<use pictures/mobile_2.png>
+Package pdftex.def Info: pictures/mobile_2.png  used on input line 206.
+(pdftex.def)             Requested size: 187.89914pt x 185.963pt.
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 15 undefined on input line 207.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 15 undefined on input line 207.
+
+[15 <./pictures/fixed_4.png> <./pictures/mobile_1.png>]
+<pictures/mobile_3.png, id=388, 348.55219pt x 108.405pt>
+File: pictures/mobile_3.png Graphic file (type png)
+<use pictures/mobile_3.png>
+Package pdftex.def Info: pictures/mobile_3.png  used on input line 213.
+(pdftex.def)             Requested size: 281.85587pt x 87.6653pt.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 16 undefined on input line 214.
+
+
+LaTeX Warning: Citation `grlj_docking_stations' on page 16 undefined on input line 214.
+
+[16 <./pictures/mobile_2.png> <./pictures/mobile_3.png>]) (./chapters/electronics_soa.tex
+
+LaTeX Warning: Citation `rohdE_ESC' on page 17 undefined on input line 7.
+
+
+LaTeX Warning: Citation `flight_controllers' on page 17 undefined on input line 15.
+
+
+LaTeX Warning: Citation `flight_controllers' on page 17 undefined on input line 16.
+
+
+LaTeX Warning: Citation `flight_controllers' on page 17 undefined on input line 17.
+
+[17]
+
+LaTeX Warning: Citation `pixhawk_docs' on page 18 undefined on input line 22.
+
+
+LaTeX Warning: Citation `rasp_docs' on page 18 undefined on input line 36.
+
+[18]
+
+LaTeX Warning: Citation `Gupta2019' on page 19 undefined on input line 48.
+
+
+LaTeX Warning: Citation `Wootton2016' on page 19 undefined on input line 49.
+
+
+LaTeX Warning: Citation `Gazi2021' on page 19 undefined on input line 50.
+
+
+LaTeX Warning: Citation `CompComms2023' on page 19 undefined on input line 55.
+
+[19]
+
+LaTeX Warning: Citation `fastchargers' on page 20 undefined on input line 71.
+
+
+LaTeX Warning: Citation `vehiclessmartcharge' on page 20 undefined on input line 73.
+
+
+LaTeX Warning: Citation `wiredvwirelessMohammed' on page 20 undefined on input line 80.
+
+[20]
+
+LaTeX Warning: Citation `wirelessLu' on page 21 undefined on input line 86.
+
+) (./chapters/software_soa.tex
+
+LaTeX Warning: Citation `iso_firmware' on page 21 undefined on input line 7.
+
+
+LaTeX Warning: Citation `px4_docs' on page 21 undefined on input line 12.
+
+
+LaTeX Warning: Citation `px4_docs' on page 21 undefined on input line 12.
+
+
+LaTeX Warning: Citation `px4_docs' on page 21 undefined on input line 14.
+
+[21]
+
+LaTeX Warning: Citation `px4_docs' on page 22 undefined on input line 16.
+
+
+LaTeX Warning: Citation `px4_docs' on page 22 undefined on input line 18.
+
+
+LaTeX Warning: Citation `ardupilot_docs' on page 22 undefined on input line 21.
+
+
+LaTeX Warning: Citation `ardupilot_docs' on page 22 undefined on input line 23.
+
+
+LaTeX Warning: Citation `ardupilot_docs' on page 22 undefined on input line 25.
+
+
+LaTeX Warning: Citation `ardupilot_docs' on page 22 undefined on input line 27.
+
+[22]
+
+LaTeX Warning: Citation `qgc_docs' on page 23 undefined on input line 36.
+
+<pictures/qgc_interface.jpg, id=439, 1008.76875pt x 602.25pt>
+File: pictures/qgc_interface.jpg Graphic file (type jpg)
+<use pictures/qgc_interface.jpg>
+Package pdftex.def Info: pictures/qgc_interface.jpg  used on input line 42.
+(pdftex.def)             Requested size: 225.4804pt x 134.60901pt.
+<pictures/mission_planner.jpg, id=440, 1012.78375pt x 600.2425pt>
+File: pictures/mission_planner.jpg Graphic file (type jpg)
+<use pictures/mission_planner.jpg>
+Package pdftex.def Info: pictures/mission_planner.jpg  used on input line 49.
+(pdftex.def)             Requested size: 225.4804pt x 133.62909pt.
+
+LaTeX Warning: Citation `ubuntu_docs' on page 23 undefined on input line 65.
+
+[23 <./pictures/qgc_interface.jpg> <./pictures/mission_planner.jpg>]
+
+LaTeX Warning: Citation `ubuntu_docs' on page 24 undefined on input line 67.
+
+
+LaTeX Warning: Citation `raspbian_docs' on page 24 undefined on input line 71.
+
+
+LaTeX Warning: Citation `ros_docs' on page 24 undefined on input line 80.
+
+[24]
+
+LaTeX Warning: Citation `humble_documentation' on page 25 undefined on input line 86.
+
+
+LaTeX Warning: Citation `jazzy_documentation' on page 25 undefined on input line 102.
+
+
+LaTeX Warning: Citation `ros_docs' on page 25 undefined on input line 115.
+
+[25]
+
+LaTeX Warning: Citation `ros_docs' on page 26 undefined on input line 119.
+
+<pictures/ros2_arch.png, id=462, 681.54625pt x 376.40625pt>
+File: pictures/ros2_arch.png Graphic file (type png)
+<use pictures/ros2_arch.png>
+Package pdftex.def Info: pictures/ros2_arch.png  used on input line 136.
+(pdftex.def)             Requested size: 281.85587pt x 155.66579pt.
+
+LaTeX Warning: Citation `ros_docs' on page 26 undefined on input line 137.
+
+
+LaTeX Warning: Citation `ros_docs' on page 26 undefined on input line 137.
+
+[26]
+
+LaTeX Warning: Citation `ros_docs' on page 27 undefined on input line 143.
+
+
+LaTeX Warning: Citation `opencv_docs' on page 27 undefined on input line 174.
+
+
+LaTeX Warning: Citation `opencv_docs' on page 27 undefined on input line 178.
+
+[27 <./pictures/ros2_arch.png>]
+
+LaTeX Warning: Citation `opencv_docs' on page 28 undefined on input line 180.
+
+
+LaTeX Warning: Citation `opencv_calib3d' on page 28 undefined on input line 184.
+
+<pictures/distortions.png, id=477, 429.605pt x 193.72375pt>
+File: pictures/distortions.png Graphic file (type png)
+<use pictures/distortions.png>
+Package pdftex.def Info: pictures/distortions.png  used on input line 190.
+(pdftex.def)             Requested size: 281.85587pt x 127.10133pt.
+[28 <./pictures/distortions.png>]
+<pictures/calib_pattern.jpg, id=486, 419.5675pt x 452.69125pt>
+File: pictures/calib_pattern.jpg Graphic file (type jpg)
+<use pictures/calib_pattern.jpg>
+Package pdftex.def Info: pictures/calib_pattern.jpg  used on input line 207.
+(pdftex.def)             Requested size: 187.89914pt x 202.7283pt.
+
+
+LaTeX Warning: Citation `aruco_docs' on page 29 undefined on input line 214.
+
+
+LaTeX Warning: Citation `aruco_docs' on page 29 undefined on input line 218.
+
+<pictures/arucos_ids.png, id=487, 513.92pt x 289.08pt>
+File: pictures/arucos_ids.png Graphic file (type png)
+<use pictures/arucos_ids.png>
+Package pdftex.def Info: pictures/arucos_ids.png  used on input line 222.
+(pdftex.def)             Requested size: 375.80544pt x 211.39275pt.
+[29 <./pictures/calib_pattern.jpg>]
+
+LaTeX Warning: Citation `aruco_docs_pdf' on page 30 undefined on input line 229.
+
+<pictures/calibration_aruco.png, id=494, 953.5625pt x 548.0475pt>
+File: pictures/calibration_aruco.png Graphic file (type png)
+<use pictures/calibration_aruco.png>
+Package pdftex.def Info: pictures/calibration_aruco.png  used on input line 235.
+(pdftex.def)             Requested size: 112.74277pt x 64.7928pt.
+<pictures/augmented_reality.jpg, id=495, 1284.8pt x 722.7pt>
+File: pictures/augmented_reality.jpg Graphic file (type jpg)
+<use pictures/augmented_reality.jpg>
+Package pdftex.def Info: pictures/augmented_reality.jpg  used on input line 242.
+(pdftex.def)             Requested size: 112.74277pt x 63.40811pt.
+<pictures/tracking_aruco.jpg, id=496, 2303.60625pt x 1591.9475pt>
+File: pictures/tracking_aruco.jpg Graphic file (type jpg)
+<use pictures/tracking_aruco.jpg>
+Package pdftex.def Info: pictures/tracking_aruco.jpg  used on input line 249.
+(pdftex.def)             Requested size: 112.74277pt x 77.90166pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+[]\OT1/cmr/m/n/10.95 Figure 2.22: |Real-Time
+ []
+
+
+LaTeX Warning: Citation `aruco_docs' on page 30 undefined on input line 258.
+
+
+LaTeX Warning: Citation `aruco_docs_pdf' on page 30 undefined on input line 260.
+
+[30 <./pictures/arucos_ids.png> <./pictures/calibration_aruco.png> <./pictures/augmented_reality.jpg> <./pictures/tracking_aruco.jpg>]
+<pictures/bits_aruco.png, id=506, 204.765pt x 102.6234pt>
+File: pictures/bits_aruco.png Graphic file (type png)
+<use pictures/bits_aruco.png>
+Package pdftex.def Info: pictures/bits_aruco.png  used on input line 264.
+(pdftex.def)             Requested size: 375.80544pt x 188.35799pt.
+
+
+LaTeX Warning: Citation `khazetdinov2021' on page 31 undefined on input line 275.
+
+
+LaTeX Warning: Citation `khazetdinov2021' on page 31 undefined on input line 277.
+
+<pictures/pose_1.png, id=507, 247.92625pt x 192.72pt>
+File: pictures/pose_1.png Graphic file (type png)
+<use pictures/pose_1.png>
+Package pdftex.def Info: pictures/pose_1.png  used on input line 283.
+(pdftex.def)             Requested size: 91.6023pt x 71.20529pt.
+
+Underfull \hbox (badness 4726) in paragraph at lines 284--284
+[]\OT1/cmr/m/n/10.95 Figure 2.25: |Large/S-mall
+ []
+
+<pictures/pose_2.png, id=508, 210.7875pt x 203.76125pt>
+File: pictures/pose_2.png Graphic file (type png)
+<use pictures/pose_2.png>
+Package pdftex.def Info: pictures/pose_2.png  used on input line 290.
+(pdftex.def)             Requested size: 77.51079pt x 74.92722pt.
+<pictures/pose_3.png, id=509, 182.6825pt x 185.69376pt>
+File: pictures/pose_3.png Graphic file (type png)
+<use pictures/pose_3.png>
+Package pdftex.def Info: pictures/pose_3.png  used on input line 297.
+(pdftex.def)             Requested size: 70.46396pt x 71.62407pt.
+[31 <./pictures/bits_aruco.png>]
+
+LaTeX Warning: Citation `khazetdinov2021' on page 32 undefined on input line 308.
+
+
+LaTeX Warning: Citation `opencv_docs_aruco' on page 32 undefined on input line 315.
+
+
+LaTeX Warning: Citation `opencv_tutorial_aruco' on page 32 undefined on input line 321.
+
+[32 <./pictures/pose_1.png> <./pictures/pose_2.png> <./pictures/pose_3.png>]
+
+LaTeX Warning: Citation `opencv_docs_aruco' on page 33 undefined on input line 347.
+
+<pictures/aruco_no_pose_estimation.png, id=526, 315.1775pt x 282.05376pt>
+File: pictures/aruco_no_pose_estimation.png Graphic file (type png)
+<use pictures/aruco_no_pose_estimation.png>
+Package pdftex.def Info: pictures/aruco_no_pose_estimation.png  used on input line 361.
+(pdftex.def)             Requested size: 180.385pt x 161.42647pt.
+<pictures/aruco_pose_estimation.png, id=527, 338.26375pt x 277.035pt>
+File: pictures/aruco_pose_estimation.png Graphic file (type png)
+<use pictures/aruco_pose_estimation.png>
+Package pdftex.def Info: pictures/aruco_pose_estimation.png  used on input line 367.
+(pdftex.def)             Requested size: 180.385pt x 147.7367pt.
+[33]
+
+LaTeX Warning: Citation `mavlink_docs' on page 34 undefined on input line 387.
+
+[34 <./pictures/aruco_no_pose_estimation.png> <./pictures/aruco_pose_estimation.png>]
+
+LaTeX Warning: Citation `px4_ros2' on page 35 undefined on input line 405.
+
+
+LaTeX Warning: Citation `px4_ros2' on page 35 undefined on input line 417.
+
+<pictures/xrce_dds.png, id=547, 701.62125pt x 265.99374pt>
+File: pictures/xrce_dds.png Graphic file (type png)
+<use pictures/xrce_dds.png>
+Package pdftex.def Info: pictures/xrce_dds.png  used on input line 421.
+(pdftex.def)             Requested size: 375.80544pt x 142.47774pt.
+[35]
+Overfull \hbox (85.34859pt too wide) in paragraph at lines 428--429
+\OT1/cmr/m/n/10.95 To achieve pre-cise con-trol of the drone's po-si-tion us-ing ROS 2 top-ics such as []Otexture/mavros/setpoint/position/local,
+ []
+
+
+LaTeX Warning: Citation `gps_reference' on page 36 undefined on input line 432.
+
+
+LaTeX Warning: Citation `gps_reference' on page 36 undefined on input line 433.
+
+
+LaTeX Warning: Citation `gps_reference' on page 36 undefined on input line 434.
+
+
+LaTeX Warning: Citation `non_gps_navigation' on page 36 undefined on input line 440.
+
+[36 <./pictures/xrce_dds.png>]
+
+LaTeX Warning: Citation `non_gps_navigation' on page 37 undefined on input line 442.
+
+
+LaTeX Warning: Citation `non_gps_navigation' on page 37 undefined on input line 444.
+
+
+LaTeX Warning: Citation `non_gps_navigation' on page 37 undefined on input line 446.
+
+)) [37]
+Chapter 3.
+(./chapters/desarrollo.tex [38
+
+]
+
+LaTeX Warning: Reference `fig:cajon_interno' on page 39 undefined on input line 62.
+
+[39]
+
+LaTeX Warning: Reference `fig:cajon_externo' on page 40 undefined on input line 65.
+
+
+LaTeX Warning: Reference `fig:guias_mecanicas' on page 40 undefined on input line 68.
+
+
+LaTeX Warning: Reference `fig:cajon_interno' on page 40 undefined on input line 71.
+
+
+LaTeX Warning: Reference `fig:guias_mecanicas' on page 40 undefined on input line 71.
+
+<pictures/CAJON_INTERNO_FINAL.jpeg, id=584, 365.86688pt x 280.79906pt>
+File: pictures/CAJON_INTERNO_FINAL.jpeg Graphic file (type jpg)
+<use pictures/CAJON_INTERNO_FINAL.jpeg>
+Package pdftex.def Info: pictures/CAJON_INTERNO_FINAL.jpeg  used on input line 75.
+(pdftex.def)             Requested size: 281.85587pt x 216.33162pt.
+
+LaTeX Warning: Reference `fig:patas_estabilidad' on page 40 undefined on input line 80.
+
+
+LaTeX Warning: Reference `fig:inductive_holder' on page 40 undefined on input line 80.
+
+[40 <./pictures/CAJON_INTERNO_FINAL.jpeg>]
+<pictures/ESTACION_FINAL.jpg, id=592, 1204.5pt x 1606.0pt>
+File: pictures/ESTACION_FINAL.jpg Graphic file (type jpg)
+<use pictures/ESTACION_FINAL.jpg>
+Package pdftex.def Info: pictures/ESTACION_FINAL.jpg  used on input line 87.
+(pdftex.def)             Requested size: 234.8775pt x 313.1565pt.
+
+
+LaTeX Warning: Reference `fig:motor' on page 41 undefined on input line 98.
+
+
+LaTeX Warning: Reference `fig:polea_aluminio' on page 41 undefined on input line 100.
+
+
+LaTeX Warning: Reference `fig:banda_v' on page 41 undefined on input line 102.
+
+
+LaTeX Warning: Reference `fig:balero' on page 41 undefined on input line 104.
+
+[41 <./pictures/ESTACION_FINAL.jpg>]
+
+LaTeX Warning: Reference `fig:chumacera' on page 42 undefined on input line 106.
+
+
+LaTeX Warning: Reference `fig:soporte_motor' on page 42 undefined on input line 108.
+
+
+LaTeX Warning: Reference `fig:soporte_motor2' on page 42 undefined on input line 108.
+
+
+LaTeX Warning: Reference `fig:suj_banda' on page 42 undefined on input line 110.
+
+
+LaTeX Warning: Reference `fig:suj_banda2' on page 42 undefined on input line 110.
+
+
+LaTeX Warning: Reference `fig:flecha' on page 42 undefined on input line 112.
+
+<MECANISMO/MOTOR_MECANISMO.jpg, id=602, 1606.0pt x 1204.5pt>
+File: MECANISMO/MOTOR_MECANISMO.jpg Graphic file (type jpg)
+<use MECANISMO/MOTOR_MECANISMO.jpg>
+Package pdftex.def Info: MECANISMO/MOTOR_MECANISMO.jpg  used on input line 125.
+(pdftex.def)             Requested size: 150.32504pt x 112.73781pt.
+<MECANISMO/MECANISMO_CHUMACERAS.jpg, id=603, 1606.0pt x 1204.5pt>
+File: MECANISMO/MECANISMO_CHUMACERAS.jpg Graphic file (type jpg)
+<use MECANISMO/MECANISMO_CHUMACERAS.jpg>
+Package pdftex.def Info: MECANISMO/MECANISMO_CHUMACERAS.jpg  used on input line 132.
+(pdftex.def)             Requested size: 150.32504pt x 112.73781pt.
+<MECANISMO/MECANISMO_AGARRE.jpg, id=604, 1606.0pt x 1204.5pt>
+File: MECANISMO/MECANISMO_AGARRE.jpg Graphic file (type jpg)
+<use MECANISMO/MECANISMO_AGARRE.jpg>
+Package pdftex.def Info: MECANISMO/MECANISMO_AGARRE.jpg  used on input line 139.
+(pdftex.def)             Requested size: 150.32504pt x 112.73781pt.
+[42 <./MECANISMO/MOTOR_MECANISMO.jpg> <./MECANISMO/MECANISMO_CHUMACERAS.jpg> <./MECANISMO/MECANISMO_AGARRE.jpg>] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 5D83EF877320E989732605327F557C26;8087.
+ ) ) 
+Here is how much of TeX's memory you used:
+ 14031 strings out of 480218
+ 223511 string characters out of 5894882
+ 517758 words of memory out of 5000000
+ 31574 multiletter control sequences out of 15000+600000
+ 477492 words of font info for 58 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 67i,10n,77p,1100b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/albertocastro/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (43 pages, 5325153 bytes).
+PDF statistics:
+ 693 PDF objects out of 1000 (max. 8388607)
+ 565 compressed objects within 6 object streams
+ 181 named destinations out of 1000 (max. 500000)
+ 596 words of extra memory for PDF output out of 10000 (max. 10000000)
+

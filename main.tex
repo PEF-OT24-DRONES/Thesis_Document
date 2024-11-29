@@ -1,0 +1,117 @@
+% Documento simplificado para una tesis tipo MIT
+% Versión más simple con explicaciones contextuales
+
+\documentclass[11pt]{report} % Clase de documento adecuada para tesis
+
+% Paquetes esenciales
+\usepackage[letterpaper, margin=1in]{geometry} % Configuración de márgenes
+\usepackage{graphicx} % Paquete para incluir gráficos
+\usepackage{amsmath} % Paquete para ecuaciones matemáticas avanzadas
+\usepackage{amssymb} % Símbolos matemáticos adicionales
+\usepackage{setspace} % Espaciado entre líneas
+\usepackage{titlesec} % Personalizar los títulos de secciones
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{listings}
+\usepackage{booktabs}
+
+
+
+\titleformat{\chapter}[block]
+  {\normalfont\huge\bfseries}{\thechapter.}{1em}{}
+\titlespacing*{\chapter}{0pt}{-10pt}{20pt}
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
+
+% Eliminar el título automático de thebibliography
+\renewcommand{\bibname}{}
+
+
+% Información de la portada
+\title{Charging Station System for swarming drones} % Título de la tesis
+\author{José Alberto Castro Villasana \and José Eduardo Castro Villasana \and Ana Bárbara Quintero García} % Nombres de los autores
+\date{Dicember 2024} % Fecha de presentación
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    
+    {\Huge\textbf{Charging Station System for swarming drones}} % Título en grande
+    
+    \vspace{2.5cm} % Espacio adicional para centrar mejor
+    {\Large\textbf{José Alberto Castro Villasana, José Eduardo Castro Villasana, Ana Bárbara Quintero García}} % Nombres de los autores
+    
+    \vfill
+    
+    {\large\textbf{A Thesis Presented to the Faculty of Engineering}} % Information about the presentation
+    {\large\textbf{in Conformity with the Requirements for the Degree of:}} % Information about the presentation
+
+    \vspace{0.2cm}
+    {\large\textbf{Electronic and Robotics Engineering, Mechatronics Engineering}} % Information about the presentation
+
+    \vspace{2cm}
+    
+    \includegraphics[width=0.4\textwidth]{pictures/logo_udem.png} % Logo de la institución
+    
+    \vspace{2cm}
+    
+    {\large\textbf{Universidad de Monterrey}}
+
+    \vspace{0.2cm}
+    {\large\text{ Department of Engineering and Technologies }} 
+
+    \vspace{0.2cm}
+    {\large\text{San Pedro Garza García, México}} % Institución y departamento
+    
+    \vspace{1.5cm}
+    {\large\textbf{November 30th 2024}} % Fecha de presentación
+    
+    \vfill
+    {\large\textbf{Advisor:} \text{Fermín Castro Aragón}} % Información del asesor
+    
+\end{titlepage}
+
+% Índice
+\tableofcontents
+\newpage
+
+% Espaciado entre líneas
+\onehalfspacing% Espaciado de 1.5 líneas para mejor legibilidad
+
+% Llamar a capítulos almacenados en archivos externos
+\chapter{Introduction} % Capítulo de introducción
+\input{chapters/introduccion.tex} % Llama al archivo 'introduccion.tex' desde la carpeta 'chapters'
+
+\chapter{State of the Art} % Capítulo de estado del arte
+\input{chapters/estado_arte.tex} % Llama al archivo 'estado_arte.tex' desde la carpeta 'chapters'
+
+\chapter{Development} % Capítulo principal de desarrollo
+\input{chapters/desarrollo.tex} % Llama al archivo 'desarrollo.tex' desde la carpeta 'chapters'
+
+\chapter{Results} % Capítulo principal de desarrollo
+\input{chapters/resultados.tex} % Llama al archivo 'resultados.tex' desde la carpeta 'chapters'
+
+\chapter{Discussion} % Capítulo de discusión
+\input{chapters/discussion.tex} % Llama al archivo 'discussion.tex' desde la carpeta 'chapters'
+
+\chapter{Conclusions} % Capítulo de conclusiones
+\input{chapters/conclusiones.tex} % Llama al archivo 'conclusiones.tex' desde la carpeta 'chapters'
+
+% Bibliografía
+\chapter{Bibliography} % Capítulo de bibliografía
+\input{chapters/bibliografía.tex} % Llama al archivo 'bibliografía.tex' desde la carpeta 'chapters'
+
+% Anexos
+\chapter{Anexos}
+\input{chapters/anexos.tex} 
+
+\end{document}
