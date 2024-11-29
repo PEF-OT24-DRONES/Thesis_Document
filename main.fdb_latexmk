@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1732836930 "/home/albertocastro/Documents/Thesis_Document/main.tex" "main.pdf" "main" 1732836934
+["pdflatex"] 1732847500 "/home/albertocastro/Documents/Thesis_Document/main.tex" "main.pdf" "main" 1732847504
   "/etc/texmf/web2c/texmf.cnf" 1726609615 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/albertocastro/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk" 1731859325 12644 163b25e82c02e648039637ff345e68d1 ""
-  "/home/albertocastro/Documents/Thesis_Document/main.tex" 1732769522 3944 e590a8d0597a066f4a789e9963983c75 ""
+  "/home/albertocastro/Documents/Thesis_Document/main.tex" 1732847500 3918 198cc5e6dd51f05ba28e1a0fa773c414 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -128,10 +128,10 @@
   "chapters/introduccion.tex" 1732502824 6576 c8a77cf32f02fd622fee4aa50f64e9ac ""
   "chapters/resultados.tex" 1732835159 13902 accfcbec769d29744416b53910d54894 ""
   "chapters/software_soa.tex" 1732731769 40122 8a3e967483d730f06b3c31ba56b3171d ""
-  "main.aux" 1732836934 47907 b1b204fbc5c0b24742ea1676879daade "pdflatex"
-  "main.out" 1732836934 16314 81589d501f69a5be42e5628079da9bf8 "pdflatex"
-  "main.tex" 1732769522 3944 e590a8d0597a066f4a789e9963983c75 ""
-  "main.toc" 1732836934 12106 14f2b26b6452f0fe3db23662452e7d34 "pdflatex"
+  "main.aux" 1732847504 47907 b1b204fbc5c0b24742ea1676879daade "pdflatex"
+  "main.out" 1732847504 16314 81589d501f69a5be42e5628079da9bf8 "pdflatex"
+  "main.tex" 1732847500 3918 198cc5e6dd51f05ba28e1a0fa773c414 ""
+  "main.toc" 1732847504 12106 14f2b26b6452f0fe3db23662452e7d34 "pdflatex"
   "pictures/Battery_Discharge_Inside.png" 1732831751 106970 d25dc1c933ada2c29c5b2dbddf21c32f ""
   "pictures/Battery_Discharge_Outside.png" 1732831751 98924 11efee7c7718e5f5debdf479b0c97b87 ""
   "pictures/ESTACION_FINAL.jpg" 1732652950 321321 4d47f33268b3198fb7cce66b1bdc30fa ""
