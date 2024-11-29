@@ -109,19 +109,6 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
     \item \textbf{Hardware-oriented design:} Designed for devices such as the Raspberry Pi 5, offering greater processing capacity.
 \end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.3\textwidth]{pictures/humble_logo.png}
-    \caption{ROS 2 Humble}
-    \label{fig:imagen1}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.3\textwidth]{pictures/jazzy_logo.png}
-    \caption{ROS 2 Jazzy Jalisco}
-    \label{fig:imagen2}
-\end{figure}
 
 \subsection{ROS 2 Architecture}
 
@@ -141,7 +128,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
         \item \textbf{Parameters:} Configurable values that nodes use to adjust their behavior without modifying the code.  
     \end{itemize}
     
-    The combination of these elements allows robotic systems designed in ROS 2 to be highly scalable and flexible, adapting to both small projects and complex systems.  
+    The combination of these elements (diagram showing these connections in Figure \ref{fig:ros2_architecture}) allows robotic systems designed in ROS 2 to be highly scalable and flexible, adapting to both small projects and complex systems.  
     
     % Image of ROS 2 Architecture
     \begin{figure}[H]
@@ -153,7 +140,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
     
     \subsubsection{Key Benefits of ROS 2}
     
-    The architecture of ROS 2 brings several advantages that make it ideal for modern distributed robotic systems. Among the key benefits are the following \cite{ros_docs}:  
+    The architecture of ROS 2 brings several advantages that make it ideal for modern distributed robotic systems. The key benefits are shown in Table \ref{table:benefits} \cite{ros_docs}:  
     
     \begin{table}[H]
     \centering
@@ -196,7 +183,7 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
     
     Before implementing any computer vision system in applications that demand spatial accuracy, it is essential to perform proper camera calibration. This process corrects inherent lens distortions and enables precise measurements of the environment. According to OpenCV documentation, \textit{“Camera calibration is the process of estimating the parameters of the lens and the image sensor of an imaging device”} \cite{opencv_calib3d}.  
     
-    Calibration involves determining intrinsic parameters (such as focal length and principal point) and extrinsic parameters (relative to the camera's position and orientation) that map 2D coordinates from captured images to real-world 3D coordinates.  
+    Calibration involves determining intrinsic parameters (such as focal length and principal point) and extrinsic parameters (relative to the camera's position and orientation) that map 2D coordinates from captured images to real-world 3D coordinates. Example images of camera distortion in Figure \ref*{fig:distortions}.
     
     \begin{figure}[H] 
         \centering 
@@ -365,19 +352,33 @@ According to Jazzy's documentation, its primary focus is to facilitate the devel
         \item \textbf{Lighting and contrast}: Detection can be affected by varying lighting conditions, so it is important for the image to have good contrast between the marker and the background.
     \end{itemize}
 
-    \begin{figure}[H] 
-        \centering 
-            \begin{minipage}{0.48\textwidth}
-                \includegraphics[width=0.8\textwidth]{pictures/aruco_no_pose_estimation.png} % Example of ArUco markers 
-                \caption{ArUco without pose estimation.} 
-                \label{fig:aruco_no_pose_estimation}
-            \end{minipage}
-            \begin{minipage}{0.48\textwidth}
-                \includegraphics[width=0.8\textwidth]{pictures/aruco_pose_estimation.png} % Example of ArUco markers 
-                \caption{ArUco with pose estimation.} 
-                \label{fig:aruco_pose_estimation}
-            \end{minipage}
-    \end{figure}
+    \usepackage{subcaption}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{pictures/aruco_no_pose_estimation.png} % Example of ArUco markers
+        \subcaption{ArUco without pose estimation.} 
+        \label{fig:aruco_no_pose_estimation}
+    \end{minipage}
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{pictures/aruco_pose_estimation.png} % Example of ArUco markers
+        \subcaption{ArUco with pose estimation.}
+        \label{fig:aruco_pose_estimation}
+    \end{minipage}
+    \caption{ArUco markers: (a) without pose estimation, (b) with pose estimation.}
+    \label{fig:aruco_comparison}
+\end{figure}
+
+
+Figures \ref{fig:aruco_no_pose_estimation} and \ref{fig:aruco_pose_estimation} illustrate different uses of ArUco markers in the context of computer vision applications. 
+
+Figure \ref{fig:aruco_no_pose_estimation} shows an example of ArUco markers without pose estimation. In this scenario, the markers are used for basic detection and identification without providing information about their orientation or position in 3D space.
+
+Figure \ref{fig:aruco_pose_estimation} demonstrates the use of ArUco markers with pose estimation. Here, the markers not only identify the presence of the markers but also calculate their pose, giving information about their rotation and translation in three dimensions.
+
 
 \subsection{ROS2-Pixhawk Communication}
     Communication between ROS 2 and Pixhawk is based on the MAVLink protocol, a lightweight protocol that enables bidirectional data transfer between the flight controller and a companion computer. This integration is critical for sending real-time flight commands and monitoring the drone's status.
